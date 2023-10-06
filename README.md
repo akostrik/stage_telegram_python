@@ -13,7 +13,7 @@ Verification of the Telegram messages veracity by two methods:
 - so the server updates the measure of similarity of the channels and constructs the graph based on the measure of similarity
   
 ### Setup
-1) In the folder 'python' create a file named ".env" :
+1) Create the file "python/.env" : 
 ```sh
 API_ID=... (Telegram connection)
 API_HASH=... (Telegram connection)
