@@ -25,6 +25,12 @@ API_HASH=... (Telegram connection)
 OPENAI=... (OpenAI key)
 MONGO=... (MonogDB connection string)
 ```
+Télégram credentials API_ID and API_HASH may be obteined here my.telegram.org for, 
+
+OpenAI key here https://platform.openai.com/account/api-keys
+
+MonogDB connection string here https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
+
 #### Configure MongoDB
 
 Create database 'telegram'
