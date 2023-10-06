@@ -21,7 +21,9 @@ Acces to API MongoDB:
 
 Create database 'telegram'
 
-Import collection 'caracteristics'
+Import collection 'caracteristics' from the file cqrqcteristics.json :
+
+
 
 During the first Telegram connection enter your phone and then the confirmation code.
 
