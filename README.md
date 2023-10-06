@@ -19,6 +19,8 @@ Acces to API MongoDB:
 - go to Database Deployments
 - presse "add current ip adresse"
 
+Create database 'telegram'
+
 During the first Telegram connection enter your phone and then the confirmation code.
 
 ### Compile and Run
