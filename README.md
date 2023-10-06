@@ -14,15 +14,16 @@ Real time verification of the Telegram messages veracity by two methods:
 - constructs the graph of the channels, there every edge is the measure of similarity of two channels, and every summit contains the id of the channel and its trust coefficient 
   
 ### Setup
-1) Install python >= 2.5 and the libraies sys, openai, os, telethon, pymongo, time, datetime, dotenv, uuid, requests, ast  
-2) Create the file "server1/.env" : 
+#### Install python 
+version >= 3.5 and the libraies sys, openai, os, telethon, pymongo, time, datetime, dotenv, uuid, requests, ast  
+#### Create the file "server1/.env" 
 ```sh
 API_ID=... (Telegram connection)
 API_HASH=... (Telegram connection)
 OPENAI=... (OpenAI key)
 MONGO=... (MonogDB connection string)
 ```
-3) Configure MongoDB:
+#### Configure MongoDB
 
 Create database 'telegram'
 
@@ -33,7 +34,8 @@ sudo mongoimport --db telegram --collection characteristics --file characteristi
 ```
 If you use MongoDB Atlas, go to https://cloud.mongodb.com - Database Deployments, and presse "add current ip adresse"
 
-3) During the first Telegram connection enter your phone and then the confirmation code
+#### Configure Telegram
+During the first Telegram connection enter your phone and then the confirmation code
 ### Compile and Run
 ```sh
 server1/python main.py
