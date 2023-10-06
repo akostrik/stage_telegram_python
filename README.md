@@ -1,5 +1,7 @@
 # python-project
-Verification of the Telegram channels veracity
+Verification of the Telegram channels veracity by two methods:
+1) Looking of the marks of the propaganda in a separate message
+2) Comparison of the information diffused by several channels   
 
 ## Project Setup
 
