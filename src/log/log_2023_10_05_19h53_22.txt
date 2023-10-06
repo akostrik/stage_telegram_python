@@ -1,0 +1,113 @@
+model           = gpt-3.5-turbo
+temperature     = 0.0
+max_len_message = 600
+channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 eupbeneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+calc_affirmations
+exemples:
+<pymongo.cursor.Cursor object at 0x7ff085507d30>
+prompt =             Please generate binary affirmations from the provided news message:
+
+            'abc'
+
+            For each affirmation:
+
+            1. Extract key assertions from the message. 
+            2. Convert negations into their positive counterparts.
+            3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
+            4. Provide a truth value for each affirmation based on its accuracy within the message.
+
+            The result should be in this format:
+            {
+                'Binary affirmation 1': true/false,
+                'Binary affirmation 2': true/false,
+                ...
+            }
+
+            Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+
+            For example. Here I provide examples already checked by gpt-4, with corrections = result that should appear instead, or close to it. You need understand what I mean with these examples and strictly follow :
+exemples:
+<pymongo.cursor.Cursor object at 0x7ff085507d30>
+Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<UpdateMethods._dispatch_update() done, defined at /home/an/.local/lib/python3.8/site-packages/telethon/client/updates.py:471> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/an/.local/lib/python3.8/site-packages/telethon/client/updates.py", line 93, in run_until_disconnected
+    return self.loop.run_until_complete(self._run_until_disconnected())
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
+    handle._run()
+  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/an/.local/lib/python3.8/site-packages/telethon/client/updates.py", line 520, in _dispatch_update
+    await callback(event)
+  File "main.py", line 92, in new_message_handler
+    await group.new_message_handler(event, promptC, promptA, model, temperature, max_tokens, request_timeout, collection_messages)
+  File "/mnt/md0/travail hobby/2022 2023 stage/github 7/src/class_group.py", line 21, in new_message_handler
+    await message.calc_affirmations(prompt_a, model, temperature, max_tokens, request_timeout, collection_messages, self)
+  File "/mnt/md0/travail hobby/2022 2023 stage/github 7/src/class_message.py", line 42, in calc_affirmations
+    response = openai.ChatCompletion.create( # await ?
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 216, in request
+    result = self.request_raw(
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 516, in request_raw
+    result = _thread_context.session.request(
+  File "/home/an/.local/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt

@@ -1,0 +1,51 @@
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 92, in new_message_handler
+    await group.new_message_handler(event, promptC, promptA, model, temperature, max_tokens, request_timeout, collection_messages)
+  File "/Users/nicolas/TelegramBots/LastStage/src/class_group.py", line 21, in new_message_handler
+    await message.calc_affirmations(prompt_a, model, temperature, max_tokens, request_timeout, collection_messages, self)
+  File "/Users/nicolas/TelegramBots/LastStage/src/class_message.py", line 43, in calc_affirmations
+    response = openai.ChatCompletion.create( # await ?
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+                           ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_requestor.py", line 298, in request
+    resp, got_stream = self._interpret_response(result, stream)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_requestor.py", line 700, in _interpret_response
+    self._interpret_response_line(
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_requestor.py", line 745, in _interpret_response_line
+    raise error.ServiceUnavailableError(
+openai.error.ServiceUnavailableError: The server is overloaded or not ready yet.
+model           = gpt-3.5-turbo
+temperature     = 0.0
+max_len_message = 600
+channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
+
+prompt =             Please generate binary affirmations from the provided news message:
+
+            'abc'
+
+            For each affirmation:
+
+            1. Extract key assertions from the message. 
+            2. Convert negations into their positive counterparts.
+            3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
+            4. Provide a truth value for each affirmation based on its accuracy within the message.
+
+            The result should be in this format:
+            {
+                'Binary affirmation 1': true/false,
+                'Binary affirmation 2': true/false,
+                ...
+            }
+
+            Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+
+            

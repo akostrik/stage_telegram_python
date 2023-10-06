@@ -1,0 +1,117 @@
+model          = gpt-3.5-turbo
+nb_messages    = 10
+temperature    = 0.0
+live_mode      = 0
+
+1  positive author attitude
+2  the message is advantageous for the actual political power
+3  exaggerations
+4  lack of object concordance
+5  appeal to the intellect
+6  appeal to emotions
+7  appeal to virtues
+8  appeal to ethics
+9  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+10 appeal to fear
+11 appeal to the threat from other countries
+12 appeal to hatred
+13 appeal to authority
+14 appeal to human rights
+15 criticism of the actual political power
+16 generalizations
+17 seemingly scientific appearance, but only seemingly
+18 real scientific proofs of the information
+19 real proofs of the information
+20 euphemismes replacing offensive expressions
+21 euphemismes replacing war or victims
+22 formal register of the texte
+23 eupbeneficiaries of the information regarding to politics
+24 flattery to the reader
+25 dilemma between only two possibilities
+26 criticisme of a person instead of criticism of his arguments
+27 underestimation of the proofs of the opponents
+
+*********************************************************
+
+calculating dist @khodorkovski                    @teamnavalny                     04/10/2023 02:53:42 ...
+calculating dist @khodorkovski                    @eschulmann                      04/10/2023 02:54:27 ...
+Request timed out: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=30)
+Timeout error, retrying...
+Traceback (most recent call last):
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/an/.local/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 538, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 516, in request_raw
+    result = _thread_context.session.request(
+  File "/home/an/.local/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=30)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/md0/travail hobby/2022 2023 stage/github 7/src/class_group.py", line 93, in calc_distances
+    response_openai = openai.ChatCompletion.create(
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 216, in request
+    result = self.request_raw(
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 527, in request_raw
+    raise error.Timeout("Request timed out: {}".format(e)) from e
+openai.error.Timeout: Request timed out: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "appli1.py", line 100, in <module>
+    client_tg.loop.run_until_complete(main())
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "appli1.py", line 91, in main
+    await group.calc_distances(model, temperature, promptD)
+  File "/mnt/md0/travail hobby/2022 2023 stage/github 7/src/class_group.py", line 111, in calc_distances
+    retries -= 1
+UnboundLocalError: local variable 'retries' referenced before assignment

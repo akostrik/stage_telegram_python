@@ -1,0 +1,51 @@
+model           = gpt-4
+temperature     = 0.2
+max_len_message = 600
+
+[-1001842901217.0, -1001905441409.0, -1001863996867.0, -1001944316671.0, -1001919265899.0]
+Message(ID: 102, Text: В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**, Timestamp: 2023-10-06 05:19:59+00:00, Channel: -1001905441409)
+None
+В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**
+            Please generate binary affirmations from the provided news message:
+
+            'В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**'
+
+            For each affirmation:
+
+            1. Extract key assertions from the message. 
+            2. Convert negations into their positive counterparts.
+            3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
+            4. Provide a truth value for each affirmation based on its accuracy within the message.
+
+            The result should be in this format:
+            {
+                'Binary affirmation 1': true/false,
+                'Binary affirmation 2': true/false,
+                ...
+            }
+
+            Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+
+            
+{
+  "id": "chatcmpl-86XXkYeeWHrQplCc7Oa2X0p62zzDB",
+  "object": "chat.completion",
+  "created": 1696569600,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    '\u0412 \u041a\u0440\u0435\u043c\u043b\u0435 \u043f\u043e\u043e\u0431\u0435\u0449\u0430\u043b\u0438 \u0432\u044b\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0435 \u041f\u0443\u0442\u0438\u043d\u0430 \u043d\u0430 \u00ab\u0412\u0430\u043b\u0434\u0430\u0435\u00bb': true,\n    '\u0412\u044b\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0435 \u041f\u0443\u0442\u0438\u043d\u0430 \u043d\u0430 \u00ab\u0412\u0430\u043b\u0434\u0430\u0435\u00bb \u043e\u0431\u0435\u0449\u0430\u044e\u0442 \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u0441\u043e\u0431\u044b\u0442\u0438\u0435\u043c \u043c\u0438\u0440\u043e\u0432\u043e\u0433\u043e \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u0430': true\n}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 209,
+    "completion_tokens": 70,
+    "total_tokens": 279
+  }
+}
+Put to mongo successful.
