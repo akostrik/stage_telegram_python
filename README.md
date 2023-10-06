@@ -15,7 +15,8 @@ Real time verification of the Telegram messages veracity by two methods:
   
 ### Setup
 #### Install python 
-version >= 3.5 and the libraies sys, openai, os, telethon, pymongo, time, datetime, dotenv, uuid, requests, ast  
+version >= 3.5 
+And the libraies sys, openai, os, telethon, pymongo, time, datetime, dotenv, uuid, requests, ast  
 #### Create the file "server1/.env" 
 ```sh
 API_ID=... (Telegram connection)
