@@ -1,4 +1,5 @@
 # python-project
+Verification of the Telegram channels veracity
 
 ## Project Setup
 
