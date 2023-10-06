@@ -6,7 +6,7 @@ Verification of the Telegram messages veracity by two methods:
 ## The first server
 1) Listens to the Telegram channels
 2) Treats a new message :
-- estimates the marks of the propaganda of the message via OpenAI, basing on them calculate the trust coefficient of the message 
+- estimates the marks of the propaganda of the message via OpenAI, basing on them calculates the trust coefficient of the message 
 - so the server updates the trust coefficient of the group of the channels
 - extracts the principal information of the message, in the form of several affirmations, via OpenAI
 - compares this affirmations to the recent affirmations of the other channels of the group
