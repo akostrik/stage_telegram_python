@@ -14,10 +14,10 @@ Real time verification of the Telegram messages veracity by two methods:
 - constructs the graph of the channels, where every edge is the measure of similarity of two channels, and every summit contains the id of the channel and its trust coefficient 
   
 ### Setup
-#### Install python 
-version >= 3.5 
+#### Install 
+python version >= 3.5 
 
-And the libraies sys, openai, os, telethon, pymongo, time, datetime, dotenv, uuid, requests, ast  
+the libraries sys, openai, os, telethon, pymongo, time, datetime, dotenv, uuid, requests, ast  
 #### Create the file "server1/.env" 
 ```sh
 API_ID=... (Telegram connection)
