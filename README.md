@@ -1,4 +1,3 @@
-# python-project
 Verification of the Telegram messages veracity by two methods:
 1) Looking for the marks of the propaganda in a separate message
 2) Comparison of the information diffused by several channels in order to detect similar channels
@@ -29,7 +28,16 @@ sudo mongoimport --db telegram --collection characteristics --file characteristi
 
 During the first Telegram connection enter your phone and then the confirmation code.
 
-### Compile and Run
+### The first server :
+1) Listens to the Telegran channels
+2) Treats a new message :
+- estimates the marks of the propaganda via OpenAI Analysis, basing on them calculate the trust coefficient of the message 
+- so the server updates the trust coefficient of the group of the channels
+- extracts the principal information of the message via OpenAI analysis in the form of several affirmations
+- compares this affirmations to the recent affirmations of all the other channels
+- so the server updates the mesure of similarity of the channels
+-  
+#### Compile and Run
 ```sh
-python main.py
+python/python main.py
 ```
