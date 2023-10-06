@@ -1,0 +1,168 @@
+{"address": {"building": "1007", "coord": [-73.856077, 40.848447], "street": "Morris Park Ave", "zipcode": "10462"}, "borough": "Bronx", "cuisine": "Bakery", "grades": [{"date": {"$date": 1393804800000}, "grade": "A", "score": 2}, {"date": {"$date": 1378857600000}, "grade": "A", "score": 6}, {"date": {"$date": 1358985600000}, "grade": "A", "score": 10}, {"date": {"$date": 1322006400000}, "grade": "A", "score": 9}, {"date": {"$date": 1299715200000}, "grade": "B", "score": 14}], "name": "Morris Park Bake Shop", "restaurant_id": "30075445"}
+{"address": {"building": "469", "coord": [-73.961704, 40.662942], "street": "Flatbush Avenue", "zipcode": "11225"}, "borough": "Brooklyn", "cuisine": "Hamburgers", "grades": [{"date": {"$date": 1419897600000}, "grade": "A", "score": 8}, {"date": {"$date": 1404172800000}, "grade": "B", "score": 23}, {"date": {"$date": 1367280000000}, "grade": "A", "score": 12}, {"date": {"$date": 1336435200000}, "grade": "A", "score": 12}], "name": "Wendy'S", "restaurant_id": "30112340"}
+{"address": {"building": "351", "coord": [-73.98513559999999, 40.7676919], "street": "West   57 Street", "zipcode": "10019"}, "borough": "Manhattan", "cuisine": "Irish", "grades": [{"date": {"$date": 1409961600000}, "grade": "A", "score": 2}, {"date": {"$date": 1374451200000}, "grade": "A", "score": 11}, {"date": {"$date": 1343692800000}, "grade": "A", "score": 12}, {"date": {"$date": 1325116800000}, "grade": "A", "score": 12}], "name": "Dj Reynolds Pub And Restaurant", "restaurant_id": "30191841"}
+{"address": {"building": "2780", "coord": [-73.98241999999999, 40.579505], "street": "Stillwell Avenue", "zipcode": "11224"}, "borough": "Brooklyn", "cuisine": "American", "grades": [{"date": {"$date": 1402358400000}, "grade": "A", "score": 5}, {"date": {"$date": 1370390400000}, "grade": "A", "score": 7}, {"date": {"$date": 1334275200000}, "grade": "A", "score": 12}, {"date": {"$date": 1318377600000}, "grade": "A", "score": 12}], "name": "Riviera Caterer", "restaurant_id": "40356018"}
+{"address": {"building": "97-22", "coord": [-73.8601152, 40.7311739], "street": "63 Road", "zipcode": "11374"}, "borough": "Queens", "cuisine": "Jewish/Kosher", "grades": [{"date": {"$date": 1416787200000}, "grade": "Z", "score": 20}, {"date": {"$date": 1358380800000}, "grade": "A", "score": 13}, {"date": {"$date": 1343865600000}, "grade": "A", "score": 13}, {"date": {"$date": 1323907200000}, "grade": "B", "score": 25}], "name": "Tov Kosher Kitchen", "restaurant_id": "40356068"}
+{"address": {"building": "8825", "coord": [-73.8803827, 40.7643124], "street": "Astoria Boulevard", "zipcode": "11369"}, "borough": "Queens", "cuisine": "American", "grades": [{"date": {"$date": 1416009600000}, "grade": "Z", "score": 38}, {"date": {"$date": 1398988800000}, "grade": "A", "score": 10}, {"date": {"$date": 1362182400000}, "grade": "A", "score": 7}, {"date": {"$date": 1328832000000}, "grade": "A", "score": 13}], "name": "Brunos On The Boulevard", "restaurant_id": "40356151"}
+{"address": {"building": "2206", "coord": [-74.1377286, 40.6119572], "street": "Victory Boulevard", "zipcode": "10314"}, "borough": "Staten Island", "cuisine": "Jewish/Kosher", "grades": [{"date": {"$date": 1412553600000}, "grade": "A", "score": 9}, {"date": {"$date": 1400544000000}, "grade": "A", "score": 12}, {"date": {"$date": 1365033600000}, "grade": "A", "score": 12}, {"date": {"$date": 1327363200000}, "grade": "A", "score": 9}], "name": "Kosher Island", "restaurant_id": "40356442"}
+
+{
+  "toUse": "true",
+  "_id": {
+    "$oid": "651aa7bfc7074d7544d30bbc"
+  },
+  "str": "positive author attitude",
+  "score": "-1"
+}
+{
+  "_id": {
+    "$oid": "651aaae1c7074d7544d30bbf"
+  },
+  "str": "the message is advantageous for the actual political power",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651aaaefc7074d7544d30bc0"
+  },
+  "str": "exaggerations",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651aab06c7074d7544d30bc1"
+  },
+  "str": "lack of object concordance",
+  "score": "-2",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651aab0bc7074d7544d30bc2"
+  },
+  "str": "appeal to the intellect",
+  "score": "+1",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651aab10c7074d7544d30bc3"
+  },
+  "str": "appeal to emotions",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "str": "appeal to virtues",
+  "score": "-1",
+  "toUse": "true",
+  "_id": {
+    "$oid": "651aab14c7074d7544d30bc4"
+  }
+}
+{
+  "_id": {
+    "$oid": "651aab18c7074d7544d30bc5"
+  },
+  "str": "appeal to ethics",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651aab1ec7074d7544d30bc6"
+  },
+  "str": "appeal to blinding generalities as fatherland, peace, glory, justice, honor",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651aab22c7074d7544d30bc7"
+  },
+  "str": "appeal to fear",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651aab26c7074d7544d30bc8"
+  },
+  "str": "appeal to the threat from other countries",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "str": "appeal to hatred",
+  "score": "-1",
+  "toUse": "true",
+  "_id": {
+    "$oid": "651aab2bc7074d7544d30bc9"
+  }
+}
+{
+  "str": "appeal to authority",
+  "score": "-1",
+  "toUse": "true",
+  "_id": {
+    "$oid": "651aab2fc7074d7544d30bca"
+  }
+}
+{
+  "str": "appeal to human rights",
+  "score": "+1",
+  "toUse": "true",
+  "_id": {
+    "$oid": "651aab34c7074d7544d30bcb"
+  }
+}
+{
+  "_id": {
+    "$oid": "651b3335b695c395e5892403"
+  },
+  "str": "criticism of the actual political power",
+  "score": "+1",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651b334cb695c395e5892404"
+  },
+  "str": "generalizations",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "_id": {
+    "$oid": "651b34e5b695c395e5892406"
+  },
+  "str": "seemingly scientific appearance, but only seemingly",
+  "score": "-1",
+  "toUse": "true"
+}
+{
+  "str": "real scientific proofs of the information",
+  "score": "+1",
+  "toUse": "true",
+  "_id": {
+    "$oid": "651b3511b695c395e5892408"
+  }
+}
+{
+  "str": "real proofs of the information",
+  "score": "+1",
+  "toUse": "true",
+  "_id": {
+    "$oid": "651b3544b695c395e5892409"
+  }
+}
+{
+  "str": "euphemismes replacing offensive expressions",
+  "score": "-1",
+  "toUse": "true",
+  "_id": {
+    "$oid": "651b3565b695c395e589240a"
+  }
+}
