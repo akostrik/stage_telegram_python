@@ -18,7 +18,7 @@ Verification of the Telegram messages veracity by two methods:
 API_ID=... (Telegram connection)
 API_HASH=... (Telegram connection)
 OPENAI=... (OpenAI key)
-MONGO=... (MonogDB connection string like mongodb+srv: ... @cluster0.fnbrrzu.mongodb.net/?retryWrites=true&w=majority
+MONGO=... (MonogDB connection string)
 ```
 2) Configure MongoDB Atlas:
 - go to https://cloud.mongodb.com 
