@@ -1,0 +1,96 @@
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/home/an/.local/lib/python3.8/site-packages/telethon/client/updates.py", line 520, in _dispatch_update
+    await callback(event)
+  File "main.py", line 93, in new_message_handler
+    await group.new_message_handler(event, promptC, promptA, model, temperature, max_tokens, request_timeout, collection_messages)
+  File "/mnt/md0/travail hobby/2022 2023 stage/github 7/src/class_group.py", line 22, in new_message_handler
+    await message.put_to_mongo(prompt_c, prompt_a, collection_messages)
+  File "/mnt/md0/travail hobby/2022 2023 stage/github 7/src/class_message.py", line 60, in put_to_mongo
+    await collection_messages.insert_one({
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/collection.py", line 671, in insert_one
+    self._insert_one(
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/collection.py", line 611, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1568, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/collection.py", line 599, in _insert_command
+    result = conn.command(
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/pool.py", line 960, in command
+    self._raise_connection_failure(error)
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/pool.py", line 932, in command
+    return command(
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/network.py", line 150, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/message.py", line 765, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: documents must have only string keys, key was 0
+model           = gpt-3.5-turbo
+temperature     = 0.0
+max_len_message = 600
+channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 eupbeneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 0
+8 0
+9 0
+10 0
+11 0
+12 0
+13 0
+14 0
+15 0
+16 0
+17 0
+18 0
+19 0
+20 0
+21 0
+22 0
+23 0
+24 0
+25 0
+26 0
+<generator object Message.put_to_mongo.<locals>.<genexpr> at 0x7f86d4a6c270>

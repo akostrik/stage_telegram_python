@@ -1,0 +1,168 @@
+model           = gpt-3.5-turbo
+temperature     = 0.0
+max_len_message = 600
+channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 eupbeneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+calc_affirmations
+                Please generate binary affirmations from the provided news message:
+
+                'abc'
+
+                For each affirmation:
+
+                1. Extract key assertions from the message. 
+                2. Convert negations into their positive counterparts.
+                3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
+                4. Provide a truth value for each affirmation based on its accuracy within the message.
+
+                The result should be in this format:
+                {
+                    'Binary affirmation 1': true/false,
+                    'Binary affirmation 2': true/false,
+                    ...
+                }
+
+                Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+
+                For example. Here I provide examples already checked by gpt-4, with corrections = result that should appear instead, or close to it. You need understand what I mean with these examples and strictly follow :
+                 
+                
+{
+    'Binary affirmation 1': True,
+    'Binary affirmation 2': False,
+    'Binary affirmation 3': True,
+    'Binary affirmation 4': True,
+    'Binary affirmation 5': True,
+    'Binary affirmation 6': True,
+    'Binary affirmation 7': True,
+    'Binary affirmation 8': True,
+    'Binary affirmation 9': True,
+    'Binary affirmation 10': True,
+    'Binary affirmation 11': True,
+    'Binary affirmation 12': True,
+    'Binary affirmation 13': True,
+    'Binary affirmation 14': True,
+    'Binary affirmation 15': True,
+    'Binary affirmation 16': True,
+    'Binary affirmation 17': True,
+    'Binary affirmation 18': True,
+    'Binary affirmation 19': True,
+    'Binary affirmation 20': True,
+    'Binary affirmation 21': True,
+    'Binary affirmation 22': True,
+    'Binary affirmation 23': True,
+    'Binary affirmation 24': True,
+    'Binary affirmation 25': True,
+    'Binary affirmation 26': True,
+    'Binary affirmation 27': True,
+    'Binary affirmation 28': True,
+    'Binary affirmation 29': True,
+    'Binary affirmation 30': True,
+    'Binary affirmation 31': True,
+    'Binary affirmation 32': True,
+    'Binary affirmation 33': True,
+    'Binary affirmation 34': True,
+    'Binary affirmation 35': True,
+    'Binary affirmation 36': True,
+    'Binary affirmation 37': True,
+    'Binary affirmation 38': True,
+    'Binary affirmation 39': True,
+    'Binary affirmation 40': True,
+    'Binary affirmation 41': True,
+    'Binary affirmation 42': True,
+    'Binary affirmation 43': True,
+    'Binary affirmation 44': True,
+    'Binary affirmation 45': True,
+    'Binary affirmation 46': True,
+    'Binary affirmation 47': True,
+    'Binary affirmation 48': True,
+    'Binary affirmation 49': True,
+    'Binary affirmation 50': True,
+    'Binary affirmation 51': True,
+    'Binary affirmation 52': True,
+    'Binary affirmation 53': True,
+    'Binary affirmation 54': True,
+    'Binary affirmation 55': True,
+    'Binary affirmation 56': True,
+    'Binary affirmation 57': True,
+    'Binary affirmation 58': True,
+    'Binary affirmation 59': True,
+    'Binary affirmation 60': True,
+    'Binary affirmation 61': True,
+    'Binary affirmation 62': True,
+    'Binary affirmation 63': True,
+    'Binary affirmation 64': True,
+    'Binary affirmation 65': True,
+    'Binary affirmation 66': True,
+    'Binary affirmation 67': True,
+    'Binary affirmation 68': True,
+    'Binary affirmation 69': True,
+    'Binary affirmation 70': True,
+    'Binary affirmation 71': True,
+    'Binary affirmation 72': True,
+    'Binary affirmation 73': True,
+    'Binary affirmation 74': True,
+    'Binary affirmation 75': True,
+    'Binary affirmation 76': True,
+    'Binary affirmation 77': True,
+    'Binary affirmation 78': True,
+    'Binary affirmation 79': True,
+    'Binary affirmation 80': True,
+    'Binary affirmation 81': True,
+    'Binary affirmation 82': True,
+    'Binary affirmation 83': True,
+    'Binary affirmation 84': True,
+    'Binary affirmation 85': True,
+    'Binary affirmation 86': True,
+    'Binary affirmation 87': True,
+    'Binary affirmation 88': True,
+    'Binary affirmation 89': True,
+    'Binary affirmation 90': True,
+    'Binary affirmation 91': True,
+    'Binary affirmation 92': True,
+    'Binary affirmation 93': True,
+    'Binary affirmation 94': True,
+    'Binary affirmation 95': True,
+    'Binary affirmation 96': True,
+    'Binary affirmation 97': True,
+    'Binary affirmation 98': True,
+    'Binary affirmation 99': True,
+    'Binary affirmation 100': True
+}
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/home/an/.local/lib/python3.8/site-packages/pymongo/periodic_executor.py", line 108, in join
+    self._thread.join(timeout)
+  File "/usr/lib/python3.8/threading.py", line 1015, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "/usr/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt

@@ -1,0 +1,14 @@
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 98, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+ * Debugger is active!
+ * Debugger PIN: 137-638-912
+/opt/homebrew/lib/python3.11/site-packages/flask/app.py:852: RuntimeWarning: coroutine 'UserMethods.get_entity' was never awaited
+  return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+127.0.0.1 - - [06/Oct/2023 03:11:51] "[35m[1mGET /add_channel/neodia HTTP/1.1[0m" 500 -
