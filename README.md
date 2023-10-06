@@ -1,7 +1,7 @@
 # The project
 Real time verification of the Telegram messages veracity by two methods:
 1) Looking for the marks of the propaganda in every separate message
-2) Comparison of the information diffused by several channels in order to detect similar channels
+2) Comparison of the information diffused by a group of channels in order to detect similar channels
 
 ## The first server
 1) Listens to the Telegram channels
