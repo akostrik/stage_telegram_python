@@ -1,13 +1,6 @@
 ## Project Setup
 ```sh
-Install python version >= 3.5 <br>
-pip3 install --upgrade requests
-Install telethon  <br>
-Install pymongo <br>
-Install openai <br>
-pip install --upgrade numpy
-# pip install streamlit
-# pip3 install --upgrade requests
+Install python version >= 3.5
 ```
 
 Create file named ".env":
