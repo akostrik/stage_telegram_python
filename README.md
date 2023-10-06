@@ -17,3 +17,8 @@ Acces to API MongoDB:
 - presse "add current ip adresse"
 
 During the first Telegram connection enter your phone and then the confirmation code.
+
+### Compile
+```sh
+python main.py
+```
