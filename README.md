@@ -33,7 +33,7 @@ Import collection 'characteristics' from the file characteristics.json :
 ```sh
 sudo mongoimport --db telegram --collection characteristics --file characteristics.json
 ```
-During the first Telegram connection enter your phone and then the confirmation code.
+3) During the first Telegram connection enter your phone and then the confirmation code
 ### Compile and Run
 ```sh
 python/python main.py
