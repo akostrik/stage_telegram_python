@@ -5,7 +5,7 @@ Verification of the Telegram messages veracity by two methods:
 
 ## Project Setup
 
-Create file named ".env":
+1) In the folder 'python' create a file named ".env" :
 ```sh
 API_ID=... (Telegram connection)
 API_HASH=... (Telegram connection)
@@ -13,7 +13,7 @@ OPENAI=... (OpenAI key)
 MONGO=... (MonogDB connection string like mongodb+srv: ... @cluster0.fnbrrzu.mongodb.net/?retryWrites=true&w=majority
 ```
 
-Acces to API MongoDB:
+2) Configure MongoDB Atlas:
 - go to https://cloud.mongodb.com 
 - sign in 
 - go to Database Deployments
