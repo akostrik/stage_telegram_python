@@ -11,7 +11,7 @@ Real time verification of the Telegram messages veracity by two methods:
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares this affirmations to the recent affirmations of the other channels of the group
 - so the server updates the measure of similarity of the channels
-- constructs the graph of the channels, there every edge is the measure of similarity of two channels, and every summit contains the id of the channel and its trust coefficient 
+- constructs the graph of the channels, where every edge is the measure of similarity of two channels, and every summit contains the id of the channel and its trust coefficient 
   
 ### Setup
 #### Install python 
@@ -25,7 +25,7 @@ API_HASH=... (Telegram connection)
 OPENAI=... (OpenAI key)
 MONGO=... (MonogDB connection string)
 ```
-Télégram credentials API_ID and API_HASH may be obteined here my.telegram.org for, 
+Télégram credentials API_ID and API_HASH may be obteined here my.telegram.org
 
 OpenAI key here https://platform.openai.com/account/api-keys
 
@@ -35,7 +35,7 @@ MonogDB connection string here https://cloud.mongodb.com/ - Database - Connect -
 
 Create database 'telegram'
 
-Import collection 'characteristics' from the file characteristics.json :
+Import the collection 'characteristics' from the file characteristics.json :
 
 ```sh
 sudo mongoimport --db telegram --collection characteristics --file characteristics.json
