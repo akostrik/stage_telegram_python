@@ -1,0 +1,6 @@
+model          = gpt-3.5-turbo
+nb_messages    = 8
+Traceback (most recent call last):
+  File "main.py", line 86, in <module>
+    print("temperature    = " + str(temperature + "\n"))
+TypeError: unsupported operand type(s) for +: 'float' and 'str'

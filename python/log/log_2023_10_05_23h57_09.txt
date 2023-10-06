@@ -1,0 +1,33 @@
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 92, in new_message_handler
+    await group.new_message_handler(event, promptC, promptA, model, temperature, max_tokens, request_timeout, collection_messages)
+  File "/Users/nicolas/TelegramBots/LastStage/src/class_group.py", line 20, in new_message_handler
+    await message.calc_score(prompt_c, model, temperature, max_tokens, request_timeout, collection_messages, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nicolas/TelegramBots/LastStage/src/class_message.py", line 27, in calc_score
+    response = openai.ChatCompletion.create( # object OpenAIObject can't be used in 'await'  ???
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+                           ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_requestor.py", line 298, in request
+    resp, got_stream = self._interpret_response(result, stream)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_requestor.py", line 700, in _interpret_response
+    self._interpret_response_line(
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/api_requestor.py", line 765, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.InvalidRequestError: Invalid value for 'content': expected a string, got null.
+model           = gpt-3.5-turbo
+temperature     = 0.0
+max_len_message = 600
+channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
+
+start calulating score
+None

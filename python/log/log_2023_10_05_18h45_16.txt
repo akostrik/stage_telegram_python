@@ -1,0 +1,191 @@
+model           = gpt-3.5-turbo
+temperature     = 0.0
+max_len_message = 600
+channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 eupbeneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+calc_affirmations
+{
+  "Binary affirmation 1": True,
+  "Binary affirmation 2": True,
+  "Binary affirmation 3": True,
+  "Binary affirmation 4": True,
+  "Binary affirmation 5": True,
+  "Binary affirmation 6": True,
+  "Binary affirmation 7": True,
+  "Binary affirmation 8": True,
+  "Binary affirmation 9": True,
+  "Binary affirmation 10": True,
+  "Binary affirmation 11": True,
+  "Binary affirmation 12": True,
+  "Binary affirmation 13": True,
+  "Binary affirmation 14": True,
+  "Binary affirmation 15": True,
+  "Binary affirmation 16": True,
+  "Binary affirmation 17": True,
+  "Binary affirmation 18": True,
+  "Binary affirmation 19": True,
+  "Binary affirmation 20": True,
+  "Binary affirmation 21": True,
+  "Binary affirmation 22": True,
+  "Binary affirmation 23": True,
+  "Binary affirmation 24": True,
+  "Binary affirmation 25": True,
+  "Binary affirmation 26": True,
+  "Binary affirmation 27": True,
+  "Binary affirmation 28": True,
+  "Binary affirmation 29": True,
+  "Binary affirmation 30": True,
+  "Binary affirmation 31": True,
+  "Binary affirmation 32": True,
+  "Binary affirmation 33": True,
+  "Binary affirmation 34": True,
+  "Binary affirmation 35": True,
+  "Binary affirmation 36": True,
+  "Binary affirmation 37": True,
+  "Binary affirmation 38": True,
+  "Binary affirmation 39": True,
+  "Binary affirmation 40": True,
+  "Binary affirmation 41": True,
+  "Binary affirmation 42": True,
+  "Binary affirmation 43": True,
+  "Binary affirmation 44": True,
+  "Binary affirmation 45": True,
+  "Binary affirmation 46": True,
+  "Binary affirmation 47": True,
+  "Binary affirmation 48": True,
+  "Binary affirmation 49": True,
+  "Binary affirmation 50": True,
+  "Binary affirmation 51": True,
+  "Binary affirmation 52": True,
+  "Binary affirmation 53": True,
+  "Binary affirmation 54": True,
+  "Binary affirmation 55": True,
+  "Binary affirmation 56": True,
+  "Binary affirmation 57": True,
+  "Binary affirmation 58": True,
+  "Binary affirmation 59": True,
+  "Binary affirmation 60": True,
+  "Binary affirmation 61": True,
+  "Binary affirmation 62": True,
+  "Binary affirmation 63": True,
+  "Binary affirmation 64": True,
+  "Binary affirmation 65": True,
+  "Binary affirmation 66": True,
+  "Binary affirmation 67": True,
+  "Binary affirmation 68": True,
+  "Binary affirmation 69": True,
+  "Binary affirmation 70": True,
+  "Binary affirmation 71": True,
+  "Binary affirmation 72": True,
+  "Binary affirmation 73": True,
+  "Binary affirmation 74": True,
+  "Binary affirmation 75": True,
+  "Binary affirmation 76": True,
+  "Binary affirmation 77": True,
+  "Binary affirmation 78": True,
+  "Binary affirmation 79": True,
+  "Binary affirmation 80": True,
+  "Binary affirmation 81": True,
+  "Binary affirmation 82": True,
+  "Binary affirmation 83": True,
+  "Binary affirmation 84": True,
+  "Binary affirmation 85": True,
+  "Binary affirmation 86": True,
+  "Binary affirmation 87": True,
+  "Binary affirmation 88": True,
+  "Binary affirmation 89": True,
+  "Binary affirmation 90": True,
+  "Binary affirmation 91": True,
+  "Binary affirmation 92": True,
+  "Binary affirmation 93": True,
+  "Binary affirmation 94": True,
+  "Binary affirmation 95": True,
+  "Binary affirmation 96": True,
+  "Binary affirmation 97": True,
+  "Binary affirmation 98": True,
+  "Binary affirmation 99": True,
+  "Binary affirmation 100": True
+}
+calc_affirmations
+Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<UpdateMethods._dispatch_update() done, defined at /home/an/.local/lib/python3.8/site-packages/telethon/client/updates.py:471> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "/home/an/.local/lib/python3.8/site-packages/telethon/client/updates.py", line 93, in run_until_disconnected
+    return self.loop.run_until_complete(self._run_until_disconnected())
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
+    handle._run()
+  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/an/.local/lib/python3.8/site-packages/telethon/client/updates.py", line 520, in _dispatch_update
+    await callback(event)
+  File "main.py", line 92, in new_message_handler
+    await group.new_message_handler(event, promptC, promptA, model, temperature, max_tokens, request_timeout, collection_messages)
+  File "/mnt/md0/travail hobby/2022 2023 stage/github 7/src/class_group.py", line 21, in new_message_handler
+    await message.calc_affirmations(prompt_a, model, temperature, max_tokens, request_timeout, collection_messages, self)
+  File "/mnt/md0/travail hobby/2022 2023 stage/github 7/src/class_message.py", line 41, in calc_affirmations
+    time_start = time.time()
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 216, in request
+    result = self.request_raw(
+  File "/home/an/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 516, in request_raw
+    result = _thread_context.session.request(
+  File "/home/an/.local/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/an/.local/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/an/.local/lib/python3.8/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt

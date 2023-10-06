@@ -1,0 +1,8 @@
+model           = gpt-3.5-turbo
+temperature     = 0.0
+max_len_message = 600
+channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
+
+start calculating score
+Message(ID: 124, Text: abc, Timestamp: 2023-10-05 21:32:20+00:00, Channel: -1001842901217)
+Put to mongo successful.

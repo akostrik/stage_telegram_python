@@ -1,0 +1,51 @@
+24/09/2023 14h29
+@bbbreaking
+@viktor_shenderovich
+
+
+1  author attitude
+2  beneficiaries
+3  exaggeration
+4  object concordance
+5  appeal to emotions
+6  appeal to the intellect
+7  appeal to virtues
+8  appeal to blinding generalities
+9  scientific appearance
+10 appeal to authority
+11 appeal to fear
+12 euphemismes
+
+
+@BBBREAKING trust score = 41/100 :
+  1   2   3   4   5   6   7   8   9  10  11  12 
+------------------------------------------------
+  0   1 -10   1 -10 -10 -10 -10 -10   1 -10 -10 
+  0 -10   1   0   1 -10 -10 -10   1   1 -10 -10 
+
+
+@VIKTOR_SHENDEROVICH trust score = 91/100 :
+  1   2   3   4   5   6   7   8   9  10  11  12 
+------------------------------------------------
+  0   0   0   0   0   0   0   0   0   0   0   0 
+  0   0   0   0   0   0   0   0   0   0   0   0 
+
+
+MESSAGE 1 @BBBREAKING
+Владимир Путин на следующей неделе встретится с избранными главами регионов РФ, которые участвовали в прошедшем Едином дне голосования — Россия-1
+
+MESSAGE 2 @BBBREAKING
+❗️Этой ночью в Москве прогнозируется самый сильный ливень в сентябре - может выпасть 15% от месячной нормы осадков — синоптики
+
+
+MESSAGE 1 @VIKTOR_SHENDEROVICH
+https://www.youtube.com/watch?v=xLT0PFHz9N0&list=PLgtsqyVZbxqHolQ62kA8GskRuTgoIQpyw&index=2
+
+ДАННОЕ СООБЩЕНИЕ (МАТЕРИАЛ) СОЗДАНО И (ИЛИ) РАСПРОСТРАНЕНО ИНОСТРАННЫМ СРЕДСТВОМ МАССОВОЙ ИНФОРМАЦИИ, ВЫПОЛНЯЮЩИМ ФУНКЦИИ ИНОСТРАННОГО АГЕНТА, И (ИЛИ) РОССИЙСКИМ ЮРИДИЧЕСКИМ ЛИЦОМ, ВЫПОЛНЯЮЩИМ ФУНКЦИИ ИНОСТРАННОГО АГЕНТА.
+
+MESSAGE 2 @VIKTOR_SHENDEROVICH
+https://youtu.be/ah2uveMBEmE
+
+ДАННОЕ СООБЩЕНИЕ (МАТЕРИАЛ) СОЗДАНО И (ИЛИ) РАСПРОСТРАНЕНО ИНОСТРАННЫМ СРЕДСТВОМ МАССОВОЙ ИНФОРМАЦИИ, ВЫПОЛНЯЮЩИМ ФУНКЦИИ ИНОСТРАННОГО АГЕНТА, И (ИЛИ) РОССИЙСКИМ ЮРИДИЧЕСКИМ ЛИЦОМ, ВЫПОЛНЯЮЩИМ ФУНКЦИИ ИНОСТРАННОГО АГЕНТА.
+
+
