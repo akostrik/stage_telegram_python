@@ -10,7 +10,7 @@ OPENAI=... (OpenAI key)
 MONGO=... (MonogDB connection string like mongodb+srv: ... @cluster0.fnbrrzu.mongodb.net/?retryWrites=true&w=majority
 ```
 
-Let acces to MongoDB:
+Acces to API MongoDB:
 - go to https://cloud.mongodb.com 
 - sign in 
 - go to Database Deployments
