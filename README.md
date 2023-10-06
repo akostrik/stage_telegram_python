@@ -20,6 +20,7 @@ Acces to API MongoDB:
 - presse "add current ip adresse"
 
 Create database 'telegram'
+Import collection 'caracteristics'
 
 During the first Telegram connection enter your phone and then the confirmation code.
 
