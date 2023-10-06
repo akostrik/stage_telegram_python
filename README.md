@@ -29,14 +29,14 @@ sudo mongoimport --db telegram --collection characteristics --file characteristi
 During the first Telegram connection enter your phone and then the confirmation code.
 
 ### The first server :
-1) Listens to the Telegran channels
+1) Listens to the Telegram channels
 2) Treats a new message :
-- estimates the marks of the propaganda via OpenAI Analysis, basing on them calculate the trust coefficient of the message 
+- estimates the marks of the propaganda via OpenAI, basing on them calculate the trust coefficient of the message 
 - so the server updates the trust coefficient of the group of the channels
-- extracts the principal information of the message via OpenAI analysis in the form of several affirmations
-- compares this affirmations to the recent affirmations of all the other channels
-- so the server updates the mesure of similarity of the channels
--  
+- extracts the principal information of the message, in the form of several affirmations, via OpenAI
+- compares this affirmations to the recent affirmations of the other channels of the group
+- so the server updates the measure of similarity of the channels and constructs the graph based on the measure of similarity
+  
 #### Compile and Run
 ```sh
 python/python main.py
