@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "main.py", line 76, in <module>
-    group                         = g.Group(test_data.channels_names)
-AttributeError: module 'test_data' has no attribute 'channels_names'
