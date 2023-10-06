@@ -1,0 +1,37 @@
+model           = gpt-3.5-turbo
+temperature     = 0.0
+max_len_message = 600
+channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
+
+calc_affirmations
+prompt =             Please generate binary affirmations from the provided news message:
+
+            'abc'
+
+            For each affirmation:
+
+            1. Extract key assertions from the message. 
+            2. Convert negations into their positive counterparts.
+            3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
+            4. Provide a truth value for each affirmation based on its accuracy within the message.
+
+            The result should be in this format:
+            {
+                'Binary affirmation 1': true/false,
+                'Binary affirmation 2': true/false,
+                ...
+            }
+
+            Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+
+            
+{
+    'The news message is about abc.': True,
+    'There are key assertions in the news message.': True,
+    'There are no negations in the news message.': True,
+    'The news message includes an attributed source.': False
+}
+put to mongo
+{}
+{'0': '{', '1': '\n', '2': ' ', '3': ' ', '4': ' ', '5': ' ', '6': "'", '7': 'T', '8': 'h', '9': 'e', '10': ' ', '11': 'n', '12': 'e', '13': 'w', '14': 's', '15': ' ', '16': 'm', '17': 'e', '18': 's', '19': 's', '20': 'a', '21': 'g', '22': 'e', '23': ' ', '24': 'i', '25': 's', '26': ' ', '27': 'a', '28': 'b', '29': 'o', '30': 'u', '31': 't', '32': ' ', '33': 'a', '34': 'b', '35': 'c', '36': '.', '37': "'", '38': ':', '39': ' ', '40': 'T', '41': 'r', '42': 'u', '43': 'e', '44': ',', '45': '\n', '46': ' ', '47': ' ', '48': ' ', '49': ' ', '50': "'", '51': 'T', '52': 'h', '53': 'e', '54': 'r', '55': 'e', '56': ' ', '57': 'a', '58': 'r', '59': 'e', '60': ' ', '61': 'k', '62': 'e', '63': 'y', '64': ' ', '65': 'a', '66': 's', '67': 's', '68': 'e', '69': 'r', '70': 't', '71': 'i', '72': 'o', '73': 'n', '74': 's', '75': ' ', '76': 'i', '77': 'n', '78': ' ', '79': 't', '80': 'h', '81': 'e', '82': ' ', '83': 'n', '84': 'e', '85': 'w', '86': 's', '87': ' ', '88': 'm', '89': 'e', '90': 's', '91': 's', '92': 'a', '93': 'g', '94': 'e', '95': '.', '96': "'", '97': ':', '98': ' ', '99': 'T', '100': 'r', '101': 'u', '102': 'e', '103': ',', '104': '\n', '105': ' ', '106': ' ', '107': ' ', '108': ' ', '109': "'", '110': 'T', '111': 'h', '112': 'e', '113': 'r', '114': 'e', '115': ' ', '116': 'a', '117': 'r', '118': 'e', '119': ' ', '120': 'n', '121': 'o', '122': ' ', '123': 'n', '124': 'e', '125': 'g', '126': 'a', '127': 't', '128': 'i', '129': 'o', '130': 'n', '131': 's', '132': ' ', '133': 'i', '134': 'n', '135': ' ', '136': 't', '137': 'h', '138': 'e', '139': ' ', '140': 'n', '141': 'e', '142': 'w', '143': 's', '144': ' ', '145': 'm', '146': 'e', '147': 's', '148': 's', '149': 'a', '150': 'g', '151': 'e', '152': '.', '153': "'", '154': ':', '155': ' ', '156': 'T', '157': 'r', '158': 'u', '159': 'e', '160': ',', '161': '\n', '162': ' ', '163': ' ', '164': ' ', '165': ' ', '166': "'", '167': 'T', '168': 'h', '169': 'e', '170': ' ', '171': 'n', '172': 'e', '173': 'w', '174': 's', '175': ' ', '176': 'm', '177': 'e', '178': 's', '179': 's', '180': 'a', '181': 'g', '182': 'e', '183': ' ', '184': 'i', '185': 'n', '186': 'c', '187': 'l', '188': 'u', '189': 'd', '190': 'e', '191': 's', '192': ' ', '193': 'a', '194': 'n', '195': ' ', '196': 'a', '197': 't', '198': 't', '199': 'r', '200': 'i', '201': 'b', '202': 'u', '203': 't', '204': 'e', '205': 'd', '206': ' ', '207': 's', '208': 'o', '209': 'u', '210': 'r', '211': 'c', '212': 'e', '213': '.', '214': "'", '215': ':', '216': ' ', '217': 'F', '218': 'a', '219': 'l', '220': 's', '221': 'e', '222': '\n', '223': '}'}
+put to mongo 2

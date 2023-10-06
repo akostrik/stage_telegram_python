@@ -1,0 +1,101 @@
+model           = gpt-4
+temperature     = 0.2
+max_len_message = 600
+
+[-1001842901217.0, -1001905441409.0, -1001863996867.0, -1001944316671.0, -1001919265899.0]
+Message(ID: 107, Text: В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**, Timestamp: 2023-10-06 05:23:13+00:00, Channel: -1001905441409)
+some mistake
+None
+В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**
+            Please generate binary affirmations from the provided news message:
+
+            'В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**'
+
+            For each affirmation:
+
+            1. Extract key assertions from the message. 
+            2. Convert negations into their positive counterparts.
+            3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
+            4. Provide a truth value for each affirmation based on its accuracy within the message.
+
+            The result should be in this format:
+            {
+                'Binary affirmation 1': true/false,
+                'Binary affirmation 2': true/false,
+                ...
+            }
+
+            Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+
+            
+{
+  "id": "chatcmpl-86XarH3tpIfyni9zgYIhpKXopVJIO",
+  "object": "chat.completion",
+  "created": 1696569793,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    'The Kremlin has made promises regarding Putin\\'s speech at \"Valdai\"': true,\n    'Putin\\'s speech at \"Valdai\" is promised to be a global-scale event by the Kremlin': true\n}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 209,
+    "completion_tokens": 49,
+    "total_tokens": 258
+  }
+}
+Put to mongo successful.
+[-1001842901217.0, -1001905441409.0, -1001863996867.0, -1001944316671.0, -1001919265899.0]
+[-1001842901217.0, -1001905441409.0, -1001863996867.0, -1001944316671.0, -1001919265899.0]
+Message(ID: 108, Text: В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**, Timestamp: 2023-10-06 05:23:37+00:00, Channel: -1001905441409)
+some mistake
+None
+В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**
+            Please generate binary affirmations from the provided news message:
+
+            'В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**'
+
+            For each affirmation:
+
+            1. Extract key assertions from the message. 
+            2. Convert negations into their positive counterparts.
+            3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
+            4. Provide a truth value for each affirmation based on its accuracy within the message.
+
+            The result should be in this format:
+            {
+                'Binary affirmation 1': true/false,
+                'Binary affirmation 2': true/false,
+                ...
+            }
+
+            Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+
+            
+{
+  "id": "chatcmpl-86XbFpmiVVuWTn3dbzjypZ83ETdZF",
+  "object": "chat.completion",
+  "created": 1696569817,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    'The Kremlin has promised Putin\\'s speech at \"Valdai\"': true,\n    'Putin\\'s speech at \"Valdai\" will be a global event according to the Kremlin': true\n}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 209,
+    "completion_tokens": 45,
+    "total_tokens": 254
+  }
+}
+Put to mongo successful.

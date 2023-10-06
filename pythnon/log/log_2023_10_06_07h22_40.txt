@@ -1,0 +1,53 @@
+model           = gpt-4
+temperature     = 0.2
+max_len_message = 600
+
+[-1001842901217.0, -1001905441409.0, -1001863996867.0, -1001944316671.0, -1001919265899.0]
+Message(ID: 105, Text: В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**, Timestamp: 2023-10-06 05:22:41+00:00, Channel: -1001905441409)
+[<class_сharacteristic.Characteristic object at 0x11db17550>, <class_сharacteristic.Characteristic object at 0x11c6b87d0>, <class_сharacteristic.Characteristic object at 0x11db2f250>, <class_сharacteristic.Characteristic object at 0x11db2f5d0>, <class_сharacteristic.Characteristic object at 0x11db2f910>, <class_сharacteristic.Characteristic object at 0x11db2fe10>, <class_сharacteristic.Characteristic object at 0x11db2ffd0>, <class_сharacteristic.Characteristic object at 0x11db2ee90>, <class_сharacteristic.Characteristic object at 0x11db2fe50>, <class_сharacteristic.Characteristic object at 0x11db2f8d0>, <class_сharacteristic.Characteristic object at 0x11db2fd90>, <class_сharacteristic.Characteristic object at 0x11db2eb50>, <class_сharacteristic.Characteristic object at 0x11db2fb10>, <class_сharacteristic.Characteristic object at 0x11db2fa50>, <class_сharacteristic.Characteristic object at 0x11db2f890>, <class_сharacteristic.Characteristic object at 0x11db2f850>, <class_сharacteristic.Characteristic object at 0x11db2f7d0>, <class_сharacteristic.Characteristic object at 0x11db2f750>, <class_сharacteristic.Characteristic object at 0x11db2f590>, <class_сharacteristic.Characteristic object at 0x11db2f510>, <class_сharacteristic.Characteristic object at 0x11db2f490>, <class_сharacteristic.Characteristic object at 0x11db2f410>, <class_сharacteristic.Characteristic object at 0x11db2f3d0>, <class_сharacteristic.Characteristic object at 0x11db2f190>, <class_сharacteristic.Characteristic object at 0x11db2fc90>, <class_сharacteristic.Characteristic object at 0x11db2ef50>, <class_сharacteristic.Characteristic object at 0x11db2d650>]
+some mistake
+None
+В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**
+            Please generate binary affirmations from the provided news message:
+
+            'В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**'
+
+            For each affirmation:
+
+            1. Extract key assertions from the message. 
+            2. Convert negations into their positive counterparts.
+            3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
+            4. Provide a truth value for each affirmation based on its accuracy within the message.
+
+            The result should be in this format:
+            {
+                'Binary affirmation 1': true/false,
+                'Binary affirmation 2': true/false,
+                ...
+            }
+
+            Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+
+            
+{
+  "id": "chatcmpl-86XaMcfhwt5i3JnhIrv3JoTOHPfsS",
+  "object": "chat.completion",
+  "created": 1696569762,
+  "model": "gpt-4-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    'The Kremlin has promised something regarding Putin\\'s performance at \"Valdai\"': true,\n    'Putin\\'s performance at \"Valdai\" is expected to be a global-scale event according to the Kremlin': true\n}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 209,
+    "completion_tokens": 50,
+    "total_tokens": 259
+  }
+}
+Put to mongo successful.

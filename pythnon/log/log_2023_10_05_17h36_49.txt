@@ -1,0 +1,5 @@
+model          = gpt-3.5-turbo
+nb_messages    = 8
+temperature    = 0.0
+
+

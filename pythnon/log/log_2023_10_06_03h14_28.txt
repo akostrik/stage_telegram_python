@@ -1,0 +1,100 @@
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/nicolas/TelegramBots/LastStage/src/main.py", line 97, in new_message_handler
+    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_channel_names_from_db() missing 1 required positional argument: 'channels_collection'
+model           = gpt-4
+temperature     = 0.2
+max_len_message = 600
+
