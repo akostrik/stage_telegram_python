@@ -21,7 +21,7 @@ Acces to API MongoDB:
 
 During the first Telegram connection enter your phone and then the confirmation code.
 
-### Compile
+### Compile and Run
 ```sh
 python main.py
 ```
