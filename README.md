@@ -7,7 +7,7 @@ Real time verification of the Telegram messages veracity by two methods:
 
 2) Comparison of the information diffused by several channels in order to detect similar channels
 
-## Server 1(python)
+## Server 1 (python)
 1) Listens to the Telegram channels
 2) Treats a new message :
 - estimates the marks of the propaganda of the message via OpenAI, basing on them calculates the trust coefficient of the message 
@@ -54,6 +54,8 @@ server1/python main.py
 ```
 
 ## Server 2 (node.js)
+### Setup
+npm install
 ### Configuration
 Put this line in the beginning of server2/server.js
 ```
