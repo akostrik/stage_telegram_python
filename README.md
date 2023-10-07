@@ -57,9 +57,9 @@ server1/python main.py
 ### Setup
 npm install
 ### Configuration
-Put this line in the beginning of server2/server.js
+Put this line in the line 13 of server2/server.js
 ```
-const mongoUrl = 'mongodb+srv://anna:1AQ2ZS3ED@cluster0.pysxbay.mongodb.net/?retryWrites=true&w=majority';
+const mongoUrl = 'mongodb+srv...';
 ```
 ```sh
 node server2/server.js
