@@ -7,6 +7,8 @@ Real time verification of the Telegram messages veracity by two methods:
 
 2) Comparison of the information diffused by several channels in order to detect similar channels
 
+![Capture d’écran de 2023-10-08 00-34-28](https://github.com/akostrik/stage_telegram/assets/22834202/88f1f2b8-7c2f-4b7e-b050-9c3cbe79d508)
+
 ## Server 1 (python)
 1) Listens to the Telegram channels
 2) Treats a new message :
