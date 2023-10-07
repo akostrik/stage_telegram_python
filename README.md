@@ -1,5 +1,6 @@
-# Stage Master II, Sorbonne University \
-(3 April 2023 - 12 September 2023)
+# Stage Master II, Sorbonne University 
+5 months, from the 3 April 2023 to the 12 September 2023
+
 Real time verification of the Telegram messages veracity by two methods:
 
 1) Looking for the marks of the propaganda in every separate message
