@@ -53,7 +53,7 @@ Import the collection 'characteristics' from the file characteristics.json :
 If you use MongoDB Atlas, go to https://cloud.mongodb.com - Database Deployments, and presse "add current ip adresse"
 
 #### Configuration Telegram
-During the first Telegram connection enter your phone and then the confirmation code
+During the first launching, enter the phone number of your Telegram account and then enter the confirmation code
 ### Compile and Run
 In the first terminal launch server1
 > server1/python server1.py
