@@ -1,6 +1,0 @@
-model           = gpt-4
-temperature     = 0.2
-max_len_message = 600
-
-[-1001842901217.0, -1001905441409.0, -1001863996867.0, -1001944316671.0, -1001919265899.0]
-Failed to insert record due to TypeError: Message.update_average_score() takes 4 positional arguments but 5 were given

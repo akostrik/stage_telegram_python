@@ -1,8 +1,0 @@
-model           = gpt-4
-temperature     = 0.2
-max_len_message = 600
-
-[-1001842901217.0, -1001905441409.0, -1001863996867.0, -1001944316671.0, -1001919265899.0]
-[0]
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-Failed to insert record due to TypeError: unsupported operand type(s) for +: 'int' and 'list'

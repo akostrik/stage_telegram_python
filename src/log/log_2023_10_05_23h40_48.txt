@@ -1,9 +1,0 @@
-model           = gpt-3.5-turbo
-temperature     = 0.0
-max_len_message = 600
-channels        = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
-
-start calulating score
-
-Message(ID: 37, Text: В Кремле пообещали, что выступление Путина на «Валдае» станет** событием мирового масштаба**, Timestamp: 2023-10-05 21:40:49+00:00, Channel: -1001905441409)
-Put to mongo successful.
