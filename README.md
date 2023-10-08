@@ -10,7 +10,7 @@ Real time verification of Telegram messages veracity by two methods:
 
 2) Comparison of the information diffused by several channels in order to detect similar channels
 
-## How does it work
+## The scheme of the appication (except Learning service)
 
 ![Capture d’écran de 2023-10-08 12-10-46](https://github.com/akostrik/stage_telegram/assets/22834202/9bbb5cb1-5a40-41ca-b504-8f6abf2d0756)
 
