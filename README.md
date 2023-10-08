@@ -1,5 +1,7 @@
 # Internship Master II, Sorbonne University (Paris)
-An Internship of 5 months, from the 3 April 2023 to the 12 September 2023, in the association Ouverture du cœur (Paris)
+An Internship of 5 months, from the 3 April 2023 to the 12 September 2023, 
+
+in the association Ouverture du cœur (Paris)
 
 ## The goal of the application
 Real time verification of Telegram messages veracity by two methods:
