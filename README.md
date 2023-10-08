@@ -7,7 +7,7 @@ Real time verification of the Telegram messages veracity by two methods:
 
 2) Comparison of the information diffused by several channels in order to detect similar channels
 
-![Capture d’écran de 2023-10-08 00-34-28](https://github.com/akostrik/stage_telegram/assets/22834202/88f1f2b8-7c2f-4b7e-b050-9c3cbe79d508)
+![Capture d’écran de 2023-10-08 12-10-46](https://github.com/akostrik/stage_telegram/assets/22834202/9bbb5cb1-5a40-41ca-b504-8f6abf2d0756)
 
 ## Server 1 (python)
 1) Listens to the Telegram channels
@@ -51,6 +51,7 @@ If you use MongoDB Atlas, go to https://cloud.mongodb.com - Database Deployments
 #### Configuration Telegram
 During the first Telegram connection enter your phone and then the confirmation code
 ### Compile and Run
+In the first terminal launch server1
 ```sh
 server1/python main.py
 ```
@@ -59,12 +60,16 @@ server1/python main.py
 ### Setup
 npm install
 ### Configuration
-Put this line in the line 13 of server2/server.js
+In the line 13 of server2/server.js put the same MongoDB connection string as in server1/.env:
 ```
 const mongoUrl = 'mongodb+srv...';
 ```
+### Compile and Run
+In the second terminal launch vue:
+```sh
+npm run dev
+```
+In the third terminal launch server2:
 ```sh
 node server2/server.js
 ```
-
-### Compile and Run
