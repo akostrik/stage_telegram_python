@@ -28,7 +28,7 @@ Install python version >= 3.5
 Install the libraries sys, openai, os, telethon, pymongo, time, datetime, dotenv, uuid, requests, ast  
 ### Configuration
 #### Create the file "server1/.env" 
-```sh
+```
 API_ID=...
 API_HASH=...
 OPENAI=...
@@ -49,7 +49,7 @@ Create database 'telegram'
 Import the collection 'characteristics' from the file characteristics.json :
 
 ```sh
-sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
+> sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
 ```
 If you use MongoDB Atlas, go to https://cloud.mongodb.com - Database Deployments, and presse "add current ip adresse"
 
@@ -58,12 +58,12 @@ During the first Telegram connection enter your phone and then the confirmation 
 ### Compile and Run
 In the first terminal launch server1
 ```sh
-server1/python server1.py
+> server1/python server1.py
 ```
 
 ## Server 2 (node.js)
 ### Setup
-npm install
+> npm install
 ### Configuration
 In the line 13 of server2/backend/server2.js put the same MongoDB connection string as in server1/.env:
 ```
@@ -73,9 +73,9 @@ const mongoUrl = 'mongodb+srv...';
 In the second terminal launch vue:
 ```sh
 cd server2/backend
-npm run dev
+> npm run dev
 ```
 In the third terminal launch server2:
 ```sh
-node server2/backend/server2.js
+> node server2/backend/server2.js
 ```
