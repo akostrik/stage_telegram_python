@@ -48,18 +48,15 @@ Create database 'telegram'
 
 Import the collection 'characteristics' from the file characteristics.json :
 
-```sh
 > sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
-```
+
 If you use MongoDB Atlas, go to https://cloud.mongodb.com - Database Deployments, and presse "add current ip adresse"
 
 #### Configuration Telegram
 During the first Telegram connection enter your phone and then the confirmation code
 ### Compile and Run
 In the first terminal launch server1
-```sh
 > server1/python server1.py
-```
 
 ## Server 2 (node.js)
 ### Setup
@@ -71,11 +68,7 @@ const mongoUrl = 'mongodb+srv...';
 ```
 ### Compile and Run
 In the second terminal launch vue:
-```sh
 > cd server2/backend
 > npm run dev
-```
 In the third terminal launch server2:
-```sh
 > node server2/backend/server2.js
-```
