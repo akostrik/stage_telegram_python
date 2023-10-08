@@ -54,7 +54,7 @@ Import the collection 'characteristics' from the file characteristics.json :
 sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
 ```
 
-If you use MongoDB Atlas, go to https://cloud.mongodb.com - Database Deployments, and presse "add current ip adresse"
+If you use MongoDB Atlas, do this: https://cloud.mongodb.com - Database Deployments - "add current ip adresse"
 
 #### Configuration Telegram
 During the first launching, enter the phone number of your Telegram account and then enter the confirmation code
