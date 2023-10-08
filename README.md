@@ -17,7 +17,7 @@ Real time verification of Telegram messages veracity by two methods:
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares these affirmations to the recent affirmations of the other followed channels
 - so the server updates the measure of similarity of the channels
-- constructs the graph of the channels, where every edge is the measure of similarity of two channels, and every summit contains the id of the channel and its trust coefficient 
+- constructs the graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels 
   
 ### Setup 
 Install python version >= 3.5 
