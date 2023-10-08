@@ -76,5 +76,5 @@ npm run dev
 ```
 In the third terminal launch server2:
 ```sh
-node server2/server.js
+node server2/backend/server.js
 ```
