@@ -65,14 +65,14 @@ server1/python server1.py
 ### Setup
 npm install
 ### Configuration
-In the line 13 of server2/server.js put the same MongoDB connection string as in server1/.env:
+In the line 13 of server2/backend/server2.js put the same MongoDB connection string as in server1/.env:
 ```
 const mongoUrl = 'mongodb+srv...';
 ```
 ### Compile and Run
 In the second terminal launch vue:
 ```sh
-cd server2
+cd server2/backend
 npm run dev
 ```
 In the third terminal launch server2:
