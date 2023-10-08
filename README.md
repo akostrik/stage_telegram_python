@@ -48,7 +48,7 @@ MonogDB connection string (MONGO): https://cloud.mongodb.com/ - Database - Conne
 
 Create database 'telegram'
 
-Import the collection 'characteristics' from the file characteristics.json :
+Import the collection 'characteristics' from the file characteristics.json to your mongo database:
 
 ```
 sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
