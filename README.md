@@ -31,7 +31,7 @@ API_HASH=... (Telegram connection)
 OPENAI=... (OpenAI key)
 MONGO=... (MonogDB connection string)
 ```
-Télégram credentials API_ID and API_HASH may be obteined here my.telegram.org 
+Télégram credentials API_ID and API_HASH may be obteined here https://my.telegram.org/auth
 
 OpenAI key here https://platform.openai.com/account/api-keys
 
