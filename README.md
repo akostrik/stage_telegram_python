@@ -67,6 +67,7 @@ const mongoUrl = 'mongodb+srv...';
 ### Compile and Run
 In the second terminal launch vue:
 ```sh
+cd server2
 npm run dev
 ```
 In the third terminal launch server2:
