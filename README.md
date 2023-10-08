@@ -12,7 +12,7 @@ Real time verification of Telegram messages veracity by two methods:
 
 ## The scheme of the appication (except Learning service)
 
-![Capture d’écran de 2023-10-08 12-10-46](https://github.com/akostrik/stage_telegram/assets/22834202/9bbb5cb1-5a40-41ca-b504-8f6abf2d0756)
+![Screenshot from 2023-10-08 21-42-47](https://github.com/akostrik/stage_telegram/assets/22834202/fb1a73ae-25fb-4732-916d-e04c3dc3fd01)
 
 ## Server 1 (python)
 1) Listens to the Telegram channels
