@@ -26,16 +26,18 @@ Install the libraries sys, openai, os, telethon, pymongo, time, datetime, dotenv
 ### Configuration
 #### Create the file "server1/.env" 
 ```sh
-API_ID=... (Telegram connection)
-API_HASH=... (Telegram connection)
-OPENAI=... (OpenAI key)
-MONGO=... (MonogDB connection string)
+API_ID=...
+API_HASH=...
+OPENAI=...
+MONGO=...
 ```
-Télégram credentials API_ID and API_HASH may be obteined here https://my.telegram.org/auth
+The linens to get these values :
 
-OpenAI key here https://platform.openai.com/account/api-keys
+Télégram credentials (API_ID and API_HASH) : https://my.telegram.org/auth
 
-MonogDB connection string here https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
+OpenAI key (OPENAI): https://platform.openai.com/account/api-keys
+
+MonogDB connection string (MONGO): https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
 
 #### Configuration MongoDB
 
