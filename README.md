@@ -75,7 +75,7 @@ In the line 13 of server2/backend/server2.js put the same MongoDB connection str
 ### Compile and Run
 In the second terminal launch Vue:
 ```
-cd server2/backend
+cd server2
 npm run dev
 ```
 In the third terminal launch server2:
