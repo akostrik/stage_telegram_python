@@ -100,7 +100,7 @@ npm install
 ```
 ### Configuration
 In the line 13 of server2/backend/server2.js put the same MongoDB connection string as in server1/.env:
-> const mongoUrl = 'mongodb+srv...';
+> const mongoUrl = '<mongodb connection string>';
 ### Compile and Run
 In the second terminal launch Vue server:
 ```
