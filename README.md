@@ -45,32 +45,35 @@ pip install pymongo
 pip install --upgrade openai
 ```
 ### Configuration
+#### Configuration MongoDB Atlas 
+Create an account : https://cloud.mongodb.com/ 
+
+Create database by the name 'telegram'
+
+Import the collection 'characteristics' from the file characteristics.json to your mongo database 'telegram':
+
+```
+sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
+```
+
+Do this: https://cloud.mongodb.com - Database Deployments - "add current ip adresse"
+
+Get you MonogDB connection string : https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
+
+
 #### Create the file "server1/.env" 
+
+Get télégram credentials (API_ID and API_HASH) here: https://my.telegram.org/auth
+
+Get your OpenAI key (OPENAI) here: https://platform.openai.com/account/api-keys
+
+MONGO = your MonogDB connection string 
 ```
 API_ID=...
 API_HASH=...
 OPENAI=...
 MONGO=...
 ```
-The linens to get these values :
-
-Télégram credentials (API_ID and API_HASH) : https://my.telegram.org/auth
-
-OpenAI key (OPENAI): https://platform.openai.com/account/api-keys
-
-MonogDB connection string (MONGO): https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
-
-#### Configuration MongoDB
-
-Create database 'telegram'
-
-Import the collection 'characteristics' from the file characteristics.json to your mongo database:
-
-```
-sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
-```
-
-If you use MongoDB Atlas, do this: https://cloud.mongodb.com - Database Deployments - "add current ip adresse"
 
 #### Configuration Telegram
 During the first launching, enter the phone number of your Telegram account and then enter the confirmation code
