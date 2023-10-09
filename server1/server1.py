@@ -1,8 +1,9 @@
 import sys
 import openai
-import os
+import os # The only exception are modules in the Python Standard Library, which is a collection of modules (e.g. time , random , os ) that are built into Python
 from telethon import TelegramClient, events
 from pymongo import MongoClient
+import pymongo
 from datetime import datetime
 from dotenv import load_dotenv
 from datetime import datetime
@@ -36,81 +37,68 @@ class LoggerStderr:
         self.my_stderr.flush()
         self.file.flush()
 
-load_dotenv()
-openai.api_key                 = os.getenv("OPENAI")
-api_id                         = os.getenv("API_ID")
-api_hash                       = os.getenv("API_HASH")
-client_mongo                   = MongoClient(os.getenv("MONGO"))
-client_tg                      = TelegramClient('anon', api_id, api_hash)
-client_tg.start()
-
 path_log                       = "log"
 try:
     os.mkdir(path_log)
 except FileExistsError:
     pass
 
+load_dotenv()
+openai.api_key                = os.getenv("OPENAI")
+api_id                        = os.getenv("API_ID")
+api_hash                      = os.getenv("API_HASH")
+client_mongo                  = MongoClient(os.getenv("MONGO"))
+client_tg                     = TelegramClient('anon', api_id, api_hash)
+client_tg.start()
+
 db                            = client_mongo['telegram']
-collection_characteristics    = db['characteristics']       #           mongo
-collection_messages           = db['messages']              #           mongo
-#collection_similarities       = db['similarities']          # local and mongo
-collection_channels           = db['channels']
-collection_relations          = db['relations']
-collectio_log                 = db['log']                   # files and mongo
-model                         = "gpt-4"
-#model                        = "gpt-4"
+collection_characteristics    = db['characteristics']
+collection_messages           = db['messages']
+collection_channels_id        = db['channels_id']
+collection_channels_score     = db['channels_score']
+collection_channels_simiarity = db['channels_similarity']
+collection_messages.create_index([('telegram_id', pymongo.ASCENDING)], unique=True)
+collection_channels_id.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_id
+#collection_channels_score.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_id
+#collectio_log                 = db['log']
+model_c                       = "gpt-3.5-turbo"
+model_a                       = "gpt-4"
 temperature                   = 0.2 #0.73, # 1
-max_tokens                    = 2000 #
-#nb_messages                   = 8 #
-request_timeout               = 10 # ?
-max_len_message               = 600 #
-#live_mode                     = 0 # LIVE = 1, FIXED_MESSAGES = 0
-log_to_mongo                  = 0 #
-promptC                       = p.Prompt_c(max_len_message, collection_characteristics) # model temperature max_tokens
-promptA                       = p.Prompt_a(max_len_message)
+max_tokens                    = 2000
+request_timeout               = 10
+max_len_message               = 600
+how_many_hours_verification   = 10
+prompt_c                      = p.Prompt_c(max_len_message, collection_characteristics)
+prompt_a                      = p.Prompt_a(max_len_message)
 log_file                      = path_log + "/log_" + datetime.now().strftime("%Y_%m_%d_%Hh%M_%S") + ".txt"
 sys.stdout                    = LoggerStdout(log_file)
 sys.stderr                    = LoggerStderr(log_file)
 sys.stdout.flush()
 sys.stderr.flush()
-#channels_nammes               = [-1001842901217, -1001905441409, -1001863996867, -1001944316671, -1001919265899]
 group                         = g.Group()
 
-# if live_mode == 0:
-#     group = test_data.group1
-# else:
-#     group = g.Group(test_data.channels_names1 + test_data.channels_names2)
-#     await group.read_messages(nb_messages, client_tg)
-
-print("model           = " + str(model))
+print("model           = " + str(model_a))
 print("temperature     = " + str(temperature))
 print("max_len_message = " + str(max_len_message))
-#print("channels        = " + str(channels_nammes))
+print("max_len_message = " + str(max_len_message))
 print()
-# print (promptC.characteristics_to_string())
-
-def get_channel_names_from_db():
-    channels = collection_channels.find({}, {})
-    return [channel['channelId'] for channel in channels]
+print (prompt_c.characteristics_to_string())
 
 @client_tg.on(events.NewMessage())
 async def new_message_handler(event):
-    channels_names = get_channel_names_from_db()  # Fetch the channels list each time
-    print(channels_names)
-    if event.chat_id in channels_names:
-        await group.new_message_handler(event, promptC, promptA, model, temperature, max_tokens, request_timeout, collection_messages, collection_channels, collection_relations)
+    await group.update_channels_from_mongo(collection_channels_id)
+    if event.chat_id in group.channels:
+        await group.new_message_handler(event, prompt_c, prompt_a,  model_c, model_a,temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_channels_simiarity)
 
     #await group.calc_score(promptC, model, temperature, max_tokens)
     #await group.calc_affirmations(promptA, model, temperature, max_tokens)
     #await group.calc_distances_openai(model, temperature, promptS)
     #await group.calc_similarities_via_affirmations(model, temperature, promptS)
-
     # print ("request openai characteristics " + group.number_per_minute_promptA() + " messages per minute")
     # print ("request openai affirmations    " + group.number_per_minute_promptA() + " messages per minute")
     # print (group.score_to_string(promptC))
     # print (group.similarities_to_string())
     # print (group.messages_to_string())
-
 
 
 with client_tg:

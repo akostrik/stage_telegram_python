@@ -1,26 +1,113 @@
 import time
-import uuid
 import openai
-from datetime import datetime
+import ast
+from datetime import datetime, timedelta
+from pymongo.errors import DuplicateKeyError
+from statistics import mean
 import class_channel as c
 import class_message as m
 
 class Group:
     def __init__(self):
-        self.channels               = set()
-        # self.similarities           = []
-        self.number_prompt_c        = 0
-        self.seconds_prompt_c       = 0
-        self.number_prompt_a        = 0
-        self.seconds_prompt_a       = 0
+        self.channels         = set()
+        self.number_requests_c  = 0
+        self.total_time_requests_c = 0
+        self.number_requests_a  = 0
+        self.total_time_requests_a = 0
+        # collection_messages
 
-    async def new_message_handler(self, event, prompt_c, prompt_a, model, temperature, max_tokens, request_timeout, collection_messages, collection_channels, collection_relations):
+    async def new_message_handler(self, event, prompt_c, prompt_a, model_c, model_a, temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_similarity):
         message = m.Message(event.message.id, event.message.text, event.message.date, event.chat_id)
-        self.channels.add(event.chat_id)
-        await message.calc_score(prompt_c, model, temperature, max_tokens, request_timeout, collection_messages, self)
-        await message.calc_affirmations(prompt_a, model, temperature, max_tokens, request_timeout, collection_messages, self)
-        await message.put_to_mongo(prompt_c, prompt_a, collection_messages, collection_channels, collection_relations)
+        print ("server1 has received the message :" + str(event.message.text))
+
+        self.channels.append(event.chat_id)
+        try:
+            collection_channels_id.insert_one({"telegram_id": event.chat_id}) # TypeError: object InsertOneResult can't be used in 'await' expression
+        except DuplicateKeyError:
+            pass
+        print("server1 listens to the channels " + str(self.channels))
+
+        await message.calc_score(prompt_c, model_c, temperature, max_tokens, collection_messages, self)
+        await message.calc_affirmations(prompt_a, model_a, temperature, max_tokens, collection_messages, self)
+        if len(message.text) == 0:
+            return
+        message.put_to_mongo(collection_messages)
+        await self.update_channels_score(message, collection_messages, collection_channels_score)
+        # await self.update_channels_similarity(self, collection_messages, collection_channels_id, collection_similarity, how_many_hours_verification)
         # free(message) ?
+
+    async def update_channels_from_mongo(self, collection_channels_id):
+        channels = collection_channels_id.find({}, {})
+        self.channels = [channel['telegram_id'] for channel in channels]
+        print("server1 listens to the channels " + str(self.channels))
+
+    async def update_channels_score(self, new_message, collection_messages, collection_channels_score):
+        try:
+            messages_this_channel = collection_messages.find({"channel": new_message.channel})
+            print (f"messages_of_this_channel = {str(messages_this_channel)}")
+            list_scores_this_channel = [msg["score"] for msg in messages_this_channel]
+            print (f"scores_of_this_channel = {str(list_scores_this_channel)}")
+            new_average = mean(list_scores_this_channel) if (len(list_scores_this_channel) >0) else 0
+            print (f"new_average = {sum(list_scores_this_channel)} / {len(list_scores_this_channel)} = {new_average}")
+            existing_record = collection_channels_score.find_one({"telegram_id": new_message.channel}) #
+            if existing_record:
+                collection_channels_score.update_one(
+                    {"telegram_id": new_message.channel},
+                    {"$set": {"average_score": new_average}}
+                )
+                print(f"Updated average score for channel {new_message.channel} to {new_average}")
+            else:
+                collection_channels_score.insert_one({
+                    "telegram_id": new_message.channel,
+                    "average_score": new_average,
+                    # {"$set": {"average_score": new_average}} # ?
+                })
+                print(f"Updated average score for channel {new_message.channel} to {new_average}")
+        except TypeError as e:
+            print(f"Failed to insert record due to TypeError: {e}")
+        except DuplicateKeyError: # как эта ошибка может возникнуть
+            print(f"Failed to insert record due to duplicate _id.") # telegram_id = key ?
+
+    def get_recent_messages(collection_messages, how_many_hours_verification):
+        ten_hours_ago = datetime.now() - timedelta(hours=how_many_hours_verification)
+        timestamp_boundary = ten_hours_ago.timestamp() * 1000
+        return list(collection_messages.find({}))
+        #return list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_boundary)}}))
+
+    async def update_channels_similarity(self, collection_messages, collection_channels_id, collection_channels_similarity, how_many_hours_verification):
+
+        def compare_affirmations(new_affirmations, old_message):
+            score = 0
+            for affirmation, truth_value in new_affirmations.items():
+                if affirmation in old_message["affirmations"]:
+                    if old_message["affirmations"][affirmation] == truth_value:
+                        score += 1
+                    else:
+                        score -= 1
+            return score
+
+        recent_messages = self.get_recent_messages(collection_messages)
+        for old_message in recent_messages:
+            if self.channel != old_message["channel"]:
+                score = compare_affirmations(ast.literal_eval(self.affirmations), old_message)
+                channels = sorted([self.channel, old_message["channel"]])
+                existing_relation = collection_channels_similarity.find_one({
+                    "channel_a": channels[0],
+                    "channel_b": channels[1]
+                })
+                if existing_relation:
+                    new_score = existing_relation["relation"] + score
+                    collection_channels_similarity.update_one(
+                        {"_id": existing_relation["_id"]},
+                        {"$set": {"relation": new_score}}
+                    )
+                else:
+                    collection_channels_similarity.insert_one({
+                        "channel_a": channels[0],
+                        "channel_b": channels[1],
+                        "relation": score
+                    })
+
 
 ####################################################### NOT USED
     def score(self, promptC):
@@ -115,7 +202,7 @@ class Group:
         time_difference = abs(m1.date - m2.date)
         return 1 + (1 / (1 + time_difference.total_seconds() / 3600))
 
-    def calc_similarities_via_affirmations(self, coll_msgs_affirmations, coll_channels_similarities):
+    def calc_similarities_via_affirmations(self, coll_msgs_affirmations, collection_channels_similarities):
         self.similarities = []
         for ch1 in self.channels:
             self.similarities.append([])
@@ -132,10 +219,10 @@ class Group:
                                         self.similarities[self.channels.index(ch1)][self.channels.index(ch2)] += self.time_weight(m1, m2)
                                     elif a1['affirmation'] == a2['affirmation'] and a1['truthValue'] != a2['truthValue']:
                                         self.similarities[self.channels.index(ch1)][self.channels.index(ch2)] -= self.time_weight(m1, m2)
-        coll_channels_similarities.delete_many({}) ##
+        collection_channels_similarities.delete_many({}) ##
         for ch1 in self.channels:
             for ch2 in self.channels:
-                coll_channels_similarities.insert_one({"ch1":ch1.name, "ch2":ch2.name, "similarity":self.similarities[self.channels.index(ch1)][self.channels.index(ch2)]})
+                collection_channels_similarities.insert_one({"ch1":ch1.name, "ch2":ch2.name, "similarity":self.similarities[self.channels.index(ch1)][self.channels.index(ch2)]})
 
     # def new_message_handler(self, new_message, coll_msgs_affirmations, coll_similarities):
     #     for m1 in list(coll_msgs_affirmations.find({'channel' : ch1.name})): ##
@@ -163,10 +250,10 @@ class Group:
     #             similarities[key] -= time_weight
 
     def number_per_minute_promptC(self):
-        return round((self.seconds_prompt_c / (60 * self.number_prompt_c )))
+        return round((self.total_time_requests_c / (60 * self.number_requests_c )))
 
     def number_per_minute_promptA(self):
-        return round((self.seconds_prompt_a / (60 * self.number_prompt_a )))
+        return round((self.total_time_requests_a / (60 * self.number_requests_a )))
 
     def score_to_string(self, promptC):
         if (len(self.channels) == 0):
@@ -219,8 +306,8 @@ class Group:
         for channel in self.channels:
             print (f"calculating score  {channel.name.ljust(32)} {datetime.now().strftime('%d/%m/%Y %H:%M:%S')} ...")
             await channel.calc_score(promptC, model, temperature, max_tokens)
-        self.seconds_prompt_c += channel.seconds_promptC
-        self.number_prompt_c += channel.number_promptC
+        self.total_time_requests_c += channel.seconds_promptC
+        self.number_requests_c += channel.number_promptC
         print ()
 
     async def calc_affirmations(self, promptA, model, temperature, max_tokens, coll_msgs_affirmations):
@@ -228,8 +315,8 @@ class Group:
         for channel in self.channels:
             print (f"calculating affirm {channel.name.ljust(32)} {datetime.now().strftime('%d/%m/%Y %H:%M:%S')} ...")
             channel.calc_affirmations(promptA, model, temperature, max_tokens, coll_msgs_affirmations) # await
-            self.seconds_prompt_a += channel.seconds_promptA
-            self.number_prompt_a += channel.number_promptA
+            self.total_time_requests_a += channel.seconds_promptA
+            self.number_requests_a += channel.number_promptA
         self.speed_promptA = round(len(self.channels[0].messages) * len(self.channels) / ((time.time() - int(time_start)) / 60.))
         print ()
 

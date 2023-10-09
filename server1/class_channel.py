@@ -7,7 +7,7 @@ class Channel:
     def __init__(self, name):
         self.name            = name
         self.messages        = []
-        self.affirmations    = []
+        # self.affirmations    = []
         self.number_promptC  = 0
         self.seconds_promptC = 0
         self.number_promptA  = 0
