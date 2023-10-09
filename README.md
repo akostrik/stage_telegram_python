@@ -47,13 +47,7 @@ datetime
 dotenv
 ```
 ```
-uuid
-```
-```
 requests
-```
-```
-ast  
 ```
 ```
 pip install pymongo
