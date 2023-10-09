@@ -61,22 +61,30 @@ Do this: https://cloud.mongodb.com - Database Deployments - "add current ip adre
 Get you MonogDB connection string : https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
 
 
-#### Create the file "server1/.env" 
-
-Get télégram credentials (API_ID and API_HASH) here: https://my.telegram.org/auth
+#### Configuration OpenAI 
 
 Get your OpenAI key (OPENAI) here: https://platform.openai.com/account/api-keys
 
-MONGO = your MonogDB connection string 
+Your account should have acces to gpt-4
+
+#### Configuration Telegram 
+
+Get Telegram credentials (api_id and api_hash) here: https://my.telegram.org/auth
+
+During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
+
+#### Create the file "server1/.env" 
 ```
 API_ID=...
 API_HASH=...
 OPENAI=...
 MONGO=...
 ```
+MONGO = your MonogDB connection string
+OPENAI = OpenAI key
+API_ID and API_HASH = Telegram credentials
 
 #### Configuration Telegram
-During the first launching, enter the phone number of your Telegram account and then enter the confirmation code
 ### Compile and Run
 In the first terminal launch server1
 ```
