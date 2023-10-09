@@ -52,6 +52,8 @@ In your account, create database by the name 'telegram'
 
 Import the collection 'characteristics' from the file characteristics.json to your mongo database 'telegram':
 
+https://www.mongodb.com/docs/atlas/import/mongoimport/
+
 ```
 sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
 ```
