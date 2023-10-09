@@ -46,9 +46,9 @@ pip install --upgrade openai
 ```
 ### Configuration
 #### Configuration database MongoDB Atlas (in the cloud)
-Create an account : https://cloud.mongodb.com/ 
+Create a MongoDB account : https://cloud.mongodb.com/ 
 
-Create database by the name 'telegram'
+In your account, create database by the name 'telegram'
 
 Import the collection 'characteristics' from the file characteristics.json to your mongo database 'telegram':
 
