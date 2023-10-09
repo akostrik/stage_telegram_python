@@ -45,7 +45,7 @@ pip install pymongo
 pip install --upgrade openai
 ```
 ### Configuration
-#### Configuration MongoDB Atlas 
+#### Configuration database MongoDB Atlas (in the cloud)
 Create an account : https://cloud.mongodb.com/ 
 
 Create database by the name 'telegram'
@@ -60,7 +60,7 @@ Do this: https://cloud.mongodb.com - Database Deployments - "add current ip adre
 
 Get you MonogDB connection string : https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
 
-
+PS You can use MongoDB installed locally
 #### Configuration OpenAI 
 
 Get your OpenAI key (OPENAI) here: https://platform.openai.com/account/api-keys
