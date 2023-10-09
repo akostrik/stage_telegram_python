@@ -29,25 +29,16 @@ Install python version >= 3.7.1
 
 Install the libraries :
 ```
-sys
+pip3 install telethon
 ```
 ```
-os
+pip install DateTime
 ```
 ```
-telethon
+npm i dotenv
 ```
 ```
-time
-```
-```
-datetime
-```
-```
-dotenv
-```
-```
-requests
+pip install requests
 ```
 ```
 pip install pymongo
