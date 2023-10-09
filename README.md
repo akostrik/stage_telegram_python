@@ -81,7 +81,9 @@ OPENAI=...
 MONGO=...
 ```
 MONGO = your MonogDB connection string
+
 OPENAI = OpenAI key
+
 API_ID and API_HASH = Telegram credentials
 
 #### Configuration Telegram
