@@ -141,32 +141,36 @@ After having installed and configured all noted above, [enjoy the service](http:
 
 ## The technical details
 ### The parameters of the application
-- Time where the messages are considered as recent (in hours)
+- The time where a messages is considered as recent (in hours)
 - The model OpenAI for a characteristis request
 - The model OpenAI for a affirmations request
-- The maximal lenth of a Telegram message (a message is cut off beyond this length)
-- The maximal lenth of OpenAI tokens [^1]
+- The text of the characteristis request
+- The text of the affirmations request
+- The maximal lenth of a Telegram message (in characters)
+- The maximal lenth of OpenAI request (in tokens [^1])
 ### Other
 - _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels for the 
 - _The trust coefficient of a channel_ is a number in the interval [0 … 100]
-
-See :
 - [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
 ## The limits of the application
-- only for Linux
+- It is developped only for Linux
 ### The limits related to MongoDB
 - MongoDB free size is limited to ... Mg
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
-- OpenQI requires payment
-- The learning service is limited to 5 examples par a request (and if the message or the examples are long, then less than 5)
-- The length of an examined Telegram message is limites 
 - The application work slowly (about 5 messages per minute), chiefly because of the gpt-4 long analysys   
+- The learning service is limited to 5 examples par a request (and if the message or the examples are long, then less than 5)
+- The length of an examined Telegram message is limites ([see](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
+- 
+- OpenAI requires payment
 
 ## The prospectives to overpass these limits of the application
-The OpenAI analysis, which is long by nature, may be accelerated by using a great number of powerful machines. Besides, others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged.  
+The OpenAI analysis, respesenting the lowest part of the appliation, may be accelerated :
+- by using a great number of powerful machines
+- by using grand nombre of OpenAI accounts
+- others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
 
 ## Sources
 
