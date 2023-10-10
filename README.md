@@ -177,7 +177,7 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 ## Sources
 
 ## PS
-<img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e">
+<img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> [^2]
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
 
@@ -186,3 +186,4 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 
 
 [^1]: 1 token ≈ 3/4 of a word, in English
+[^2]: [source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
