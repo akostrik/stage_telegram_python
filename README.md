@@ -40,8 +40,8 @@ Simultaneously to all these, Server 2 accomplishes the learning service:
 
 ### The same scheme of the appication in English with all the technical details
 See :
-- [server 1 README](https://github.com/akostrik/stage_telegram/tree/main/server1)
-- [server 2 README](https://github.com/akostrik/stage_telegram/tree/main/server1)
+- [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
+- [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
 ### The same scheme of the appication in programming languages
 See :
