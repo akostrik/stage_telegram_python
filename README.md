@@ -68,6 +68,7 @@ Go [here](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you
 
 In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/backend/server2.js) put the same MongoDB connection string as in server1/.env:
 > const mongoUrl = '...';
+
 _Be careful not to publish your MongoDB connection string on the internet and not to transmit it to unfamiliar people_
 
 ### OpenAI configuration 
