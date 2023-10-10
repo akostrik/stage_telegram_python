@@ -1,8 +1,8 @@
 # Server 1 in python
-## Its role
+## Server 1 role
 See [there](https://github.com/akostrik/stage_telegram/tree/main#the-same-scheme-of-the-appication-in-english)
   
-## Setup and configuration
+## Server 1 setup and configuration
 See [there](https://github.com/akostrik/stage_telegram/tree/main#setup-and-configuration)
 
 ## Technical details
