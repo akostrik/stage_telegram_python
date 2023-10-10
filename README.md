@@ -153,7 +153,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The maximal lenth of a Telegram message (in characters)
 - The maximal lenth of OpenAI request (in tokens [^1])
 ### Other
-- _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels for the 
+- _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
 - _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 - [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
