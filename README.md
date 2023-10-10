@@ -21,11 +21,10 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 1) Listens to the Telegram channels
 2) Treats a new message :
 - estimates the marks of the propaganda of the message via OpenAI, basing on them calculates the trust coefficient of the message 
-- so the server updates the trust coefficient of the channels
+- updates the trust coefficient of the channels
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares these affirmations to the recent affirmations of the other followed channels
-- so the server updates the measure of similarity of the channels
-- constructs the graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels 
+- updates the measure of similarity of the channels
   
 ### Setup 
 Install python version >= 3.7.1
@@ -101,6 +100,9 @@ server1/python server1.py
 ```
 
 ## Server 2 (node.js)
+1) Got the names of the channels to exminate from the user
+2) Returns the resuls of the analysis to the server vue.js (then vue.js displays the results in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels
+3) Accomplishes learning service 
 ### Setup
 ```
 npm install
