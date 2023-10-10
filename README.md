@@ -22,7 +22,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 ### The same scheme of the appication in the programmer style
 ![Screenshot from 2023-10-10 16-40-57](https://github.com/akostrik/stage_telegram/assets/22834202/f4b3c6bb-3e5a-4f78-97b6-059bd061c77e)
 
-### The same scheme of the appication by texte
+### The same scheme of the appication in English
 1) Server 2 gets, from the user, the names of Telegram channels to exminate 
 2) Server 1 listens to the chosen channels
 3) Server 1 treats every new message :
@@ -37,6 +37,12 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 Simultaneously to all these, Server 2 accomplishes the learning service:
 1) The user corrects the previous responses of OpenAI
 2) Server 1 attaches these corrected examples to every new OpenAI request   
+
+### The same scheme of the appication in English with all the technical details
+See  and 
+
+### The same scheme of the appication in programming languages
+See the code if the foldeers _server1_ and _server2_
 
 ## Setup and configuration
 ### Database MongoDB Atlas configuration (in the cloud)
