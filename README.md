@@ -35,7 +35,7 @@ The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, e
 - compares these affirmations to the recent affirmations of the other followed channels
 - stocks all obteined information in the database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels)
 4) Server 2, via its provided public API, after having treated a message by Server 1, returns the current results of the analysis to the server vue.js
-5) Server vue.js displays the results to the user in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels
+5) Server vue.js displays the results to the user in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels
 
 Simultaneously, the learning service is working:
 1) Server 2, via public API that it provides, propose to the user to correct the previous responses of OpenAI
