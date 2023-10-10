@@ -11,7 +11,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 2) Constant improvement of the results by the mean of attaching of examples corriged by a user to OpenAI requests 
 
 ## The easy scheme of the appication (except Learning service)
-![Capture d’écran de 2023-10-10 02-29-35](https://github.com/akostrik/stage_telegram/assets/22834202/6580b630-1f8b-4432-9a0b-d65f3901cbcf)
+![Screenshot from 2023-10-10 15-49-01](https://github.com/akostrik/stage_telegram/assets/22834202/89b2eab1-2291-44ea-a008-7a32fd9e0678)
 
 ## The scheme of the appication (except Learning service)
 
