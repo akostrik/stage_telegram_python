@@ -135,13 +135,11 @@ pip install --upgrade openai
 ```
 npm install
 ```
-### Server 1 compile and run
+### Compile and run
 In the first terminal launch server1
 ```
 server1/python server1.py
 ```
-
-### Server 2 compile and run
 In the second terminal launch Vue server:
 ```
 cd server2
