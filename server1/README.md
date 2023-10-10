@@ -10,7 +10,7 @@
 See the homepage of this repository
 
 ## Technical details
+- Every execution output is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log) 
 
 ## Exprerimentations
 - Comparaison of paires of messages directly via OpenAI (instead of extrcacting the principal information as affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
-- Every execution output is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log) 
