@@ -4,12 +4,13 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 ## The goal of the application
 Real time verification of Telegram messages veracity by two methods:
 
-1) Looking for the marks of the propaganda in every separate message
+1) Looking for the marks of the propaganda in every separate message via OpenAI
 
-2) Comparison of the information diffused by several channels in order to detect similar channels
+2) Comparison of the information diffused by several channels via OpenAI in order to detect similar channels
+
+3) Improuving of the results by the mean of attaching to OpenAI requests examples corriged by a user
 
 ## The scheme of the appication (except Learning service)
-
 ![Capture d’écran de 2023-10-10 02-29-35](https://github.com/akostrik/stage_telegram/assets/22834202/6580b630-1f8b-4432-9a0b-d65f3901cbcf)
 
 ## Server 1 (python)
