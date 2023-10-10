@@ -16,7 +16,7 @@ The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, e
 ## What the developped appication can do
 1) Real time verification of Telegram messages veracity by two methods:
 - Looking for the marks of the propaganda in every separate message via OpenAI
-- Comparison of the information diffused by several channels via OpenAI in order to detect similar channels
+- Comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
 2) Constant improvement of its results by the mean of the Learning service, which consiste of attaching of some previous OpenIA responses, corriged by a user, to OpenAI requests
 
 ### The easy scheme of the appication (except Learning service)
