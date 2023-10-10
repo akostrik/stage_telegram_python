@@ -1,5 +1,5 @@
 # Internship Master II, Sorbonne University (Paris)
-An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
+The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 
 ## The missions of the internship
 - Complete the education by a full-time profesional pratice in a Paris association
