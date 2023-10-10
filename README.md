@@ -156,8 +156,14 @@ After having installed and configured all noted above, [enjoy the service](http:
 - _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
 - _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 - The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
-- [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
-- [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
+- Python is choosen for the server 1, because:
+-- it is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
+-- it is a rather easy language, partly because it frees the memory automatically
+- Every output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
+- Telegram requests are asynchronous 
+- OpenAI requests are **not asynchronous**
+- MongoDB requests are **not all asynchronous** 
+
 
 ## Experimentations
 ![Screenshot from 2023-10-11 01-06-20](https://github.com/akostrik/stage_telegram/assets/22834202/e2040841-cb7c-4724-8d7e-b7b4c08ba496)
