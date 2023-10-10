@@ -148,7 +148,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The model OpenAI for a characteristis request
 - The model OpenAI for a affirmations request
 - [The text of the characteristis request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
-- [The text of the affirmations request]()
+- [The text of the affirmations request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
 - The maximal lenth of a Telegram message (in characters)
 - The maximal lenth of OpenAI request (in tokens [^1])
 ### Other
