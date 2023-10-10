@@ -147,6 +147,6 @@ After having installed and configured all noted above, [enjoy the service](http:
 - You can use MongoDB installed locally
 
 ## PS
-[All the questions are welcome](stage.mongodb@gmail.com)
+[All the questions are welcome]((mailto: stage.mongodb@gmail.com)
 
-[Get help to install the application](stage.mongodb@gmail.com)  
+[Get help to install the application]((mailto: stage.mongodb@gmail.com)  
