@@ -134,8 +134,7 @@ In the third terminal launch server2:
 node server2/backend/server2.js
 ```
 ## User interface (vue.js)
-After having installed and configured all noted above, go to [here](http://localhost:5173/) to enjoy the service
-
+After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
 ## The limits of the application
 - only for Linux
 - MongoDB free size is limited to ... Mg
