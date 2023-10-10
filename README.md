@@ -10,7 +10,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 - Evaluate my capacity of integration in the professional environment
 - And so, ensure my entrance to the work market
 
-## What the appication can do
+## What the developped appication can do
 1) Real time verification of Telegram messages veracity by two methods:
 - Looking for the marks of the propaganda in every separate message via OpenAI
 - Comparison of the information diffused by several channels via OpenAI in order to detect similar channels
