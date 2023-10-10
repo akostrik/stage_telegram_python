@@ -53,9 +53,7 @@ Simultaneously, the learning service is working:
 
 In your account, create a database by the name 'telegram'
 
-Import the collection 'characteristics' from the file characteristics.json to your database 'telegram':
-
-https://www.mongodb.com/docs/atlas/import/mongoimport/
+[Import the collection](https://www.mongodb.com/docs/atlas/import/mongoimport/) 'characteristics' from [the file characteristics.json]() to your database 'telegram':
 
 ```
 sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
