@@ -159,8 +159,12 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
 - OpenQI requires payment
-- The learning service is limited to 5 examples par a request (sometimes lesss than 5, if the message or the examples are long)
-- The length of an examined message is limites to 100 tokens (words)
+- The learning service is limited to 5 examples par a request (and if the message or the examples are long, then less than 5)
+- The length of an examined Telegram message is limites to 1000 tokens (words)
+- The application work slowly (about 5 messages per minute), chiefly because of the gpt-4 long analysys   
+
+## The prospectives to overpass these limits
+The OpenAI analysis, which is long by nature, may be accelerated by using a great number of powerful machines. Besides, others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged.  
 
 ## PS
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
