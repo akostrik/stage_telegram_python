@@ -40,6 +40,9 @@ Simultaneously, the learning service is working:
 3) Server 1 attaches these corrected examples to every new OpenAI request (in the limit of examples)   
 
 ### The same scheme of the appication in English with all the technical details
+- _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations
+- _The trust coefficient of a channel_ is a number in the interval [0 … 100]
+
 See :
 - [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
