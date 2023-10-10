@@ -1,82 +1,24 @@
-# Internship Master II, Sorbonne University (Paris)
-An Internship of 5 months, from the 3 April 2023 to the 12 September 2023, in the association Ouverture du cœur (Paris)
-
-## The goal of the application
-Real time verification of Telegram messages veracity by two methods:
-
-1) Looking for the marks of the propaganda in every separate message
-
-2) Comparison of the information diffused by several channels in order to detect similar channels
-
-## How does it work
-
-![Capture d’écran de 2023-10-08 12-10-46](https://github.com/akostrik/stage_telegram/assets/22834202/9bbb5cb1-5a40-41ca-b504-8f6abf2d0756)
-
-## Server 1 (python)
-1) Listens to the Telegram channels
-2) Treats a new message :
-- estimates the marks of the propaganda of the message via OpenAI, basing on them calculates the trust coefficient of the message 
-- so the server updates the trust coefficient of the channels
-- extracts the principal information of the new message, in the form of several affirmations, via OpenAI
-- compares these affirmations to the recent affirmations of the other followed channels
-- so the server updates the measure of similarity of the channels
-- constructs the graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels 
+# Server 1 in python
+## Server 1 role
+See [there](https://github.com/akostrik/stage_telegram/tree/main#the-same-scheme-of-the-appication-in-english)
   
-### Setup 
-Install python version >= 3.5 
+## Server 1 setup and configuration
+See [there](https://github.com/akostrik/stage_telegram/tree/main#setup-and-configuration)
 
-Install the libraries sys, openai, os, telethon, pymongo, time, datetime, dotenv, uuid, requests, ast  
-### Configuration
-#### Create the file "server1/.env" 
-```
-API_ID=...
-API_HASH=...
-OPENAI=...
-MONGO=...
-```
-The linens to get these values :
+## Server 1 technical details
+Python is choosen for the server 1, because:
+- it is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
+- it is a rather easy language, partly because it frees the memory automatically
 
-Télégram credentials (API_ID and API_HASH) : https://my.telegram.org/auth
+Every output of an execution is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
-OpenAI key (OPENAI): https://platform.openai.com/account/api-keys
+## Server 1 exprerimentations that were not included in the final functionality
+<img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
-MonogDB connection string (MONGO): https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
+- Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message, because the analysis did not work corectly. Sorry, the example is in Russian, if you translate it, you will see the pour quality of the analysis:
 
-#### Configuration MongoDB
+- Comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
-Create database 'telegram'
+- Keeping of a part of the data in the application memory, and not in the database, because the application has no acces to the results of the previous executions 
 
-Import the collection 'characteristics' from the file characteristics.json :
-
-```
-sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
-```
-
-If you use MongoDB Atlas, go to https://cloud.mongodb.com - Database Deployments, and presse "add current ip adresse"
-
-#### Configuration Telegram
-During the first launching, enter the phone number of your Telegram account and then enter the confirmation code
-### Compile and Run
-In the first terminal launch server1
-```
-server1/python server1.py
-```
-
-## Server 2 (node.js)
-### Setup
-```
-npm install
-```
-### Configuration
-In the line 13 of server2/backend/server2.js put the same MongoDB connection string as in server1/.env:
-> const mongoUrl = 'mongodb+srv...';
-### Compile and Run
-In the second terminal launch Vue:
-```
-cd server2/backend
-npm run dev
-```
-In the third terminal launch server2:
-```
-node server2/backend/server2.js
-```
+- Extracting of the affirmations with gpt-3 didn't work
