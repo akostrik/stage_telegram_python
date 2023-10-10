@@ -166,7 +166,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 ### The limits related to OpenAI
 - The application work slowly (about 5 messages per minute), chiefly because of the gpt-4 long analysys   
 - The length of an examined Telegram message is limited ([see](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
-- The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [The maximal lenth of OpenAI request]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then less than 5)
+- The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then less than 5 examples)
 - OpenAI requires payment
 
 ## The prospectives to overpass these limits of the application
