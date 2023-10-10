@@ -63,18 +63,18 @@ sudo mongoimport --db telegram --collection characteristics --file collection_ch
 
 Do this: https://cloud.mongodb.com - Database Deployments - "add current ip adresse"
 
-Get you MonogDB connection string : https://cloud.mongodb.com/ - Database - Connect - Drives - connection string
+Get you MonogDB connection string [here](https://cloud.mongodb.com/): go to Database - Connect - Drives - connection string
 
 PS You can use MongoDB installed locally
 #### Configuration OpenAI 
 
-Get your OpenAI key (OPENAI) here: https://platform.openai.com/account/api-keys
+Get your OpenAI key (OPENAI) [here](https://platform.openai.com/account/api-keys)
 
 Your account should have acces to gpt-4
 
 #### Configuration Telegram 
 
-Get Telegram credentials (api_id and api_hash) here: https://my.telegram.org/auth
+Get Telegram credentials (api_id and api_hash) [here](https://my.telegram.org/auth)
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
