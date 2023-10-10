@@ -39,7 +39,7 @@ Simultaneously to all these, Server 2 accomplishes the learning service:
 2) Server 1 attaches these corrected examples to every new OpenAI request   
 
 ### The same scheme of the appication in English with all the technical details
-See  and 
+See [server 1 README](https://github.com/akostrik/stage_telegram/tree/main/server1) and [server 2 README](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
 ### The same scheme of the appication in programming languages
 See the code if the foldeers _server1_ and _server2_
