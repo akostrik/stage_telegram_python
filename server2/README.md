@@ -1,4 +1,7 @@
-# vue-project
+## Its role
+See [there](https://github.com/akostrik/stage_telegram/tree/main#the-same-scheme-of-the-appication-in-english)
+
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
