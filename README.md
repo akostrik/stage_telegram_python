@@ -77,6 +77,8 @@ _Be careful not to publish your MongoDB connection string on the internet and no
 
 Your account should have acces to gpt-4 (a paying option)
 
+_Be very very careful not to publish your MongoDB connection string on the internet and not to transmit it to unfamiliar people_
+
 ### Telegram configuration  
 
 [Get Telegram credentials api_id and api_hash ](https://my.telegram.org/auth)
