@@ -120,6 +120,7 @@ node server2/backend/server2.js
 After having installed and configured all noted above, go to http://localhost:5173/ et enjoy the service
 
 ## The limits of the application
+- only for Linux
 - MongoDB free size is limited to ... Mg
 - OpenQI reauires payment
 
