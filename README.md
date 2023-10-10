@@ -142,8 +142,7 @@ node server2/backend/server2.js
 ### Go to the user interface (vue.js)
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
 
-## The technical details
-### The parameters of the application
+## The parameters of the application
 - The time where a messages is considered as recent (in hours)
 - The model OpenAI for a characteristis request
 - The model OpenAI for a affirmations request
@@ -152,9 +151,11 @@ After having installed and configured all noted above, [enjoy the service](http:
 - [The text of the affirmations request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
 - The maximal lenth of a Telegram message (in characters)
 - The maximal lenth of OpenAI request (in tokens [^1])
-### Other
+
+## The technical details of the application
 - _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
 - _The trust coefficient of a channel_ is a number in the interval [0 … 100]
+- The appication does O(N) rOpenAI requests and O(N * K) MongoDB requests
 - [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
