@@ -28,7 +28,7 @@ The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, e
 ### The same scheme of the appication in English
 1) Server 2, via its provided public API, gets, from the user, the names of Telegram channels to examinate 
 2) Server 1 listens to the chosen channels
-3) Server 1 treats every new message :
+3) Server 1 treats every new message, that is:
 - estimates the marks of the propaganda of the message via OpenAI
 - basing on these marks of the propaganda calculates the trust coefficient of the message 
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
