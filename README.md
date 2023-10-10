@@ -39,19 +39,25 @@ Simultaneously, the learning service is working:
 2) As soon as the user provides the corrected examples, server 2 put it to the database
 3) Server 1 attaches these corrected examples to every new OpenAI request (in the limit of examples)   
 
-### The same scheme of the appication in English with all the technical details
-- _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations
-- _The trust coefficient of a channel_ is a number in the interval [0 … 100]
-
-See :
-- [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
-- [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
-
 ### The same scheme of the appication in programming languages
 See :
 - [server 1 code in python](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 code in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js)
 - [the user interface code in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
+
+### The technical details
+#### The parameters of the application
+- Time where the messages are considered as recent (in hours)
+- The model OpenAI for a characteristis request
+- The model OpenAI for a affirmations request
+- The maximal lenth of a Telegram message (a message is cut off beyond this length)
+#### Other
+- _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels for the 
+- _The trust coefficient of a channel_ is a number in the interval [0 … 100]
+
+See :
+- [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
+- [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
 ## Setup and configuration
 ### Database MongoDB Atlas configuration (in the cloud)
