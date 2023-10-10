@@ -22,18 +22,22 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 ### The same scheme of the appication in the programmer style
 ![Screenshot from 2023-10-10 16-40-57](https://github.com/akostrik/stage_telegram/assets/22834202/f4b3c6bb-3e5a-4f78-97b6-059bd061c77e)
 
-### Server 1 (python)
-1) Listens to the Telegram channels
-2) Treats a new message :
-- estimates the marks of the propaganda of the message via OpenAI, basing on them calculates the trust coefficient of the message 
+### The same scheme of the appication in words
+1) Server 2 gets, from the user, the names of Telegram channels to exminate 
+2) Server 1 listens to the chosen channels
+3) Server 1 treats every new message :
+- estimates the marks of the propaganda of the message via OpenAI
+- basing on these marks of the propaganda calculates the trust coefficient of the message 
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares these affirmations to the recent affirmations of the other followed channels
-- updates the trust coefficients of the channels and the measure of similarity of the channels
-  
-### Server 2 (node.js)
-1) Got the names of the channels to exminate from the user
-2) Returns the resuls of the analysis to the server vue.js (then vue.js displays the results in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels
-3) Accomplishes learning service 
+- updates the trust coefficients of the channels
+- updates the measure of similarity of the channels
+4) Server 2 constantly returns the current resuls of the analysis to the server vue.js
+5) vue.js displays the results for the user in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels
+
+Simultaneously to all these, Server 2 accomplishes the learning service:
+1) The user corrects the previous responses of OpenAI
+2) Server 1 attaches these correctedexamples to every new OpenAI request   
 
 ## Setup and configuration
 ### Database MongoDB Atlas configuration (in the cloud)
