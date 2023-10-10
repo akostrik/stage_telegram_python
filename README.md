@@ -147,6 +147,6 @@ After having installed and configured all noted above, [enjoy the service](http:
 - You can use MongoDB installed locally
 
 ## PS
-For technilcal details of server1 and server2, see README files in the corresponding folders.
-All the questions are welcome at stage.mongodb at gmail.com
-To have help to install the application, please write also to stage.mongodb at gmail.com  
+[All the questions are welcome](stage.mongodb@gmail.com)
+
+[Get help to install the application](stage.mongodb@gmail.com)  
