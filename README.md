@@ -8,7 +8,7 @@ Real time verification of Telegram messages veracity by two methods:
 
 2) Comparison of the information diffused by several channels via OpenAI in order to detect similar channels
 
-3) Constant improuving of the results by the mean of attaching of examples corriged by a user to OpenAI requests 
+3) Constant improvement of the results by the mean of attaching of examples corriged by a user to OpenAI requests 
 
 ## The scheme of the appication (except Learning service)
 ![Capture d’écran de 2023-10-10 02-29-35](https://github.com/akostrik/stage_telegram/assets/22834202/6580b630-1f8b-4432-9a0b-d65f3901cbcf)
