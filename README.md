@@ -161,7 +161,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 ## The limits of the application
 - It is developped only for Linux
 ### The limits related to MongoDB
-- MongoDB free size is limited to ... Mg
+- MongoDB database size is limited to 16 Mgb (for free accounts) **to verify**
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
 - The application work slowly (about 5 messages per minute), chiefly because of the gpt-4 long analysys   
