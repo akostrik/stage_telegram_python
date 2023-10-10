@@ -155,7 +155,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 ## The technical details of the application
 - _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
 - _The trust coefficient of a channel_ is a number in the interval [0 … 100]
-- The appication does O(N) rOpenAI requests and O(N * K) MongoDB requests
+- The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
 - [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
