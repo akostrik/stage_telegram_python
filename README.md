@@ -118,4 +118,6 @@ node server2/backend/server2.js
 After having installed and configured all noted above, go to http://localhost:5173/ et enjoy the service
 
 ## PS
+For technilcal details of server1 and server2, see README files in the corresponding folders.
 All the questions are welcome at stage.mongodb at gmail.com
+To have help to install the application, please write also to stage.mongodb at gmail.com  
