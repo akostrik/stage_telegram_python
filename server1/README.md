@@ -12,4 +12,4 @@ See the homepage of this repository
 ## Technical details
 
 ## Exprerimentations
-- Comparaison of the messages directly via OpenAI (without extrcacting the principal information as affirmations) demands O(N<sup>2</sup>) operations and so is too long.
+- Comparaison of paires of messages directly via OpenAI, instead of extrcacting the principal information as affirmations, demands O(N<sup>2</sup>) operations and so is too long.
