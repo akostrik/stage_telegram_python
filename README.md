@@ -39,10 +39,15 @@ Simultaneously to all these, Server 2 accomplishes the learning service:
 2) Server 1 attaches these corrected examples to every new OpenAI request   
 
 ### The same scheme of the appication in English with all the technical details
-See [server 1 README](https://github.com/akostrik/stage_telegram/tree/main/server1) and [server 2 README](https://github.com/akostrik/stage_telegram/tree/main/server1)
+See :
+- [server 1 README](https://github.com/akostrik/stage_telegram/tree/main/server1)
+- [server 2 README](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
 ### The same scheme of the appication in programming languages
-See [server 1 code in python](https://github.com/akostrik/stage_telegram/tree/main/server1), [server 2 code in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js) and [the user interface code in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
+See :
+- [server 1 code in python](https://github.com/akostrik/stage_telegram/tree/main/server1)
+- [server 2 code in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js)
+- [the user interface code in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
 
 ## Setup and configuration
 ### Database MongoDB Atlas configuration (in the cloud)
