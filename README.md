@@ -10,6 +10,9 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 - Evaluate my capacity of integration in the professional environment
 - And so, ensure my entrance to the work market
 
+## The contexte
+The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc, which is very popular in Russia and where there are many channels of different subjects
+
 ## What the developped appication can do
 1) Real time verification of Telegram messages veracity by two methods:
 - Looking for the marks of the propaganda in every separate message via OpenAI
