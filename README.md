@@ -174,11 +174,8 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 - by using grand nombre of OpenAI accounts
 - others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
 
-## Sources
-
 ## PS
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
-<p align="right">[^2]</p>
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
 
@@ -186,5 +183,7 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 [Get help to install the application](mailto:stage.mongodb@gmail.com) 
 
 
-[^1]: 1 token ≈ 3/4 of a word, in English
-[^2]: [source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
+## Sources
+[source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
+
+[^1]: in English 1 token ≈ 3/4 of a word
