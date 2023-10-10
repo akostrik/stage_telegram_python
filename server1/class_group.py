@@ -14,7 +14,6 @@ class Group:
         self.total_time_requests_c = 0
         self.number_requests_a  = 0
         self.total_time_requests_a = 0
-        # collection_messages
 
     async def new_message_handler(self, event, prompt_c, prompt_a, model_c, model_a, temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_similarity):
         message = m.Message(event.message.id, event.message.text, event.message.date, event.chat_id)
@@ -33,7 +32,7 @@ class Group:
             return
         message.put_to_mongo(collection_messages)
         await self.update_channels_score(message, collection_messages, collection_channels_score)
-        # await self.update_channels_similarity(self, collection_messages, collection_channels_id, collection_similarity, how_many_hours_verification)
+        await self.update_channels_similarity(self, collection_messages, collection_channels_id, collection_similarity, how_many_hours_verification)
         # free(message) ?
 
     async def update_channels_from_mongo(self, collection_channels_id):
@@ -68,37 +67,30 @@ class Group:
         except DuplicateKeyError: # как эта ошибка может возникнуть
             print(f"Failed to insert record due to duplicate _id.") # telegram_id = key ?
 
-    def get_recent_messages(collection_messages, how_many_hours_verification):
-        ten_hours_ago = datetime.now() - timedelta(hours=how_many_hours_verification)
-        timestamp_boundary = ten_hours_ago.timestamp() * 1000
-        return list(collection_messages.find({}))
-        #return list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_boundary)}}))
-
     async def update_channels_similarity(self, collection_messages, collection_channels_id, collection_channels_similarity, how_many_hours_verification):
 
-        def compare_affirmations(new_affirmations, old_message):
-            score = 0
-            for affirmation, truth_value in new_affirmations.items():
-                if affirmation in old_message["affirmations"]:
-                    if old_message["affirmations"][affirmation] == truth_value:
-                        score += 1
-                    else:
-                        score -= 1
-            return score
+        recent_messages = list(collection_messages.find({}))
+        # timestamp_boundary = (datetime.now() - timedelta(hours=how_many_hours_verification)) * 1000
+        #recent_messages = list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_boundary)}}))
 
-        recent_messages = self.get_recent_messages(collection_messages)
         for old_message in recent_messages:
             if self.channel != old_message["channel"]:
-                score = compare_affirmations(ast.literal_eval(self.affirmations), old_message)
+                score = 0
+                for affirmation, truth_value in ast.literal_eval(self.affirmations).items():
+                    if affirmation in old_message["affirmations"]:
+                        if old_message["affirmations"][affirmation] == truth_value:
+                              score += 1
+                        else:
+                              score -= 1
                 channels = sorted([self.channel, old_message["channel"]])
-                existing_relation = collection_channels_similarity.find_one({
+                existing_record = collection_channels_similarity.find_one({
                     "channel_a": channels[0],
                     "channel_b": channels[1]
                 })
-                if existing_relation:
-                    new_score = existing_relation["relation"] + score
+                if existing_record:
+                    new_score = existing_record["relation"] + score
                     collection_channels_similarity.update_one(
-                        {"_id": existing_relation["_id"]},
+                        {"_id": existing_record["_id"]},
                         {"$set": {"relation": new_score}}
                     )
                 else:
@@ -109,7 +101,7 @@ class Group:
                     })
 
 
-####################################################### NOT USED
+####################################################### ARCHIVE, MAY BE TO USE LATER
     def score(self, promptC):
         if len(self.channels) == 0:
             return (int(0))
@@ -181,7 +173,7 @@ class Group:
                         #     else:
                         #         raise e
         self.speed_promptS = round(nb_requests / ((time.time() - int(time_start)) / 60.))
-        print ()
+        print ()	
 
     def similarities_to_string(self):
         string = "similarities:\n    "
@@ -198,7 +190,7 @@ class Group:
             string += "\n"
         return string
 
-    def time_weight(m1, m2): # timezone
+    def time_weight(m1, m2): # timezone ###
         time_difference = abs(m1.date - m2.date)
         return 1 + (1 / (1 + time_difference.total_seconds() / 3600))
 
@@ -280,7 +272,6 @@ class Group:
             string += channel.messages_to_string()
         return (string)
 
-######################################################## NOT USED
     # def log_to_mongo(coll_log): #
     #     if (log_to_mongo == 1):
     #         coll_log.insert_one({

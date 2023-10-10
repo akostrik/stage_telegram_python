@@ -57,16 +57,19 @@ collection_messages           = db['messages']
 collection_channels_id        = db['channels_id']
 collection_channels_score     = db['channels_score']
 collection_channels_simiarity = db['channels_similarity']
-collection_messages.create_index([('telegram_id', pymongo.ASCENDING)], unique=True)
-collection_channels_id.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_id
-#collection_channels_score.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_id
-#collectio_log                 = db['log']
+try:
+    collection_messages.create_index([('telegram_id', pymongo.ASCENDING)], unique=True)
+    collection_channels_id.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_id
+    #collection_channels_score.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_id
+except pymongo.errors.ServerSelectionTimeoutError:
+    print("Have you added this IP addresse in your MongoDB account?")
+#collection_log               = db['log']
 model_c                       = "gpt-3.5-turbo"
 model_a                       = "gpt-4"
 temperature                   = 0.2 #0.73, # 1
 max_tokens                    = 2000
+max_len_telegram_message      = 600
 request_timeout               = 10
-max_len_message               = 600
 how_many_hours_verification   = 10
 prompt_c                      = p.Prompt_c(max_len_message, collection_characteristics)
 prompt_a                      = p.Prompt_a(max_len_message)
@@ -75,31 +78,35 @@ sys.stdout                    = LoggerStdout(log_file)
 sys.stderr                    = LoggerStderr(log_file)
 sys.stdout.flush()
 sys.stderr.flush()
-group                         = g.Group()
+group_channels                = g.Group()
 
-print("model           = " + str(model_a))
-print("temperature     = " + str(temperature))
-print("max_len_message = " + str(max_len_message))
-print("max_len_message = " + str(max_len_message))
+
+print("openai model for propaganda marks = " + str(model_a))
+print("openai model for affirmations     = " + str(model_c))
+print("temperature                       = " + str(temperature))
+print("max_len_telegram_message          = " + str(max_len_telegram_message))
+print("verification of the messages for the last " + str(how_many_hours_verification) + " hours")
 print()
 print (prompt_c.characteristics_to_string())
 
 @client_tg.on(events.NewMessage())
 async def new_message_handler(event):
-    await group.update_channels_from_mongo(collection_channels_id)
-    if event.chat_id in group.channels:
-        await group.new_message_handler(event, prompt_c, prompt_a,  model_c, model_a,temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_channels_simiarity)
-
-    #await group.calc_score(promptC, model, temperature, max_tokens)
-    #await group.calc_affirmations(promptA, model, temperature, max_tokens)
-    #await group.calc_distances_openai(model, temperature, promptS)
-    #await group.calc_similarities_via_affirmations(model, temperature, promptS)
-    # print ("request openai characteristics " + group.number_per_minute_promptA() + " messages per minute")
-    # print ("request openai affirmations    " + group.number_per_minute_promptA() + " messages per minute")
-    # print (group.score_to_string(promptC))
-    # print (group.similarities_to_string())
-    # print (group.messages_to_string())
+    await group_channels.update_channels_from_mongo(collection_channels_id)
+    if event.chat_id in group_channels.channels:
+        await group_channels.new_message_handler(event, prompt_c, prompt_a, model_c, model_a,temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_channels_simiarity)
 
 
 with client_tg:
     client_tg.run_until_disconnected()
+
+
+    #await group_channels.calc_score(promptC, model, temperature, max_tokens)
+    #await group_channels.calc_affirmations(promptA, model, temperature, max_tokens)
+    #await group_channels.calc_distances_openai(model, temperature, promptS)
+    #await group_channels.calc_similarities_via_affirmations(model, temperature, promptS)
+    # print ("request openai characteristics " + group_channels.number_per_minute_promptA() + " messages per minute")
+    # print ("request openai affirmations    " + group_channels.number_per_minute_promptA() + " messages per minute")
+    # print (group_channels.score_to_string(promptC))
+    # print (group_channels.similarities_to_string())
+    # print (group_channels.messages_to_string())
+

@@ -2,21 +2,21 @@ import class_сharacteristic as chr
 
 
 class Prompt_c: ##################################### characteristics
-    def __init__(self, max_len_message, collection_characteristics):
-        self.max_len_message = max_len_message
+    def __init__(self, max_len_telegram_message, collection_characteristics):
+        self.max_len_telegram_message = max_len_telegram_message
         self.characteristics = []
         records = collection_characteristics.find() # requests is not an async pkg
         for record in records:
              self.characteristics.append(chr.Characteristic(record['score'], record['str']))
 
-    def __str__(self):
-        return (f"Prompt_c(Max Message Length: {self.max_len_message}, Characteristics: "
-            f"{', '.join([charac for charac in self.characteristics])})")
+    def __str__(self): ###
+        return (f"Prompt_c(Max Message Length: {self.max_len_telegram_message}, Characteristics: "
+            f"{', '.join([charact for charact in self.characteristics])})")
 
 
-    def examples(self, collection_messages): ##     # NOT USED
+    def examples(self, collection_messages):
         examples_cursor = collection_messages.find({"to_use_c": True}).limit(5)
-    
+
         # Check the count using the collection's count_documents method
         if collection_messages.count_documents({"to_use_c": True}) == 0:
             return ""
@@ -32,7 +32,7 @@ class Prompt_c: ##################################### characteristics
             string = f"""\
                 Analyze the following message and provide its characteristics.\
                 Reply by numbers, one number for each criterion and nothing else.\n\n\
-                {message.text[0:self.max_len_message]}\n\n"""
+                {message.text[0:self.max_len_telegram_message]}\n\n"""
             for characteristic in self.characteristics:
                 string += f"{self.characteristics.index(characteristic)}. " + characteristic.to_string()
             return string + self.examples(collection_messages)
@@ -54,7 +54,6 @@ class Prompt_a: ################################### affirmations
 
     def __str__(self):
         return f"Prompt_a(Max Message Length: {self.max_len_message})"
-
 
     def examples(self, coll_affirmations):
         examples = coll_affirmations.find({"to_use_a": True}).limit(5) # await ?
@@ -98,7 +97,8 @@ class Prompt_a: ################################### affirmations
         #     return ("")
 
 
-'''class Prompt_s: ################################### prompt similarities NOT USED
+####################################################### ARCHIVE, MAY BE TO USE LATER
+class Prompt_s:
     def __init__(self, max_len_message):
         self.max_len_message = max_len_message
 
@@ -108,4 +108,4 @@ class Prompt_a: ################################### affirmations
             Reply by number, one number and nothing else.\n\n\
             First message : {message1.text[0:self.max_len_message]}\n\n\
             Seconde messsage: {message2.text[0:self.max_len_message]}\n\n\
-            Reply 1 if yes, 0 if no, 0 if you are not sure"""'''
+            Reply 1 if yes, 0 if no, 0 if you are not sure"""

@@ -88,8 +88,8 @@ class Message:
             print(f"Failed to insert record {e}")
 
 
-############################################### NOT USED
-    def to_string(self, channel_name):
+####################################################### ARCHIVE, MAY BE TO USE LATER
+    def to_string(self, channel_name): # __str__
         string = ""
         string += f"{channel_name.upper()}\n"
         if len(self.score) > 0:

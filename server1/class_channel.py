@@ -2,7 +2,7 @@ import telethon
 from telethon.tl.functions.messages import GetHistoryRequest
 import class_message as m
 
-####################################################### NOT USED
+####################################################### ARCHIVE, MAY BE TO USE LATER
 class Channel:
     def __init__(self, name):
         self.name            = name
