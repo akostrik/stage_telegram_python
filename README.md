@@ -196,6 +196,11 @@ After having installed and configured all noted above, [enjoy the service](http:
 - OpenAI requires payment
 ### The limits related to Telegram
 - The application can't read some channels, [for example this one](https://t.me/generallsvr) **why**
+### Non-technical limits 
+- The learning and the choice of the characteristics are founded on a human subjective opinion
+- The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
+- The application doesn't aime at the deep causes of the propaganda 
+
 ## The prospectives to overpass these limits of the application
 The OpenAI analysis, respesenting the lowest part of the appliation, may be accelerated :
 - by using a great number of powerful machines
