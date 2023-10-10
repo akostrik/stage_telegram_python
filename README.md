@@ -63,7 +63,7 @@ Go [here](https://cloud.mongodb.com) - Database Deployments - to add your curren
 
 Go [here](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you MonogDB connection string 
 
-In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/backend/server2.js) put the same MongoDB connection string as in server1/.env:
+In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/backend/server2.js) put the same MongoDB connection string as in server1/.env: **.env !**
 > const mongoUrl = '...';
 
 _Be careful not to publish your MongoDB connection string on the internet and not to transmit it to unfamiliar people_
@@ -83,7 +83,7 @@ _Be very very careful not to publish your MongoDB connection string on the inter
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
 The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) _anon.session_ in the folder server1 in order to you can to login without re-sending the code. 
-_Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_ **(sure ?)**
+_Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_
 
 ### Create the file "server1/.env" 
 ```
@@ -147,8 +147,8 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The time where a messages is considered as recent (in hours)
 - The model OpenAI for a characteristis request
 - The model OpenAI for a affirmations request
-- The text of the characteristis request
-- The text of the affirmations request
+- [The text of the characteristis request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
+- [The text of the affirmations request]()
 - The maximal lenth of a Telegram message (in characters)
 - The maximal lenth of OpenAI request (in tokens [^1])
 ### Other
@@ -164,7 +164,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
 - The application work slowly (about 5 messages per minute), chiefly because of the gpt-4 long analysys   
-- The length of an examined Telegram message is limited ([see](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
+- The length of an examined Telegram message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
 - The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then less than 5 examples)
 - OpenAI requires payment
 
@@ -174,10 +174,8 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 - by using grand nombre of OpenAI accounts
 - others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
 
-## Sources
-
 ## PS
-<img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e">
+<img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
 
@@ -185,4 +183,7 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 [Get help to install the application](mailto:stage.mongodb@gmail.com) 
 
 
-[^1]: 1 token ≈ 3/4 of a word, in English
+## Sources
+[source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
+
+[^1]: in English 1 token ≈ 3/4 of a word
