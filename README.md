@@ -44,9 +44,9 @@ Simultaneously, the learning service is working:
 
 ### The same scheme of the appication in programming languages
 See :
-- [server 1 code in python](https://github.com/akostrik/stage_telegram/tree/main/server1)
-- [server 2 code in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js)
-- [the user interface code in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
+- [server 1 in python](https://github.com/akostrik/stage_telegram/tree/main/server1)
+- [server 2 in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js)
+- [the user interface in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
 
 ## How to use the application
 ### Database MongoDB Atlas configuration (in the cloud)
