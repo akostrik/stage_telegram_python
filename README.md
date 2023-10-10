@@ -62,7 +62,7 @@ See :
 - [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
-## Setup and configuration
+## How to use the application
 ### Database MongoDB Atlas configuration (in the cloud)
 [Create a MongoDB account](https://cloud.mongodb.com/) 
 
@@ -83,19 +83,19 @@ Go [here](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you
 In the line 13 of server2/backend/server2.js put the same MongoDB connection string as in server1/.env:
 > const mongoUrl = '...';
 
-### OpenAI Configuration 
+### OpenAI configuration 
 
 [Get your OpenAI key](https://platform.openai.com/account/api-keys)
 
 Your account should have acces to gpt-4 (a paying option)
 
-### Telegram Configuration  
+### Telegram configuration  
 
 [Get Telegram credentials api_id and api_hash ](https://my.telegram.org/auth)
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
-#### Create the file "server1/.env" 
+### Create the file "server1/.env" 
 ```
 API_ID=...
 API_HASH=...
@@ -131,16 +131,16 @@ pip install pymongo
 pip install --upgrade openai
 ```
 
+### Server 2 setup
+```
+npm install
+```
 ### Server 1 compile and run
 In the first terminal launch server1
 ```
 server1/python server1.py
 ```
 
-### Server 2 setup
-```
-npm install
-```
 ### Server 2 compile and run
 In the second terminal launch Vue server:
 ```
@@ -151,7 +151,7 @@ In the third terminal launch server2:
 ```
 node server2/backend/server2.js
 ```
-## User interface (vue.js)
+### Go to the user interface (vue.js)
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
 ## The limits of the application
 - only for Linux
