@@ -114,3 +114,5 @@ In the third terminal launch server2:
 ```
 node server2/backend/server2.js
 ```
+## User interface (vue.js)
+Go to http://localhost:5173/ et enjoy the application
