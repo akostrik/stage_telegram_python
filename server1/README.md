@@ -1,13 +1,6 @@
 # Server 1 (python)
 ## Its role
-Listens to the chosen Telegram channels
-Treats every new message :
-- estimates the marks of the propaganda of the message via OpenAI
-- basing on these marks of the propaganda calculates the trust coefficient of the message 
-- extracts the principal information of the new message, in the form of several affirmations, via OpenAI
-- compares these affirmations to the recent affirmations of the other followed channels
-- stocks all obteined information in the database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels)
-
+See [there](https://github.com/akostrik/stage_telegram/tree/main#the-same-scheme-of-the-appication-in-english)
   
 ## Setup and configuration
 See [there](https://github.com/akostrik/stage_telegram/tree/main#setup-and-configuration)
