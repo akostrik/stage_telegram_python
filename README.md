@@ -14,7 +14,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 ![Screenshot from 2023-10-10 15-49-01](https://github.com/akostrik/stage_telegram/assets/22834202/89b2eab1-2291-44ea-a008-7a32fd9e0678)
 
 ## The same scheme of the appication in programmer style
-![Screenshot from 2023-10-10 16-34-58](https://github.com/akostrik/stage_telegram/assets/22834202/30b70700-c827-4bbc-a150-405bd4359385)
+![Screenshot from 2023-10-10 16-40-57](https://github.com/akostrik/stage_telegram/assets/22834202/f4b3c6bb-3e5a-4f78-97b6-059bd061c77e)
 
 
 ## Server 1 (python)
