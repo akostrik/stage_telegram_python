@@ -21,10 +21,9 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 1) Listens to the Telegram channels
 2) Treats a new message :
 - estimates the marks of the propaganda of the message via OpenAI, basing on them calculates the trust coefficient of the message 
-- updates the trust coefficient of the channels
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares these affirmations to the recent affirmations of the other followed channels
-- updates the measure of similarity of the channels
+- updates the trust coefficients of the channels and the measure of similarity of the channels
   
 ### Setup 
 Install python version >= 3.7.1
