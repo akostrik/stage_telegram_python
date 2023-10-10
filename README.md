@@ -43,7 +43,6 @@ Simultaneously, the learning service is working:
 3) Server 1 attaches these corrected examples to every new OpenAI request (in the limit of several examples)   
 
 ### The same scheme of the appication in programming languages
-See :
 - [server 1 in python](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js)
 - [the user interface in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
