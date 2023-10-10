@@ -13,7 +13,9 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 ## The easy scheme of the appication (except Learning service)
 ![Screenshot from 2023-10-10 15-49-01](https://github.com/akostrik/stage_telegram/assets/22834202/89b2eab1-2291-44ea-a008-7a32fd9e0678)
 
-## The scheme of the appication (except Learning service)
+## The scheme of the appication in more professional style
+![Screenshot from 2023-10-10 16-19-29](https://github.com/akostrik/stage_telegram/assets/22834202/9da78718-4776-4c9f-ba2a-80432dc43723)
+
 
 ## Server 1 (python)
 1) Listens to the Telegram channels
