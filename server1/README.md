@@ -13,3 +13,4 @@ See the homepage of this repository
 
 ## Exprerimentations
 - Comparaison of paires of messages directly via OpenAI (instead of extrcacting the principal information as affirmations) demands O(N<sup>2</sup>) operations and so is too long (cf. log_2023_09_28_18h08 ERROR LIMITE GPT4).
+- Every execution output is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log) 
