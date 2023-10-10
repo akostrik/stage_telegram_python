@@ -60,7 +60,7 @@ collection_channels_simiarity = db['channels_similarity']
 try:
     collection_messages.create_index([('telegram_id', pymongo.ASCENDING)], unique=True)
     collection_channels_id.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_id
-    #collection_channels_score.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_id
+    #collection_channels_score.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_idf
 except pymongo.errors.ServerSelectionTimeoutError:
     print("Have you added this IP addresse in your MongoDB account?")
 #collection_log               = db['log']
@@ -71,8 +71,8 @@ max_tokens                    = 2000
 max_len_telegram_message      = 600
 request_timeout               = 10
 how_many_hours_verification   = 10
-prompt_c                      = p.Prompt_c(max_len_message, collection_characteristics)
-prompt_a                      = p.Prompt_a(max_len_message)
+prompt_c                      = p.Prompt_c(max_len_telegram_message, collection_characteristics)
+prompt_a                      = p.Prompt_a(max_len_telegram_message)
 log_file                      = path_log + "/log_" + datetime.now().strftime("%Y_%m_%d_%Hh%M_%S") + ".txt"
 sys.stdout                    = LoggerStdout(log_file)
 sys.stderr                    = LoggerStderr(log_file)

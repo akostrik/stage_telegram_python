@@ -49,8 +49,8 @@ class Prompt_c: ##################################### characteristics
         return (string)
 
 class Prompt_a: ################################### affirmations
-    def __init__(self, max_len_message):
-        self.max_len_message = max_len_message
+    def __init__(self, max_len_telegram_message):
+        self.max_len_message = max_len_telegram_message
 
     def __str__(self):
         return f"Prompt_a(Max Message Length: {self.max_len_message})"

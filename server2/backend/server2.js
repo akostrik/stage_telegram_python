@@ -10,7 +10,7 @@ const port = 3001;
 app.use(bodyParser.json());
 app.use(cors());
 
-const mongoUrl = '';
+const mongoUrl = 'mongodb+srv://anna:1AQ2ZS3ED@cluster0.pysxbay.mongodb.net/?retryWrites=true&w=majority';
 const dbName = 'telegram';
 
 let db;

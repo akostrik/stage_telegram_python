@@ -9,13 +9,13 @@ import class_message as m
 
 class Group:
     def __init__(self):
-        self.channels         = set()
-        self.number_requests_c  = 0
+        self.channels              = set()
+        self.number_requests_c     = 0
         self.total_time_requests_c = 0
-        self.number_requests_a  = 0
+        self.number_requests_a     = 0
         self.total_time_requests_a = 0
 
-    async def new_message_handler(self, event, prompt_c, prompt_a, model_c, model_a, temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_similarity):
+    async def new_message_handler(self, event, prompt_c, prompt_a, model_c, model_a, temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_channels_similarity):
         message = m.Message(event.message.id, event.message.text, event.message.date, event.chat_id)
         print ("server1 has received the message :" + str(event.message.text))
 
@@ -32,7 +32,7 @@ class Group:
             return
         message.put_to_mongo(collection_messages)
         await self.update_channels_score(message, collection_messages, collection_channels_score)
-        await self.update_channels_similarity(self, collection_messages, collection_channels_id, collection_similarity, how_many_hours_verification)
+        await self.update_channels_similarity(message, collection_messages, collection_channels_similarity, how_many_hours_verification)
         # free(message) ?
 
     async def update_channels_from_mongo(self, collection_channels_id):
@@ -67,25 +67,25 @@ class Group:
         except DuplicateKeyError: # как эта ошибка может возникнуть
             print(f"Failed to insert record due to duplicate _id.") # telegram_id = key ?
 
-    async def update_channels_similarity(self, collection_messages, collection_channels_id, collection_channels_similarity, how_many_hours_verification):
+    async def update_channels_similarity(self, message, collection_messages, collection_channels_similarity, how_many_hours_verification):
 
         recent_messages = list(collection_messages.find({}))
         # timestamp_boundary = (datetime.now() - timedelta(hours=how_many_hours_verification)) * 1000
         #recent_messages = list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_boundary)}}))
 
         for old_message in recent_messages:
-            if self.channel != old_message["channel"]:
+            if message.channel != old_message["channel"]:
                 score = 0
-                for affirmation, truth_value in ast.literal_eval(self.affirmations).items():
+                for affirmation, truth_value in ast.literal_eval(message.affirmations).items():
                     if affirmation in old_message["affirmations"]:
                         if old_message["affirmations"][affirmation] == truth_value:
                               score += 1
                         else:
                               score -= 1
-                channels = sorted([self.channel, old_message["channel"]])
+                two_channels = sorted([message.channel, old_message["channel"]])
                 existing_record = collection_channels_similarity.find_one({
-                    "channel_a": channels[0],
-                    "channel_b": channels[1]
+                    "channel_a": two_channels[0],
+                    "channel_b": two_channels[1]
                 })
                 if existing_record:
                     new_score = existing_record["relation"] + score
@@ -95,8 +95,8 @@ class Group:
                     )
                 else:
                     collection_channels_similarity.insert_one({
-                        "channel_a": channels[0],
-                        "channel_b": channels[1],
+                        "channel_a": two_channels[0],
+                        "channel_b": two_channels[1],
                         "relation": score
                     })
 
