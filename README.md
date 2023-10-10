@@ -159,6 +159,9 @@ After having installed and configured all noted above, [enjoy the service](http:
 - [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
+## Experimentations
+![Screenshot from 2023-10-11 01-06-20](https://github.com/akostrik/stage_telegram/assets/22834202/e2040841-cb7c-4724-8d7e-b7b4c08ba496)
+
 ## The limits of the application
 - It is developped only for Linux
 ### The limits related to MongoDB
