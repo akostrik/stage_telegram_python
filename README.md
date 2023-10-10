@@ -36,7 +36,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 
 Simultaneously to all these, Server 2 accomplishes the learning service:
 1) The user corrects the previous responses of OpenAI
-2) Server 1 attaches these correctedexamples to every new OpenAI request   
+2) Server 1 attaches these corrected examples to every new OpenAI request   
 
 ## Setup and configuration
 ### Database MongoDB Atlas configuration (in the cloud)
