@@ -9,6 +9,6 @@
 - constructs the graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels 
   
 ## Setup and configuration
-See the homepage of the repositoire 
+See the homepage of this repository
 
 ## Technical details
