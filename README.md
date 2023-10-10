@@ -46,7 +46,7 @@ See [server 1 code in python](https://github.com/akostrik/stage_telegram/tree/ma
 
 ## Setup and configuration
 ### Database MongoDB Atlas configuration (in the cloud)
-Create a MongoDB account : https://cloud.mongodb.com/ 
+[Create a MongoDB account](https://cloud.mongodb.com/) 
 
 In your account, create database by the name 'telegram'
 
@@ -67,13 +67,13 @@ In the line 13 of server2/backend/server2.js put the same MongoDB connection str
 
 ### OpenAI Configuration 
 
-Get your OpenAI key [here](https://platform.openai.com/account/api-keys)
+[Get your OpenAI key](https://platform.openai.com/account/api-keys)
 
 Your account should have acces to gpt-4 (a paying option)
 
 ### Telegram Configuration  
 
-Get Telegram credentials api_id and api_hash [here](https://my.telegram.org/auth)
+[Get Telegram credentials api_id and api_hash ](https://my.telegram.org/auth)
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
