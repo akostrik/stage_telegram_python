@@ -20,10 +20,10 @@ The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, e
 2) Constant improvement of its results by the mean of the Learning service, which consiste of attaching of some previous OpenIA responses, corriged by a user, to OpenAI requests
 
 ### The easy scheme of the appication (except Learning service)
-![Screenshot from 2023-10-10 15-49-01](https://github.com/akostrik/stage_telegram/assets/22834202/89b2eab1-2291-44ea-a008-7a32fd9e0678)
+![Screenshot from 2023-10-10 22-21-58](https://github.com/akostrik/stage_telegram/assets/22834202/99074446-16eb-4096-877b-af61d3f9efc6)
 
 ### The same scheme of the appication in the programmer style
-![Screenshot from 2023-10-10 22-21-58](https://github.com/akostrik/stage_telegram/assets/22834202/99074446-16eb-4096-877b-af61d3f9efc6)
+![Screenshot from 2023-10-10 20-25-50](https://github.com/akostrik/stage_telegram/assets/22834202/ebc785d0-74df-4cad-a205-5badb96fa032)
 
 ### The same scheme of the appication in English
 1) Server 2, via its provided public API, gets, from the user, the names of Telegram channels to examinate 
