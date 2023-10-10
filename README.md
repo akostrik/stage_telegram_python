@@ -145,7 +145,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 - only for Linux
 ### The limits related to MongoDB
 - MongoDB free size is limited to ... Mg
-- The insructions only fot cloud version MongoDB are provided here (MongoDB Atlas), however a user can use MongoDB installed locally
+- The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
 - OpenQI requires payment
 - The learning service is limited to 5 examples par a request (sometimes lesss than 5, if the message or the examples are long)
