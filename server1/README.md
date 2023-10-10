@@ -1,10 +1,13 @@
 # Server 1 (python)
-1) Listens to the Telegram channels
-2) Treats a new message :
-- estimates the marks of the propaganda of the message via OpenAI, basing on them calculates the trust coefficient of the message 
+## Its role
+Listens to the chosen Telegram channels
+Treats every new message :
+- estimates the marks of the propaganda of the message via OpenAI
+- basing on these marks of the propaganda calculates the trust coefficient of the message 
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares these affirmations to the recent affirmations of the other followed channels
-- updates the trust coefficients of the channels and the measure of similarity of the channels
+- stocks all obteined information in the database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels)
+
   
 ## Setup and configuration
 See the homepage of this repository
