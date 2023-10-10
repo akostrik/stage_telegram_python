@@ -4,18 +4,16 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 ## The missions of the internship
 - Complete my education by a full-time profesional pratice in a Paris association
 - Acquire a first professional experience as a developement ingineer
-- Determine the initial orientation of my career : Secteur d’activité, stack technique, ESN vs. grande entreprise vs. start-up, etc.
-- Acquire new knowledge, techniques, approaches, methods, méthodes, toolsls, etc in practice
+- Determine the initial orientation of my career, in particular computer sciences applied to the social life
+- Acquire new knowledge, techniques, approaches, methods, méthodes, toolsls, etc, in practice
 - Acquire know-how and the code of four associations
 - Evaluate my capacity of integration in the professional environment
 - And so, ensure my entrance to the work market
+
 ## What the appication can do
 1) Real time verification of Telegram messages veracity by two methods:
-
 - Looking for the marks of the propaganda in every separate message via OpenAI
-
 - Comparison of the information diffused by several channels via OpenAI in order to detect similar channels
-
 2) Constant improvement of the results by the mean of attaching of examples corriged by a user to OpenAI requests (Learning service)
 
 ### The easy scheme of the appication (except Learning service)
