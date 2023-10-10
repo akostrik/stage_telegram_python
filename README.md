@@ -178,7 +178,9 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 ## Sources
 
 ## PS
-[All the questions are welcome](mailto:stage.mongodb@gmail.com) ![welcome-emoji](https://github.com/akostrik/stage_telegram/assets/22834202/fd113c97-5781-4925-acd0-bd7d78b1f435)
+<img align="right" width="30" height="30" src="[https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a](https://github.com/akostrik/stage_telegram/assets/22834202/fd113c97-5781-4925-acd0-bd7d78b1f435)">
+
+[All the questions are welcome](mailto:stage.mongodb@gmail.com)
 
 
 [Get help to install the application](mailto:stage.mongodb@gmail.com) 
