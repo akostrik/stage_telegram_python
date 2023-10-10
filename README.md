@@ -195,11 +195,13 @@ MongoDB requests are **not all asynchronous**
 - MongoDB database size is limited to 16 Mgb (for free accounts) **to verify**
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
-- The application work **slowly** (about 5 messages per minute), the OpenAI analysis respesents the lowest part of the appliation, may be accelerated :
+- The application work **slowly** (about 5 messages per minute), the [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis respesenting the lowest part of the appliation may be accelerated :
   * by using a great number of powerful machines
   * by using grand nombre of OpenAI accounts
-  * others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
-- Errors of OpenAI analisys : may be significally improuved by learning and by cross-analysis by several language models 
+  * others language models can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
+- Errors of OpenAI analisys, which may be improuved :
+  * by learning
+  * by cross-analysis by several language models 
 - The length of an examined Telegram message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
 - The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then less than 5 examples)
 - OpenAI is paying
