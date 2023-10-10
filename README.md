@@ -152,17 +152,24 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The maximal lenth of a Telegram message (in characters)
 - The maximal lenth of OpenAI request (in tokens [^1])
 
-## The technical details of the application
-- _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
-- _The trust coefficient of a channel_ is a number in the interval [0 … 100]
-- The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
-- Python is choosen for the server 1, because:
--- it is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
--- it is a rather easy language, partly because it frees the memory automatically
-- Every output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
-- Telegram requests are asynchronous 
-- OpenAI requests are **not asynchronous**
-- MongoDB requests are **not all asynchronous** 
+## The technical details
+_Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
+
+_The trust coefficient of a channel_ is a number in the interval [0 … 100]
+
+The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
+
+Python is choosen for the server 1, because:
+- it is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
+- it is a rather easy language, partly because it frees the memory automatically
+
+Every output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
+
+Telegram requests are asynchronous 
+
+OpenAI requests are **not asynchronous**
+
+MongoDB requests are **not all asynchronous** 
 
 ## Experimentations
 | Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
@@ -189,9 +196,9 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
 - The application work **slowly** (about 5 messages per minute), the OpenAI analysis respesents the lowest part of the appliation, may be accelerated :
-..* by using a great number of powerful machines
-..* by using grand nombre of OpenAI accounts
-..* others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
+  * by using a great number of powerful machines
+  * by using grand nombre of OpenAI accounts
+  * others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
 - Errors of OpenAI analisys : may be significally improuved by learning and by cross-analysis by several language models 
 - The length of an examined Telegram message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
 - The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then less than 5 examples)
