@@ -12,7 +12,7 @@ Python is choosen for the server 1, because:
 
 Every output of an execution is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
-## Exprerimentations that were not included in the final functionality
+## Server 1 exprerimentations that were not included in the final functionality
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
 - Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message, because the analysis did not work corectly. Sorry, the example is in Russian, if you translate it, you will see the pour quality of the analysis:
