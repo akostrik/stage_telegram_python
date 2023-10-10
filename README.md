@@ -85,7 +85,7 @@ _Be very very careful not to publish your MongoDB connection string on the inter
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
-The application will create a file _anon.session_. _Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_
+The application will create a file _anon.session_ in the root folder of the project. _Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_ **(sure ?)**
 
 ### Create the file "server1/.env" 
 ```
