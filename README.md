@@ -143,9 +143,13 @@ node server2/backend/server2.js
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
 ## The limits of the application
 - only for Linux
+### The limits related to MongoDB
 - MongoDB free size is limited to ... Mg
-- OpenQI reauires payment
-- You can use MongoDB installed locally
+- The insructions only fot cloud version MongoDB are provided here (MongoDB Atlas), however a user can use MongoDB installed locally
+### The limits related to OpenAI
+- OpenQI requires payment
+- The learning service is limited to 5 examples par a request (sometimes lesss than 5, if the message or the examples are long)
+- The length of an examined message is limites to 100 tokens (words)
 
 ## PS
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
