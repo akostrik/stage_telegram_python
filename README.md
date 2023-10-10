@@ -42,8 +42,9 @@ Simultaneously to all these, Server 2 accomplishes the learning service:
 See [server 1 README](https://github.com/akostrik/stage_telegram/tree/main/server1) and [server 2 README](https://github.com/akostrik/stage_telegram/tree/main/server1)
 
 ### The same scheme of the appication in programming languages
-See [server 1 code (python)](https://github.com/akostrik/stage_telegram/tree/main/server1), [server 2 code (node.js)](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js) and [the iser interface code (vue.js)](https://github.com/akostrik/stage_telegram/tree/main/server2)
-##Setup and configuration
+See [server 1 code in python](https://github.com/akostrik/stage_telegram/tree/main/server1), [server 2 code in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js) and [the user interface code in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
+
+## Setup and configuration
 ### Database MongoDB Atlas configuration (in the cloud)
 Create a MongoDB account : https://cloud.mongodb.com/ 
 
