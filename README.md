@@ -8,7 +8,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 
 - Comparison of the information diffused by several channels via OpenAI in order to detect similar channels
 
-2) Constant improvement of the results by the mean of attaching of examples corriged by a user to OpenAI requests 
+2) Constant improvement of the results by the mean of attaching of examples corriged by a user to OpenAI requests (Learning service)
 
 ## The easy scheme of the appication (except Learning service)
 ![Screenshot from 2023-10-10 15-49-01](https://github.com/akostrik/stage_telegram/assets/22834202/89b2eab1-2291-44ea-a008-7a32fd9e0678)
