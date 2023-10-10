@@ -189,11 +189,17 @@ After having installed and configured all noted above, [enjoy the service](http:
 - MongoDB database size is limited to 16 Mgb (for free accounts) **to verify**
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
-- The application work slowly (about 5 messages per minute), chiefly because of the gpt-4 long analysys   
-- Errors of OpenAI analisys
+- The application work slowly (about 5 messages per minute), the OpenAI analysis respesents the lowest part of the appliation, may be accelerated :
+-- by using a great number of powerful machines
+-- by using grand nombre of OpenAI accounts
+-- others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
+
+- Errors of OpenAI analisys : may be significally improuved by learning and by cross-analysis by several language models 
 - The length of an examined Telegram message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
 - The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then less than 5 examples)
 - OpenAI requires payment
+
+
 ### The limits related to Telegram
 - The application can't read some channels, [for example this one](https://t.me/generallsvr) **why**
 ### Non-technical limits 
@@ -201,11 +207,6 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
 - The application doesn't aime at the deep causes of the propaganda 
 
-## The prospectives to overpass these limits of the application
-The OpenAI analysis, respesenting the lowest part of the appliation, may be accelerated :
-- by using a great number of powerful machines
-- by using grand nombre of OpenAI accounts
-- others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
 
 ## PS
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
