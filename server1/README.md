@@ -6,7 +6,10 @@ See [there](https://github.com/akostrik/stage_telegram/tree/main#the-same-scheme
 See [there](https://github.com/akostrik/stage_telegram/tree/main#setup-and-configuration)
 
 ## Technical details
-- Every execution output is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
+Python is choosen for the server 1, because:
+- it is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
+- it is rather easy, partly because it frees the memory automatically
+Every output of an execution is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
 ## Exprerimentations
 - Extracting of information from a message 
