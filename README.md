@@ -52,9 +52,9 @@ See :
 ### Database MongoDB Atlas configuration (in the cloud)
 [Create a MongoDB account](https://cloud.mongodb.com/) 
 
-In your account, create database by the name 'telegram'
+In your account, create a database by the name 'telegram'
 
-Import the collection 'characteristics' from the file characteristics.json to your mongo database 'telegram':
+Import the collection 'characteristics' from the file characteristics.json to your database 'telegram':
 
 https://www.mongodb.com/docs/atlas/import/mongoimport/
 
