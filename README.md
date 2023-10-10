@@ -168,8 +168,8 @@ After having installed and configured all noted above, [enjoy the service](http:
 ## Experimentations
 | Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| l’écart     | 2 | 2 | 2 | 2 | 3 | 4 | 3 | 3 | 5 | 5 | 5 |
-| l’écart     | 1 | 1 | 2 | 3 | 1 | 1 | 3 | 4 | 2 | 4 | 4 |
+| l’écart     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
+| l’écart     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
 
 ## Exprerimentations that were not included in the final functionality
