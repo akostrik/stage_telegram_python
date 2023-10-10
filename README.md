@@ -68,7 +68,7 @@ Go [here](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you
 
 In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/backend/server2.js) put the same MongoDB connection string as in server1/.env:
 > const mongoUrl = '...';
-Be careful not to pulish your MongoDB connection string on the internet
+_Be careful not to publish your MongoDB connection string on the internet and not to transmit it to unfamiliar people_
 
 ### OpenAI configuration 
 
@@ -81,6 +81,8 @@ Your account should have acces to gpt-4 (a paying option)
 [Get Telegram credentials api_id and api_hash ](https://my.telegram.org/auth)
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
+
+The application will create a file _anon.session_. _Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_
 
 ### Create the file "server1/.env" 
 ```
