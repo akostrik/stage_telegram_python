@@ -1,4 +1,4 @@
-# Server 1 (python)
+# Server 1 in python
 ## Its role
 See [there](https://github.com/akostrik/stage_telegram/tree/main#the-same-scheme-of-the-appication-in-english)
   
