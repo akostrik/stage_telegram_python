@@ -1,5 +1,10 @@
+# Server 2 in node.js
 ## Its role
 See [there](https://github.com/akostrik/stage_telegram/tree/main#the-same-scheme-of-the-appication-in-english)
+  
+## Setup and configuration
+See [there](https://github.com/akostrik/stage_telegram/tree/main#setup-and-configuration)
+
 
 
 
