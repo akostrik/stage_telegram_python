@@ -23,7 +23,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 ![Screenshot from 2023-10-10 16-40-57](https://github.com/akostrik/stage_telegram/assets/22834202/f4b3c6bb-3e5a-4f78-97b6-059bd061c77e)
 
 ### The same scheme of the appication in English
-1) Server 2 gets, from the user, the names of Telegram channels to exminate 
+1) Server 2, via its provided public API, gets, from the user, the names of Telegram channels to examinate 
 2) Server 1 listens to the chosen channels
 3) Server 1 treats every new message :
 - estimates the marks of the propaganda of the message via OpenAI
@@ -31,12 +31,13 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares these affirmations to the recent affirmations of the other followed channels
 - stocks all obteined information in the database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels)
-4) Server 2 constantly returns the current resuls of the analysis to the server vue.js
-5) vue.js displays the results for the user in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels
+4) Server 2, via its provided public API, constantly returns the current resuls of the analysis to the server vue.js
+5) Server vue.js displays the results for the user in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels
 
-Simultaneously to all these, Server 2 accomplishes the learning service:
-1) The user corrects the previous responses of OpenAI
-2) Server 1 attaches these corrected examples to every new OpenAI request   
+Simultaneously, the learning service is working:
+1) Server 2, via public API that it provides, propose to the user to correct the previous responses of OpenAI
+2) As soon as the user provides the corrected examples, server 2 put it to the database
+3) Server 1 attaches these corrected examples to every new OpenAI request (in the limit of examples)   
 
 ### The same scheme of the appication in English with all the technical details
 See :
