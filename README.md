@@ -30,8 +30,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 - basing on these marks of the propaganda calculates the trust coefficient of the message 
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares these affirmations to the recent affirmations of the other followed channels
-- updates the trust coefficients of the channels
-- updates the measure of similarity of the channels
+- stocks all obteined information in the database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels)
 4) Server 2 constantly returns the current resuls of the analysis to the server vue.js
 5) vue.js displays the results for the user in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two channels
 
