@@ -115,4 +115,6 @@ In the third terminal launch server2:
 node server2/backend/server2.js
 ```
 ## User interface (vue.js)
-Go to http://localhost:5173/ et enjoy the application
+After having installed and configured all noted above, go to http://localhost:5173/ et enjoy the service
+
+_All the questions are welcome at stage.mongodb at gmail.com_  
