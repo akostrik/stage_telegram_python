@@ -84,7 +84,7 @@ _Be very very careful not to publish your MongoDB connection string on the inter
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
-The application will create a session file _anon.session_ in the folder server1 in order to you can to login without re-sending the code. 
+The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) _anon.session_ in the folder server1 in order to you can to login without re-sending the code. 
 _Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_ **(sure ?)**
 
 ### Create the file "server1/.env" 
