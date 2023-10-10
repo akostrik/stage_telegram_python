@@ -20,7 +20,7 @@ An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 ![Screenshot from 2023-10-10 15-49-01](https://github.com/akostrik/stage_telegram/assets/22834202/89b2eab1-2291-44ea-a008-7a32fd9e0678)
 
 ### The same scheme of the appication in the programmer style
-![Screenshot from 2023-10-10 20-25-00](https://github.com/akostrik/stage_telegram/assets/22834202/0b907795-1cb9-48a7-a7da-d02393bcc41f)
+![Screenshot from 2023-10-10 20-25-50](https://github.com/akostrik/stage_telegram/assets/22834202/83b13af7-f22d-4b72-92ee-492abe569579)
 
 ### The same scheme of the appication in English
 1) Server 2, via its provided public API, gets, from the user, the names of Telegram channels to examinate 
