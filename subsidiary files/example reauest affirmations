@@ -1,0 +1,5 @@
+Please generate binary affirmations from the provided news message:
+'{message}'
+For each affirmation:
+Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
+For example. Here I provide examples already checked by gpt-4, with corrections = result that should appear instead, or close to it. You need understand what I mean with these examples and strictly follow : """
