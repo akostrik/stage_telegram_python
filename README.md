@@ -23,7 +23,7 @@ The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, e
 ![Screenshot from 2023-10-10 22-21-58](https://github.com/akostrik/stage_telegram/assets/22834202/99074446-16eb-4096-877b-af61d3f9efc6)
 
 ### The same scheme of the appication in the programmer style
-![Screenshot from 2023-10-10 20-25-50](https://github.com/akostrik/stage_telegram/assets/22834202/ebc785d0-74df-4cad-a205-5badb96fa032)
+![Screenshot from 2023-10-10 22-24-14](https://github.com/akostrik/stage_telegram/assets/22834202/fa7b6eae-d1d0-47cc-8a89-92dcf5c57d68)
 
 ### The same scheme of the appication in English
 1) Server 2, via its provided public API, gets, from the user, the names of Telegram channels to examinate 
