@@ -84,7 +84,8 @@ _Be very very careful not to publish your MongoDB connection string on the inter
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
-The application will create a file _anon.session_ in the folder server1. _Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_ **(sure ?)**
+The application will create a session file _anon.session_ in the folder server1 in order to you can to login without re-sending the code. 
+_Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_ **(sure ?)**
 
 ### Create the file "server1/.env" 
 ```
@@ -178,8 +179,7 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 ## Sources
 
 ## PS
-<img align="right" width="30" height="30" src="![welcome-emoji](https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e)
-">
+<img align="right" width="30" height="30" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e">
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
 
