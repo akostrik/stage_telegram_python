@@ -166,7 +166,8 @@ After having installed and configured all noted above, [enjoy the service](http:
 
 
 ## Experimentations
-<img align="left" width="300" height="300" src=(https://github.com/akostrik/stage_telegram/assets/22834202/e2040841-cb7c-4724-8d7e-b7b4c08ba496">
+<img align="left" width="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/c3d826e7-9e1f-4814-aa7e-21939390f21b">
+
 
 ## Exprerimentations that were not included in the final functionality
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
