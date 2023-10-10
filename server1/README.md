@@ -12,6 +12,8 @@ Python is choosen for the server 1, because:
 
 Every output of an execution is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
+Python code has 5 Classes: Group, Message, Prompt_c, Prompt_a, Characteristic
+
 ## Server 1 exprerimentations that were not included in the final functionality
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
