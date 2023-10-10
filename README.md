@@ -2,13 +2,13 @@
 An Internship of 5 months, from the 3 April 2023 to the 12 September 2023
 
 ## The missions of the internship
-- Complete my education by a full-time profesional pratice in a Paris association
+- Complete the education by a full-time profesional pratice in a Paris association
 - Acquire a first professional experience as a developement ingineer
-- Determine the initial orientation of my career, in particular computer sciences applied to the social life
+- Determine the initial orientation of the career, in particular computer sciences applied to the social life
 - Acquire new knowledge, techniques, approaches, methods, méthodes, toolsls, etc, in practice
-- Acquire know-how and the code of four associations
-- Evaluate my capacity of integration in the professional environment
-- And so, ensure my entrance to the work market
+- Acquire know-how and the code of some French associations
+- Evaluate the capacity of integration in the professional environment
+- And so, ensure the entrance to the work market
 
 ## The context
 The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc, which is very popular in Russia and where there are many channels of different subjects
