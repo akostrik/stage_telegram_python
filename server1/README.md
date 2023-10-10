@@ -10,7 +10,7 @@ Treats every new message :
 
   
 ## Setup and configuration
-See the homepage of this repository
+See [there](https://github.com/akostrik/stage_telegram/tree/main#setup-and-configuration)
 
 ## Technical details
 - Every execution output is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log) 
