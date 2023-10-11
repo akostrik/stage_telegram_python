@@ -170,12 +170,12 @@ The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is
 
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
-#### Python
+#### Python details
 The server 1 is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
 - Python is a rather easy language (partly because it frees the memory automatically)
 
-#### Javascript
+#### Javascript details
 The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces, be they simple or complex [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^7]
 Data-driven developpement 
 
@@ -183,7 +183,7 @@ Vite, a development server used by default by Vue, monitors files as they're bei
 
 Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be accessed from another domain outside the domain from which the first resource was served.
 
-**Other details** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+  **Other details** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 #### Asynchronous requests
 Telegram requests are asynchronous 
@@ -194,10 +194,10 @@ MongoDB server 1 requests are **not all asynchronous**
 
 Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-#### Database
+#### Database details
 A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collections _Characteristics_ and _Messages_) 
 
-**Why MongoDB** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
+  **Why MongoDB** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 
 ## The limits of the application
 - It is developped only for Linux
