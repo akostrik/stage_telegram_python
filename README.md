@@ -11,7 +11,7 @@ The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 - And so, ensure the entrance to the work market
 
 ## The context 
-The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc, having a lot of channels on different subjects in Russian 
+The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects in Russian and they have little censorship limitations 
 
 ## What the appication does
 1) Real time verification of Telegram messages veracity by two methods:
