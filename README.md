@@ -10,7 +10,7 @@ The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 - Evaluate the capacity of integration in the professional environment
 - And so, ensure the entrance to the work market
 
-## The context
+## The context 
 The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc, which is very popular in Russia and where there are many channels on different subjects
 
 ## What the appication does
@@ -175,6 +175,8 @@ OpenAI requests are **not asynchronous** ![#f03c15](https://placehold.co/15x15/f
 
 MongoDB requests are **not all asynchronous** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
+Why noSql database ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
 Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 
 js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
@@ -221,8 +223,11 @@ js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 - **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-## Methodology of the internship
+## How the internship has been orgainized (the methodology)
 Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+## Why an application like this
+...
 
 ## Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
