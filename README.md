@@ -183,7 +183,7 @@ OpenAI requests are **not asynchronous** ![#f03c15](https://placehold.co/15x15/f
 
 MongoDB requests are **not all asynchronous** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collection _Characteristics_ and _Messages_) 
+A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collections _Characteristics_ and _Messages_) 
 
 Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 
