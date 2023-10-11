@@ -246,11 +246,14 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ...
 
 ## Some projects of similar orientation
+- [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc
+- [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
 - Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386)
 - Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
 - Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
-- [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
-- [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc 
+- Machine learning project [Buster.ai](https://www.buster.ai/)
+- Workshops [Fever](https://fever.ai/workshop.html)
+- [Auxipresse](https://auxipress.be/)
 
 ## Sources
 [image source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
