@@ -48,8 +48,8 @@ Simultaneously, the learning service is working:
 
 ### The same scheme of the appication in programming languages
 - [server 1 in python](https://github.com/akostrik/stage_telegram/tree/main/server1)
-- [server 2 in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js)
-- [the user interface in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
+- [server 2 in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js)
+- [the user interface in vue.js](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src)
 
 ## How to use the application
 ### Database MongoDB Atlas configuration (in the cloud)
@@ -63,11 +63,11 @@ In your account, create a database by the name 'telegram'
 sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
 ```
 
-Go [here](https://cloud.mongodb.com) - Database Deployments - to add your current ip adresse
+Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments - to add your current ip adresse
 
-Go [here](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you MonogDB connection string 
+Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you MonogDB connection string 
 
-In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/backend/server2.js) put the same MongoDB connection string as in server1/.env: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/server2.js) put the same MongoDB connection string as in server1/.env: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 > const mongoUrl = '...';
 
 _Be careful not to publish your MongoDB connection string on the internet and not to transmit it to unfamiliar people_
@@ -137,12 +137,12 @@ server1/python server1.py
 ```
 In the second terminal launch Vue server:
 ```
-cd server2
+cd user_interface
 npm run dev
 ```
 In the third terminal launch server2:
 ```
-node server2/backend/server2.js
+node server2/server2.js
 ```
 ### Go to the user interface
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
