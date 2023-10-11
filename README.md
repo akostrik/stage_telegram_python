@@ -1,17 +1,21 @@
 # Internship Master II, Sorbonne University (Paris)
 The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 
-## The missions of the internship
+## The general missions of the internship
 - Complete the education by a full-time profesional pratice in a Paris association
 - Acquire a first professional experience as a developement ingineer
 - Determine the initial orientation of the career, in particular computer sciences applied to the social life
 - Acquire new knowledge, techniques, approaches, methods, méthodes, toolsls, etc, in practice
-- Acquire know-how and the code of some French associations
+- Acquire know-how and the code of associations
 - Evaluate the capacity of integration in the professional environment
-- And so, ensure the entrance to the work market
+- So, ensure the entrance to the work market
 
-## The context 
-The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects in Russian and they have little censorship limitations 
+## The particular missions of the internship in the context 
+Thus project is aimed at automatical detecting of propagandistic information in Telegram channels. 
+
+That is the infoirmation, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [6^]
+
+The Telegram Messenger is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship limitations.
 
 ## What the appication does
 1) Real time verification of Telegram messages veracity by two methods:
@@ -257,3 +261,4 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 [^2]: https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature 
 [^3]: [https://www.scalablepath.com/front-end/vue-vs-react](https://vuejs.org/guide/introduction.html#what-is-vue)https://vuejs.org/guide/introduction.html#what-is-vue 
 [^5]: https://en.wikipedia.org/wiki/Vite_(software)
+[^6]: https://www.britannica.com/topic/propaganda
