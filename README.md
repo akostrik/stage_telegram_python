@@ -63,7 +63,7 @@ Go [here](https://cloud.mongodb.com) - Database Deployments - to add your curren
 
 Go [here](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you MonogDB connection string 
 
-In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/backend/server2.js) put the same MongoDB connection string as in server1/.env: **.env !**
+In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/backend/server2.js) put the same MongoDB connection string as in server1/.env: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 > const mongoUrl = '...';
 
 _Be careful not to publish your MongoDB connection string on the internet and not to transmit it to unfamiliar people_
@@ -139,7 +139,7 @@ In the third terminal launch server2:
 ```
 node server2/backend/server2.js
 ```
-### Go to the user interface (vue.js)
+### Go to the user interface
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
 
 ## The parameters of the application
@@ -167,9 +167,9 @@ Every output of server 1 is saved in the [logs](https://github.com/akostrik/stag
 
 Telegram requests are asynchronous 
 
-OpenAI requests are **not asynchronous**
+OpenAI requests are **not asynchronous** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-MongoDB requests are **not all asynchronous** 
+MongoDB requests are **not all asynchronous** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ## Experimentations
 | Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
@@ -178,7 +178,7 @@ MongoDB requests are **not all asynchronous**
 | l’écart     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
 
-## Exprerimentations that were not included in the final functionality
+## Exprerimentations that were not included in the final functionality ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
 - Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message : because the analysis did not work corectly. Sorry for the example in Russian, the pour quality of the analysis
@@ -192,10 +192,10 @@ MongoDB requests are **not all asynchronous**
 ## The limits of the application
 - It is developped only for Linux
 ### The limits related to MongoDB
-- MongoDB database size is limited to 16 Mgb (for free accounts) <span style="color:red">**to verify**</span> ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
+- MongoDB database size is limited to 16 Mgb (for free accounts) **to verify** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
-- The application work **slowly** (about 5 messages per minute), the [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis respesenting the lowest part of the appliation may be accelerated :
+- The application work **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) (about 5 messages per minute), the [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis respesenting the lowest part of the appliation may be accelerated :
   * by using a great number of powerful machines
   * by using grand nombre of OpenAI accounts
   * others language models can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
@@ -207,7 +207,7 @@ MongoDB requests are **not all asynchronous**
 - OpenAI is paying
 
 ### The limits related to Telegram
-- The application can't read some channels, [for example this one](https://t.me/generallsvr) **why**
+- The application can't read some channels, [for example this one](https://t.me/generallsvr) **why** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### Non-technical limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
 - The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
@@ -224,7 +224,7 @@ MongoDB requests are **not all asynchronous**
 
 
 ## Sources
-[source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
+[image source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
 
 [^1]: in English 1 token ≈ 3/4 of a word
 [^2]: https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature 
