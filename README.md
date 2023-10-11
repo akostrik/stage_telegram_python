@@ -245,11 +245,11 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ## Why an application like this
 ...
 
-## Some rojects of similar orientation
-- Machine learning project by [](https://cemeai.icmc.usp.br/)
+## Some projects of similar orientation
+- Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
 - Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386)
 - Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works) 
-- [detecting, by cross-channel interactions, of communities with similar ideologies](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
+- [Detecting, by cross-channel interactions, of communities with similar ideologies](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
 - [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc 
 
 ## Sources
