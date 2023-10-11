@@ -246,7 +246,7 @@ Keeping of a part of the data in the application memory, and not in the database
 
 Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-Distances euclidienne, jaccrd, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
