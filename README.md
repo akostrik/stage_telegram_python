@@ -8,7 +8,7 @@ The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 - Acquire new knowledge, techniques, approaches, methods, méthodes, toolsls, etc, in practice
 - Acquire know-how and the code of associations
 - Evaluate the capacity of integration in the professional environment
-- So, ensure the entrance to the work market
+- So, ensure the entrance to the work et
 
 ## The particular missions of the internship in the context 
 Thus project is aimed at automatical detecting of propagandistic information in Telegram channels. 
@@ -19,7 +19,7 @@ The Telegram Messenger is an application similar to WhatApp, Viber, Signal, etc.
 
 ## What the appication does
 1) Real time verification of Telegram messages veracity by two methods:
-- Looking for the marks of the propaganda in every separate message via OpenAI
+- Looking for the marks of the propaganda [^8] in every separate message via OpenAI
 - Comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
 2) Constant improvement of its results by the mean of the Learning service, which consiste of attaching of some previous OpenIA responses, corriged by a user, to OpenAI requests
 
@@ -245,17 +245,22 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ## Why an application like this
 ...
 
+## Some rojects of similar orientation
+- Machine learning project by [](https://cemeai.icmc.usp.br/)
+- Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386)
+- Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works) 
+- [detecting, by cross-channel interactions, of communities with similar ideologies](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
+- [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc 
+
+## Sources
+[image source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
+
 ## Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
 
-
 [Get help to install the application](mailto:stage.mongodb@gmail.com) 
-
-
-## Sources
-[image source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
 
 [^1]: in English 1 token ≈ 3/4 of a word
 [^2]: https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature 
@@ -263,3 +268,4 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 [^5]: https://en.wikipedia.org/wiki/Vite_(software)
 [^6]: https://www.britannica.com/topic/propaganda
 [^7]: https://skillbox.ru/media/code/vuejs-chto-takoe-kak-on-ustroen-i-chem-otlichaetsya-ot-react/ 
+[^8]: https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.htm 
