@@ -196,7 +196,7 @@ ls ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - It is developped only for Linux
 ### The limits related to MongoDB
 - MongoDB database size is limited to 16 Mgb (for free accounts) **to verify** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
-- The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
+- The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### The limits related to OpenAI
 - The application work **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) (about 5 messages per minute), the [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis respesenting the lowest part of the appliation may be accelerated :
   * by using a great number of powerful machines
@@ -216,8 +216,10 @@ ls ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
 - The application doesn't aime at the deep causes of the propaganda 
 
+## Methodology
+Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-## PS
+## Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
