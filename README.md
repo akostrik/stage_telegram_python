@@ -183,7 +183,7 @@ Vite, a development server used by default by Vue, monitors files as they're bei
 
 Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be accessed from another domain outside the domain from which the first resource was served.
 
-  **Other details** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+Other details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 #### Asynchronous requests
 Telegram requests are asynchronous 
@@ -197,7 +197,7 @@ Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 #### Database details
 A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collections _Characteristics_ and _Messages_) 
 
-  **Why MongoDB** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
+Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 
 ## The limits of the application
 - It is developped only for Linux
