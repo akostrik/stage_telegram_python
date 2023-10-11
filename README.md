@@ -223,6 +223,10 @@ js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 - Extracting of the affirmations with gpt-3 : didn't work
 
+- Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+- Distances euclidienne, jaccrd, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
 - **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ## How the internship has been orgainized (the methodology)
