@@ -11,7 +11,7 @@ The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 - And so, ensure the entrance to the work market
 
 ## The context
-The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc, which is very popular in Russia and where there are many channels of different subjects
+The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc, which is very popular in Russia and where there are many channels on different subjects
 
 ## What the developped appication can do
 1) Real time verification of Telegram messages veracity by two methods:
@@ -142,20 +142,52 @@ node server2/backend/server2.js
 ### Go to the user interface (vue.js)
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
 
-## The technical details
-### The parameters of the application
+## The parameters of the application
 - The time where a messages is considered as recent (in hours)
 - The model OpenAI for a characteristis request
 - The model OpenAI for a affirmations request
+- OpenAI temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit. [^2]
 - [The text of the characteristis request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
-- [The text of the affirmations request]()
+- [The text of the affirmations request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
 - The maximal lenth of a Telegram message (in characters)
 - The maximal lenth of OpenAI request (in tokens [^1])
-### Other
-- _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
-- _The trust coefficient of a channel_ is a number in the interval [0 … 100]
-- [server 1 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
-- [server 2 details](https://github.com/akostrik/stage_telegram/tree/main/server1)
+
+## The technical details
+_Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
+
+_The trust coefficient of a channel_ is a number in the interval [0 … 100]
+
+The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
+
+Python is choosen for the server 1, because:
+- it is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
+- it is a rather easy language, partly because it frees the memory automatically
+
+Every output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
+
+Telegram requests are asynchronous 
+
+OpenAI requests are **not asynchronous**
+
+MongoDB requests are **not all asynchronous** 
+
+## Experimentations
+| Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
+|-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| l’écart     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
+| l’écart     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
+
+
+## Exprerimentations that were not included in the final functionality
+<img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
+
+- Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message : because the analysis did not work corectly. Sorry for the example in Russian, the pour quality of the analysis
+
+- Comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) : demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
+
+- Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
+
+- Extracting of the affirmations with gpt-3 : didn't work
 
 ## The limits of the application
 - It is developped only for Linux
@@ -163,16 +195,24 @@ After having installed and configured all noted above, [enjoy the service](http:
 - MongoDB database size is limited to 16 Mgb (for free accounts) **to verify**
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
-- The application work slowly (about 5 messages per minute), chiefly because of the gpt-4 long analysys   
+- The application work **slowly** (about 5 messages per minute), the [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis respesenting the lowest part of the appliation may be accelerated :
+  * by using a great number of powerful machines
+  * by using grand nombre of OpenAI accounts
+  * others language models can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
+- Errors of OpenAI analisys, which may be improuved :
+  * by learning
+  * by cross-analysis by several language models 
 - The length of an examined Telegram message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
 - The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then less than 5 examples)
-- OpenAI requires payment
+- OpenAI is paying
 
-## The prospectives to overpass these limits of the application
-The OpenAI analysis, respesenting the lowest part of the appliation, may be accelerated :
-- by using a great number of powerful machines
-- by using grand nombre of OpenAI accounts
-- others [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **because ...**
+### The limits related to Telegram
+- The application can't read some channels, [for example this one](https://t.me/generallsvr) **why**
+### Non-technical limits 
+- The learning and the choice of the characteristics are founded on a human subjective opinion
+- The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
+- The application doesn't aime at the deep causes of the propaganda 
+
 
 ## PS
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
@@ -187,3 +227,4 @@ The OpenAI analysis, respesenting the lowest part of the appliation, may be acce
 [source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
 
 [^1]: in English 1 token ≈ 3/4 of a word
+[^2]: https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature 
