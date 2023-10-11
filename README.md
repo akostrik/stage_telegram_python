@@ -171,14 +171,16 @@ OpenAI requests are **not asynchronous** ![#f03c15](https://placehold.co/15x15/f
 
 MongoDB requests are **not all asynchronous** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
+Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+ls ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ## Experimentations
 | Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | l’écart     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | l’écart     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
-
-## Exprerimentations that were not included in the final functionality ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+## Exprerimentations that were not included in the final functionality
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
 - Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message : because the analysis did not work corectly. Sorry for the example in Russian, the pour quality of the analysis
@@ -189,6 +191,7 @@ MongoDB requests are **not all asynchronous** ![#f03c15](https://placehold.co/15
 
 - Extracting of the affirmations with gpt-3 : didn't work
 
+- **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ## The limits of the application
 - It is developped only for Linux
 ### The limits related to MongoDB
