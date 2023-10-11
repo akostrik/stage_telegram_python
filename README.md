@@ -59,28 +59,30 @@ In your account, create a database by the name 'telegram'
 
 [Import the collection](https://www.mongodb.com/docs/atlas/import/mongoimport/) 'characteristics' from [this file](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/collection_characteristics.json) to your database 'telegram': ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-```
+```bash
 sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
 ```
 
 Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments - to add your current ip address
 
-Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you MonogDB connection string 
+Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you MongoDB connection string 
 
-In the line 13 of [here](https://github.com/akostrik/stage_telegram/blob/main/server2/server2.js) put the same MongoDB connection string as in server1/.env: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-> const mongoUrl = '...';
+In the line 13, [here](https://github.com/akostrik/stage_telegram/blob/main/server2/server2.js), put the same MongoDB connection string as in `server1/.env`: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+```js
+const mongoUrl = '...';
+```
 
-_Be careful not to publish your MongoDB connection string on the internet and not to transmit it to unfamiliar people_
+_Be careful not to publish your MongoDB connection token on the internet and not to transmit it to unfamiliar people_
 
 ### OpenAI configuration 
 
 [Get your OpenAI key](https://platform.openai.com/account/api-keys)
 
-Your account should have acces to gpt-4 (a paying option)
+Your account should have access to gpt-4 (a paying option)
 
-_Be very very careful not to publish your MongoDB connection string on the internet and not to transmit it to unfamiliar people_
+_Be very very careful not to publish your OpenAI connection token on the internet and not to transmit it to unfamiliar people_
 
-### Telegram configuration  
+### Telegram configuration
 
 [Get Telegram credentials api_id and api_hash ](https://my.telegram.org/auth)
 
@@ -97,7 +99,7 @@ API_HASH=...
 OPENAI=...
 MONGO=...
 ```
-MONGO = your MonogDB connection string
+MONGO = your MongoDB connection string
 
 OPENAI = OpenAI key
 
@@ -107,22 +109,12 @@ API_ID and API_HASH = Telegram credentials
 Install python version >= 3.7.1
 
 Install the libraries :
-```
+```bash
 pip3 install telethon
-```
-```
 pip install DateTime
-```
-```
 npm i dotenv
-```
-```
 pip install requests
-```
-```
 pip install pymongo
-```
-```
 pip install --upgrade openai
 ```
 
@@ -151,13 +143,13 @@ After having installed and configured all noted above, [enjoy the service](http:
 ## How does the application work
 ### The parameters of the application
 - The characteristics of the propaganda
-- [The text of the characteristis request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
+- [The text of the characteristics request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
 - [The text of the affirmations request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
-- OpenAI model for a characteristis request
+- OpenAI model for a characteristics request
 - OpenAI model for a affirmations request
 - OpenAI temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic. If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit. [^2]
 - OpenAI request maximal lenth (in tokens [^1])
-- Telegram message maximal lenth (in characters)
+- Telegram message maximal length (in characters)
 - The time where a message is considered as recent (in hours)
 
 ### Technical details
@@ -173,26 +165,14 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 #### Python details
 The server 1 is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
-- Python is a rather easy language (partly because it frees the memory automatically)
+- Python is a rather easy language (partly becauseof its easy syntax)
 
 #### Javascript details
 The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces, be they simple or complex [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^7]
-Data-driven developpement 
 
 Vite, a development server used by default by Vue, monitors files as they're being edited and upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by just reloading the specific file being changed instead of recompiling the entire application. [^5]
 
-Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be accessed from another domain outside the domain from which the first resource was served.
-
 Other details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
-#### Asynchronous requests
-Telegram requests are asynchronous 
-
-OpenAI server 1 requests are **not asynchronous** 
-
-MongoDB server 1 requests are **not all asynchronous**
-
-Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 #### Database details
 A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collections _characteristics_ and _messages_) 
@@ -205,15 +185,15 @@ Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - MongoDB database size is limited to 16 Mgb (for free accounts) **to verify** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### The limits related to OpenAI
-- The application work **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats about 5 messages per minute. However, the [language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
+- The application works **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats about 5 messages per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
   * by involving a great number of powerful machines
-  * by involving a grand numbre of OpenAI accounts
+  * by involving a grand number of OpenAI accounts
   * using of other language models can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **which is ...**
 - Errors of OpenAI analisys, which may be improuved :
   * by cross-analysis by several language models 
   * by learning
 - The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
-- The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learninh is limites to less than 5 examples)
+- The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
 - OpenAI is paying
 
 ### The limits related to Telegram
@@ -222,6 +202,17 @@ Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - The learning and the choice of the characteristics are founded on a human subjective opinion
 - The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
 - The application doesn't aime at the deep causes of the propaganda 
+
+### Other limits
+#### Asynchronous requests
+
+Telegram requests are asynchronous 
+
+OpenAI server 1 requests are **not asynchronous** 
+
+MongoDB server 1 requests are **not all asynchronous**
+
+Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ## Experimentations
 ### OpenAI experimentations
