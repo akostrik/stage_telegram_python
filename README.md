@@ -206,7 +206,7 @@ js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - OpenAI is paying
 
 ### The limits related to Telegram
-- The application can't read some channels, [for example this one](https://t.me/generallsvr) **why** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+- The application can't read some channels, for example [this one](https://t.me/generallsvr) **why** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### Non-technical limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
 - The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
