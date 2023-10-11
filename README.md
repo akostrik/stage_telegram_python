@@ -129,7 +129,7 @@ pip install --upgrade openai
 ```
 npm install
 ```
-**any folder ?** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+**in any folder ?** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### Compile and run
 In the first terminal launch server1
 ```
@@ -152,12 +152,12 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The characteristics of the propaganda
 - [The text of the characteristis request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
 - [The text of the affirmations request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
-- The model OpenAI for a characteristis request
-- The model OpenAI for a affirmations request
+- OpenAI model for a characteristis request
+- OpenAI model for a affirmations request
 - OpenAI temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic. If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit. [^2]
-- The maximal lenth of OpenAI request (in tokens [^1])
-- The maximal lenth of a Telegram message (in characters)
-- The time where a messages is considered as recent (in hours)
+- OpenAI request maximal lenth (in tokens [^1])
+- Telegram message maximal lenth (in characters)
+- The time where a message is considered as recent (in hours)
 
 ### Technical details
 _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
@@ -201,8 +201,8 @@ js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - Errors of OpenAI analisys, which may be improuved :
   * by cross-analysis by several language models 
   * by learning
-- The length of an examined Telegram message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
-- The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then less than 5 examples)
+- The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
+- The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal lenth of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learninh is limites to less than 5 examples)
 - OpenAI is paying
 
 ### The limits related to Telegram
