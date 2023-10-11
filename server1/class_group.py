@@ -71,7 +71,7 @@ class Group:
 
         recent_messages = list(collection_messages.find({}))
         # timestamp_boundary = (datetime.now() - timedelta(hours=how_many_hours_verification)) * 1000
-        #recent_messages = list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_boundary)}}))
+        #recent_messages = list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_boundary)}})) ####
 
         for old_message in recent_messages:
             if message.channel != old_message["channel"]:
@@ -99,6 +99,7 @@ class Group:
                         "channel_b": two_channels[1],
                         "relation": score
                     })
+                print(f"collection channels_similarity updated")
 
 
 ####################################################### ARCHIVE, MAY BE TO USE LATER
