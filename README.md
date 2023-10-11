@@ -130,7 +130,7 @@ pip install --upgrade openai
 ```
 npm install
 ```
-**in any folder ?** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+in any folder ? ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### Compile and run
 In the first terminal launch server1
 ```
