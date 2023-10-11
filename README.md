@@ -192,7 +192,7 @@ MongoDB requests are **not all asynchronous**
 ## The limits of the application
 - It is developped only for Linux
 ### The limits related to MongoDB
-- MongoDB database size is limited to 16 Mgb (for free accounts) <span style="color:red">**to verify**</span>
+- MongoDB database size is limited to 16 Mgb (for free accounts) <span style="color:red">**to verify**</span> ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 - The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally
 ### The limits related to OpenAI
 - The application work **slowly** (about 5 messages per minute), the [language models](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis respesenting the lowest part of the appliation may be accelerated :
