@@ -19,12 +19,12 @@ class Group:
         message = m.Message(event.message.id, event.message.text, event.message.date, event.chat_id)
         print ("server1 has received the message :" + str(event.message.text))
 
-        self.channels.append(event.chat_id)
+        self.channels.add(event.chat_id)
         try:
             collection_channels_id.insert_one({"telegram_id": event.chat_id}) # TypeError: object InsertOneResult can't be used in 'await' expression
         except DuplicateKeyError:
             pass
-        print("server1 listens to the channels " + str(self.channels))
+        print("server1 listens to the channels (new channel)" + str(self.channels))
 
         await message.calc_score(prompt_c, model_c, temperature, max_tokens, collection_messages, self)
         await message.calc_affirmations(prompt_a, model_a, temperature, max_tokens, collection_messages, self)
@@ -37,13 +37,17 @@ class Group:
 
     async def update_channels_from_mongo(self, collection_channels_id):
         channels = collection_channels_id.find({}, {})
-        self.channels = [channel['telegram_id'] for channel in channels]
-        print("server1 listens to the channels " + str(self.channels))
+        self.channels = set() # ?
+        for channel in channels:
+            if (isinstance(channel['telegram_id'], float)):
+                self.channels.add(int(channel['telegram_id']))
+            else:
+                self.channels.add(channel['telegram_id'])
+        print("server1 listens to the channels (update)" + str(self.channels))
 
     async def update_channels_score(self, new_message, collection_messages, collection_channels_score):
         try:
             messages_this_channel = collection_messages.find({"channel": new_message.channel})
-            print (f"messages_of_this_channel = {str(messages_this_channel)}")
             list_scores_this_channel = [msg["score"] for msg in messages_this_channel]
             print (f"scores_of_this_channel = {str(list_scores_this_channel)}")
             new_average = mean(list_scores_this_channel) if (len(list_scores_this_channel) >0) else 0
@@ -69,9 +73,9 @@ class Group:
 
     async def update_channels_similarity(self, message, collection_messages, collection_channels_similarity, how_many_hours_verification):
 
-        recent_messages = list(collection_messages.find({}))
-        # timestamp_boundary = (datetime.now() - timedelta(hours=how_many_hours_verification)) * 1000
-        #recent_messages = list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_boundary)}})) ####
+        # recent_messages = list(collection_messages.find({}))
+        timestamp_to_start_from = datetime.now() - timedelta(hours=how_many_hours_verification)
+        recent_messages = list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_to_start_from)}}))
 
         for old_message in recent_messages:
             if message.channel != old_message["channel"]:
@@ -82,7 +86,7 @@ class Group:
                               score += 1
                         else:
                               score -= 1
-                two_channels = sorted([message.channel, old_message["channel"]])
+                two_channels = sorted([message.channel, old_message["channel"]]) # string and int ?
                 existing_record = collection_channels_similarity.find_one({
                     "channel_a": two_channels[0],
                     "channel_b": two_channels[1]

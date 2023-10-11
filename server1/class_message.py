@@ -58,7 +58,7 @@ class Message:
             pass
 
     def put_to_mongo(self, collection_messages): # do not put async
-        collection_messages.delete_many({}) ################## TMP
+        # collection_messages.delete_many({}) ################## TMP
         existing_record = collection_messages.find_one({"telegram_id": self.telegram_id, "channel": self.channel}) # no need telegram_id is key
         if existing_record:
             print(f"Record with telegram_id {self.telegram_id} already exists in the database.")
