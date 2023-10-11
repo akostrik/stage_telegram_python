@@ -170,7 +170,7 @@ The server 1 is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
 - Python is a rather easy language, partly because it frees the memory automatically
 
-The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces, be they simple or complex [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^4]
+The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces, be they simple or complex [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^7]
 Data-driven developpement 
 
 Vite, a development server used by default by Vue, monitors files as they're being edited and upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by just reloading the specific file being changed instead of recompiling the entire application. [^5]
@@ -262,3 +262,4 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 [^3]: [https://www.scalablepath.com/front-end/vue-vs-react](https://vuejs.org/guide/introduction.html#what-is-vue)https://vuejs.org/guide/introduction.html#what-is-vue 
 [^5]: https://en.wikipedia.org/wiki/Vite_(software)
 [^6]: https://www.britannica.com/topic/propaganda
+[^7]: https://skillbox.ru/media/code/vuejs-chto-takoe-kak-on-ustroen-i-chem-otlichaetsya-ot-react/ 
