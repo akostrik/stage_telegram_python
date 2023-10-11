@@ -161,34 +161,44 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The time where a message is considered as recent (in hours)
 
 ### Technical details
+#### General details, the data, computation, etc 
 _Similarity measure of two channels (channel1, channel2)_ = the numbre of their similar affirmations  - the number of their opposite affirmations
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 
 The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
 
+Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
+
+#### Python
 The server 1 is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
-- Python is a rather easy language, partly because it frees the memory automatically
+- Python is a rather easy language (partly because it frees the memory automatically)
 
+#### Javascript
 The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces, be they simple or complex [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^7]
 Data-driven developpement 
 
 Vite, a development server used by default by Vue, monitors files as they're being edited and upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by just reloading the specific file being changed instead of recompiling the entire application. [^5]
 
-Every output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
+Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be accessed from another domain outside the domain from which the first resource was served.
 
+**Other details** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+#### Asynchronous requests
 Telegram requests are asynchronous 
 
-OpenAI requests are **not asynchronous** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+OpenAI server 1 requests are **not asynchronous** 
 
-MongoDB requests are **not all asynchronous** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+MongoDB server 1 requests are **not all asynchronous**
 
+Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+#### Database
 A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collections _Characteristics_ and _Messages_) 
 
-Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
+**Why MongoDB** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 
-js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ## The limits of the application
 - It is developped only for Linux
 ### The limits related to MongoDB
@@ -207,7 +217,7 @@ js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - OpenAI is paying
 
 ### The limits related to Telegram
-- The application can't read some channels, for example [this one](https://t.me/generallsvr) **why** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+- The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### Non-technical limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
 - The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
