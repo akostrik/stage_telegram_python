@@ -47,6 +47,8 @@ Simultaneously, the learning service is working:
 - [server 2 in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js)
 - [the user interface in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
 
+## Understand what the application show in the browser
+
 ## How to use the application
 ### Database MongoDB Atlas configuration (in the cloud)
 [Create a MongoDB account](https://cloud.mongodb.com/) 
