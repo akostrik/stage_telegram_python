@@ -134,7 +134,7 @@ npm install
 ### Compile and run
 In the first terminal launch server1
 ```
-server1/python server1.py
+python server1/server1.py
 ```
 In the second terminal launch Vue server:
 ```
