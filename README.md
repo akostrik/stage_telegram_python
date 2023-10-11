@@ -161,7 +161,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The time where a message is considered as recent (in hours)
 
 ### Technical details
-_Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
+_Similarity measure of two channels (channel1, channel2)_ = the numbre of their similar affirmations  - the number of their opposite affirmations
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 
