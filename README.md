@@ -13,7 +13,7 @@ The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 ## The context
 The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, etc, which is very popular in Russia and where there are many channels on different subjects
 
-## What the developped appication can do
+## What the appication does
 1) Real time verification of Telegram messages veracity by two methods:
 - Looking for the marks of the propaganda in every separate message via OpenAI
 - Comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
@@ -47,7 +47,7 @@ Simultaneously, the learning service is working:
 - [server 2 in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/backend/server.js)
 - [the user interface in vue.js](https://github.com/akostrik/stage_telegram/tree/main/server2/src)
 
-## What shows the application 
+## What the application shows 
 ...
 
 ## How to use the application
@@ -145,7 +145,8 @@ node server2/backend/server2.js
 ### Go to the user interface
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
 
-## The parameters of the application
+## How does the application work
+### The parameters of the application
 - The time where a messages is considered as recent (in hours)
 - The model OpenAI for a characteristis request
 - The model OpenAI for a affirmations request
@@ -155,7 +156,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The maximal lenth of a Telegram message (in characters)
 - The maximal lenth of OpenAI request (in tokens [^1])
 
-## The technical details
+## Other technical details
 _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
@@ -174,16 +175,16 @@ OpenAI requests are **not asynchronous** ![#f03c15](https://placehold.co/15x15/f
 
 MongoDB requests are **not all asynchronous** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 
-ls ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ## Experimentations
 | Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | l’écart     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | l’écart     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
-## Exprerimentations that were not included in the final functionality
+### Exprerimentations that were not included in the final functionality
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
 - Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message : because the analysis did not work corectly. Sorry for the example in Russian, the pour quality of the analysis
