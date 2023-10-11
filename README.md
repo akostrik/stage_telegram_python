@@ -158,16 +158,21 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The maximal lenth of a Telegram message (in characters)
 - The time where a messages is considered as recent (in hours)
 
-### Other technical details
+### Technical details
 _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 
 The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
 
-Python is choosen for the server 1, because:
-- it is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
-- it is a rather easy language, partly because it frees the memory automatically
+The server 1 is written in Python, because:
+- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist)
+- Python is a rather easy language, partly because it frees the memory automatically
+
+The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces, be they simple or complex [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^4]
+Data-driven developpement 
+
+Vite, a development server used by default by Vue, monitors files as they're being edited and upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by just reloading the specific file being changed instead of recompiling the entire application. [^5]
 
 Every output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
@@ -207,10 +212,12 @@ js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - The application doesn't aime at the deep causes of the propaganda 
 
 ## Experimentations
-| Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
-|-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| l’écart     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
-| l’écart     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
+### OpenAI experimentations
+To test the bonds of the trust coefficient and the temperature parameter, I launched two tests, every of the tests on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to my intuition). In the table, I noted the difference of the average coefficient of the two groups. The tests show a tendancy of better distinction between the two groups while the temperature parameter is hier.    
+| Temperature    | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
+|----------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| difference     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
+| difference     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
 ### Exprerimentations that were not included in the final functionality
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
@@ -249,3 +256,5 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 [^1]: in English 1 token ≈ 3/4 of a word
 [^2]: https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature 
+[^3]: [https://www.scalablepath.com/front-end/vue-vs-react](https://vuejs.org/guide/introduction.html#what-is-vue)https://vuejs.org/guide/introduction.html#what-is-vue 
+[^5]: https://en.wikipedia.org/wiki/Vite_(software)
