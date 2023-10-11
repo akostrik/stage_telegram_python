@@ -13,7 +13,7 @@ The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 ## The particular missions of the internship in the context 
 Thus project is aimed at automatical detecting of propagandistic information in Telegram channels. 
 
-That is the infoirmation, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [6^]
+That is the infoirmation, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
 
 The Telegram Messenger is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship limitations.
 
