@@ -195,7 +195,7 @@ MongoDB server 1 requests are **not all asynchronous**
 Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 #### Database details
-A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collections _Characteristics_ and _Messages_) 
+A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collections _characteristics_ and _messages_) 
 
 Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 
