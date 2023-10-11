@@ -147,14 +147,15 @@ After having installed and configured all noted above, [enjoy the service](http:
 
 ## How does the application work
 ### The parameters of the application
-- The time where a messages is considered as recent (in hours)
-- The model OpenAI for a characteristis request
-- The model OpenAI for a affirmations request
-- OpenAI temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit. [^2]
+- The characteristics of the propaganda
 - [The text of the characteristis request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
 - [The text of the affirmations request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
-- The maximal lenth of a Telegram message (in characters)
+- The model OpenAI for a characteristis request
+- The model OpenAI for a affirmations request
+- OpenAI temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic. If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit. [^2]
 - The maximal lenth of OpenAI request (in tokens [^1])
+- The maximal lenth of a Telegram message (in characters)
+- The time where a messages is considered as recent (in hours)
 
 ### Other technical details
 _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
