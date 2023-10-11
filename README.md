@@ -39,7 +39,7 @@ The Telegram Messenger is a messenger application like WhatApp, Viber, Signal, e
 
 Simultaneously, the learning service is working:
 1) Server 2, via public API that it provides, proposes to the user to correct the previous responses of OpenAI
-2) As soon as the user provides the corrected examples, server 2 puts it to the database
+2) As soon as the user provides the corrected examples, server 2 puts them to the database
 3) Server 1 attaches these corrected examples to every new OpenAI request (in the limit of several examples)   
 
 ### The same scheme of the appication in programming languages
