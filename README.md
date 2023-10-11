@@ -8,45 +8,45 @@ The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 - Acquire new knowledge, techniques, approaches, methods, méthodes, toolsls, etc, in practice
 - Acquire know-how and the code of associations
 - Evaluate the capacity of integration in the professional environment
-- So, ensure the entrance to the work et
+- So, ensure the entrance to the work market
 
 ## The particular missions of the internship in the context 
-Thus project is aimed at automatical detecting of propagandistic information in Telegram channels. 
+This project is aimed at automatical detecting of propagandistic information in Telegram channels. 
 
-That is the infoirmation, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
+The information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
 
-The Telegram Messenger is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship limitations.
+Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship.
 
 ## What the appication does
 1) Real time verification of Telegram messages veracity by two methods:
 - Looking for the marks of the propaganda [^8] in every separate message via OpenAI
 - Comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
-2) Constant improvement of its results by the mean of the Learning service, which consiste of attaching of some previous OpenIA responses, corriged by a user, to OpenAI requests
+2) Constant improvement of its results by the mean of a Learning service, which consists in attaching some previous OpenAI responses, corrected by a user, to OpenAI requests.
 
-### The easy scheme of the appication (except Learning service)
+### Simplified diagram of the application (except Learning service)
 ![Screenshot from 2023-10-10 22-21-58](https://github.com/akostrik/stage_telegram/assets/22834202/99074446-16eb-4096-877b-af61d3f9efc6)
 
-### The same scheme of the appication in the programmer style
+### Diagram of the application in the programmer style
 ![Screenshot from 2023-10-10 22-24-14](https://github.com/akostrik/stage_telegram/assets/22834202/fa7b6eae-d1d0-47cc-8a89-92dcf5c57d68)
 
-### The same scheme of the appication in English
+### Description of the application in English
 1) Server 2, via its provided public API, gets, from the user, the names of Telegram channels to examinate 
 2) Server 1 listens to the chosen channels
 3) Server 1 treats every new message, that is:
 - estimates the marks of the propaganda of the message via OpenAI
-- basing on these marks of the propaganda calculates the trust coefficient of the message 
+- based on these marks of the propaganda it calculates the trust coefficient of the message 
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
 - compares these affirmations to the recent affirmations of the other followed channels
-- stocks all obteined information in the database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels)
-4) Server 2, via its provided public API, after having treated a message by Server 1, returns permanently the current results of the analysis to the server vue.js
-5) Server vue.js displays the results to the user in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels
+- stocks all obtained information in the database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels)
+4) Server 2, via its provided public API, after having treated a message by Server 1, returns permanently the current results of the analysis to the Vue.js server
+5) Vue.js server displays the results to the user in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels
 
 Simultaneously, the learning service is working:
-1) Server 2, via public API that it provides, proposes to the user to correct the previous responses of OpenAI
+1) Server 2, via the public API it provides, proposes to the user to correct OpenAI's the previous responses
 2) As soon as the user provides the corrected examples, server 2 puts them to the database
-3) Server 1 attaches these corrected examples to every new OpenAI request (in the limit of several examples)   
+3) Server 1 attaches these corrected examples to every new OpenAI request (limited to several examples)   
 
-### The same scheme of the appication in programming languages
+### Application components
 - [server 1 in python](https://github.com/akostrik/stage_telegram/tree/main/server1)
 - [server 2 in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js)
 - [the user interface in vue.js](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src)
@@ -63,7 +63,7 @@ In your account, create a database by the name 'telegram'
 sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
 ```
 
-Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments - to add your current ip adresse
+Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments - to add your current ip address
 
 Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you MonogDB connection string 
 
