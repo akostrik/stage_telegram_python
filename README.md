@@ -156,7 +156,7 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The maximal lenth of a Telegram message (in characters)
 - The maximal lenth of OpenAI request (in tokens [^1])
 
-## Other technical details
+### Other technical details
 _Similarity measure of two channels (channel1, channel2)_ is equal to the numbre of similar affirmations in these channels
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
@@ -178,24 +178,6 @@ MongoDB requests are **not all asynchronous** ![#f03c15](https://placehold.co/15
 Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
 
 js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-## Experimentations
-| Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
-|-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| l’écart     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
-| l’écart     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
-
-### Exprerimentations that were not included in the final functionality
-<img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
-
-- Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message : because the analysis did not work corectly. Sorry for the example in Russian, the pour quality of the analysis
-
-- Comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) : demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
-
-- Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
-
-- Extracting of the affirmations with gpt-3 : didn't work
-
-- **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ## The limits of the application
 - It is developped only for Linux
 ### The limits related to MongoDB
@@ -220,7 +202,26 @@ js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
 - The application doesn't aime at the deep causes of the propaganda 
 
-## Methodology
+## Experimentations
+| Temperature | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
+|-------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| l’écart     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
+| l’écart     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
+
+### Exprerimentations that were not included in the final functionality
+<img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
+
+- Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message : because the analysis did not work corectly. Sorry for the example in Russian, the pour quality of the analysis
+
+- Comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) : demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
+
+- Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
+
+- Extracting of the affirmations with gpt-3 : didn't work
+
+- **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+## Methodology of the internship
 Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ## Welcome
