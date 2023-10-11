@@ -1,0 +1,59 @@
+openai model for propaganda marks = gpt-4
+openai model for affirmations     = gpt-3.5-turbo
+temperature                       = 0.2
+max_len_telegram_message          = 600
+verification of the messages for the last 0.016 hours
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 beneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+server1 listens to the channels (update){-1001944316671, -1001842901217, -1001919265899, -1001863996867, -1001905441409}
+server1 has received the message :«Израиль оказался перед военной дилеммой: наземное наступление несет в себе огромные риски»: Немцы назвали возможную наземную операцию в Газе «кошмаром» для израильтян. 
+
+«Наземная операция будет означать необходимость оккупации значительной части территории сектора Газа и ее длительное удержание.
+Наземное наступление - это именно тот сценарий, которого израильская армия пыталась избежать в течение многих лет, предпочитая ограничиваться точными атаками с воздуха. Связано это с тем, что сектор Газа - один из самых густонаселенных районов в мире, что делает ведение боевых действий исключительно сложной задачей для вооруженных сил.
+В настоящий момент политическое руководство страны вынуждено проявлять максимальную решимость, что нашло отражение в беспрецедентном для нынешнего тысячелетия шаге по мобилизации 360 тысяч израильских резервистов»
+server1 listens to the channels (new channel){-1001944316671, -1001842901217, -1001919265899, -1001863996867, -1001905441409}
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+affirmations : {
+    'Israel is facing a military dilemma as a ground offensive carries huge risks': True,
+    'Germans have called a possible ground operation in Gaza a "nightmare" for Israelis': True,
+    'A ground operation would mean the need to occupy a significant part of the Gaza Strip and hold it for a long time': True,
+    'The Israeli army has been trying to avoid a ground offensive for many years, preferring to limit itself to precise air strikes': True,
+    'The Gaza Strip is one of the most densely populated areas in the world, making military operations extremely difficult': True,
+    'The political leadership of the country is currently forced to show maximum determination': True,
+    'This determination is reflected in the unprecedented step of mobilizing 360,000 Israeli reservists in the current millennium': True
+}
+Put message to mongo successful.
+scores_of_this_channel = [-3, -4, -2, -3, 1, 1, 1, 0]
+new_average = -9 / 8 = -1.125
+Updated average score for channel -1001842901217 to -1.125
+server1 listens to the channels (update){-1001944316671, -1001842901217, -1001919265899, -1001863996867, -1001905441409}
+server1 listens to the channels (update){-1001944316671, -1001842901217, -1001919265899, -1001863996867, -1001905441409}

@@ -37,7 +37,7 @@ class LoggerStderr:
         self.my_stderr.flush()
         self.file.flush()
 
-path_log                       = "log"
+path_log                       = "server1/log"
 try:
     os.mkdir(path_log)
 except FileExistsError:

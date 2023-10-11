@@ -1,0 +1,40 @@
+openai model for propaganda marks = gpt-4
+openai model for affirmations     = gpt-3.5-turbo
+temperature                       = 0.2
+max_len_telegram_message          = 600
+verification of the messages for the last 10 hours
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 beneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+float
+float
+float
+float
+float
+server1 listens to the channels (update)[]
