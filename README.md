@@ -212,29 +212,28 @@ js details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - The application doesn't aime at the deep causes of the propaganda 
 
 ## Experimentations
+**дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### OpenAI experimentations
+<img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
+
+Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message : because the analysis did not work corectly. Sorry for the example in Russian, the pour quality of the analysis
+
+- Comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) : demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
+
 To test the bonds of the trust coefficient and the temperature parameter, I launched two tests, every of the tests on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to my intuition). In the table, I noted the difference of the average coefficient of the two groups. The tests show a tendancy of better distinction between the two groups while the temperature parameter is hier.    
 | Temperature    | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |----------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | difference     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | difference     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
-### Exprerimentations that were not included in the final functionality
-<img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
+Extracting of the affirmations with gpt-3 : didn't work
 
-- Extracting of detailed information from a message, like its main subject, the people it deals with, etc, that is "undesrstanding" of the message : because the analysis did not work corectly. Sorry for the example in Russian, the pour quality of the analysis
+### Other experimentations
+Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
 
-- Comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) : demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
+Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-- Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
-
-- Extracting of the affirmations with gpt-3 : didn't work
-
-- Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
-- Distances euclidienne, jaccrd, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
-- **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+Distances euclidienne, jaccrd, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ## How the internship has been orgainized (the methodology)
 Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
