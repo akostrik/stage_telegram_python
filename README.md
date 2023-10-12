@@ -17,11 +17,10 @@ The information, which may not be objective and may be selectively presenting fa
 
 Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship. A Telegram channel is a one-way broadcast tool.  
 
+## Why an application like this
+
 ## How the internship has been orgainized, the methodology
 Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
-## Why an application like this
-...
 
 # What the application does
 1) Real time verification of Telegram messages veracity by two methods:
