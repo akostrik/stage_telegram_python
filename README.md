@@ -18,7 +18,7 @@ in a professional environment
 seamlessly enter the job market
 
 ## The methodology
-The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.
+The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that both the developpers team and the users were represented by myself only.
 
 The approach to development followed the Scrum principes like:
 - to break work into goals to be completed within time-boxed iterations, called sprints, where the sprints were dedicated to the contexte, the [large language models](https://en.wikipedia.org/wiki/Large_language_model), the architecture, python and its interactions with the concerned API study, the datababases and elasticsearch, frontend);
