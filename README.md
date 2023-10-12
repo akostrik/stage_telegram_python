@@ -75,7 +75,7 @@ Simultaneously, the _Learning service_ is working:
 1) _Server 3_ proposes to the user to correct OpenAI's previous responses in the web browser, via the Server 3 API
 2) As soon as the user provides the corrected examples, _Server 3_ passes them to _Server 2_
 3) _Server 3_ puts the corrected examples to the database, via MongoDB API
-4) _Server 1_ attaches (a limited number of) these corrected examples to every new OpenAI request 
+4) _Server 1_ attaches (a limited number of) corrected examples to every new OpenAI request 
 
 # Setup and usage
 The user should have a web browser compatible with ECMAScript 5 (for example, IE8 and its previous versions are  not compatible with ECMAScript 5)
