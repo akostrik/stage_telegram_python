@@ -90,7 +90,7 @@ _Be very very careful not to publish your OpenAI connection token on the interne
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
-The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) _anon.session_ in the folder `server1` in order to you can to login without re-sending the code. 
+The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) `anon.session` in the folder `server1` in order to you can to login without re-sending the code. 
 
 _Be careful not to publish the Telegram credentials on the internet and not to transmit them to unfamiliar people_
 
