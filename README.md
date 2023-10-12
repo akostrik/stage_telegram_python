@@ -32,7 +32,8 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 ### Description of the application in English
 1) Server 2, via its provided public API, gets, from the user, the names of Telegram channels to examinate 
 2) Server 1 listens to the chosen channels
-3) Server 1 treats every new message, that is:
+3) - [server 1](https://github.com/akostrik/stage_telegram/tree/main/server1)
+ treats every new message, that is:
 - estimates the marks of the propaganda of the message via OpenAI
 - based on these marks of the propaganda it calculates the trust coefficient of the message 
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI
@@ -47,8 +48,7 @@ Simultaneously, the learning service is working:
 3) Server 1 attaches these corrected examples to every new OpenAI request (limited to several examples)   
 
 ### Application components
-- [server 1 in python](https://github.com/akostrik/stage_telegram/tree/main/server1)
-- [server 2 in node.js](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js)
+- [server 2](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js)
 - [the user interface in vue.js](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src)
 
 ## How to use the application
@@ -67,7 +67,7 @@ Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments 
 
 Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - `to get you MongoDB connection string` 
 
-In the line 13, [here](https://github.com/akostrik/stage_telegram/blob/main/server2/server2.js), put the same MongoDB connection string as in `server1/.env`: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+In the line 13, [here](https://github.com/akostrik/stage_telegram/blob/main/server2/server2.js), put the same MongoDB connection token (connection string) as in `server1/.env`: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ```js
 const mongoUrl = '...';
 ```
@@ -76,7 +76,7 @@ _Be careful not to publish your MongoDB connection token on the internet and not
 
 ### OpenAI configuration 
 
-[Get your OpenAI key](https://platform.openai.com/account/api-keys)
+[Get your OpenAI connection token](https://platform.openai.com/account/api-keys)
 
 Your account should have access to gpt-4 (a paying option)
 
@@ -90,20 +90,21 @@ During the first launching of the application, enter the phone number of your Te
 
 The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) _anon.session_ in the folder `server1` in order to you can to login without re-sending the code. 
 
-_Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_
+_Be careful not to publish the Telegram credentials on the internet and not to transmit them to unfamiliar people_
 
-### Modify the file `server1/.env` 
+### Modify the file `server1/.env.exemple` and rename it to `server1/.env` 
+Put MONGO = your MongoDB connection token, OPENAI = OpenAI connection token, API_ID and API_HASH = Telegram credentials in the file `server1/.env.exemple`: 
 ```
 API_ID=...
 API_HASH=...
 OPENAI=...
 MONGO=...
 ```
-MONGO = your MongoDB connection string
+Rename `server1/.env.exemple` to `server1/.env`
 
-OPENAI = OpenAI key
+Copy `server1/.env` to `server2/.env`
 
-API_ID and API_HASH = Telegram credentials
+_Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_
 
 ### Server 1 setup
 Install python version >= 3.7.1
