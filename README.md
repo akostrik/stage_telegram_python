@@ -92,7 +92,7 @@ During the first launching of the application, enter the phone number of your Te
 
 The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) `anon.session` in the folder `server1` in order to you can to login without re-sending the code. 
 
-_Be careful not to publish the Telegram credentials on the internet and not to transmit them to unfamiliar people_
+_Be very very careful not to publish the Telegram credentials on the internet and not to transmit them to unfamiliar people_
 
 ### Modify the file `server1/.env.example` and rename it to `server1/.env` 
 Put MONGO = your MongoDB connection token, OPENAI = OpenAI connection token, API_ID and API_HASH = Telegram credentials in the file `server1/.env.example`: 
