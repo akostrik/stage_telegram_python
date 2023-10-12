@@ -1,14 +1,21 @@
 # Internship Master II, Sorbonne University (Paris)
 The project hase been developped during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realized in Paris associations.
 
-## The general missions of the internship
-- Complete the education by a full-time profesional pratice in a Paris association
-- Acquire a first professional experience as a developement ingineerfapp
-- Determine the initial orientation of the career, in particular computer sciences applied to the social life
-- Acquire new knowledge, techniques, approaches, methods, méthodes, toolsls, etc, in practice
-- Acquire know-how and the code of associations
-- Evaluate the capacity of integration in the professional environment
-- So, ensure the entrance to the work market
+## The objectives:
+- Professional Experience: Engage in full-time professional practice within
+a Parisian association
+• Skill Development: Cultivate skills as a development engineer, focusing
+on real-world applications
+• Career Exploration: Investigate potential career trajectories, especially
+in computer sciences applied to societal challenges
+• Hands-on Learning: Immerse in new techniques, methodologies, tools,
+and their practical applications
+• Association Ethics: Grasp the ethical considerations and operational
+nuances of associations
+• Professional Adaptability: Evaluate one's ability to integrate and adapt
+in a professional environment
+• Job Market Transition: Equip oneself with the skills and experience to
+seamlessly enter the job market
 
 ## Context and motivation
 The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
