@@ -1,9 +1,9 @@
 import time
 import openai
 import ast
-from datetime import datetime, timedelta
-from pymongo.errors import DuplicateKeyError
-from statistics import mean
+from   datetime       import datetime, timedelta
+from   pymongo.errors import DuplicateKeyError
+from   statistics     import mean
 import class_channel as c
 import class_message as m
 
@@ -18,14 +18,6 @@ class Group:
     async def new_message_handler(self, event, prompt_c, prompt_a, model_c, model_a, temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_channels_similarity):
         message = m.Message(event.message.id, event.message.text, event.message.date, event.chat_id)
         print ("server1 has received the message :" + str(event.message.text))
-
-        # self.channels.add(event.chat_id) # no need
-        # try:
-        #     collection_channels_id.insert_one({"telegram_id": event.chat_id}) # TypeError: object InsertOneResult can't be used in 'await' expression
-        # except DuplicateKeyError:
-        #     pass
-        # print("server1 listens to the channels (new channel)" + str(self.channels))
-
         await message.calc_score(prompt_c, model_c, temperature, max_tokens, collection_messages, self)
         await message.calc_affirmations(prompt_a, model_a, temperature, max_tokens, collection_messages, self)
         if len(message.text) == 0:
@@ -33,7 +25,6 @@ class Group:
         message.put_to_mongo(collection_messages)
         await self.update_channels_score(message, collection_messages, collection_channels_score)
         await self.update_channels_similarity(message, collection_messages, collection_channels_similarity, how_many_hours_verification)
-        # free(message) ?
 
     async def update_channels_from_mongo(self, collection_channels_id):
         channels = collection_channels_id.find({}, {})

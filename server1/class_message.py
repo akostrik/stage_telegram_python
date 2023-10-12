@@ -1,9 +1,8 @@
 import openai
-import time # The only exception are modules in the Python Standard Library, which is a collection of modules (e.g. time , random , os ) that are built into Python
+import time 
 import requests
-from pymongo.errors import DuplicateKeyError
-import ast # ast is part of the standard library of python, you don't need to install it separately
-from datetime import datetime
+import ast      # part of the standard library of python, you don't need to install it separately
+from   pymongo.errors import DuplicateKeyError
 
 class Message:
     def __init__(self, telegram_id, text, timestamp, channel):
@@ -20,7 +19,6 @@ class Message:
     async def calc_score(self, prompt_c, model_c, temperature, max_tokens, collection_messages, group):
         try:
             time_start = time.time()
-            # print ("\n" + datetime.now().strftime("%S:%M:%Hh %d/%m/%Y") + " OpenAI request: " + prompt_c.to_string(self, collection_messages))
             response = openai.ChatCompletion.create(
                 model           = model_c,
                 max_tokens      = max_tokens,

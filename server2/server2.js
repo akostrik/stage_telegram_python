@@ -36,15 +36,20 @@ app.get('/all_messages', async (req, res) => {
   res.json(docs);
 });
 
+app.get('/characteristics', async (req, res) => {
+  const docs = await db.collection('characteristics').find({}).limit(100).toArray();
+  res.json(docs);
+});
+
+app.get('/relations', async (req, res) => {
+  const docs = await db.collection('channels_similarity').find({}).limit(100).toArray();
+  res.json(docs);
+});
+
 app.post('/update/:id', async (req, res) => {
   const id = req.params.id;
   await db.collection('messages').updateOne({ _id: new ObjectId(id) }, { $set: req.body });
   res.json({ success: true });
-});
-
-app.get('/characteristics', async (req, res) => {
-  const docs = await db.collection('characteristics').find({}).limit(100).toArray();
-  res.json(docs);
 });
 
 app.post('/saveChannel', async (req, res) => {
@@ -54,39 +59,39 @@ app.post('/saveChannel', async (req, res) => {
     // Convert channelId to integer, if it's not already
     channelId = parseInt(channelId, 10);
 
-    // Optional: Check if channelId is a valid integer
     if (isNaN(channelId)) {
       throw new Error('Invalid channelId');
     }
 
-    await db.collection('channels').insertOne({ channelId });
+    await db.collection('channels_id').insertOne({ channelId });
     res.json({ success: true });
   } catch (error) {
     res.json({ success: false, message: error.message });
   }
 });
 
-app.get('/relations', async (req, res) => {
-  const docs = await db.collection('relations').find({}).limit(100).toArray();
-  res.json(docs);
+// Centralized error handling
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
 });
 
-
+connectToDB().catch(err => console.error('Failed to connect to the database', err));
 
 /*app.get('/data/:id', async (req, res) => {
   const id = req.params.id;
-  const doc = await db.collection('scores').findOne({ _id: new ObjectId(id) });
+  const doc = await db.collection('channels_scores').findOne({ _id: new ObjectId(id) });
   res.json(doc);
 });
 
 app.get('/all_records', async (req, res) => {
-  const docs = await db.collection('scores').find({}).limit(100).toArray();
+  const docs = await db.collection('channels_scores').find({}).limit(100).toArray();
   res.json(docs);
 });
 
 app.post('/update/:id', async (req, res) => {
   const id = req.params.id;
-  await db.collection('scores').updateOne({ _id: new ObjectId(id) }, { $set: req.body });
+  await db.collection('channels_scores').updateOne({ _id: new ObjectId(id) }, { $set: req.body });
   res.json({ success: true });
 });
 
@@ -107,10 +112,3 @@ app.post('/update_affirmation/:id', async (req, res) => {
   res.json({ success: true });
 });*/
 
-// Centralized error handling
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
-});
-
-connectToDB().catch(err => console.error('Failed to connect to the database', err));

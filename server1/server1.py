@@ -1,15 +1,13 @@
-import sys
+import os       # module in the Python Standard Library, built into Python
+import sys      # --
 import openai
-import os # The only exception are modules in the Python Standard Library, which is a collection of modules (e.g. time , random , os ) that are built into Python
-from telethon import TelegramClient, events
-from pymongo import MongoClient
 import pymongo
-from datetime import datetime
-from dotenv import load_dotenv
-from datetime import datetime
+from   dotenv   import load_dotenv
+from   telethon import TelegramClient, events
+from   pymongo  import MongoClient
+from   datetime import datetime
 import classes_prompts as p
 import class_group     as g
-import test_data
 
 class LoggerStdout:
     def __init__(self, filename):

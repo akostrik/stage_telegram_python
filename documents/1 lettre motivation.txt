@@ -1,0 +1,14 @@
+Objet : les projets sociales et le stage universitaire
+Paris, le 19 mars 2023
+
+Monsieur le Président,
+
+Terminant un Master II en Informatique (Université Sorbonne Paris), je suis viscéralement attachée aux projets informatiques à vocation sociale, comme par exemple la détection de la propagande, la formalisation des liens entre les événements historiques, les états virtuels, les jeux permettant de tester le régimes politiques, les monnaies alternatifs, l’économie partagée, la coopération sans chef.
+
+Sur le plan professionnel, je possède des compétences en Java et C, mes projets récents sont visibles à https://github.com/akostrik. A la Sorbonne, j’ai validé les UE en Algorithmique, Bases de données, Programmation répartie. Diplômée de Mathématiques en plus de ma formation en Informatique, je possède la rigueur, la passion du travail réalisé avec soin, une facilité de compréhension des abstractions mais aussi un sens de l’inventivité.
+
+Cette année, afin de finaliser mon cursus, je dois réaliser un stage de 5 à 6 mois, commençant au plus tard le 03/04/2023, encadré par un professionnel et correspondant au niveau Master de ma spécialité Sciences et Technologie du Logiciel. Plus particulièrement, le développement de logiciels, les langages de programmation, les méthodes algorithmiques, les aspects fondamentaux et technologiques de l’informatique, les méthodes et les outils de conception et de développement des logiciels complexes, la modélisation et l’analyse de problèmes algorithmiques issus de divers domaines applicatifs. Je voudrais faire mon stage de préférence en tant que bénévole.
+
+Je précise qu’outre l’obligation formelle de réaliser un stage, l’application à grande échelle de l’informatique à la vie sociale me tient tout particulièrement à cœur. C’est dans ce domaine précis que je souhaite construire ma vie professionnelle, je serais ravie de rejoindre une équipe partageant ces idées et j’accepterai toutes les formes de collaboration.
+
+Dans l’attente de votre retour, je vous prie d’agréer, Monsieur le Président, l’expression de ma considération distinguée et me tiens à votre disposition pour tout entretien au sein de vos locaux.
