@@ -317,7 +317,7 @@ The direct question to OpenAI, _Is there any marks of the propagande in this mes
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
 The classifying of the channes into groups according to their subject didn't prove to be useful in this project.
-Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+Distances euclidienne, jaccard, cos, ... 
 
 Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions.
 
