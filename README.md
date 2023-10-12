@@ -181,9 +181,9 @@ The user interface is written in Vue.js, because its programming model is adapte
 [Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited and upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by just reloading the specific file being changed instead of recompiling the entire application. [^5]
 
 #### Database details
-A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`) 
+A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
 
-Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
+MongoDB usage is explained by its SaaS offer and its popularity. The databse operations of this project are simple, so other noSql databases would provide the same functionnalty and at the speed.  
 
 #### Asynchrony details
 
@@ -200,9 +200,6 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 
 ## The limits of the application
 - It is developped only for Linux
-### The limits related to MongoDB
-- MongoDB database size is limited to 16 Mgb (for free accounts) **to verify** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
-- The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB [installed locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/)
 ### The limits related to OpenAI
 - The application works **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats about 5 messages per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
   * by involving a great number of powerful machines
@@ -216,6 +213,11 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 - The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
 
 Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models.
+
+### The limits related to MongoDB
+- MongoDB database size is limited to 16 Mgb (for free accounts) **to verify** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png).
+- The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however the user can use MongoDB [installed locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
+- The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means descibed above or others), the databade requests can be accelerated by installing MongoDn locally et may be by using other databases.
 
 ### The limits related to Telegram
 - The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
