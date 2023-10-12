@@ -286,7 +286,6 @@ The teste launched on two groups of channels, a propagandistic group and a non-p
 
 ![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
 
-
 Two tests on the values of the trust coefficient depending in the temperature parameter, every of the tests launched on the two groups of channels, show a tendancy of better distinction between the two groups while the temperature parameter is hier.    
 | Temperature       | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |-------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -300,6 +299,8 @@ Extracting of detailed information (like the main subject, the people it deals w
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
 The direct question to OpenAI, _Is there any marks of the propagande in this message?_, didn't work correctly.
+
+The classifying of the channes into groups according to their subject didn't prove to be useful in this project.
 
 ## Other experimentations
 Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
