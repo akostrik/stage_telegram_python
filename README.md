@@ -238,16 +238,16 @@ The server creates a listening socket and then blocks while waiting for new conn
 
 Telegram requests are asynchronous 
 
-OpenAI server 1 requests are **not asynchronous** 
+OpenAI server 1 requests are not asynchronous
 
-MongoDB server 1 requests are **not all asynchronous**
+MongoDB server 1 requests are not all asynchronous
 
-Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+Server 2 requests ...
 
 ## Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
 
-MongoDB usage is explained by its SaaS offer and its popularity. The databse operations of this project are simple, so other noSql databases would provide the same functionnalty and at the speed.  
+MongoDB usage is explained by its cloud database service offer MongoDB Atlas (SaaS) and its popularity. The database operations of this project are simple, so other noSql databases would provide the same functionnalty and at the speed.  
 
 ## Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
