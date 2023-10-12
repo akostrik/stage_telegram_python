@@ -261,8 +261,6 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - Workshops [Fever](https://fever.ai/workshop.html)
 - [Auxipresse](https://auxipress.be/)
 
-## Sources
-
 ## Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
