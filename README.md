@@ -144,7 +144,8 @@ npm run dev
 ### Go to the user interface
 After having installed and configured all noted above, enjoy the service http://localhost:5173/ 
 
-## How does the application work (in technical language)
+## Technical details of the deveppement
+_To unserstant this section, the reader should have basic knowledge of the teminologie of computer sciences_
 ### The parameters of the application
 - The characteristics of the propaganda
 - [The text of the characteristics request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
@@ -156,20 +157,19 @@ After having installed and configured all noted above, enjoy the service http://
 - Telegram message maximal length (in characters)
 - The time where a message is considered as recent (in hours)
 
-### Technical details
-#### Computation details 
+### Computation details 
 _Similarity measure of two channels (channel1, channel2)_ = the numbre of their similar affirmations  - the number of their opposite affirmations
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 
 The application does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
 
-#### Python details
+### Python details
 The server 1 is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
 - Python is a rather easy language (partly becauseof its easy syntax)
 
-#### Node.js details
+### Node.js details
 [Vue.js](https://vuejs.org/) framework usage for _Server 3_ is explained by its programming model adapted to efficiently develop user interfaces [^3], simple syntax, intuitive documentation and pertinence for smaller projects and novice developers [^7].
 
 [Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
@@ -179,13 +179,7 @@ The server 1 is written in Python, because:
 - set the port to use, and the location of templates that are used for rendering the response
 - integrate with "view" rendering engines in order to generate responses by inserting data into templates
 
-
-#### Database details
-A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
-
-MongoDB usage is explained by its SaaS offer and its popularity. The databse operations of this project are simple, so other noSql databases would provide the same functionnalty and at the speed.  
-
-#### Asynchrony details
+### Asynchrony details
 
 Telegram requests are asynchronous 
 
@@ -195,7 +189,12 @@ MongoDB server 1 requests are **not all asynchronous**
 
 Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-#### Other technical details
+### Database details
+A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
+
+MongoDB usage is explained by its SaaS offer and its popularity. The databse operations of this project are simple, so other noSql databases would provide the same functionnalty and at the speed.  
+
+### Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
 ## The limits of the application
