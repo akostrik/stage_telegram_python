@@ -28,6 +28,12 @@ The approach to development followed the Scrum principes like:
 - continuous feedback and flexibility; 
 - changing of the requirements as the project evolves.
 
+## Aquired competences
+A lof of experience, completely new for me, like:
+- the conception of a whole application with several servers, several API, several external services
+- programming languages languanges (python, node.js, javascript)
+- frameworks (Vue, express, ...) 
+
 # What the application does
 1) Real time verification of Telegram messages veracity by two methods:
 - looking for the marks of the propaganda [^8] in every separate message via OpenAI
