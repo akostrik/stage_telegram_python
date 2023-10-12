@@ -268,14 +268,14 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 
                                 
-|                                 | improvement  | improvement  |     needed     |    cost             |
+|                                 | improvement  | improvement  |     needed     |    cost                |
 |---------------------------------------------------------------------------------------------------------|
-| many powerful machines          | yes          | no           | yes            | increasing |
-| many LLM accounts               | yes          | no           | no             | increasing |
+| many powerful machines          | yes          | no           | yes            | increasing             |
+| many LLM accounts               | yes          | no           | no             | increasing             |
 | cross-analysis by several LLM   | slowing down | yes          |                | the same or increasing |
-| prompt design                   | no           | yes          | no or little   | about the same |    
-| learning (prompt with examples) | no           | yes          | no or little   | about the same |
-| fine-tuning *                   | yes          | considerably | yes            | decreasing |          
+| prompt design                   | no           | yes          | no or little   | about the same         |
+| learning (prompt with examples) | no           | yes          | no or little   | about the same         |
+| fine-tuning *                   | yes          | considerably | yes            | decreasing             |          
 
 * for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
