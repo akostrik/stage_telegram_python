@@ -122,7 +122,7 @@ pip install requests
 pip install pymongo
 pip install --upgrade openai
 ```
-Install **Vue.js**
+Install [nmp package manager](https://www.npmjs.com/)
 ```
 cd server3
 npm install
