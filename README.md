@@ -293,7 +293,15 @@ The application may help to the malefactors to adjust propagandistic messages to
 
 The application doesn't aime at the deep causes of the propaganda.
 
-# Experimentations
+# Experimentations, evolution, iterations
+##Prototype Phase:
+- Basic Propaganda Detection: The initial prototype was a rudimentary system that relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
+- Limited Channel Integration: The prototype was limited to a handful of Telegram channels, primarily to test the waters and understand the kind of data and challenges we would face.
+
+## Version 1.0
+- Introduction of AI: Realizing the limitations of keyword matching, I integrated basic AI models to analyze the context of messages. This significantly improved detection accuracy but had its own set of challenges, especially false positives.
+- User Feedback Mechanism: I introduced a feedback mechanism where users could flag incorrect detections. This was our first step towards a self-improving system.
+
 ## OpenAI experimentations
 The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficient of the two groups between 3 and 8 point:
 
