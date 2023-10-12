@@ -20,8 +20,6 @@ seamlessly enter the job market
 ## Context and motivation
 The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
 
-This project is aimed at automatical detecting of propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
-
 ## The methodology
 The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.
 
@@ -32,16 +30,20 @@ The approach to development followed the Scrum principes like:
 - changing of the requirements as the project evolves.
 
 ## Aquired competences
-A lof of experience, completely new for me, like:
+A lof of completely new experience, like:
 - the conception of a whole application with several servers, several API, several external services
 - programming languages languanges (python, node.js, javascript)
 - frameworks (Vue, express, ...) 
 
-# What the application does
-1) Real time verification of Telegram messages veracity by two methods:
-- looking for the marks of the propaganda [^8] in every separate message via OpenAI
-- comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
-2) Constant improvement of the results by the mean of a Learning service, which consists in attaching some previous OpenAI responses, corrected by a user, to OpenAI requests
+# Project overview
+This project is aimed at automatical detecting of propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
+
+## Application features
+1. Real-time Telegram messages verification by two methods:
+- Scan individual messages for propaganda markers via OpenAI [^8];
+- Analyze recent information from various channels to identify and highlight similarities, ensuring users are aware of potential echo chambers.
+2. Continuous Learning & Improvement:
+- Feedback Loop: The application learns from its mistakes. By leveraging previous OpenAI responses, which are corrected by users, the system refines its accuracy over time.
 
 ## Simplified diagram of the application (except Learning service)
 ![Capture d’écran de 2023-10-12 10-38-38](https://github.com/akostrik/stage_telegram/assets/22834202/41252982-3978-40d9-9b2b-20483566d203)
