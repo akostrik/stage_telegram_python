@@ -171,7 +171,7 @@ The server 1 is written in Python, because:
 - Python is a rather easy language (partly becauseof its easy syntax)
 
 ### Node.js details
-[Vue.js](https://vuejs.org/) framework usage for _Server 3_ is explained by its programming model adapted to efficiently develop user interfaces [^3], simple syntax, intuitive documentation and pertinence for smaller projects and novice developers [^7].
+[Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding Angular and React as other possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
 
 [Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
 
@@ -289,3 +289,4 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 [^6]: https://www.britannica.com/topic/propaganda
 [^7]: https://skillbox.ru/media/code/vuejs-chto-takoe-kak-on-ustroen-i-chem-otlichaetsya-ot-react/ 
 [^8]: https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.htm 
+[^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
