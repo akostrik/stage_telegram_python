@@ -268,10 +268,14 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 
                                 
-| the means           | speed | quality | investissement | cost |
-|---------------------|-------|---------|----------------|------|
-| difference (test 1) |  2    |  2      |  2             |   2  |
-| difference (test 2) |  1    |  1      |  2             |  3   |
+| the means                       | speed | quality | investissement | cost |
+|---------------------------------|-------|---------|----------------|------|
+| many powerful machines          |  2    |  2      |  2             |   2  |
+| many LLM accounts               |  1    |  1      |  2             |  3   |
+| cross-analysis by several LLM   |       |         |                |      |
+| prompt design                   |       |         |                |      |
+| learning (prompt with examples) |       |         |                |      |
+| cross-analysis by several LLM   |       |         |                |      |
 
 
 | the means                       | improvement  | improvement  |     needed     |    cost                |
