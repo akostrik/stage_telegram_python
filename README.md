@@ -193,6 +193,7 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 - Errors of OpenAI analisys, which may be improuved :
   * by cross-analysis by several language models 
   * by learning
+  * by fine-tuning
 - The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
 - The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
 
@@ -225,7 +226,7 @@ Extracting of detailed information (like the main subject, the people it deals w
 
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
-To test the bonds of the trust coefficient and the temperature parameter, I launched two tests, every of the tests on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to my intuition). In the table, I noted the difference of the average coefficient of the two groups. The tests show a tendancy of better distinction between the two groups while the temperature parameter is hier.    
+The bonds of the trust coefficient and the temperature parameter were tested with two tests, evety of thr tests on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition). The table shows the difference of the average coefficient of the two groups. The tests show a tendancy of better distinction between the two groups while the temperature parameter is hier.    
 | Temperature    | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |----------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | difference     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
@@ -244,15 +245,15 @@ Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f
 
 **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-## How the internship has been orgainized (the methodology)
+## How the internship has been orgainized, the methodology
 Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ## Why an application like this
 ...
 
 ## Some projects of similar orientation
-- [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc
 - [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
+- [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc
 - Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386)
 - Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
 - Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
@@ -261,7 +262,6 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - [Auxipresse](https://auxipress.be/)
 
 ## Sources
-[image source](https://tenor.com/fr/view/welcome-emoji-smile-gif-10359622) 
 
 ## Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
