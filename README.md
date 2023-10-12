@@ -267,7 +267,10 @@ Vue supports web browsers compatible with ECMAScript 5
 
 # Experimentations
 ## OpenAI experimentations
-The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficient of the two groups between 3 and 8 point.
+The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficient of the two groups between 3 and 8 point:
+
+![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
+
 
 Two tests on the values of the trust coefficient depending in the temperature parameter, every of the tests launched on the two groups of channels, show a tendancy of better distinction between the two groups while the temperature parameter is hier.    
 | Temperature       | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
