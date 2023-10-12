@@ -267,21 +267,21 @@ Vue supports web browsers compatible with ECMAScript 5
 
 # Experimentations
 ## OpenAI experimentations
+The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficient of the two groups between 3 and 8 point.
+
+Two tests on the values of the trust coefficient depending in the temperature parameter, every of the tests launched on the two groups of channels, show a tendancy of better distinction between the two groups while the temperature parameter is hier.    
+| Temperature       | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
+|-------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| difference test 1 |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
+| difference test 2 |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
+
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
 Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
 
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
-The bonds of the trust coefficient and the temperature parameter were tested with two tests, evety of thr tests on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition). The table shows the difference of the average coefficient of the two groups. The tests show a tendancy of better distinction between the two groups while the temperature parameter is hier.    
-| Temperature    | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
-|----------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| difference     |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
-| difference     |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
-
-Extracting of the affirmations with gpt-3 didn't work.
-
-The direct question to OpenAI, _Is there marks of the propagande in this message?_, didn't work correctly.
+The direct question to OpenAI, _Is there any marks of the propagande in this message?_, didn't work correctly.
 
 ## Other experimentations
 Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
