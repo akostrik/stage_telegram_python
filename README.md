@@ -195,7 +195,9 @@ _Similarity measure of two channels (channel1, channel2)_ = the numbre of their 
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 
-The application does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
+The application executes 2 OpenAI requests par message.
+
+The application executes O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes contanstly MongoDB requests in order to integrate immediately a new channel added by the user.
 
 ## Python details
 The _Server 1_ is written in Python, because:
