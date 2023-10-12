@@ -51,7 +51,7 @@ Simultaneously, the learning service is working:
 1) _Server 3_ proposes to the user to correct OpenAI's the previous responses in the borwser, via the Server 3API
 2) As soon as the user provides the corrected examples, _Server 3_ passes them to _Server 2_
 3) _Server 3_ puts the corrected examples to the database via MongoDB API
-4) _Server 18 attaches (a limited number of) these corrected examples to every new OpenAI request 
+4) _Server 1_ attaches (a limited number of) these corrected examples to every new OpenAI request 
 
 ## How to use the application
 ### Database MongoDB Atlas configuration (in the cloud)
