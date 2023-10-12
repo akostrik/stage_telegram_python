@@ -3,7 +3,7 @@ The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
 
 ## The general missions of the internship
 - Complete the education by a full-time profesional pratice in a Paris association
-- Acquire a first professional experience as a developement ingineer
+- Acquire a first professional experience as a developement ingineerfapp
 - Determine the initial orientation of the career, in particular computer sciences applied to the social life
 - Acquire new knowledge, techniques, approaches, methods, méthodes, toolsls, etc, in practice
 - Acquire know-how and the code of associations
@@ -17,7 +17,7 @@ The information, which may not be objective and may be selectively presenting fa
 
 Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship.
 
-## What the appication does
+## What the application does
 1) Real time verification of Telegram messages veracity by two methods:
 - Looking for the marks of the propaganda [^8] in every separate message via OpenAI
 - Comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
@@ -63,9 +63,9 @@ In your account, create a database by the name 'telegram'
 sudo mongoimport --db telegram --collection characteristics --file collection_characteristics.json
 ```
 
-Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments - to add your current ip address
+Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments - `to add your current ip address`
 
-Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - to get you MongoDB connection string 
+Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - `to get you MongoDB connection string` 
 
 In the line 13, [here](https://github.com/akostrik/stage_telegram/blob/main/server2/server2.js), put the same MongoDB connection string as in `server1/.env`: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ```js
@@ -88,11 +88,11 @@ _Be very very careful not to publish your OpenAI connection token on the interne
 
 During the first launching of the application, enter the phone number of your Telegram account and then enter the confirmation code
 
-The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) _anon.session_ in the folder server1 in order to you can to login without re-sending the code. 
+The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) _anon.session_ in the folder `server1` in order to you can to login without re-sending the code. 
 
 _Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_
 
-### Create the file "server1/.env" 
+### Modify the file `server1/.env` 
 ```
 API_ID=...
 API_HASH=...
@@ -125,17 +125,17 @@ npm install
 in any folder ? ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### Compile and run
 In the first terminal launch server1
-```
+```bash
 python server1/server1.py
 ```
-In the second terminal launch Vue server:
+In the second terminal launch server2:
+```bash
+node server2/server2.js
 ```
+In the third terminal launch server3:
+```bash
 cd user_interface
 npm run dev
-```
-In the third terminal launch server2:
-```
-node server2/server2.js
 ```
 ### Go to the user interface
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
@@ -153,14 +153,12 @@ After having installed and configured all noted above, [enjoy the service](http:
 - The time where a message is considered as recent (in hours)
 
 ### Technical details
-#### General details, the data, computation, etc 
+#### Computation details 
 _Similarity measure of two channels (channel1, channel2)_ = the numbre of their similar affirmations  - the number of their opposite affirmations
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 
-The appication does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
-
-Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
+The application does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
 
 #### Python details
 The server 1 is written in Python, because:
@@ -175,15 +173,18 @@ Vite, a development server used by default by Vue, monitors files as they're bei
 Other details ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 #### Database details
-A noSql database usage is explained chiefly by the changing number of the _characteristics_, as well as by changing of the _characteristics_ themselves, while adjusting the application (it concerns the collections _characteristics_ and _messages_) 
+A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`) 
 
 Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
+
+#### Other technical details
+Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
 ## The limits of the application
 - It is developped only for Linux
 ### The limits related to MongoDB
 - MongoDB database size is limited to 16 Mgb (for free accounts) **to verify** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
-- The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB installed locally ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+- The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however a user can use MongoDB [installed locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/)
 ### The limits related to OpenAI
 - The application works **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats about 5 messages per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
   * by involving a great number of powerful machines
