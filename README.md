@@ -262,10 +262,10 @@ Gpt-4 :
 - doesn't provide always the analysis of high-quality,
 - is paying.
 
+                                |    speed     |   quality    | investissement | treatement
+
 However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
 
--------------------------------------------------------------------------------------------------------
-                                |    speed     |   quality    | investissement | treatement
 
                                 
                                 | improvement  | improvement  |     needed     |    cost
