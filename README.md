@@ -22,12 +22,11 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 ## The methodology
 The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.
 
-
 The approach to development followed the Scrum principes like:
-- to break work into goals to be completed within time-boxed iterations, called sprints;
+- to break work into goals to be completed within time-boxed iterations, called sprints, where the sprints were dedicated to the contexte, the [large language models](https://en.wikipedia.org/wiki/Large_language_model), the architecture, python and its interactions with the concerned API study, the datababases and elasticsearch, frontend);
 - bringing decision-making authority to an operational level;
 - continuous feedback and flexibility; 
-- requirements volatility, changing of the requirements as the project evolves.
+- changing of the requirements as the project evolves.
 
 # What the application does
 1) Real time verification of Telegram messages veracity by two methods:
@@ -164,6 +163,8 @@ After having installed and configured all noted above, enjoy the service http://
 _To unserstand this section, the reader should have basic knowledge of the teminology of computer sciences_
 
 Separation of the data treatment provided by _Server 1_ and the presentation functoinality provided by _Server 2_ and _Server 3_ falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
+
+_Server 1_ and _Server 2_ represent the backend functionality, while _Server 3_ ensures the Frontend one.
 
 ## The parameters of the application
 - The characteristics of the propaganda
