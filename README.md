@@ -94,15 +94,15 @@ The application will create a [session file](https://docs.telethon.dev/en/stable
 
 _Be careful not to publish the Telegram credentials on the internet and not to transmit them to unfamiliar people_
 
-### Modify the file `server1/.env.exemple` and rename it to `server1/.env` 
-Put MONGO = your MongoDB connection token, OPENAI = OpenAI connection token, API_ID and API_HASH = Telegram credentials in the file `server1/.env.exemple`: 
+### Modify the file `server1/.env.example` and rename it to `server1/.env` 
+Put MONGO = your MongoDB connection token, OPENAI = OpenAI connection token, API_ID and API_HASH = Telegram credentials in the file `server1/.env.example`: 
 ```
 API_ID=...
 API_HASH=...
 OPENAI=...
 MONGO=...
 ```
-Rename `server1/.env.exemple` to `server1/.env`
+Rename `server1/.env.example` to `server1/.env`
 
 Copy `server1/.env` to `server2/.env`
 
