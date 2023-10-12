@@ -228,10 +228,14 @@ It is developped only for Linux.
 The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker.
  
 ## The limits related to OpenAI
-The application works **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats only about 5 requests per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
+Gpt-4 treats only about 5 requests per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
   * by involving a great number of powerful machines
   * by involving a grand number of OpenAI accounts
   * using of other language models can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **which is ...**
+
+Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models. [^12]
+
+Extraction of affirmations gives acceptable results only with Gpt-4 (not wirh Gpt-3) and only with some examples included in the request.
 
 The quality of OpenAI analisys may be improuved :
   * by cross-analysis by several language models 
@@ -241,8 +245,6 @@ The quality of OpenAI analisys may be improuved :
 The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
 
 The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
-
-Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models. [^12]
 
 ## The limits related to MongoDB
 
