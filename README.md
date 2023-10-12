@@ -4,17 +4,17 @@ The project hase been developped during an Internship of 5 months, from the 3d A
 ## The objectives:
 - Professional Experience: Engage in full-time professional practice within
 a Parisian association
-• Skill Development: Cultivate skills as a development engineer, focusing
+- Skill Development: Cultivate skills as a development engineer, focusing
 on real-world applications
-• Career Exploration: Investigate potential career trajectories, especially
+- Career Exploration: Investigate potential career trajectories, especially
 in computer sciences applied to societal challenges
-• Hands-on Learning: Immerse in new techniques, methodologies, tools,
+- Hands-on Learning: Immerse in new techniques, methodologies, tools,
 and their practical applications
-• Association Ethics: Grasp the ethical considerations and operational
+- Association Ethics: Grasp the ethical considerations and operational
 nuances of associations
-• Professional Adaptability: Evaluate one's ability to integrate and adapt
+- Professional Adaptability: Evaluate one's ability to integrate and adapt
 in a professional environment
-• Job Market Transition: Equip oneself with the skills and experience to
+- Job Market Transition: Equip oneself with the skills and experience to
 seamlessly enter the job market
 
 ## Context and motivation
