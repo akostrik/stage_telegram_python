@@ -1,14 +1,14 @@
 # Internship Master II, Sorbonne University (Paris)
 The project hase been developped during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realized in Paris associations.
 
-## The objectives:
-- Professional Experience: Engage in full-time professional practice within Parisian associations
-- Skill Development: Cultivate skills as a development engineer, focusing on real-world applications
-- Career Exploration: Investigate potential career trajectories, especially in computer sciences applied to societal challenges
-- Hands-on Learning: Immerse in new techniques, methodologies, tools, and their practical applications
+## The objectives
+- Professional experience: Engage in full-time professional practice within Parisian associations
+- Skill development: Cultivate skills as a development engineer, focusing on real-world applications
+- Career exploration: Investigate potential career trajectories, especially in computer sciences applied to societal challenges
+- Hands-on learning: Immerse in new techniques, methodologies, tools, and their practical applications
 - Association Ethics: Grasp the ethical considerations and operational nuances of associations
-- Professional Adaptability: Evaluate one's ability to integrate and adapt in a professional environment
-- Job Market Transition: Equip oneself with the skills and experience to seamlessly enter the job market
+- Professional adaptability: Evaluate one's ability to integrate and adapt in a professional environment
+- Job market tеransition: Equip oneself with the skills and experience to seamlessly enter the job market
 
 ## Context and motivation
 The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
@@ -56,7 +56,7 @@ This project wouldn't have been possible without the guidance of the faculty at 
 ![Capture d’écran de 2023-10-12 10-38-38](https://github.com/akostrik/stage_telegram/assets/22834202/41252982-3978-40d9-9b2b-20483566d203)
 
 ## Diagram of the application in the programmer style
-![Screenshot from 2023-10-10 22-24-14](https://github.com/akostrik/stage_telegram/assets/22834202/fa7b6eae-d1d0-47cc-8a89-92dcf5c57d68)
+![Capture d’écran de 2023-10-12 21-29-17](https://github.com/akostrik/stage_telegram/assets/22834202/1e38b6fa-0c31-43a9-8851-4ef2189ca83e)
 
 ## Application components
 [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/) in python handles real-time data streaming from Telegram, processes messages, and interacts with OpenAI for analysis.
@@ -211,16 +211,18 @@ The _Server 1_ is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
 - Python is a rather easy language (partly becauseof its easy syntax)
 
-## Presentation functionality (node.js and Vue) details
+## node.js details
+[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in Node.js directly performs I/O, so the process never blocks [^10].
 
-[Node.js](https://nodejs.org/en/about), a asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser, which is a raisonable choice because no function in Node.js directly performs I/O, so the process never blocks except when the I/O is performed using synchronous methods of Node.js standard library [^10].
-
-[Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding to Angular and React as its possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
+The server creates a listening socket and then blocks while waiting for new connections. During this time, the kernel puts the process into an interruptible sleep state and runs other processes. [^14]
 
 [Express](https://expressjs.com/) Node web framework, is used by _Server 2_ to:
 - write handlers for requests
 - set the port to use, and the location of templates that are used for rendering the response
 - integrate with "view" rendering engines in order to generate responses by inserting data into templates.
+
+## Vue details
+[Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding to Angular and React as its possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
 
 [Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
 
@@ -364,3 +366,4 @@ Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f
 [^11]: https://www.mongodb.com/docs/manual/reference/limits/
 [^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms 
 [^13]: Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels (a channel is a one-way broadcast tool) on different subjects, chiefly in Russian, with little censorship.  
+[^14]: https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes.
