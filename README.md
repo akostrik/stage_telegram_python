@@ -17,9 +17,6 @@ in a professional environment
 - Job Market Transition: Equip oneself with the skills and experience to
 seamlessly enter the job market
 
-## Context and motivation
-The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
-
 ## The methodology
 The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.
 
@@ -34,6 +31,9 @@ A lof of completely new experience, like:
 - the conception of a whole application with several servers, several API, several external services
 - programming languages languanges (python, node.js, javascript)
 - frameworks (Vue, express, ...) 
+
+## Context and motivation
+The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
 
 # Project overview
 This project is aimed at automatical detecting of propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
