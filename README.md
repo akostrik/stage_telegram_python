@@ -98,10 +98,6 @@ Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments 
 
 Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - `to get you MongoDB connection string` 
 
-In the line 13, [here](https://github.com/akostrik/stage_telegram/blob/main/server2/server2.js), put the same MongoDB connection token (connection string) as in `server1/.env`: **.env** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-```js
-const mongoUrl = '...';
-```
 _Be careful not to publish your MongoDB connection token on the internet and not to transmit it to unfamiliar people_
 
 ## OpenAI configuration 
