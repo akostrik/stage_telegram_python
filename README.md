@@ -54,9 +54,9 @@ This project is aimed at automatical detecting of propagandistic information in 
 ## Application components
 [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/) in python handles real-time data streaming from Telegram, processes messages, and interacts with OpenAI for analysis.
 
-[_Server 2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) in node.js: manages data retrieval from MongoDB and serves it to the frontend.
+[_Server 2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) in node.js manages data retrieval from MongoDB and serves it to the frontend.
 
-[_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js: presents the analyzed data to users in an intuitive and interactive manner.
+[_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js presents the analyzed data to users in an intuitive and interactive manner.
 
 ## Description of the application
 1) _Server 3_ gets from the web browser a name of Telegram channel to examinate, via Server 3 [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
