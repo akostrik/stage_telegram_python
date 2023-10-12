@@ -106,7 +106,7 @@ Rename `server1/.env.example` to `server1/.env`
 
 Copy `server1/.env` to `server2/.env`
 
-_Be careful not to publish this file on the internet and not to transmit it to unfamiliar people_
+_Be very very careful not to publish this file on the internet and not to transmit it to unfamiliar people_
 
 ### Server 1 setup
 Install python version >= 3.7.1
