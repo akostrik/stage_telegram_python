@@ -52,7 +52,7 @@ This project wouldn't have been possible without the guidance of the faculty at 
 2. Continuous learning and improvement:
 - Feedback Loop: The application learns from its mistakes. By leveraging previous OpenAI responses, which are corrected by users, the system refines its accuracy over time.
 
-## Simplified diagram of the application (except Learning service)
+## Simplified diagram of the application (except _Learning service_)
 ![Capture d’écran de 2023-10-12 10-38-38](https://github.com/akostrik/stage_telegram/assets/22834202/41252982-3978-40d9-9b2b-20483566d203)
 
 ## Diagram of the application in the programmer style
@@ -257,24 +257,28 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 It is developped only for Linux.
 
 ## The limits related to OpenAI
-Gpt-4 treats only about 5 requests per minute. However, this [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
-- by involving a great number of powerful machines
-- by involving a grand number of OpenAI accounts
-- using of other language models can be envisaged, for example
+Gpt-4 :
+- treats about 5 requests per minute an respesents the lowest part of the appliation,
+- doesn't provide always the analysis of high-quality,
+- is paying.
 
-The quality of OpenAI analisys may be improuved :
-- by cross-analysis by several language models 
-- by prompt design
-- by learning ()
-- by fine-tuning
+However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
 
-Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models. [^12]
+                                |    speed     |   quality    | investissement | treatement
+                                | improvement  | improvement  |     needed     |    cost
+-----------------------------------------------------------------------------------------------------------
+many powerful machines          | yes          | no           | yes            | increasing
+many LLM accounts               | yes          | no           | no             | increasing
+cross-analysis by several LLM   | slowing down | yes          |                | the same or increasing
+prompt design                   | no           | yes          | no or little   | about the same     
+learning (prompt with examples) | no           | yes          | no or little   | about the same 
+fine-tuning *                   | yes          | considerably | yes            | decreasing               
+
+* for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
+
+The _Learning service_ of the application is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples).
 
 The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length.
-
-The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples).
-
-Extraction of affirmations gives acceptable results only with Gpt-4 (not with Gpt-3) and only with some examples included in the request.
 
 ## The limits related to MongoDB
 
@@ -321,6 +325,8 @@ The classifying of the channes into groups according to their subject didn't pro
 Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions.
+
+Extraction of affirmations gives acceptable results only with Gpt-4 (not with Gpt-3) and only with some examples included in the request.
 
 ## Version 3.0 (Current)
 - Real-time analysis of messages, giving users instant feedback on the content they are consuming.
