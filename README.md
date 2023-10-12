@@ -254,21 +254,21 @@ The installation and configuration instructions are complicated for a user, they
  
 ## The limits related to OpenAI
 Gpt-4 treats only about 5 requests per minute. However, this [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
-  * by involving a great number of powerful machines
-  * by involving a grand number of OpenAI accounts
-  * using of other language models can be envisaged, for example
+- by involving a great number of powerful machines
+- by involving a grand number of OpenAI accounts
+- using of other language models can be envisaged, for example
 
 The quality of OpenAI analisys may be improuved :
-  * by cross-analysis by several language models 
-  * by prompt design
-  * by learning ()
-  * by fine-tuning
+- by cross-analysis by several language models 
+- by prompt design
+- by learning ()
+- by fine-tuning
 
 Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models. [^12]
 
-The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
+The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length.
 
-The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
+The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples).
 
 Extraction of affirmations gives acceptable results only with Gpt-4 (not with Gpt-3) and only with some examples included in the request.
 
@@ -286,15 +286,6 @@ A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cann
 ## The limits related to Vue
 Vue supports web browsers compatible with ECMAScript 5
 
-## future enhancements
-As technology and misinformation tactics evolve, so will this application.
-Future versions aim to:
-- integrate with other messaging platforms beyond Telegram
-- allow users to customize their propaganda detection parameters
-- provide real-time alerts to users about exceptional analysis results
-- detection of the first channel to spead information
-- comparison of the rusults with other projects
-
 ## Conceptual limits 
 The learning and the choice of the characteristics are founded on a human subjective opinion, there's always a margin of error.
 
@@ -311,15 +302,35 @@ The application doesn't aime at the deep causes of the propaganda.
 - Integration of LLM to analyze the context of messages significantly improved detection accuracy but had its own set of challenges, especially false positives.
 - User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
+Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
+
+The direct question to OpenAI, _Is there any marks of the propagande in this message?_, didn't work correctly.
+
 ## Version 2.0
-- Advanced AI Models: With advancements in natural language processing, I integrated more sophisticated AI models that could understand nuances and subtleties in messages, reducing false positives.
-- Contextual Analysis: Instead of analyzing messages in isolation, this version introduced contextual analysis, where a series of messages were analyzed together to understand the broader narrative.
-- Channel Insights: I introduced features that would give users insights into the kind of content a channel was promoting, helping them make informed decisions about which channels to follow.
+- More sophisticated AI models (Gpt-4) was integrated, what reduced false positives.
+- Contextual analysis: Instead of analyzing messages in isolation, this version introduced contextual analysis, where a series of messages were analyzed together to understand the broader narrative.
+- Channel insights: I introduced features that would give users insights into the kind of content a channel was promoting, helping them make informed decisions about which channels to follow.
+
+The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
+
+The classifying of the channes into groups according to their subject didn't prove to be useful in this project.
+Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions.
 
 ## Version 3.0 (Current)
-- Real-time Analysis: the system analyzes messages in real-time, giving users instant feedback on the content they are consuming.
-- Echo Chamber Detection: One of the standout features of the current version is the ability to detect echo chambers, where multiple channels promote the same narrative, potentially indicating coordinated propaganda efforts.
-- Customizable Detection Parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs.
+- Real-time analysis of messages, giving users instant feedback on the content they are consuming.
+- Echo chamber detection: One of the standout features of the current version is the ability to detect echo chambers, where multiple channels promote the same narrative, potentially indicating coordinated propaganda efforts.
+
+## future enhancements
+As technology and misinformation tactics evolve, so will this application.
+Future versions aim to:
+- integrate with other messaging platforms beyond Telegram
+- allow users to customize their propaganda detection parameters
+- provide real-time alerts to users about exceptional analysis results
+- detection of the first channel to spead information
+- comparison of the rusults with other projects
+- Customizable detection parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs.
 
 ## OpenAI experimentations
 The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficients of the groups between 3 and 8 points:
@@ -334,22 +345,7 @@ Two tests on the values of the trust coefficient depending in the temperature pa
 
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
-Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
-
-The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
-
-The direct question to OpenAI, _Is there any marks of the propagande in this message?_, didn't work correctly.
-
-The classifying of the channes into groups according to their subject didn't prove to be useful in this project.
-
-## Other experimentations
-Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
-
 Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
-Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
-![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 # Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
