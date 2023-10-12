@@ -235,7 +235,7 @@ MongoDB usage is explained by its SaaS offer and its popularity. The databse ope
 ## Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
-# The limits of the application and future enhancements 
+# Limitatoins, challenges and future enhancements 
 
 It is developped only for Linux.
 
