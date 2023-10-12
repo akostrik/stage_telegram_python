@@ -142,7 +142,7 @@ cd user_interface
 npm run dev
 ```
 ### Go to the user interface
-After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
+After having installed and configured all noted above, enjoy the service http://localhost:5173/ 
 
 ## How does the application work (in technical language)
 ### The parameters of the application
