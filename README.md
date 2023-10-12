@@ -123,9 +123,10 @@ pip install --upgrade openai
 
 ### Server 2 setup
 ```
+cd server3
 npm install
 ```
-in any folder ? ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+_PS `npm install` should be eecuted in the same folder where are `package.json` file_
 ### Compile and run
 In the first terminal launch server1
 ```bash
