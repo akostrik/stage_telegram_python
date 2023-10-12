@@ -150,8 +150,6 @@ After having installed and configured all noted above, enjoy the service http://
 ## Technical details of the deveppement
 _To unserstand this section, the reader should have basic knowledge of the teminology of computer sciences_
 
-_Server 1_ is created in python, _Server 2_ in node.js and _Server 3_ in vue.js.
-
 Separation of the data treatment provided by _Server 1_ and the presentation functoinality provided by _Server 2_ and _Server 3_ falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
 ### The parameters of the application
@@ -177,9 +175,9 @@ The _Server 1_ is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
 - Python is a rather easy language (partly becauseof its easy syntax)
 
-### Presentation functionality (node.js and vue.js) details
+### Presentation functionality (node.js and Vue) details
 
-[Node.js](https://nodejs.org/en/about), a asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser, is a raisonable choice because no function in Node.js directly performs I/O, so the process never blocks except when the I/O is performed using synchronous methods of Node.js standard library [^10].
+[Node.js](https://nodejs.org/en/about), a asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser, which is a raisonable choice because no function in Node.js directly performs I/O, so the process never blocks except when the I/O is performed using synchronous methods of Node.js standard library [^10].
 
 [Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding to Angular and React as its possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
 
@@ -243,8 +241,8 @@ A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cann
 ### The limits related to Telegram
 - The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-### The limits related to Vue.js
-Vue.js supports web browsers compatible with ECMAScript 5
+### The limits related to Vue
+Vue supports web browsers compatible with ECMAScript 5
 
 ### Non-technical limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
