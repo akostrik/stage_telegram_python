@@ -18,6 +18,7 @@ The information, which may not be objective and may be selectively presenting fa
 Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship. A Telegram channel is a one-way broadcast tool.  
 
 ## Why an application like this
+The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and organisation.
 
 ## The methodology
 The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.
