@@ -250,8 +250,6 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 
 It is developped only for Linux.
 
-The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker.
- 
 ## The limits related to OpenAI
 Gpt-4 treats only about 5 requests per minute. However, this [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
 - by involving a great number of powerful machines
@@ -342,9 +340,8 @@ Future versions aim to:
 - provide real-time alerts to users about exceptional analysis results
 - detection of the first channel to spead information
 - comparison of the rusults with other projects
-- customizable detection parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs.
-
-Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+- customizable detection parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs
+- usage of docker containers for installation and configuration instructions
 
 # Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
