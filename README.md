@@ -21,12 +21,11 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 
 ## The methodology
 The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.  
-
-The approach to development was close to Scrum, which :
-- prescribes to break work into goals to be completed within time-boxed iterations, called sprints
-- involves bringing decision-making authority to an operational level
-- allows for continuous feedback and flexibility, 
-- is based in part on the notion of requirements volatility, that stakeholders will change their requirements as the project evolves.
+The approach to development possessed the Scrum principes like:
+- to break work into goals to be completed within time-boxed iterations, called sprints;
+- bringing decision-making authority to an operational level;
+- continuous feedback and flexibility; 
+- requirements volatility, changing of the requirements as the project evolves.
 
 # What the application does
 1) Real time verification of Telegram messages veracity by two methods:
