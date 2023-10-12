@@ -1,5 +1,5 @@
 # Internship Master II, Sorbonne University (Paris)
-The Internship of 5 months, from the 3d April 2023 to the 12th September 2023
+The project hase been developped during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realized in Paris associations.
 
 ## The general missions of the internship
 - Complete the education by a full-time profesional pratice in a Paris association
@@ -17,19 +17,25 @@ The information, which may not be objective and may be selectively presenting fa
 
 Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship. A Telegram channel is a one-way broadcast tool.  
 
-## What the application does
+## How the internship has been orgainized, the methodology
+Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+## Why an application like this
+...
+
+# What the application does
 1) Real time verification of Telegram messages veracity by two methods:
 - looking for the marks of the propaganda [^8] in every separate message via OpenAI
 - comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
 2) Constant improvement of the results by the mean of a Learning service, which consists in attaching some previous OpenAI responses, corrected by a user, to OpenAI requests
 
-### Simplified diagram of the application (except Learning service)
+## Simplified diagram of the application (except Learning service)
 ![Capture d’écran de 2023-10-12 10-38-38](https://github.com/akostrik/stage_telegram/assets/22834202/41252982-3978-40d9-9b2b-20483566d203)
 
-### Diagram of the application in the programmer style
+## Diagram of the application in the programmer style
 ![Screenshot from 2023-10-10 22-24-14](https://github.com/akostrik/stage_telegram/assets/22834202/fa7b6eae-d1d0-47cc-8a89-92dcf5c57d68)
 
-### Description of the application in English
+## Description of the application in English
 1) [_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src)
  gets from the web browser a name of Telegram channel to examinate, via Server 3 [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
 2) _Server 3_ transmet the name of the channel to [_Server 2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js), via Server 2 API
@@ -53,10 +59,10 @@ Simultaneously, the _Learning service_ is working:
 3) _Server 3_ puts the corrected examples to the database, via MongoDB API
 4) _Server 1_ attaches (a limited number of) these corrected examples to every new OpenAI request 
 
-## How to use the application
+# How to use the application
 The user should have a web browser compatible with ECMAScript 5 (IE8 and its previous versions are  compatible with ECMAScript 5)
 
-### MongoDB Atlas configuration
+## MongoDB Atlas configuration
 
 [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4) in a database MongoDB the in cloud.
 
@@ -80,7 +86,7 @@ const mongoUrl = '...';
 ```
 _Be careful not to publish your MongoDB connection token on the internet and not to transmit it to unfamiliar people_
 
-### OpenAI configuration 
+## OpenAI configuration 
 
 [Get your OpenAI connection token](https://platform.openai.com/account/api-keys)
 
@@ -88,7 +94,7 @@ Your account should have access to gpt-4 (a paying option)
 
 _Be very very careful not to publish your OpenAI connection token on the internet and not to transmit it to unfamiliar people_
 
-### Telegram configuration
+## Telegram configuration
 
 [Get Telegram credentials api_id and api_hash ](https://my.telegram.org/auth)
 
@@ -98,7 +104,7 @@ The application will create a [session file](https://docs.telethon.dev/en/stable
 
 _Be very very careful not to publish the Telegram credentials on the internet and not to transmit them to unfamiliar people_
 
-### `.env` file configuration 
+## `.env` file configuration 
 Put MONGO = your MongoDB connection token, OPENAI = OpenAI connection token, API_ID and API_HASH = Telegram credentials in the file `server1/.env.example`: 
 ```
 API_ID=...
@@ -112,7 +118,7 @@ Copy `server1/.env` to `server2/.env`
 
 _Be very very careful not to publish this file on the internet and not to transmit it to unfamiliar people_
 
-### Setup
+## Setup
 Install python version >= 3.7.1
 
 Install the python libraries :
@@ -130,7 +136,8 @@ cd server3
 npm install
 ```
 _PS `npm install` should be executed in the same folder where `package.json` file is_
-### Compile and run
+
+## Compile and run
 In the first terminal launch _Server 1_
 ```bash
 python server1/server1.py
@@ -144,15 +151,15 @@ In the third terminal launch _Server 3_
 cd user_interface
 npm run dev
 ```
-### Go to the user interface
+## Go to the user interface
 After having installed and configured all noted above, enjoy the service http://localhost:5173/ 
 
-## Technical details of the deveppement
+# Technical details of the deveppement
 _To unserstand this section, the reader should have basic knowledge of the teminology of computer sciences_
 
 Separation of the data treatment provided by _Server 1_ and the presentation functoinality provided by _Server 2_ and _Server 3_ falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
-### The parameters of the application
+## The parameters of the application
 - The characteristics of the propaganda
 - [The text of the characteristics request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
 - [The text of the affirmations request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
@@ -163,19 +170,19 @@ Separation of the data treatment provided by _Server 1_ and the presentation fun
 - Telegram message maximal length (in characters)
 - The time where a message is considered as recent (in hours)
 
-### Computation details 
+## Computation details 
 _Similarity measure of two channels (channel1, channel2)_ = the numbre of their similar affirmations  - the number of their opposite affirmations
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 
 The application does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
 
-### Python details
+## Python details
 The _Server 1_ is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
 - Python is a rather easy language (partly becauseof its easy syntax)
 
-### Presentation functionality (node.js and Vue) details
+## Presentation functionality (node.js and Vue) details
 
 [Node.js](https://nodejs.org/en/about), a asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser, which is a raisonable choice because no function in Node.js directly performs I/O, so the process never blocks except when the I/O is performed using synchronous methods of Node.js standard library [^10].
 
@@ -188,7 +195,7 @@ The _Server 1_ is written in Python, because:
 
 [Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
 
-### Asynchrony details
+## Asynchrony details
 
 [Asynchrony](https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)) refers to the actions instigated by a program that take place concurrently with program execution, without the program blocking to wait for results. In this application, it concerns the requests to Telegram, OpenAI and MongoDB.
 
@@ -200,20 +207,20 @@ MongoDB server 1 requests are **not all asynchronous**
 
 Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-### Database details
+## Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
 
 MongoDB usage is explained by its SaaS offer and its popularity. The databse operations of this project are simple, so other noSql databases would provide the same functionnalty and at the speed.  
 
-### Other technical details
+## Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
-## The limits of the application
+# The limits of the application
 It is developped only for Linux.
 
 The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker.
  
-### The limits related to OpenAI
+## The limits related to OpenAI
 The application works **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats only about 5 requests per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
   * by involving a great number of powerful machines
   * by involving a grand number of OpenAI accounts
@@ -230,7 +237,7 @@ The learning service is limited to 5 examples par a request (but if the message,
 
 Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models. [^12]
 
-### The limits related to MongoDB
+## The limits related to MongoDB
 
 The installation instructions are provided in this document only for the cloud version MongoDB (MongoDB Atlas), however the user can [install MongoDB locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
 
@@ -238,19 +245,19 @@ The speed of MongoDB requests is not critical in this project, because they are 
 
 A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size, thought these limits hardly concern this application. 
 
-### The limits related to Telegram
+## The limits related to Telegram
 - The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-### The limits related to Vue
+## The limits related to Vue
 Vue supports web browsers compatible with ECMAScript 5
 
-### Non-technical limits 
+## Non-technical limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
 - The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed
 - The application doesn't aime at the deep causes of the propaganda 
 
-## Experimentations
-### OpenAI experimentations
+# Experimentations
+## OpenAI experimentations
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
 Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
@@ -267,7 +274,7 @@ Extracting of the affirmations with gpt-3 didn't work.
 
 The direct question to OpenAI, _Is there marks of the propagande in this message?_, didn't work correctly.
 
-### Other experimentations
+## Other experimentations
 Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions 
 
 Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
@@ -276,13 +283,7 @@ Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f
 
 **дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-## How the internship has been orgainized, the methodology
-Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
-## Why an application like this
-...
-
-## Some projects of similar orientation
+# Some projects of similar orientation
 - [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
 - [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc
 - Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386)
@@ -292,12 +293,13 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 - Workshops [Fever](https://fever.ai/workshop.html)
 - [Auxipresse](https://auxipress.be/)
 
-## Welcome
+# Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
 
 [Get help to install the application](mailto:stage.mongodb@gmail.com) 
+
 
 [^1]: in English 1 token ≈ 3/4 of a word
 [^2]: https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature 
