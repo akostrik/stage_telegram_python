@@ -20,8 +20,10 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 ## Why an application like this
 
 ## The methodology
-The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.  
-The approach to development possessed the Scrum principes like:
+The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.
+
+
+The approach to development followed the Scrum principes like:
 - to break work into goals to be completed within time-boxed iterations, called sprints;
 - bringing decision-making authority to an operational level;
 - continuous feedback and flexibility; 
