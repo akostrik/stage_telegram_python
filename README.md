@@ -270,7 +270,7 @@ The speed of MongoDB requests is not critical in this project, because they are 
 A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size. 
 
 ## The limits related to Telegram
-- The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+- From 30 tested channels, the application could not read [this channel](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ## The limits related to Vue
 Vue supports web browsers compatible with ECMAScript 5
