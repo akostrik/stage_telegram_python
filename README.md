@@ -228,7 +228,7 @@ The length of an examined message is limited (see [The parameters of the applica
 
 The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
 
-Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models.
+Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models. [^12]
 
 ### The limits related to MongoDB
 
@@ -309,3 +309,4 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 [^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
 [^10]: https://nodejs.org/en/about
 [^11]: https://www.mongodb.com/docs/manual/reference/limits/
+[^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms 
