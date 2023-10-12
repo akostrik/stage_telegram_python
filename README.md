@@ -44,7 +44,7 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 - stocks all obtained information in MongoDB database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels), via MongoDB API
 7) _Server 2_ consults permanently the results of the computations in MongoDB, via MongoDB API
 8) _Server 2_ returns permanently the current results of the computations to the _Server 3_, via Server 2 API
-9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit of the graph contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels, via Server 3 API
+9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels, via Server 3 API
 10) The web browser displays the graph to the user
 
 Simultaneously, the _Learning service_ is working:
