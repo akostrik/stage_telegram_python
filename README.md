@@ -199,6 +199,8 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 
 ## The limits of the application
 - It is developped only for Linux
+- The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker 
+ 
 ### The limits related to OpenAI
 - The application works **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats about 5 messages per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
   * by involving a great number of powerful machines
@@ -222,7 +224,7 @@ Alternatives to the paid approach could be to train a self-hosted model (like LL
 - The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### Non-technical limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
-- The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
+- The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed
 - The application doesn't aime at the deep causes of the propaganda 
 
 ## Experimentations
