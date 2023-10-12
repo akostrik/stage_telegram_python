@@ -262,30 +262,16 @@ Gpt-4 :
 - doesn't provide always the analysis of high-quality,
 - is paying.
 
-                                |    speed     |   quality    | investissement | treatement
-
 However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
-
-
                                 
-| the means                       | speed    | quality | investissement | cost |
-|---------------------------------|----------|---------|----------------|------|
-| many powerful machines          | better   |  2      |  2             |   2  |
-| many LLM accounts               | better   |  1      |  2             |  3   |
-| cross-analysis by several LLM   | worse    |         |                |      |
-| prompt design                   | the same |         |                |      |
-| learning (prompt with examples) | the same |         |                |      |
-| cross-analysis by several LLM * | better   |         |                |      |
-
-
-| the means                       | improvement  | improvement  |     needed     |    cost                |
-|---------------------------------------------------------------------------------------------------------|
-| many powerful machines          | yes          | no           | yes            | increasing             |
-| many LLM accounts               | yes          | no           | no             | increasing             |
-| cross-analysis by several LLM   | slowing down | yes          |                | the same or increasing |
-| prompt design                   | no           | yes          | no or little   | about the same         |
-| learning (prompt with examples) | no           | yes          | no or little   | about the same         |
-| fine-tuning *                   | yes          | considerably | yes            | decreasing             |          
+| the means                       | speed    | quality  | investissement | cost                   |
+|---------------------------------|----------|----------|----------------|------------------------|
+| many powerful machines          | better   | the same | yes            | increasing             |
+| many LLM accounts               | better   | the same | no             | increasing             |
+| cross-analysis by several LLM   | worse    | better   |                | the same or increasing |
+| prompt design                   | the same | better   | no or little   | the same               |
+| learning (prompt with examples) | the same | better   | no or little   | the same               |
+| fine-tuning *                   | better   | better ! | yes            | decreasing             |
 
 * for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
