@@ -45,7 +45,7 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 7) _Server 2_ consults permanently the results of the computations in MongoDB via MongoDB API
 8) _Server 2_ returns permanently the current results of the computations to the _Server 3_ via Server 2 API
 9) _Server 3_ passes the the results to the browser in the form of a graph of the channels, where every summit of the graph contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels, via Server 3 API
-10) The browser displays the graph it to the user
+10) The browser displays the graph to the user
 
 Simultaneously, the learning service is working:
 1) _Server 3_ proposes to the user to correct OpenAI's the previous responses in the borwser, via the Server 3API
