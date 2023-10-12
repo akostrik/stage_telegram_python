@@ -222,7 +222,7 @@ MongoDB usage is explained by its SaaS offer and its popularity. The databse ope
 ## Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
-# The limits of the application
+# The limits and improvements of the application
 It is developped only for Linux.
 
 The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker.
@@ -260,10 +260,18 @@ A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cann
 ## The limits related to Vue
 Vue supports web browsers compatible with ECMAScript 5
 
+## Other possible improvement
+Some othe feautres could be added, like: 
+- notifications for exceptional analysis results;
+- detection of the first channel to spead information;
+- comparison of the rusults with other projects.
+
 ## Conceptual limits 
-- The learning and the choice of the characteristics are founded on a human subjective opinion
-- The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed
-- The application doesn't aime at the deep causes of the propaganda 
+The learning and the choice of the characteristics are founded on a human subjective opinion.
+
+The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed.
+
+The application doesn't aime at the deep causes of the propaganda.
 
 # Experimentations
 ## OpenAI experimentations
