@@ -268,8 +268,8 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 
                                 
-|                                 | improvement  | improvement  |     needed     |    cost |
-|-----------------------------------------------------------------------------------------------------
+|                                 | improvement  | improvement  |     needed     |    cost             |
+|---------------------------------------------------------------------------------------------------------|
 | many powerful machines          | yes          | no           | yes            | increasing |
 | many LLM accounts               | yes          | no           | no             | increasing |
 | cross-analysis by several LLM   | slowing down | yes          |                | the same or increasing |
