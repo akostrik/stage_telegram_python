@@ -150,7 +150,7 @@ _To unserstand this section, the reader should have basic knowledge of the temin
 
 _Server 1_ is created in python, _Server 2_ in node.js and _Server 3_ in vue.js.
 
-Separation of the data treatment provided by _Server 1_ and the presentation functoinality provided by _Server 2_ and _Server 3_ falls into the pattern of _[Model-View-ViewModel](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
+Separation of the data treatment provided by _Server 1_ and the presentation functoinality provided by _Server 2_ and _Server 3_ falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
 ### The parameters of the application
 - The characteristics of the propaganda
