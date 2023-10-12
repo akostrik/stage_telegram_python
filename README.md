@@ -281,7 +281,7 @@ The speed of MongoDB requests is not critical in this project, because they are 
 A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size. 
 
 ## The limits related to Telegram
-- From 30 tested channels, the application could not read [this channel](https://t.me/generallsvr) 
+- The application could not read [this channel](https://t.me/generallsvr) 
 
 ## The limits related to Vue
 Vue supports web browsers compatible with ECMAScript 5
@@ -305,19 +305,24 @@ The application doesn't aime at the deep causes of the propaganda.
 # Experimentations, evolution, iterations
 ## Prototype Phase:
 - Basic Propaganda Detection: The initial prototype was a rudimentary system that relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
-- Limited Channel Integration: The prototype was limited to a handful of Telegram channels, primarily to test the waters and understand the kind of data and challenges we would face.
+- Limited Channel Integration: The prototype was limited to the set of fixed (in the code) channels, primarily to test the waters and understand challenges to face.
 
 ## Version 1.0
-- Introduction of AI: Realizing the limitations of keyword matching, I integrated basic AI models to analyze the context of messages. This significantly improved detection accuracy but had its own set of challenges, especially false positives.
-- User Feedback Mechanism were introduced, where the user could flag incorrect detections. This was the first step towards a self-improving system.
+- Integration of LLM to analyze the context of messages significantly improved detection accuracy but had its own set of challenges, especially false positives.
+- User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
-## Version 2.0:
+## Version 2.0
 - Advanced AI Models: With advancements in natural language processing, I integrated more sophisticated AI models that could understand nuances and subtleties in messages, reducing false positives.
 - Contextual Analysis: Instead of analyzing messages in isolation, this version introduced contextual analysis, where a series of messages were analyzed together to understand the broader narrative.
 - Channel Insights: I introduced features that would give users insights into the kind of content a channel was promoting, helping them make informed decisions about which channels to follow.
 
+## Version 3.0 (Current)
+- Real-time Analysis: the system analyzes messages in real-time, giving users instant feedback on the content they are consuming.
+- Echo Chamber Detection: One of the standout features of the current version is the ability to detect echo chambers, where multiple channels promote the same narrative, potentially indicating coordinated propaganda efforts.
+- Customizable Detection Parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs.
+
 ## OpenAI experimentations
-The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficient of the two groups between 3 and 8 point:
+The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficients of the groups between 3 and 8 points:
 
 ![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
 
