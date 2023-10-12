@@ -10,6 +10,19 @@ The project hase been developped during an Internship of 5 months, from the 3d A
 - Professional Adaptability: Evaluate one's ability to integrate and adapt in a professional environment
 - Job Market Transition: Equip oneself with the skills and experience to seamlessly enter the job market
 
+## Context and motivation
+The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
+
+## Some projects of similar orientation
+- [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
+- [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc
+- Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386)
+- Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
+- Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
+- Machine learning project [Buster.ai](https://www.buster.ai/)
+- Workshops [Fever](https://fever.ai/workshop.html)
+- [Auxipresse](https://auxipress.be/)
+
 ## The methodology
 The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that both the developpers team and the users were represented by myself only.
 
@@ -24,9 +37,6 @@ A lof of completely new experience, like:
 - the conception of a whole application with several servers, several API, several external services
 - programming languages languanges (python, node.js)
 - frameworks (Vue, express, ...) 
-
-## Context and motivation
-The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
 
 ## Acknowleggements
 This project wouldn't have been possible without the guidance of the faculty at Sorbonne University, the feedback from early users and the continuous support from the associations.
@@ -327,16 +337,6 @@ Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
-
-# Some projects of similar orientation
-- [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
-- [The project of Huan Cao [ru]](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc
-- Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386)
-- Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
-- Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
-- Machine learning project [Buster.ai](https://www.buster.ai/)
-- Workshops [Fever](https://fever.ai/workshop.html)
-- [Auxipresse](https://auxipress.be/)
 
 # Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
