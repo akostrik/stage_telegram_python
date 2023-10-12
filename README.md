@@ -22,7 +22,7 @@ The approach to development followed the Scrum principes like:
 ## Aquired competences
 A lof of completely new experience, like:
 - the conception of a whole application with several servers, several API, several external services
-- programming languages languanges (python, node.js, javascript)
+- programming languages languanges (python, node.js)
 - frameworks (Vue, express, ...) 
 
 ## Context and motivation
