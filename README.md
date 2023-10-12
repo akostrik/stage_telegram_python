@@ -32,9 +32,9 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 ### Description of the application in English
 1) [_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src)
  gets from the web browser a name of Telegram channel to examinate, via Server 3 [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-2) _Server 3_ transmet the name of the channel to [_Server2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js), via Server 2 API
+2) _Server 3_ transmet the name of the channel to [_Server 2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js), via Server 2 API
 3) _Server 2_ put puts the name of the channel to MongoDB, via MongoDB API
-4) [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/server1) permanently gets the names of the channels from MongoDB, via MongoDB API
+4) [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/) permanently gets the names of the channels from MongoDB, via MongoDB API
 5) _Server 1_ listens permanently to the chosen channels, via Telegram API
 6) _Server 1_ treats every new message, that is:
 - estimates the marks of the propaganda of the message, via OpenAI API
@@ -108,10 +108,10 @@ Copy `server1/.env` to `server2/.env`
 
 _Be very very careful not to publish this file on the internet and not to transmit it to unfamiliar people_
 
-### Server 1 setup
+### Setup
 Install python version >= 3.7.1
 
-Install the libraries :
+Install the python libraries :
 ```bash
 pip3 install telethon
 pip install DateTime
@@ -120,23 +120,22 @@ pip install requests
 pip install pymongo
 pip install --upgrade openai
 ```
-
-### Server 2 setup
+Install **Vue.js**
 ```
 cd server3
 npm install
 ```
-_PS `npm install` should be eecuted in the same folder where are `package.json` file_
+_PS `npm install` should be executed in the same folder where `package.json` file is_
 ### Compile and run
-In the first terminal launch server1
+In the first terminal launch _Server 1_
 ```bash
 python server1/server1.py
 ```
-In the second terminal launch server2:
+In the second terminal launch _Server 2_
 ```bash
 node server2/server2.js
 ```
-In the third terminal launch server3:
+In the third terminal launch _Server 3_
 ```bash
 cd user_interface
 npm run dev
@@ -145,7 +144,7 @@ npm run dev
 After having installed and configured all noted above, enjoy the service http://localhost:5173/ 
 
 ## Technical details of the deveppement
-_To unserstant this section, the reader should have basic knowledge of the teminologie of computer sciences_
+_To unserstand this section, the reader should have basic knowledge of the teminology of computer sciences_
 ### The parameters of the application
 - The characteristics of the propaganda
 - [The text of the characteristics request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
@@ -222,6 +221,10 @@ Alternatives to the paid approach could be to train a self-hosted model (like LL
 
 ### The limits related to Telegram
 - The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+
+### The limits related to Vue.js
+Vue.js supports web browsers compatible with ECMAScript 5
+
 ### Non-technical limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
 - The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed
