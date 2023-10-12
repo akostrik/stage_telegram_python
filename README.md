@@ -146,14 +146,14 @@ _Be very very careful not to publish this file on the internet and not to transm
 ## Setup
 Install python version >= 3.7.1
 
-Install the python libraries :
+Install the libraries and modules:
 ```bash
 pip3 install telethon
 pip install DateTime
-npm i dotenv
 pip install requests
 pip install pymongo
 pip install --upgrade openai
+npm install dotenv --save
 ```
 Install [nmp package manager](https://www.npmjs.com/)
 ```
