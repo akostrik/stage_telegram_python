@@ -275,7 +275,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 | cross-analysis by several LLM   | worse    |         |                |      |
 | prompt design                   | the same |         |                |      |
 | learning (prompt with examples) | the same |         |                |      |
-| cross-analysis by several LLM   | better   |         |                |      |
+| cross-analysis by several LLM * | better   |         |                |      |
 
 
 | the means                       | improvement  | improvement  |     needed     |    cost                |
