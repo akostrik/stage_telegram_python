@@ -2,20 +2,13 @@
 The project hase been developped during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realized in Paris associations.
 
 ## The objectives:
-- Professional Experience: Engage in full-time professional practice within
-a Parisian association
-- Skill Development: Cultivate skills as a development engineer, focusing
-on real-world applications
-- Career Exploration: Investigate potential career trajectories, especially
-in computer sciences applied to societal challenges
-- Hands-on Learning: Immerse in new techniques, methodologies, tools,
-and their practical applications
-- Association Ethics: Grasp the ethical considerations and operational
-nuances of associations
-- Professional Adaptability: Evaluate one's ability to integrate and adapt
-in a professional environment
-- Job Market Transition: Equip oneself with the skills and experience to
-seamlessly enter the job market
+- Professional Experience: Engage in full-time professional practice within Parisian associations
+- Skill Development: Cultivate skills as a development engineer, focusing on real-world applications
+- Career Exploration: Investigate potential career trajectories, especially in computer sciences applied to societal challenges
+- Hands-on Learning: Immerse in new techniques, methodologies, tools, and their practical applications
+- Association Ethics: Grasp the ethical considerations and operational nuances of associations
+- Professional Adaptability: Evaluate one's ability to integrate and adapt in a professional environment
+- Job Market Transition: Equip oneself with the skills and experience to seamlessly enter the job market
 
 ## The methodology
 The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that both the developpers team and the users were represented by myself only.
@@ -242,7 +235,8 @@ MongoDB usage is explained by its SaaS offer and its popularity. The databse ope
 ## Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
-# The limits and improvements of the application
+# The limits of the application and future enhancements 
+
 It is developped only for Linux.
 
 The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker.
@@ -281,11 +275,14 @@ A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cann
 ## The limits related to Vue
 Vue supports web browsers compatible with ECMAScript 5
 
-## Other possible improvement
-Some othe feautres could be added, like: 
-- notifications for exceptional analysis results;
-- detection of the first channel to spead information;
-- comparison of the rusults with other projects.
+## future enhancements
+As technology and misinformation tactics evolve, so will this application.
+Future versions aim to:
+- integrate with other messaging platforms beyond Telegram
+- allow users to customize their propaganda detection parameters
+- provide real-time alerts to users about exceptional analysis results
+- detection of the first channel to spead information
+- comparison of the rusults with other projects
 
 ## Conceptual limits 
 The learning and the choice of the characteristics are founded on a human subjective opinion.
@@ -323,7 +320,7 @@ Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
-**дописать** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 # Some projects of similar orientation
 - [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
