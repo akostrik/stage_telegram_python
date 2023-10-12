@@ -209,27 +209,34 @@ MongoDB usage is explained by its SaaS offer and its popularity. The databse ope
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
 ## The limits of the application
-- It is developped only for Linux
-- The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker 
+It is developped only for Linux.
+
+The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker.
  
 ### The limits related to OpenAI
-- The application works **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats about 5 messages per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
+The application works **slowly** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png), chiefly beacuse gpt-4 treats only about 5 requests per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
   * by involving a great number of powerful machines
   * by involving a grand number of OpenAI accounts
   * using of other language models can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **which is ...**
-- Errors of OpenAI analisys, which may be improuved :
+
+The quality of OpenAI analisys may be improuved :
   * by cross-analysis by several language models 
   * by learning
   * by fine-tuning
-- The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
-- The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
+
+The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
+
+The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
 
 Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models.
 
 ### The limits related to MongoDB
-- MongoDB database size is limited to 16 Mgb (for free accounts) **to verify** ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png).
-- The instructions are provided here only for the cloud version MongoDB (MongoDB Atlas), however the user can use MongoDB [installed locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
-- The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means descibed above or others), the databade requests can be accelerated by installing MongoDn locally et may be by using other databases.
+
+The installation instructions are provided in this document only for the cloud version MongoDB (MongoDB Atlas), however the user can [install MongoDB locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
+
+The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means descibed above or others), the databade requests can be accelerated by installing MongoDn locally et may be by using other databases.
+
+A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size, thought these limits hardly concern this application. 
 
 ### The limits related to Telegram
 - The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
@@ -301,3 +308,4 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 [^8]: https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.htm 
 [^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
 [^10]: https://nodejs.org/en/about
+[^11]: https://www.mongodb.com/docs/manual/reference/limits/
