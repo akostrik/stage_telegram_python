@@ -10,12 +10,10 @@ The project hase been developped during an Internship of 5 months, from the 3d A
 - Evaluate the capacity of integration in the professional environment
 - So, ensure the entrance to the work market
 
-## Motivation
-The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and organisation.
+## Context and motivation
+The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
 
-This project is aimed at automatical detecting of propagandistic information in Telegram channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
-
-Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels (a channel is a one-way broadcast tool) on different subjects, chiefly in Russian, with little censorship. 
+This project is aimed at automatical detecting of propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
 
 ## The methodology
 The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.
@@ -232,23 +230,24 @@ It is developped only for Linux.
 The installation and configuration instructions are complicated for a user, they should be unified in one instruction by using Docker.
  
 ## The limits related to OpenAI
-Gpt-4 treats only about 5 requests per minute. However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
+Gpt-4 treats only about 5 requests per minute. However, this [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis, respesenting the lowest part of the appliation, may be accelerated :
   * by involving a great number of powerful machines
   * by involving a grand number of OpenAI accounts
-  * using of other language models can be envisaged, for example [Facebook Artificial Intelligence Research](https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research), **which is ...**
-
-Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models. [^12]
-
-Extraction of affirmations gives acceptable results only with Gpt-4 (not wirh Gpt-3) and only with some examples included in the request.
+  * using of other language models can be envisaged, for example
 
 The quality of OpenAI analisys may be improuved :
   * by cross-analysis by several language models 
-  * by learning
+  * by prompt design
+  * by learning ()
   * by fine-tuning
+
+Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models. [^12]
 
 The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length
 
 The learning service is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples)
+
+Extraction of affirmations gives acceptable results only with Gpt-4 (not with Gpt-3) and only with some examples included in the request.
 
 ## The limits related to MongoDB
 
@@ -256,7 +255,7 @@ The installation instructions are provided in this document only for the cloud v
 
 The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means descibed above or others), the databade requests can be accelerated by installing MongoDn locally et may be by using other databases.
 
-A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size, thought these limits hardly concern this application. 
+A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size. 
 
 ## The limits related to Telegram
 - The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
@@ -337,3 +336,4 @@ Distances euclidienne, jaccard, cos, ... ![#f03c15](https://placehold.co/15x15/f
 [^10]: https://nodejs.org/en/about
 [^11]: https://www.mongodb.com/docs/manual/reference/limits/
 [^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms 
+[^13]: Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels (a channel is a one-way broadcast tool) on different subjects, chiefly in Russian, with little censorship.  
