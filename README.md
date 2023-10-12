@@ -35,7 +35,7 @@ The approach to development followed the Scrum principes like:
 - changing of the requirements as the project evolves.
 
 ## Aquired competences
-A lof of completely new experience, like:
+A lof of completely new experience was aquired, like:
 - the conception of a whole application with several servers, several API, several external services
 - programming languages languanges (python, node.js)
 - frameworks (Vue, express, ...) 
