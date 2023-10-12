@@ -268,7 +268,13 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 
                                 
-|                                 | improvement  | improvement  |     needed     |    cost                |
+| the means           | speed | quality | investissement | cost |
+|---------------------|-------|---------|----------------|------|
+| difference (test 1) |  2    |  2      |  2             |   2  |
+| difference (test 2) |  1    |  1      |  2             |  3   |
+
+
+| the means                       | improvement  | improvement  |     needed     |    cost                |
 |---------------------------------------------------------------------------------------------------------|
 | many powerful machines          | yes          | no           | yes            | increasing             |
 | many LLM accounts               | yes          | no           | no             | increasing             |
