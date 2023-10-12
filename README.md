@@ -10,7 +10,7 @@ The project hase been developped during an Internship of 5 months, from the 3d A
 - Professional adaptability: Evaluate one's ability to integrate and adapt in a professional environment
 - Job market tеransition: Equip oneself with the skills and experience to seamlessly enter the job market
 
-## Context and motivation
+## The context and motivation
 The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
 
 This project is aimed at automatical detecting of propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
@@ -322,17 +322,6 @@ Keeping of a part of the data in the application memory, and not in the database
 - Real-time analysis of messages, giving users instant feedback on the content they are consuming.
 - Echo chamber detection: One of the standout features of the current version is the ability to detect echo chambers, where multiple channels promote the same narrative, potentially indicating coordinated propaganda efforts.
 
-## future enhancements
-As technology and misinformation tactics evolve, so will this application.
-Future versions aim to:
-- integrate with other messaging platforms beyond Telegram
-- allow users to customize their propaganda detection parameters
-- provide real-time alerts to users about exceptional analysis results
-- detection of the first channel to spead information
-- comparison of the rusults with other projects
-- Customizable detection parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs.
-
-## OpenAI experimentations
 The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficients of the groups between 3 and 8 points:
 
 ![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
@@ -344,6 +333,16 @@ Two tests on the values of the trust coefficient depending in the temperature pa
 | difference (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
+
+## future enhancements
+As technology and misinformation tactics evolve, so will this application.
+Future versions aim to:
+- integrate with other messaging platforms beyond Telegram
+- allow users to customize their propaganda detection parameters
+- provide real-time alerts to users about exceptional analysis results
+- detection of the first channel to spead information
+- comparison of the rusults with other projects
+- customizable detection parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs.
 
 Elasticsearch ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
