@@ -48,7 +48,7 @@ This project is aimed at automatical detecting of propagandistic information in 
 1. Real-time Telegram messages verification by two methods:
 - Scan individual messages for propaganda markers via OpenAI [^8];
 - Analyze recent information from various channels to identify and highlight similarities, ensuring users are aware of potential echo chambers.
-2. Continuous Learning & Improvement:
+2. Continuous learning and improvement:
 - Feedback Loop: The application learns from its mistakes. By leveraging previous OpenAI responses, which are corrected by users, the system refines its accuracy over time.
 
 ## Simplified diagram of the application (except Learning service)
