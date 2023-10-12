@@ -21,7 +21,7 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 1) Real time verification of Telegram messages veracity by two methods:
 - Looking for the marks of the propaganda [^8] in every separate message via OpenAI
 - Comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
-2) Constant improvement of its results by the mean of a Learning service, which consists in attaching some previous OpenAI responses, corrected by a user, to OpenAI requests.
+2) Constant improvement of the results by the mean of a Learning service, which consists in attaching some previous OpenAI responses, corrected by a user, to OpenAI requests.
 
 ### Simplified diagram of the application (except Learning service)
 ![Capture d’écran de 2023-10-12 10-38-38](https://github.com/akostrik/stage_telegram/assets/22834202/41252982-3978-40d9-9b2b-20483566d203)
