@@ -81,7 +81,7 @@ Simultaneously, the _Learning service_ is working:
 3) _Server 3_ puts the corrected examples to the database, via MongoDB API
 4) _Server 1_ attaches (a limited number of) these corrected examples to every new OpenAI request 
 
-# How to use the application
+# Setup and usage
 The user should have a web browser compatible with ECMAScript 5 (for example, IE8 and its previous versions are  not compatible with ECMAScript 5)
 
 ## MongoDB Atlas configuration
