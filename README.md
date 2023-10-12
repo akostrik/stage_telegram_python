@@ -32,25 +32,25 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 ### Description of the application in English
 1) [_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src)
  gets from the web browser a name of Telegram channel to examinate, via Server 3 [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-2) _Server 3_ transmet the name of the channel to [_Server2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) via Server 2 API
-3) _Server 2_ put puts the name of the channel to MongoDB via MongoDB API
-4) [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/server1) permanently gets the names of the channels from MongoDB via MongoDB API
-5) _Server 1_ listens permanently to the chosen channels via Telegram API
+2) _Server 3_ transmet the name of the channel to [_Server2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js), via Server 2 API
+3) _Server 2_ put puts the name of the channel to MongoDB, via MongoDB API
+4) [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/server1) permanently gets the names of the channels from MongoDB, via MongoDB API
+5) _Server 1_ listens permanently to the chosen channels, via Telegram API
 6) _Server 1_ treats every new message, that is:
-- estimates the marks of the propaganda of the message via OpenAI API
+- estimates the marks of the propaganda of the message, via OpenAI API
 - based on these marks of the propaganda it calculates the trust coefficient of the message
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
 - compares these affirmations to the recent affirmations of the other followed channels
-- stocks all obtained information in MongoDB database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels) via MongoDB API
-7) _Server 2_ consults permanently the results of the computations in MongoDB via MongoDB API
-8) _Server 2_ returns permanently the current results of the computations to the _Server 3_ via Server 2 API
+- stocks all obtained information in MongoDB database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels), via MongoDB API
+7) _Server 2_ consults permanently the results of the computations in MongoDB, via MongoDB API
+8) _Server 2_ returns permanently the current results of the computations to the _Server 3_, via Server 2 API
 9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit of the graph contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels, via Server 3 API
 10) The web browser displays the graph to the user
 
-Simultaneously, the learning service is working:
-1) _Server 3_ proposes to the user to correct OpenAI's the previous responses in the borwser, via the Server 3API
+Simultaneously, the _Learning service_ is working:
+1) _Server 3_ proposes to the user to correct OpenAI's previous responses in the web browser, via the Server 3 API
 2) As soon as the user provides the corrected examples, _Server 3_ passes them to _Server 2_
-3) _Server 3_ puts the corrected examples to the database via MongoDB API
+3) _Server 3_ puts the corrected examples to the database, via MongoDB API
 4) _Server 1_ attaches (a limited number of) these corrected examples to every new OpenAI request 
 
 ## How to use the application
