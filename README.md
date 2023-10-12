@@ -19,9 +19,9 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 
 ## What the application does
 1) Real time verification of Telegram messages veracity by two methods:
-- Looking for the marks of the propaganda [^8] in every separate message via OpenAI
-- Comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
-2) Constant improvement of the results by the mean of a Learning service, which consists in attaching some previous OpenAI responses, corrected by a user, to OpenAI requests.
+- looking for the marks of the propaganda [^8] in every separate message via OpenAI
+- comparison, via OpenAI, of the recent information diffused by several channels, in order to detect similar channels
+2) Constant improvement of the results by the mean of a Learning service, which consists in attaching some previous OpenAI responses, corrected by a user, to OpenAI requests
 
 ### Simplified diagram of the application (except Learning service)
 ![Capture d’écran de 2023-10-12 10-38-38](https://github.com/akostrik/stage_telegram/assets/22834202/41252982-3978-40d9-9b2b-20483566d203)
@@ -31,7 +31,7 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 
 ### Description of the application in English
 1) [_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src)
- gets from the browser a name of Telegram channel to examinate, via Server 3 API
+ gets from the browser a name of Telegram channel to examinate, via Server 3 [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
 2) _Server 3_ transmet the name of the channel to [_Server2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) via Server 2 API
 3) _Server 2_ put puts the name of the channel to MongoDB via MongoDB API
 4) [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/server1) permanently gets the names of the channels from MongoDB via MongoDB API
@@ -143,7 +143,7 @@ npm run dev
 ### Go to the user interface
 After having installed and configured all noted above, [enjoy the service](http://localhost:5173/) 
 
-## How does the application work
+## How does the application work (in technical language)
 ### The parameters of the application
 - The characteristics of the propaganda
 - [The text of the characteristics request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
@@ -168,10 +168,13 @@ The server 1 is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
 - Python is a rather easy language (partly becauseof its easy syntax)
 
-#### Javascript details
-The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces, be they simple or complex [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^7]
+#### Node.js details
+The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^7]
 
-[Express](https://expressjs.com/) framework
+[Express](https://expressjs.com/) Node web framework, is used to:
+- write handlers for requests
+- set the port to use, and the location of templates that are used for rendering the response
+- integrate with "view" rendering engines in order to generate responses by inserting data into templates
 
 [Vue.js](https://vuejs.org/) framework
 
@@ -181,6 +184,16 @@ The user interface is written in Vue.js, because its programming model is adapte
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`) 
 
 Why MongoDB ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) 
+
+#### Asynchrony details
+
+Telegram requests are asynchronous 
+
+OpenAI server 1 requests are **not asynchronous** 
+
+MongoDB server 1 requests are **not all asynchronous**
+
+Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 #### Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
@@ -204,24 +217,12 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 
 Alternatives to the paid approach could be to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models.
 
-
 ### The limits related to Telegram
 - The application **can't read some channels**, for example [this one](https://t.me/generallsvr) ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 ### Non-technical limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
 - The application may help to the malefactors to adjust the propagandistic messages to make them pass unnoticed
 - The application doesn't aime at the deep causes of the propaganda 
-
-### Other limits
-#### Asynchronous requests
-
-Telegram requests are asynchronous 
-
-OpenAI server 1 requests are **not asynchronous** 
-
-MongoDB server 1 requests are **not all asynchronous**
-
-Server 2 requests ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 
 ## Experimentations
 ### OpenAI experimentations
