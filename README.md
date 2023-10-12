@@ -173,6 +173,11 @@ In the third terminal launch _Server 3_
 cd user_interface
 npm run dev
 ```
+Install Vue [^15]
+```bash
+npm install vue
+```
+
 ## Go to the user interface
 After having installed and configured all noted above, enjoy the service http://localhost:5173/ 
 
@@ -365,3 +370,4 @@ Future versions aim to:
 [^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms 
 [^13]: Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels (a channel is a one-way broadcast tool) on different subjects, chiefly in Russian, with little censorship.  
 [^14]: https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes.
+[^15]: https://v2.fr.vuejs.org/v2/guide/installation.html 
