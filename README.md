@@ -144,9 +144,9 @@ Copy `server1/.env` to `server2/.env`
 _Be very very careful not to publish this file on the internet and not to transmit it to unfamiliar people_
 
 ## Setup
-Install python version >= 3.7.1
+[Install python](https://www.python.org/downloads/) (version >= 3.7.1)
 
-Install the libraries and modules:
+Install python libraries and modules:
 ```bash
 pip3 install telethon
 pip install DateTime
@@ -155,12 +155,9 @@ pip install pymongo
 pip install --upgrade openai
 npm install dotenv --save
 ```
-Install [nmp package manager](https://www.npmjs.com/)
-```
-cd server3
-npm install
-```
-_PS `npm install` should be executed in the same folder where `package.json` file is_
+[Install Node and npm](https://www.mongodb.com/docs/drivers/node/current/quick-start/download-and-install/#std-label-node-quick-start-download-and-install)
+
+_NB `npm install` should be executed in the same folder where `package.json` file is_
 
 ## Compile and run
 In the first terminal launch _Server 1_
@@ -213,6 +210,10 @@ The _Server 1_ is written in Python, because:
 
 ## node.js details
 [Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in Node.js directly performs I/O, so the process never blocks [^10].
+
+between [other possibilities](https://www.mongodb.com/docs/drivers/) 
+
+https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 
 The server creates a listening socket and then blocks while waiting for new connections. During this time, the kernel puts the process into an interruptible sleep state and runs other processes. [^14]
 
