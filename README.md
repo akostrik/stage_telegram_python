@@ -147,6 +147,11 @@ After having installed and configured all noted above, enjoy the service http://
 
 ## Technical details of the deveppement
 _To unserstand this section, the reader should have basic knowledge of the teminology of computer sciences_
+
+_Server 1_ is created in python, _Server 2_ in node.js and _Server 3_ in vue.js.
+
+Separation of the data treatment provided by _Server 1_ and the presentation functoinality provided by _Server 2_ and _Server 3_ falls into the pattern of _[Model-View-ViewModel](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
+
 ### The parameters of the application
 - The characteristics of the propaganda
 - [The text of the characteristics request](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
@@ -166,19 +171,23 @@ _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 The application does O(N) OpenAI requests and O(N*K) MongoDB requests, where N is the total numbre of messages, K is the nuber of followed channels
 
 ### Python details
-The server 1 is written in Python, because:
+The _Server 1_ is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
 - Python is a rather easy language (partly becauseof its easy syntax)
 
-### Node.js details
-[Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding Angular and React as other possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
+### Presentation functionality (node.js and vue.js) details
 
-[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
+[Node.js](https://nodejs.org/en/about), a asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser, is a raisonable choice because no function in Node.js directly performs I/O, so the process never blocks except when the I/O is performed using synchronous methods of Node.js standard library [^10].
+
+[Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding to Angular and React as its possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
 
 [Express](https://expressjs.com/) Node web framework, is used by _Server 2_ to:
 - write handlers for requests
 - set the port to use, and the location of templates that are used for rendering the response
-- integrate with "view" rendering engines in order to generate responses by inserting data into templates
+- integrate with "view" rendering engines in order to generate responses by inserting data into templates.
+
+[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
+
 
 ### Asynchrony details
 
@@ -290,3 +299,4 @@ Agile scrum [#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
 [^7]: https://skillbox.ru/media/code/vuejs-chto-takoe-kak-on-ustroen-i-chem-otlichaetsya-ot-react/ 
 [^8]: https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.htm 
 [^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
+[^10]: https://nodejs.org/en/about
