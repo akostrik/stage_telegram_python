@@ -169,13 +169,11 @@ The server 1 is written in Python, because:
 #### Javascript details
 The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces, be they simple or complex [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^7]
 
-Vite, a development server used by default by Vue, monitors files as they're being edited and upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by just reloading the specific file being changed instead of recompiling the entire application. [^5]
-
 [Express](https://expressjs.com/) framework
 
 [Vue.js](https://vuejs.org/) framework
 
-[Vite](https://vitejs.dev/) a local development server and used by Vue
+[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited and upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by just reloading the specific file being changed instead of recompiling the entire application. [^5]
 
 #### Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`) 
