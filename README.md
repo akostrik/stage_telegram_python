@@ -285,7 +285,7 @@ Future versions aim to:
 - comparison of the rusults with other projects
 
 ## Conceptual limits 
-The learning and the choice of the characteristics are founded on a human subjective opinion.
+The learning and the choice of the characteristics are founded on a human subjective opinion, there's always a margin of error.
 
 The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed.
 
