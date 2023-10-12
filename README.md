@@ -24,7 +24,7 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 2) Constant improvement of its results by the mean of a Learning service, which consists in attaching some previous OpenAI responses, corrected by a user, to OpenAI requests.
 
 ### Simplified diagram of the application (except Learning service)
-![Screenshot from 2023-10-10 22-21-58](https://github.com/akostrik/stage_telegram/assets/22834202/99074446-16eb-4096-877b-af61d3f9efc6)
+![Capture d’écran de 2023-10-12 10-06-54](https://github.com/akostrik/stage_telegram/assets/22834202/adcec118-54af-44fb-8610-3ce41649449d)
 
 ### Diagram of the application in the programmer style
 ![Screenshot from 2023-10-10 22-24-14](https://github.com/akostrik/stage_telegram/assets/22834202/fa7b6eae-d1d0-47cc-8a89-92dcf5c57d68)
