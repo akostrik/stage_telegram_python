@@ -76,10 +76,10 @@ This project wouldn't have been possible without the guidance of the faculty at 
 - based on these marks of the propaganda it calculates the trust coefficient of the message
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
 - compares these affirmations to the recent affirmations of the other followed channels
-- stocks all obtained information in MongoDB Atlas database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels), via MongoDB API
+- stocks all obtained information in MongoDB Atlas database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the index of similarity of the channels), via MongoDB API
 7) _Server 2_ consults permanently the results of the computations in MongoDB Atlas, via MongoDB API
 8) _Server 2_ returns permanently the current results of the computations to the _Server 3_, via Server 2 API
-9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels, via Server 3 API
+9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via Server 3 API
 10) The web browser displays the graph to the user
 
 Simultaneously, the _Learning service_ is working:
@@ -196,7 +196,7 @@ _Server 1_ and _Server 2_ represent the backend functionality, while _Server 3_ 
 - The time where a message is considered as recent (in hours)
 
 ## Computation details 
-_Similarity measure of two channels (channel1, channel2)_ = the numbre of their similar affirmations  - the number of their opposite affirmations
+_The similarity index of two channels (channel1, channel2)_ = the numbre of their similar affirmations  - the number of their opposite affirmations
 
 _The trust coefficient of a channel_ is a number in the interval [0 … 100]
 
@@ -298,12 +298,16 @@ The application doesn't aime at the deep causes of the propaganda.
 
 # Experimentations, evolution, iterations
 ## Prototype Phase:
-- Basic Propaganda Detection: The initial prototype was a rudimentary system that relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
-- Limited Channel Integration: The prototype was limited to the set of fixed (in the code) channels, primarily to test the waters and understand challenges to face.
+Basic Propaganda Detection: The initial prototype was a rudimentary system that relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
+
+Limited Channel Integration: The prototype was limited to the set of fixed (in the code) channels, primarily to test the waters and understand challenges to face.
 
 ## Version 1.0
-- Integration of LLM to analyze the context of messages significantly improved detection accuracy but had its own set of challenges, especially false positives.
-- User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
+<img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
+
+Integration of LLM to analyze the context of messages significantly improved detection accuracy but had its own set of challenges, especially false positives.
+
+User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
 Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
 
@@ -316,8 +320,9 @@ The direct question to OpenAI, _Is there any marks of the propagande in this mes
 
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
-The classifying of the channes into groups according to their subject didn't prove to be useful in this project.
-Distances euclidienne, jaccard, cos, ... 
+The clasterisation of channels according to their subject didn't prove to be useful, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was excluded.
+
+The idea of definition of a _similatiry index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enought to test all these possibilities. The terms _metric_ or _distance_ should not be involved, because the positivity axiome [^16] doens't necessary hold true.
 
 Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions.
 
@@ -337,9 +342,7 @@ Two tests on the values of the trust coefficient depending in the temperature pa
 | difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | difference (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
-<img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
-
-## future enhancements
+## Future enhancements
 As technology and misinformation tactics evolve, so will this application.
 Future versions aim to:
 - integrate with other messaging platforms beyond Telegram
@@ -372,3 +375,4 @@ Future versions aim to:
 [^13]: Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels (a channel is a one-way broadcast tool) on different subjects, chiefly in Russian, with little censorship.  
 [^14]: https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes.
 [^15]: https://v2.fr.vuejs.org/v2/guide/installation.html 
+[^16]: the distance between two distinct points is always positive
