@@ -273,7 +273,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 | learning (prompt with examples) | the same | better   | no or little   | the same               |
 | fine-tuning *                   | better   | better ! | yes            | decreasing             |
 
-* for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
+(*) for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
 The _Learning service_ of the application is limited to 5 examples par a request (but if the message, the examples and the OpenAI response are altogether longer than [_The maximal length of OpenAI request_]((https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)) parameter, then the learning is limited to less than 5 examples).
 
