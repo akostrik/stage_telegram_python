@@ -10,15 +10,12 @@ The project hase been developped during an Internship of 5 months, from the 3d A
 - Evaluate the capacity of integration in the professional environment
 - So, ensure the entrance to the work market
 
-## The particular missions of the internship in the context 
-This project is aimed at automatical detecting of propagandistic information in Telegram channels. 
-
-The information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
-
-Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects (chiefly in Russian) with little censorship. A Telegram channel is a one-way broadcast tool.  
-
-## Why an application like this
+## Motivation
 The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and organisation.
+
+This project is aimed at automatical detecting of propagandistic information in Telegram channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
+
+Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels (a channel is a one-way broadcast tool) on different subjects, chiefly in Russian, with little censorship. 
 
 ## The methodology
 The metodogy applicated was close to the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that, the projet being a litle one, both the developpers team and the users were represented by myself only.
