@@ -54,6 +54,8 @@ Simultaneously, the _Learning service_ is working:
 4) _Server 1_ attaches (a limited number of) these corrected examples to every new OpenAI request 
 
 ## How to use the application
+The user should have a web browser compatible with ECMAScript 5 (IE8 and its previous versions are  compatible with ECMAScript 5)
+
 ### Database MongoDB Atlas configuration (in the cloud)
 [Create a MongoDB account](https://cloud.mongodb.com/) 
 
