@@ -31,7 +31,7 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 
 ### Description of the application in English
 1) [_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src)
- gets from the browser a name of Telegram channel to examinate, via Server 3 [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
+ gets from the web browser a name of Telegram channel to examinate, via Server 3 [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
 2) _Server 3_ transmet the name of the channel to [_Server2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) via Server 2 API
 3) _Server 2_ put puts the name of the channel to MongoDB via MongoDB API
 4) [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/server1) permanently gets the names of the channels from MongoDB via MongoDB API
@@ -44,8 +44,8 @@ Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particula
 - stocks all obtained information in MongoDB database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the measure of similarity of the channels) via MongoDB API
 7) _Server 2_ consults permanently the results of the computations in MongoDB via MongoDB API
 8) _Server 2_ returns permanently the current results of the computations to the _Server 3_ via Server 2 API
-9) _Server 3_ passes the the results to the browser in the form of a graph of the channels, where every summit of the graph contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels, via Server 3 API
-10) The browser displays the graph to the user
+9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit of the graph contains the id of the channel and its trust coefficient, and every edge is the measure of similarity of two concerned channels, via Server 3 API
+10) The web browser displays the graph to the user
 
 Simultaneously, the learning service is working:
 1) _Server 3_ proposes to the user to correct OpenAI's the previous responses in the borwser, via the Server 3API
@@ -169,16 +169,15 @@ The server 1 is written in Python, because:
 - Python is a rather easy language (partly becauseof its easy syntax)
 
 #### Node.js details
-The user interface is written in Vue.js, because its programming model is adapted to efficiently develop user interfaces [^3], it has a simple syntax and intuitive documentation and suits for smaller projects and novice developers [^7]
+[Vue.js](https://vuejs.org/) framework usage for _Server 3_ is explained by its programming model adapted to efficiently develop user interfaces [^3], simple syntax, intuitive documentation and pertinence for smaller projects and novice developers [^7].
 
-[Express](https://expressjs.com/) Node web framework, is used to:
+[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
+
+[Express](https://expressjs.com/) Node web framework, is used by _Server 2_ to:
 - write handlers for requests
 - set the port to use, and the location of templates that are used for rendering the response
 - integrate with "view" rendering engines in order to generate responses by inserting data into templates
 
-[Vue.js](https://vuejs.org/) framework
-
-[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited and upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by just reloading the specific file being changed instead of recompiling the entire application. [^5]
 
 #### Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
