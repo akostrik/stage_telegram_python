@@ -260,7 +260,7 @@ A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cann
 ## The limits related to Vue
 Vue supports web browsers compatible with ECMAScript 5
 
-## Non-technical limits 
+## Conceptual limits 
 - The learning and the choice of the characteristics are founded on a human subjective opinion
 - The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed
 - The application doesn't aime at the deep causes of the propaganda 
