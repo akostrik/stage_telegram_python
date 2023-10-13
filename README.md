@@ -1,5 +1,5 @@
 # Internship in the context of Master II study at Sorbonne University (Paris) 
-The project has been developped during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realized in Paris associations.
+The project has been developed during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realised in Paris associations.
 
 ## The objectives
 - Professional experience: Engage in full-time professional practice
