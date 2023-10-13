@@ -83,10 +83,10 @@ This project wouldn't have been possible without the guidance of the faculty at 
 10) The web browser displays the graph to the user
 
 Simultaneously, the _Learning service_ is working:
-7) `Server 3` proposes to the user to correct OpenAI's previous responses in the web browser, via the `Server 3` API
-2) As soon as the user provides the corrected examples, `Server 3` passes them to `Server 2`
-3) `Server 2` puts the corrected examples to the database, via MongoDB API
-4) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
+1) `Server 3` proposes to the user to correct OpenAI's previous responses in the web browser, via the `Server 3` API
+1) As soon as the user provides the corrected examples, `Server 3` passes them to `Server 2`
+1) `Server 2` puts the corrected examples to the database, via MongoDB API
+1) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
 
 # Setup and usage
 The user should have a web browser compatible with ECMAScript 5 (for example, IE8 and its previous versions are  not compatible with ECMAScript 5).
