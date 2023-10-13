@@ -64,7 +64,7 @@ export default {
     editRecord(record) {
       this.currentRecord = record;
     },
-    editAffirmation(affirmation) { // to edit a specific affirmation
+    editAffirmation(affirmation) {
       this.currentAffirmation = affirmation;
     },
     onSaved() {

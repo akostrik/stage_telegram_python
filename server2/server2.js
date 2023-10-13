@@ -7,7 +7,7 @@ const ObjectId    = require('mongodb').ObjectId;
 const app         = express();
 const port        = 3001;
 
-app.use(bodyParser.json()); // tells the system that you want json to be used
+app.use(bodyParser.json()); // json to be used
 app.use(cors());
 
 const mongoUrl    = 'mongodb+srv://anna:1AQ2ZS3ED@cluster0.pysxbay.mongodb.net/?retryWrites=true&w=majority';

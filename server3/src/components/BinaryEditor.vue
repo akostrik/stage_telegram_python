@@ -96,6 +96,5 @@ export default {
   }
 }
 
-  
 };
 </script>

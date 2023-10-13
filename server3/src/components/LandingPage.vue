@@ -3,10 +3,8 @@
     <h1>Welcome to the Dashboard</h1>
     <button @click="navigate('recordEditor')">Go to Record Editor</button>
     <button @click="navigate('binaryEditor')">Go to Binary Affirmations Editor</button>
-
     <input v-model="channelId" placeholder="Enter channel ID" />
     <button @click="saveChannel">Save Channel</button>
-
     <div id="cy" class="cytoscape-container"></div>
   </div>
 </template>
@@ -34,11 +32,8 @@ export default {
   },
   async mounted() {
     try {
-      // Fetch relations
       const relationResponse = await axios.get('http://localhost:3001/relations/');
       const relations = relationResponse.data;
-
-      // Fetch channels
       const channelResponse = await axios.get('http://localhost:3001/channels/');
       const channels = channelResponse.data;
 
@@ -54,11 +49,9 @@ export default {
         const channelA = channelMap[relation.channel_a];
         const channelB = channelMap[relation.channel_b];
 
-        // Add nodes for channels with average_score
-        elements.push({ data: { id: channelA.channelId, average_score: channelA.average_score } }); // Adjusted to use channelId
-        elements.push({ data: { id: channelB.channelId, average_score: channelB.average_score } }); // Adjusted to use channelId
-            
-        // Add edges between channels
+        // Add 2 nodes and un edge
+        elements.push({ data: { id: channelA.channelId, average_score: channelA.average_score } });  // Adjusted to use channelId
+        elements.push({ data: { id: channelB.channelId, average_score: channelB.average_score } });
         elements.push({
           data: {
             id: relation.channel_a + '-' + relation.channel_b,
@@ -68,7 +61,6 @@ export default {
           }
         });
       });
-
 
       cytoscape({
           container: document.getElementById('cy'),
@@ -87,16 +79,16 @@ export default {
             selector: 'edge',
             style: {
               'curve-style': 'bezier',
-              'width': 'data(relation)', // This will set the edge width based on the relation value.
-              'label': 'data(relation)', // This will display the relation value as a label on the edge.
-              'text-rotation': 'autorotate', // This rotates the text so it's aligned with the edge.
-              'text-margin-y': -10, // This offsets the text a bit from the edge to make it more readable.
+              'width': 'data(relation)',     // set the edge width based on the relation value
+              'label': 'data(relation)',     // display the relation value as a label on the edge
+              'text-rotation': 'autorotate', // rotates the text so it's aligned with the edge
+              'text-margin-y': -10,          // The offsets the text a bit from the edge
               'font-size': '8px'
             }
           }
         ],
           layout: {
-            name: 'cose', // This is a force-directed layout.
+            name: 'cose', // a force-directed layout
           }
         });
       // Initialize Cytoscape with modified elements
@@ -144,14 +136,11 @@ export default {
   align-items: center;
   gap: 20px;
 }
-
 .chart {
   width: 80%;
   height: 400px;
   margin-top: 20px;
 }
-
-
 </style>
 
 <style scoped>
