@@ -93,7 +93,7 @@ The user should have a web browser compatible with ECMAScript 5 (for example, IE
 
 ## MongoDB Atlas configuration
 
-[MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4) in a database MongoDB the in cloud.
+[MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4) in a database MongoDB in the cloud.
 
 [Create a MongoDB account](https://cloud.mongodb.com/) 
 
@@ -177,10 +177,10 @@ npm run dev
 
 Enjoy the service http://localhost:5173/ 
 
-# Technical details of the deveppement
-_To unserstand this section, the reader should have basic knowledge of computer sciences teminology_
+# Technical details of the developement
+_To understand this section, the reader should have basic knowledge of computer sciences teminology_
 
-Separation of the data treatment provided by `Server 1` and the presentation functoinality provided by `Server 2` and `Server 3` falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
+Separation of the data treatment provided by `Server 1` and the presentation functionality provided by `Server 2` and `Server 3` falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
 `Server 1` and `Server 2` represent the backend functionality, while `Server 3` ensures the Frontend one.
 
@@ -193,7 +193,7 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 - OpenAI model for a characteristics request
 - OpenAI model for a affirmations request
 - OpenAI temperature, between 0 and 1: higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic (if set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit [^2])
-- OpenAI request maximal lenth (in tokens [^1])
+- OpenAI request maximal length (in tokens [^1])
 - Telegram message maximal length (in characters)
 - The time where a message is considered as recent (in hours)
 
