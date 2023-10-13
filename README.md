@@ -366,4 +366,4 @@ Future versions aim to:
 [^13]: Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels (a channel is a one-way broadcast tool) on different subjects, chiefly in Russian, with little censorship.  
 [^14]: https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes.
 [^15]: https://v2.fr.vuejs.org/v2/guide/installation.html 
-[^16]: the distance between two distinct points is always positive
+[^16]: the distance between two distinct points is always positive https://en.wikipedia.org/wiki/Metric_space 
