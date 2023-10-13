@@ -228,15 +228,7 @@ The visualization is provided by the graph visualization library [Cytoscape](htt
 
 ## Asynchrony details
 
-[Asynchrony](https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)) refers to the actions instigated by a program that take place concurrently with program execution, without the program blocking to wait for results. In this application, it concerns the requests to Telegram, OpenAI and MongoDB.
-
-Telegram requests are asynchronous 
-
-OpenAI server 1 requests are not asynchronous
-
-MongoDB server 1 requests are not all asynchronous
-
-Server 2 requests ...
+[Asynchrony](https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)) refers to the actions instigated by a program that take place concurrently with program execution, without the program blocking to wait for results. In this application, it concerns many requests (see the dotted arrows on the application diagram).
 
 ## Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
