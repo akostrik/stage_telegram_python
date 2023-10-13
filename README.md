@@ -276,10 +276,10 @@ A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cann
 The application could not read [this channel](https://t.me/generallsvr).
 
 ## The limitations related to Vue
-Vue supports web browsers compatible with ECMAScript 5
+Vue supports web browsers compatible with ECMAScript 5.
 
 ## Conceptual limitations 
-The learning and the choice of the characteristics are founded on a human subjective opinion, there's always a margin of error.
+The learning and the choice of the characteristics are founded on a human subjective opinion, where there's a margin of error.
 
 The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed.
 
