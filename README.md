@@ -333,7 +333,7 @@ Gpt-4 improved the quality of the analysis by characteristics, though extraction
 
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and proved to be too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
-The analysis of a series of messages, instead of analyzing messages one by one, was tested.
+The analysis of a series of messages, instead of analyzing messages one by one, was tested, though it did not prove acceptable results.
 
 Detecting of the kind of channel content wss tested, helping the user to choose which channels to follow. The clasterisation of channels according to their subject, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was postponed.
 
