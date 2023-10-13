@@ -292,13 +292,13 @@ The initial prototype relied on keyword matching to flag potential propaganda me
 
 Integration of LLM to analyze the context of messages significantly improved detection accuracy but has its own set of challenges, especially false positives.
 
-Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "understanding" of the meaning of a message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
+Extracting detailed information (like the main subject, the people it deals with, etc) from a message, that is "understanding" of the meaning of a message, didn't work correctly because of the poor quality of the analysis. Sorry for the example in Russian.
 
 The direct question to OpenAI, _Is there any marks of the propaganda in this message?_, also didn't work correctly.
 
 User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
-Keeping the data only in the application memory, and not in the database, prevented the application from having access to the results of the previous executions. Channels identifiers was fixed directlty in the code.
+Keeping the data only in the application memory, and not in the database, prevented the application from having access to the results of the previous executions. Channels identifiers was fixed directly in the code.
 
 The experimentations were important to understand challenges to face.
 
@@ -309,7 +309,7 @@ The comparison of paires of messages directly via OpenAI (instead of extracting 
 
 The analysis of a series of messages, instead of analysing messages one by one did not prove acceptable results.
 
-Detecting of the subject of a channel content was tested, in order to help the user to choose the channels to follow. The clastering of channels according to their subject, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was postponed.
+Detecting the subject of a channel content was tested, in order to help the user to choose the channels to follow. The clustering of channels according to their subject, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was postponed.
 
 The idea of definition of a _similarity index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enough to test all these approaches. 
 
