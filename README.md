@@ -262,7 +262,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 (*) for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
-OpenAI limitations make necessary to limite the _Learning service_ of the application (5 examples or less par request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)).
+OpenAI limitations make necessary to limite the _Learning service_ of the application (5 examples or less par request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application).
 
 ## The limitations related to MongoDB
 
@@ -273,7 +273,7 @@ The speed of MongoDB requests is not critical in this project, because they are 
 A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size. 
 
 ## The limitations related to Telegram
-- The application could not read [this channel](https://t.me/generallsvr) 
+The application could not read [this channel](https://t.me/generallsvr).
 
 ## The limitations related to Vue
 Vue supports web browsers compatible with ECMAScript 5
