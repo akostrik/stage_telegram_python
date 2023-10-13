@@ -368,7 +368,8 @@ Future versions aim to:
 - comparison of the rusults with other projects
 - customizable detection parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs
 - usage of docker containers for installation and configuration instructions
-
+- it addition to transmission of a channel identificator added by user via MongoDB, _Server 3_ will pass it directly to _Server 1_ via _Server 3_ API, in order to release _Server 1_ from constant observation of the MongoDB collection
+  
 # Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
