@@ -283,6 +283,8 @@ In addition to putting of a channel identifier added by user to MongoDB, `Server
 
 Asynchrony of all MongoDB requests and OpenAI requests is not implemented yet.
 
+Installation an configuration instructions are complicated, bacause usage of docker containers for them is not implemented yet.
+
 ## Conceptual limitations 
 The learning and the choice of the characteristics are founded on a human subjective opinion, where there's a margin of error.
 
@@ -345,9 +347,8 @@ Future versions aim to:
 - integrate with other messaging platforms beyond Telegram
 - provide real-time alerts to users about exceptional analysis results
 - detection of the first channel to spread information
-- comparison of the results with other projects
+- comparison of the results with ones of the other projects
 - customizable detection parameters: features that allow users to customise detection parameters, tailoring the system to their individual needs
-- usage of docker containers for installation and configuration instructions
   
 # Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
