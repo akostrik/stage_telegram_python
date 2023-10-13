@@ -184,6 +184,8 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 
 `Server 1` and `Server 2` represent the backend functionality, while `Server 3` ensures the Frontend one.
 
+`Server 1` creates a listening socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means, than the kernel puts the processus into an interruptible sleep state and runs other processes. [^14]
+
 ## The parameters of the application
 - The characteristics of the propaganda
 - [The text of the characteristics OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
@@ -210,8 +212,6 @@ The `Server 1` is written in Python, because:
 ## node.js details
 [Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, MongoDB site provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 ) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
-
-The server creates a listening socket and then blocks while waiting for new connections. During this time, the kernel puts the process into an interruptible sleep state and runs other processes. [^14]
 
 [Express](https://expressjs.com/) Node web framework, is used by `Server 2` to:
 - write handlers for requests
