@@ -250,6 +250,8 @@ A noSql database usage is explained chiefly by the changing number of the `chara
 
 MongoDB usage is explained by its cloud database service _MongoDB Atlas_ and its popularity. The database operations of this project are simple, so another noSql databases would probably provide about the same functionnalty and speed.  
 
+_MongoDB Atlas_ provides automatic failover, ensuring high availability, to prevent data loss. 
+
 ## Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
