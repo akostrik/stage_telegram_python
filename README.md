@@ -63,10 +63,10 @@ This project wouldn't have been possible without the guidance of the faculty at 
 
 [`Server 2`](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) in node.js manages data retrieval from MongoDB and serves it to the frontend.
 
-[`Server 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js presents the analyzed data to users in an intuitive and interactive manner.
+[`Server 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js presents the analysed data to users in an intuitive and interactive manner.
 
 ## Description of the application
-1) `Server 3` gets from the web browser an identificator of Telegram channel to examinate, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
+1) `Server 3` gets from the web browser an identificator of Telegram channel to examine, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
 2) `Server 3` transmet the identificator of the channel to `Server 2`, via `Server 2` API
 3) `Server 2` put puts the identificator of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
 4) `Server 1` permanently updates the list of the identificators from _MongoDB Atlas_, via MongoDB API
@@ -76,9 +76,9 @@ This project wouldn't have been possible without the guidance of the faculty at 
 - based on these marks of the propaganda, it calculates the trust coefficient of the message
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
 - compares these affirmations to the recent affirmations of the other followed channels
-- stocks the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
-1) `Server 3` requests conbstantly the results of the computations from `Server 2`, via `Server 2` API
-1) `Server 2` fetchs the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to `Server 3`
+- stocks the message itself, the result if its analysis, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
+1) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
+1) `Server 2` fetches the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to `Server 3`
 1) `Server 3` passes the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via `Server 3` API
 1) The web browser displays the graph to the user
 
