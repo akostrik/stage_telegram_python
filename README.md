@@ -233,6 +233,8 @@ It consists of two major parts:
 - A dev server that provides feature enhancements over native ES modules, for example HMR.
 - A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
 
+A software platform [Cytoscape](https://cytoscape.org/) provides visualizing of the graphe.
+
 ## Asynchrony details
 
 [Asynchrony](https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)) refers to the actions instigated by a program that take place concurrently with program execution, without the program blocking to wait for results. In this application, it concerns the requests to Telegram, OpenAI and MongoDB.
