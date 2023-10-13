@@ -245,7 +245,7 @@ It is developped only for Linux.
 
 ## The limitations related to OpenAI
 Gpt-4 :
-- treats about 5 requests per minute an respesents the lowest part of the appliation,
+- treats about 5 requests per minute and respesents the lowest part of the appliation,
 - doesn't provide always the analysis of high-quality,
 - is paying.
 
