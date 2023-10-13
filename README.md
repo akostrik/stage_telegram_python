@@ -153,6 +153,11 @@ npm install dotenv --save
 ```
 [Install Node and npm](https://www.mongodb.com/docs/drivers/node/current/quick-start/download-and-install/#std-label-node-quick-start-download-and-install)
 
+Install Vue [^15]
+```bash
+npm install vue
+```
+
 _NB `npm install` should be executed in the same folder where `package.json` file is_
 
 ## Compile and run
@@ -168,10 +173,6 @@ In the third terminal launch `Server 3`
 ```bash
 cd user_interface
 npm run dev
-```
-Install Vue [^15]
-```bash
-npm install vue
 ```
 
 ## Go to the user interface
