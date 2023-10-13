@@ -26,21 +26,21 @@ This project is aimed at automaticalle detecting propagandistic information in T
 - [Auxipresse](https://auxipress.be/) (Belgium)
 
 ## The methodology
-The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that both the developpers team and the users were represented by myself only.
+The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organising and cross-functional teams with the users, except that both the developers team and the users were represented by myself only.
 
-The approach to development followed the Scrum principes like:
-- to break work into goals to be completed within time-boxed iterations, called sprints, where the sprints were dedicated to the contexte study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) sudy, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, vue.js);
+The approach to development followed the Scrum principles like:
+- to break work into goals to be completed within time-boxed iterations, called sprints, where the sprints were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, vue.js);
 - bringing decision-making authority to an operational level;
 - continuous feedback and flexibility; 
 - changing of the requirements as the project evolves.
 
-## Aquired competences
-A lof of completely new experience was aquired, like:
+## Acquired competences
+A lof of completely new experience was acquired, like:
 - the conception of a whole application with several servers, several API, several external services
 - programming languages (python, node.js)
 - frameworks (Vue, express, ...) 
 
-## Acknowleggements
+## Acknowledgements
 This project wouldn't have been possible without the guidance of the faculty at Sorbonne University, the feedback from early users and the continuous support from the associations.
 
 # Project overview
