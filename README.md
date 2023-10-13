@@ -36,9 +36,9 @@ The approach to development followed the Scrum principles like:
 
 ## Acquired competences
 A lot of completely new experience was acquired, like:
-- the conception of a whole application with several servers, several API, several external services
-- programming languages (python, node.js)
-- frameworks (Vue, express, ...) 
+- the conception of a whole application with several servers, several API, several external services;
+- programming languages (python, node.js);
+- frameworks (Vue, express, ...).
 
 ## Acknowledgements
 This project wouldn't have been possible without the guidance of the faculty at Sorbonne University, the feedback from early users and the continuous support from the associations.
@@ -67,11 +67,11 @@ This project wouldn't have been possible without the guidance of the faculty at 
 
 ## Description of the application
 1) `Server 3` gets from the web browser an identifier of Telegram channel to examine, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-2) `Server 3` transmet the identifier of the channel to `Server 2`, via `Server 2` API
-3) `Server 2` put puts the identifier of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
-4) `Server 1` permanently updates the list of the identifiers from _MongoDB Atlas_, via MongoDB API
-5) `Server 1` listens to the chosen channels, via Telegram API
-6) `Server 1` treats every new message, that is:
+1) `Server 3` transmet the identifier of the channel to `Server 2`, via `Server 2` API
+1) `Server 2` put puts the identifier of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
+1) `Server 1` permanently updates the list of the identifiers from _MongoDB Atlas_, via MongoDB API
+1) `Server 1` listens to the chosen channels, via Telegram API
+1) `Server 1` treats every new message, that is:
 - estimates the marks of the propaganda of the message, via OpenAI API
 - based on these marks of the propaganda, it calculates the trust coefficient of the message
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
@@ -89,7 +89,7 @@ Simultaneously, the _Learning service_ is working:
 4) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
 
 # Setup and usage
-The user should have a web browser compatible with ECMAScript 5 (for example, IE8 and its previous versions are  not compatible with ECMAScript 5)
+The user should have a web browser compatible with ECMAScript 5 (for example, IE8 and its previous versions are  not compatible with ECMAScript 5).
 
 ## MongoDB Atlas configuration
 
@@ -178,7 +178,7 @@ npm run dev
 Enjoy the service http://localhost:5173/ 
 
 # Technical details of the developement
-_To understand this section, the reader should have basic knowledge of computer sciences terminology_
+_To understand this section, the reader should have basic knowledge of computer sciences terminology._
 
 Separation of the data treatment provided by `Server 1` and the presentation functionality provided by `Server 2` and `Server 3` falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
