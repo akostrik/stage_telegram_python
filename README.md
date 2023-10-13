@@ -190,7 +190,7 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 - [The text of the affirmations OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
 - OpenAI model for a characteristics request
 - OpenAI model for a affirmations request
-- OpenAI temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic. If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit. [^2]
+- OpenAI temperature, between 0 and 1: higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic (if set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit [^2])
 - OpenAI request maximal lenth (in tokens [^1])
 - Telegram message maximal length (in characters)
 - The time where a message is considered as recent (in hours)
