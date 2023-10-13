@@ -73,10 +73,10 @@ This project wouldn't have been possible without the guidance of the faculty at 
 5) _Server 1_ listens to the chosen channels, via Telegram API
 6) _Server 1_ treats every new message, that is:
 - estimates the marks of the propaganda of the message, via OpenAI API
-- based on these marks of the propaganda it calculates the trust coefficient of the message
+- based on these marks of the propaganda, it calculates the trust coefficient of the message
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
 - compares these affirmations to the recent affirmations of the other followed channels
-- stocks all obtained information in _MongoDB Atlas_ database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the index of similarity of the channels), via MongoDB API
+- stocks the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
 7) _Server 2_ consults permanently the results of the computations in _MongoDB Atlas_, via MongoDB API
 8) _Server 2_ returns permanently the current results of the computations to the _Server 3_, via _Server 2_ API
 9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via _Server 3_ API
