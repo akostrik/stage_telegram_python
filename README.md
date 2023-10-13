@@ -244,7 +244,7 @@ Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_tele
 
 It is developped only for Linux.
 
-## The limits related to OpenAI
+## The limitations related to OpenAI
 Gpt-4 :
 - treats about 5 requests per minute an respesents the lowest part of the appliation,
 - doesn't provide always the analysis of high-quality,
@@ -267,7 +267,7 @@ The _Learning service_ of the application is limited to 5 examples par a request
 
 The length of an examined message is limited (see [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application)), a message is cut off beyond this length.
 
-## The limits related to MongoDB
+## The limitations related to MongoDB
 
 The installation instructions are provided in this document only for the cloud version _MongoDB Atlas_, however the user can [install MongoDB locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
 
@@ -275,13 +275,13 @@ The speed of MongoDB requests is not critical in this project, because they are 
 
 A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size. 
 
-## The limits related to Telegram
+## The limitations related to Telegram
 - The application could not read [this channel](https://t.me/generallsvr) 
 
-## The limits related to Vue
+## The limitations related to Vue
 Vue supports web browsers compatible with ECMAScript 5
 
-## Conceptual limits 
+## Conceptual limitations 
 The learning and the choice of the characteristics are founded on a human subjective opinion, there's always a margin of error.
 
 The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed.
