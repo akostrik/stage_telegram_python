@@ -97,7 +97,7 @@ The user should have a web browser compatible with ECMAScript 5 (for example, IE
 
 [Create a MongoDB account](https://cloud.mongodb.com/) 
 
-In your account, create a database by the name 'telegram'
+In your account, create a database by the name of 'telegram'
 
 [Import the collection](https://www.mongodb.com/docs/atlas/import/mongoimport/) 'characteristics' from [this file](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/collection_characteristics.json) to your database 'telegram'
 
