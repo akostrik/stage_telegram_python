@@ -208,8 +208,8 @@ The `Server 1` is written in Python, because:
 - it is a rather easy language (partly becauseof its easy syntax)
 
 ## node.js details
-[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in Node.js directly performs I/O, so the process never blocks [^10]. MongoDB provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
-) of its usage. So Node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
+[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, MongoDB site provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
 The server creates a listening socket and then blocks while waiting for new connections. During this time, the kernel puts the process into an interruptible sleep state and runs other processes. [^14]
 
