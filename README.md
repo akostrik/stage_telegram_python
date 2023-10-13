@@ -186,8 +186,6 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 
 `Server 1` creates a listening socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means, than the kernel puts the processus into an interruptible sleep state and runs other processes. [^14]
 
-Output of `Server 1` is written to the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log), to keep trace of all the experimentations.
-
 ## The parameters of the application
 - The characteristics of the propaganda
 - [The text of the characteristics OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
@@ -332,19 +330,16 @@ Two tests on the values of the trust coefficient depending in the temperature pa
 | difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | difference (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
-Constant adaptation of the _characteristics_ helps to improve the results.
-
-Logs
+Output of `Server 1` is written to the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log), to keep trace of all the experimentations.
 
 ## Future enhancements
 As technology and misinformation tactics evolve, so will this application.
 Future versions aim to:
 - integrate with other messaging platforms beyond Telegram
-- allow users to customize their propaganda detection parameters
 - provide real-time alerts to users about exceptional analysis results
 - detection of the first channel to spead information
 - comparison of the rusults with other projects
-- customizable detection parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs
+- customizable detection parameters: features that allow users to customize detection parameters, tailoring the system to their individual needs
 - usage of docker containers for installation and configuration instructions
 - in addition to transmission of a channel identificator added by user via MongoDB, `Server 3` will pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection
 - asynchrony of all database requests and OpenAI requests
