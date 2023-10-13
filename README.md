@@ -202,15 +202,15 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 
 `The trust coefficient of a channel` is a number in the interval [0 … 100]
 
-The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes contanstly MongoDB requests in order to integrate immediately a new channel added by the user.
+The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes contantly MongoDB requests in order to integrate immediately a new channel added by the user.
 
 ## `Server 1` in python details
 The `Server 1` is written in Python, because:
-- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
-- it is a rather easy language (partly becauseof its easy syntax)
+- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specialised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
+- it is a rather easy language (partly because of its easy syntax)
 
 ## `Server 2` in node.js details
-[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, MongoDB site provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, the MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 ) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
 `Server 2` uses [Express](https://expressjs.com/) framework to:
@@ -218,13 +218,13 @@ The `Server 1` is written in Python, because:
 - set the port to use and the location of templates rendering the response
 
 ## `Server 3` in Vue details
-[Vue](https://vuejs.org/) choice as a framework to manipulate the DOM on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers. [^7] [^9]
+[Vue](https://vuejs.org/) choice as a framework to manipulate the DOM on the user's side (regarding Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers. [^7] [^9]
 
 Vue uses [Vite](https://vitejs.dev/), a server that monitors files as they're being edited. 
 
 An HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides requests from the browser to `Server 3` API. And upon file save, the web browser reloads the code being edited (only the specific file being changed) through a process called Hot Module Replacement (HMR). [^5]
 
-The visualization is provided by the graph visualization library [Cytoscape](https://cytoscape.org/).
+The visualisation is provided by the graph visualisation library [Cytoscape](https://cytoscape.org/).
 
 ## Asynchrony details
 
