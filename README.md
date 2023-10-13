@@ -213,7 +213,7 @@ The `Server 1` is written in Python, because:
 [Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, the MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 ) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
-`Server 2` uses [Express](https://expressjs.com/) framework to:
+`Server 2` uses [Express](https://expressjs.com/) framework in order to:
 - write handlers for requests: it defines routing using methods (that is to how an application’s endpoints respond to client requests) of the Express app object that correspond to HTTP methods;
 - set the port to use and the location of templates rendering the response.
 
