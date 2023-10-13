@@ -11,7 +11,7 @@ The project has been developped during an Internship of 5 months, from the 3d Ap
 - Job market tеransition: Equip oneself with the skills and experience to seamlessly enter the job market
 
 ## The context and motivation
-The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection.
+The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection, with a huge potential to bring many changes to the life of people. 
 
 This project is aimed at automatical detecting of propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
 
