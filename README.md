@@ -196,13 +196,11 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 - The time where a message is considered as recent (in hours)
 
 ## Computation details 
-_The similarity index of two channels (channel1, channel2)_ = the numbre of their similar affirmations  - the number of their opposite affirmations
+`The similarity index of two channels (channel1, channel2)` is the numbre of their similar affirmations  - the number of their opposite affirmations
 
-_The trust coefficient of a channel_ is a number in the interval [0 … 100]
+`The trust coefficient of a channel` is a number in the interval [0 … 100]
 
-The application executes 2 OpenAI requests par message.
-
-The application executes O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes contanstly MongoDB requests in order to integrate immediately a new channel added by the user.
+The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes contanstly MongoDB requests in order to integrate immediately a new channel added by the user.
 
 ## Python details
 The `Server 1` is written in Python, because:
