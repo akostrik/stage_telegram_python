@@ -56,7 +56,7 @@ This project wouldn't have been possible without the guidance of the faculty at 
 ![Capture d’écran de 2023-10-12 10-38-38](https://github.com/akostrik/stage_telegram/assets/22834202/41252982-3978-40d9-9b2b-20483566d203)
 
 ## Diagram of the application in the programmer style
-![Capture d’écran de 2023-10-13 06-01-14](https://github.com/akostrik/stage_telegram/assets/22834202/8d9ccef6-da99-4c2f-9877-eccf32cdb9cc)
+![Capture d’écran de 2023-10-13 11-59-32](https://github.com/akostrik/stage_telegram/assets/22834202/a3d62bcc-3215-4064-accf-dd6ab5df59f8)
 
 ## Application components
 [_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/) in python handles real-time data streaming from Telegram, processes messages, and interacts with OpenAI for analysis.
@@ -213,7 +213,6 @@ The _Server 1_ is written in Python, because:
 [Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in Node.js directly performs I/O, so the process never blocks [^10]. MpongoDB provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 ) of its usage. So Node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
-
 The server creates a listening socket and then blocks while waiting for new connections. During this time, the kernel puts the process into an interruptible sleep state and runs other processes. [^14]
 
 [Express](https://expressjs.com/) Node web framework, is used by _Server 2_ to:
@@ -226,16 +225,17 @@ Routing refers to how an application’s endpoints (URIs) respond to client requ
 You define routing using methods of the Express app object that correspond to HTTP methods; for example, app.get() to handle GET requests and app.post to handle POST requests. For a full list, see app.METHOD. You can also use app.all() to handle all HTTP methods and app.use() to specify middleware as the callback function (See Using middleware for details).
 
 ## Vue details
-[Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding to Angular and React as its possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
+[Vue](https://vuejs.org/) framework choice as programming model to develop the user interface on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9]. Vue manipulates the DOM.
 
-[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
+[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by reloading only the specific file being changed. [^5]
+
 It consists of two major parts:
-- A dev server that provides feature enhancements over native ES modules, for example HMR.
-- A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
+- A `dev` server that provides feature enhancements over native ES modules, for example HMR.
+- A `build` command that bundles the code with Rollup, pre-configured to output highly optimized static assets.
 
 a HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides gets the data from _Server 2_ API.
 
-A software platform [Cytoscape](https://cytoscape.org/) provides visualizing of the graphe.
+The grap is visualizated with a a graph visualization library [Cytoscape](https://cytoscape.org/).
 
 ## Asynchrony details
 
