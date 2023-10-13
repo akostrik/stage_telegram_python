@@ -229,6 +229,9 @@ You define routing using methods of the Express app object that correspond to HT
 [Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding to Angular and React as its possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
 
 [Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement which works by reloading only the specific file being changed. [^5]
+It consists of two major parts:
+- A dev server that provides feature enhancements over native ES modules, for example HMR.
+- A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
 
 ## Asynchrony details
 
@@ -245,7 +248,7 @@ Server 2 requests ...
 ## Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
 
-MongoDB usage is explained by its cloud database service offer MongoDB Atlas (SaaS) and its popularity. The database operations of this project are simple, so other noSql databases would provide the same functionnalty and at the speed.  
+MongoDB usage is explained by its cloud database service _MongoDB Atlas_ and its popularity. The database operations of this project are simple, so another noSql databases would probably provide about the same functionnalty and speed.  
 
 ## Other technical details
 Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
