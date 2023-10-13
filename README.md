@@ -337,9 +337,9 @@ As technology and misinformation tactics evolve, so will this application.
 Future versions aim to:
 - integrate with other messaging platforms beyond Telegram
 - provide real-time alerts to users about exceptional analysis results
-- detection of the first channel to spead information
-- comparison of the rusults with other projects
-- customizable detection parameters: features that allow users to customize detection parameters, tailoring the system to their individual needs
+- detection of the first channel to spread information
+- comparison of the results with other projects
+- customizable detection parameters: features that allow users to customise detection parameters, tailoring the system to their individual needs
 - usage of docker containers for installation and configuration instructions
 - in addition to transmission of a channel identificator added by user via MongoDB, `Server 3` will pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection
 - asynchrony of all database requests and OpenAI requests
