@@ -22,8 +22,8 @@ This project is aimed at automatical detecting of propagandistic information in 
 - Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
 - Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
 - Machine learning project [Buster.ai](https://www.buster.ai/) (France)
-- Workshops [Fever](https://fever.ai/workshop.html)
-- [Auxipresse](https://auxipress.be/)
+- Workshops [Fever](https://fever.ai/workshop.html) (international)
+- [Auxipresse](https://auxipress.be/) (Belgium)
 
 ## The methodology
 The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organizing and cross-functional teams with the users, except that both the developpers team and the users were represented by myself only.
