@@ -249,16 +249,18 @@ Gpt-4 :
 
 However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
                                 
-| the means                       | speed    | quality  | investissement | cost                |
+| the means                       | speed    | quality  | investissement | a request cost **   |
 |---------------------------------|----------|----------|----------------|---------------------|
-| many powerful machines          | better   | the same | yes            | greater             |
+| many powerful machines          | better   | the same | yes            | 0                   |
 | many LLM accounts               | better   | the same | no             | greater             |
-| cross-analysis by several LLM   | worse    | better   |                | the same or greater |
-| prompt design                   | the same | better   | no or little   | the same            |
-| learning (prompt with examples) | the same | better   | no or little   | the same            |
-| fine-tuning *                   | better   | better ! | yes            | less                |
+| cross-analysis by several LLM   | worse    | better   | no             | greater             |
+| prompt design                   | the same | better   | no             | the same            |
+| learning (prompt with examples) | the same | better   | no             | the same            |
+| fine-tuning *                   | better   | better ! | yes            | 0                   |
 
 (*) for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
+
+(**) we consider all the LLM as being paying, 
 
 OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application).
 
