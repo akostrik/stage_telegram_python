@@ -206,7 +206,7 @@ The application executes O(K) MongoDB requests par message, where K is the numbe
 
 ## Python details
 The _Server 1_ is written in Python, because:
-- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like telethon, DateTime, requests, pymongo, openai
+- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
 - Python is a rather easy language (partly becauseof its easy syntax)
 
 ## node.js details
