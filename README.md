@@ -17,7 +17,7 @@ This project is aimed at automaticalle detecting propagandistic information in T
 
 ## Some projects of similar orientation
 - [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab] (https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (United States)
-- [The project of Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc (China)
+- [The project of Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localization of the users, etc (China)
 - Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386) (United States)
 - Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
 - Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
@@ -66,10 +66,10 @@ This project wouldn't have been possible without the guidance of the faculty at 
 [`Server 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js presents the analysed data to users in an intuitive and interactive manner.
 
 ## Description of the application
-1) `Server 3` gets from the web browser an identificator of Telegram channel to examine, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-2) `Server 3` transmet the identificator of the channel to `Server 2`, via `Server 2` API
-3) `Server 2` put puts the identificator of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
-4) `Server 1` permanently updates the list of the identificators from _MongoDB Atlas_, via MongoDB API
+1) `Server 3` gets from the web browser an identifier of Telegram channel to examine, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
+2) `Server 3` transmet the identifier of the channel to `Server 2`, via `Server 2` API
+3) `Server 2` put puts the identifier of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
+4) `Server 1` permanently updates the list of the identifiers from _MongoDB Atlas_, via MongoDB API
 5) `Server 1` listens to the chosen channels, via Telegram API
 6) `Server 1` treats every new message, that is:
 - estimates the marks of the propaganda of the message, via OpenAI API
@@ -298,7 +298,7 @@ The direct question to OpenAI, _Is there any marks of the propaganda in this mes
 
 User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
-Keeping the data only in the application memory, and not in the database, prevented the application from having access to the results of the previous executions. Channels identificators was fixed directlty in the code.
+Keeping the data only in the application memory, and not in the database, prevented the application from having access to the results of the previous executions. Channels identifiers was fixed directlty in the code.
 
 The experimentations were important to understand challenges to face.
 
@@ -341,7 +341,7 @@ Future versions aim to:
 - comparison of the results with other projects
 - customizable detection parameters: features that allow users to customise detection parameters, tailoring the system to their individual needs
 - usage of docker containers for installation and configuration instructions
-- in addition to transmission of a channel identificator added by user via MongoDB, `Server 3` will pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection
+- in addition to transmission of a channel identifier added by user via MongoDB, `Server 3` will pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection
 - asynchrony of all database requests and OpenAI requests
   
 # Welcome
