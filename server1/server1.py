@@ -89,7 +89,7 @@ print (prompt_c.characteristics_to_string())
 
 @client_tg.on(events.NewMessage())
 async def new_message_handler(event):
-    await group_channels.update_channels_from_mongo(collection_channels_id)
+    group_channels.update_channels_from_mongo(collection_channels_id) # await TypeError: object NoneType can't be used in 'await' expression 
     if event.chat_id in group_channels.channels:
         await group_channels.new_message_handler(event, prompt_c, prompt_a, model_c, model_a,temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_channels_simiarity)
 
