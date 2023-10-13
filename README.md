@@ -178,7 +178,7 @@ npm install vue
 After having installed and configured all noted above, enjoy the service http://localhost:5173/ 
 
 # Technical details of the deveppement
-_To unserstand this section, the reader should have basic knowledge of the teminology of computer sciences_
+_To unserstand this section, the reader should have basic knowledge of computer sciences teminology_
 
 Separation of the data treatment provided by _Server 1_ and the presentation functoinality provided by _Server 2_ and _Server 3_ falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
