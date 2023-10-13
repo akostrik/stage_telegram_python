@@ -20,7 +20,7 @@ This project is aimed at automaticalle detecting propagandistic information in T
 - [The project of Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localization of the users, etc (China)
 - Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386) (United States)
 - Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
-- Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
+- Machine learning project by [The Institute of Mathematical and Computing Sciences](https://cemeai.icmc.usp.br/) (Brazil)
 - Machine learning project [Buster.ai](https://www.buster.ai/) (France)
 - Workshops [Fever](https://fever.ai/workshop.html) (international)
 - [Auxipresse](https://auxipress.be/) (Belgium)
