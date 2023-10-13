@@ -289,25 +289,25 @@ The application doesn't aime at the deep causes of the propaganda.
 ## Prototype Phase
 The initial prototype relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
 
-The prototype was limited to the set of fixed (direclty in the code) channels, primarily to understand challenges to face.
-
 ## Version 1.0
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
-Integration of LLM to analyze the context of messages significantly improved detection accuracy but had its own set of challenges, especially false positives.
+Primarily to understand challenges to face.
 
-User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
+Integration of LLM to analyze the context of messages significantly improved detection accuracy but has its own set of challenges, especially false positives.
 
 Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the meaning of a message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
 
-The direct question to OpenAI, _Is there any marks of the propagande in this message?_, didn't work correctly.
+The direct question to OpenAI, _Is there any marks of the propagande in this message?_, also didn't work correctly.
 
-Extraction of affirmations via Gpt-3 didn't work correctly.
+User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
-Keeping the data in the application memory, and not in the database, preventd the application to have acces to the results of the previous executions.
+Keeping the data only in the application memory, and not in the database, prevented the application to have acces to the results of the previous executions. Channels identificators to follow was fixed direclty in the code.
 
 ## Version 2.0
 Gpt-4 improved the quality of the analysis by characteristics, though extraction of affirmations via Gpt-4 without examples attached to the prompt often didn't work correctly.
+
+Extraction of affirmations via Gpt-3 didn't work correctly.
 
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and proved to be too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
