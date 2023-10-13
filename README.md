@@ -309,11 +309,13 @@ Gpt-4 improved the quality of the analysis by characteristics, though extraction
 
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and proved to be too long.
 
-The analysis of a series of messages, instead of analyzing messages one by one, was tested, though it did not prove acceptable results.
+The analysis of a series of messages, instead of analyzing messages one by one did not prove acceptable results.
 
-Detecting of the kind of channel content wss tested, helping the user to choose which channels to follow. The clasterisation of channels according to their subject, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was postponed.
+Detecting of the subject of a channel content was tested, in order to help the user to choose the channels to follow. The clasterisation of channels according to their subject, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was postponed.
 
-The idea of definition of a _similatiry index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enought to test all these possibilities. The terms _metric_ or _distance_ should not be involved, because the positivity axiome [^16] doens't necessary hold true.
+The idea of definition of a _similatiry index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enough to test all these approaches. 
+
+NB The terms _metric_ or _distance_ should not be involved, because the positivity axiome [^16] doens't necessary hold true for a set of channels.
 
 ## Version 3.0 (Current)
 Real-time analysis of messages, giving users instant feedback on the content they are consuming.
