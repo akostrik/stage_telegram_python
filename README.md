@@ -260,7 +260,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 (*) for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
-(**) we consider all the LLM as being paying, except self-hosted ones
+(**) we consider all the LLM being paying, except self-hosted ones
 
 OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application).
 
