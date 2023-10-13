@@ -72,11 +72,11 @@ This project wouldn't have been possible without the guidance of the faculty at 
 1) `Server 1` permanently updates the list of the identifiers from _MongoDB Atlas_, via MongoDB API
 1) `Server 1` listens to the chosen channels, via Telegram API
 1) `Server 1` treats every new message, that is:
-- estimates the marks of the propaganda of the message, via OpenAI API
-- based on these marks of the propaganda, it calculates the trust coefficient of the message
-- extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
-- compares these affirmations to the recent affirmations of the other followed channels
-- stocks the message itself, the result if its analysis, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
+  - estimates the marks of the propaganda of the message, via OpenAI API
+  - based on these marks of the propaganda, it calculates the trust coefficient of the message
+  - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
+  - compares these affirmations to the recent affirmations of the other followed channels
+  - stocks the message itself, the result if its analysis, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
 1) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
 1) `Server 2` fetches the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to `Server 3`
 1) `Server 3` passes the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via `Server 3` API
@@ -198,24 +198,24 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 - The time where a message is considered as recent (in hours)
 
 ## Computation details 
-`The similarity index of two channels (channel1, channel2)` is the number of their similar affirmations  - the number of their opposite affirmations
+`The similarity index of two channels (channel1, channel2)` is the number of their similar affirmations  - the number of their opposite affirmations.
 
-`The trust coefficient of a channel` is a number in the interval [0 … 100]
+`The trust coefficient of a channel` is a number in the interval [0 … 100].
 
 The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes constantly MongoDB requests in order to integrate immediately a new channel added by the user.
 
 ## `Server 1` in python details
 The `Server 1` is written in Python, because:
-- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specialised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
-- it is a rather easy language (partly because of its easy syntax)
+- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specialised libraries];(https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
+- it is a rather easy language (partly because of its easy syntax).
 
 ## `Server 2` in node.js details
 [Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, the MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 ) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
 `Server 2` uses [Express](https://expressjs.com/) framework to:
-- write handlers for requests: it defines routing using methods (that is to how an application’s endpoints respond to client requests) of the Express app object that correspond to HTTP methods
-- set the port to use and the location of templates rendering the response
+- write handlers for requests: it defines routing using methods (that is to how an application’s endpoints respond to client requests) of the Express app object that correspond to HTTP methods;
+- set the port to use and the location of templates rendering the response.
 
 ## `Server 3` in Vue details
 [Vue](https://vuejs.org/) choice as a framework to manipulate the DOM on the user's side (regarding Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers. [^7] [^9]
