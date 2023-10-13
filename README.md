@@ -256,7 +256,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 | cross-analysis by several LLM   | worse    | better   | no             | greater             |
 | prompt design                   | the same | better   | no             | the same            |
 | learning (prompt with examples) | the same | better   | no             | the same            |
-| fine-tuning *                   | better   | better ! | yes            | 0                   |
+| fine-tuning *                   | better ! | better ! | yes            | 0                   |
 
 (*) for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
