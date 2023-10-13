@@ -205,7 +205,7 @@ The application executes 2 OpenAI requests par message and O(K) MongoDB requests
 ## Python details
 The `Server 1` is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
-- Python is a rather easy language (partly becauseof its easy syntax)
+- it is a rather easy language (partly becauseof its easy syntax)
 
 ## node.js details
 [Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in Node.js directly performs I/O, so the process never blocks [^10]. MpongoDB provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
