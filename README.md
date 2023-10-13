@@ -70,7 +70,7 @@ This project wouldn't have been possible without the guidance of the faculty at 
 2) _Server 3_ transmet the identificator of the channel to _Server 2_, via _Server 2_ API
 3) _Server 2_ put puts the identificator of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
 4) _Server 1_ permanently upates the lis of the identificators from _MongoDB Atlas_, via MongoDB API
-5) _Server 1_ listens permanently to the chosen channels, via Telegram API
+5) _Server 1_ listens to the chosen channels, via Telegram API
 6) _Server 1_ treats every new message, that is:
 - estimates the marks of the propaganda of the message, via OpenAI API
 - based on these marks of the propaganda it calculates the trust coefficient of the message
