@@ -2,7 +2,7 @@
 The project has been developped during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realized in Paris associations.
 
 ## The objectives
-- Professional experience: Engage in full-time professional practice within Parisian associations
+- Professional experience: Engage in full-time professional practice
 - Skill development: Cultivate skills as a development engineer, focusing on real-world applications
 - Career exploration: Investigate potential career trajectories, especially in computer sciences applied to societal challenges
 - Hands-on learning: Immerse in new techniques, methodologies, tools, and their practical applications
