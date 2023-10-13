@@ -297,10 +297,10 @@ The application may help to the malefactors to adjust propagandistic messages to
 The application doesn't aime at the deep causes of the propaganda.
 
 # Experimentations, evolution, iterations
-## Prototype Phase:
-Basic Propaganda Detection: The initial prototype was a rudimentary system that relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
+## Prototype Phase
+The initial prototype relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
 
-Limited Channel Integration: The prototype was limited to the set of fixed (in the code) channels, primarily to test the waters and understand challenges to face.
+The prototype was limited to the set of fixed (direclty in the code) channels, primarily to understand challenges to face.
 
 ## Version 1.0
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
@@ -309,30 +309,31 @@ Integration of LLM to analyze the context of messages significantly improved det
 
 User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
-Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
+Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the meaning of a message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
 
 The direct question to OpenAI, _Is there any marks of the propagande in this message?_, didn't work correctly.
 
+Extraction of affirmations via Gpt-3 didn't work correctly.
+
+Keeping the data in the application memory, and not in the database, preventd the application to have acces to the results of the previous executions.
+
 ## Version 2.0
-- More sophisticated AI models (Gpt-4) was integrated, what reduced false positives.
-- Contextual analysis: Instead of analyzing messages in isolation, this version introduced contextual analysis, where a series of messages were analyzed together to understand the broader narrative.
-- Channel insights: I introduced features that would give users insights into the kind of content a channel was promoting, helping them make informed decisions about which channels to follow.
+Gpt-4 improved the quality of the analysis by characteristics, though extraction of affirmations via Gpt-4 without examples attached to the prompt often didn't work correctly.
 
-The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and so is too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
+The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and proved to be too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
-The clasterisation of channels according to their subject didn't prove to be useful, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was excluded.
+The analysis of a series of messages, instead of analyzing messages one by one, was tested.
+
+Detecting of the kind of channel content wss tested, helping the user to choose which channels to follow. The clasterisation of channels according to their subject, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was postponed.
 
 The idea of definition of a _similatiry index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enought to test all these possibilities. The terms _metric_ or _distance_ should not be involved, because the positivity axiome [^16] doens't necessary hold true.
 
-Keeping of a part of the data in the application memory, and not in the database : because the application has no acces to the results of the previous executions.
-
-Extraction of affirmations gives acceptable results only with Gpt-4 (not with Gpt-3) and only with some examples included in the request.
-
 ## Version 3.0 (Current)
-- Real-time analysis of messages, giving users instant feedback on the content they are consuming.
-- Echo chamber detection: One of the standout features of the current version is the ability to detect echo chambers, where multiple channels promote the same narrative, potentially indicating coordinated propaganda efforts.
+Real-time analysis of messages, giving users instant feedback on the content they are consuming.
 
-The teste launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficients of the groups between 3 and 8 points:
+Echo chamber detection: One of the standout features of the current version is the ability to detect echo chambers, where multiple channels promote the same narrative, potentially indicating coordinated propaganda efforts.
+
+The tests launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficients of the groups between 3 and 8 points:
 
 ![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
 
@@ -341,6 +342,10 @@ Two tests on the values of the trust coefficient depending in the temperature pa
 |---------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | difference (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
+
+Constant adaptation of the _characteristics_ helps to improve the results.
+
+Logs
 
 ## Future enhancements
 As technology and misinformation tactics evolve, so will this application.
