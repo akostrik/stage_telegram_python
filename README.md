@@ -182,7 +182,7 @@ _To understand this section, the reader should have basic knowledge of computer 
 
 Separation of the data treatment provided by `Server 1` and the presentation functionality provided by `Server 2` and `Server 3` falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
-`Server 1` and `Server 2` represent the backend functionality, while `Server 3` ensures the Frontend one.
+`Server 1` and `Server 2` represent the backend functionality, while `Server 3` ensures the frontend one.
 
 `Server 1` creates a listening socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means that the kernel puts the processus into an interruptible sleep state and runs other processes. [^14]
 
