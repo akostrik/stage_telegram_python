@@ -252,7 +252,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 | the means                       | speed    | quality  | investissement | a request cost **   |
 |---------------------------------|----------|----------|----------------|---------------------|
 | many powerful machines          | better   | the same | yes            | 0                   |
-| many LLM accounts               | better   | the same | no             | greater             |
+| many LLM accounts               | better   | the same | no             | the same            |
 | cross-analysis by several LLM   | worse    | better   | no             | greater             |
 | prompt design                   | the same | better   | no             | the same            |
 | learning (prompt with examples) | the same | better   | no             | the same            |
