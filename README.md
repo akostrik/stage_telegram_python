@@ -305,9 +305,7 @@ Keeping the data only in the application memory, and not in the database, preven
 The experimentations were important to understand challenges to face.
 
 ## Version 2.0
-Gpt-4 improved the quality of the analysis by characteristics, though extraction of affirmations via Gpt-4 without examples attached to the prompt often didn't work correctly.
-
-Extraction of affirmations via Gpt-3 didn't work correctly.
+Gpt-4 improved the quality of the analysis by characteristics, though extraction of affirmations via Extraction via Gpt-3, as well as via Gpt-4 without examples attached to the prompt, didn't work correctly.
 
 The comparaison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and proved to be too long (see [log example](https://github.com/akostrik/stage_telegram/blob/main/server1/log/log_2023_09_28_18h08%20ERROR%20LIMITE%20GPT4.txt)).
 
