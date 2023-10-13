@@ -13,7 +13,7 @@ The project has been developed during an Internship of 5 months, from the 3d Apr
 ## The context and motivation
 The technologies has been always influenced greatly the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection, with a huge potential to bring many changes to the life of people. 
 
-This project is aimed at automatical detecting of propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
+This project is aimed at automaticalle detecting propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
 
 ## Some projects of similar orientation
 - [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab] (https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (United States)
