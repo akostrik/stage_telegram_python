@@ -216,7 +216,7 @@ The `Server 1` is written in Python, because:
 `Server 2` uses [Express](https://expressjs.com/) framework to:
 - write handlers for requests: it defines routing using methods (that is to how an application’s endpoints respond to client requests) of the Express app object that correspond to HTTP methods
 - set the port to use and the location of templates rendering the response
-**- integrate with _view_ rendering engines in order to generate responses by inserting data into templates**
+- **integrate with _view_ rendering engines in order to generate responses by inserting data into templates**
 
 ## Vue details
 [Vue](https://vuejs.org/) framework choice as programming model to manipulate the DOM on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers [^7] [^9].
