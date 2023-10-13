@@ -219,17 +219,13 @@ The `Server 1` is written in Python, because:
 - **integrate with _view_ rendering engines in order to generate responses by inserting data into templates**
 
 ## Vue details
-[Vue](https://vuejs.org/) framework choice as programming model to manipulate the DOM on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers [^7] [^9].
+[Vue](https://vuejs.org/) framework choice as programming model to manipulate the DOM on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers. [^7] [^9]
 
-[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited through a process called Hot Module Replacement (HMR) which works by reloading only the specific file being changed. [^5]
+[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited (only the specific file being changed) through a process called Hot Module Replacement (HMR). [^5]
 
-It consists of two major parts:
-- A `dev` server that provides feature enhancements over native ES modules, for example HMR.
-- A `build` command that bundles the code with Rollup, pre-configured to output highly optimized static assets.
+An HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides gets the data from `Server 2` API.
 
-a HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides gets the data from `Server 2` API.
-
-The grap is visualizated with a a graph visualization library [Cytoscape](https://cytoscape.org/).
+The visualization is provided by the graph visualization library [Cytoscape](https://cytoscape.org/).
 
 ## Asynchrony details
 
