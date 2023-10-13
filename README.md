@@ -243,7 +243,7 @@ The application is developed only for Linux.
 
 ## The limitations related to OpenAI
 Gpt-4 :
-- treats about 5 requests per minute and respesents the lowest part of the appliation,
+- treats about 5 requests per minute and represents the slowest part of the application,
 - doesn't provide always the analysis of high-quality,
 - is paying.
 
@@ -260,15 +260,15 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 (*) for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
-OpenAI limitations make necessary to limite the _Learning service_ of the application (5 examples or less par request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application).
+OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application).
 
 ## The limitations related to MongoDB
 
 The installation instructions are provided in this document only for the cloud version _MongoDB Atlas_, however the user can [install MongoDB locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
 
-The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means descibed above or others), the databade requests can be accelerated by installing MongoDn locally et may be by using other databases.
+The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means described above or others), the database requests can be accelerated by installing MongoDB locally et may be, by using other databases.
 
-A BSON document in MongoDB cannot excede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size. 
+A BSON document in MongoDB cannot exceede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size.
 
 ## The limitations related to Telegram
 The application could not read [this channel](https://t.me/generallsvr).
@@ -279,7 +279,7 @@ Vue supports web browsers compatible with ECMAScript 5.
 ## Conceptual limitations 
 The learning and the choice of the characteristics are founded on a human subjective opinion, where there's a margin of error.
 
-The application may help to the malefactors to adjust propagandistic messages to make them pass unnoticed.
+The application may help the malefactors to adjust propagandistic messages to make them pass unnoticed.
 
 The application doesn't aime at the deep causes of the propaganda.
 
