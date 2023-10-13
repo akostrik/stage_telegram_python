@@ -77,13 +77,13 @@ This project wouldn't have been possible without the guidance of the faculty at 
   - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
   - compares these affirmations to the recent affirmations of the other followed channels
   - stocks the message itself, the result if its analysis, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
-1) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
-1) `Server 2` fetches the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to `Server 3`
-1) `Server 3` passes the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via `Server 3` API
-1) The web browser displays the graph to the user
+7) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
+8) `Server 2` fetches the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to `Server 3`
+9) `Server 3` passes the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via `Server 3` API
+10) The web browser displays the graph to the user
 
 Simultaneously, the _Learning service_ is working:
-1) `Server 3` proposes to the user to correct OpenAI's previous responses in the web browser, via the `Server 3` API
+7) `Server 3` proposes to the user to correct OpenAI's previous responses in the web browser, via the `Server 3` API
 2) As soon as the user provides the corrected examples, `Server 3` passes them to `Server 2`
 3) `Server 2` puts the corrected examples to the database, via MongoDB API
 4) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
