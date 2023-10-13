@@ -1,7 +1,7 @@
 # Internship in the context of Master II study at Sorbonne University (Paris) 
 The project has been developed during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realised in Paris associations.
 
-## The objectives
+## The objectives of the internship
 - Professional experience: Engage in full-time professional practice
 - Skill development: Cultivate skills as a development engineer, focusing on real-world applications
 - Career exploration: Investigate potential career trajectories, especially in computer sciences applied to societal challenges
