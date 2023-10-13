@@ -204,23 +204,19 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 
 The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes contanstly MongoDB requests in order to integrate immediately a new channel added by the user.
 
-## Python details
+## `Server 1` in python details
 The `Server 1` is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
 - it is a rather easy language (partly becauseof its easy syntax)
 
-## Node.js details
+## `Server 2` in node.js details
 [Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, MongoDB site provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 ) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
-[Express](https://expressjs.com/) framework is used by `Server 2` to:
-- write handlers for requests
-- set the port to use, and the location of templates that are used for rendering the response
-- integrate with "view" rendering engines in order to generate responses by inserting data into templates.
-
-Routing refers to how an application’s endpoints (URIs) respond to client requests. For an introduction to routing, see Basic routing.
-
-You define routing using methods of the Express app object that correspond to HTTP methods; for example, app.get() to handle GET requests and app.post to handle POST requests. For a full list, see app.METHOD. You can also use app.all() to handle all HTTP methods and app.use() to specify middleware as the callback function (See Using middleware for details).
+`Server 2` uses [Express](https://expressjs.com/) framework to:
+- write handlers for requests: it defines routing using methods (that is to how an application’s endpoints respond to client requests) of the Express app object that correspond to HTTP methods
+- set the port to use and the location of templates rendering the response
+**- integrate with _view_ rendering engines in order to generate responses by inserting data into templates**
 
 ## Vue details
 [Vue](https://vuejs.org/) framework choice as programming model to develop the user interface on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9]. Vue manipulates the DOM.
