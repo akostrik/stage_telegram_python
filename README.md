@@ -251,14 +251,14 @@ Gpt-4 :
 
 However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
                                 
-| the means                       | speed    | quality  | investissement | cost                   |
-|---------------------------------|----------|----------|----------------|------------------------|
-| many powerful machines          | better   | the same | yes            | increasing             |
-| many LLM accounts               | better   | the same | no             | increasing             |
-| cross-analysis by several LLM   | worse    | better   |                | the same or increasing |
-| prompt design                   | the same | better   | no or little   | the same               |
-| learning (prompt with examples) | the same | better   | no or little   | the same               |
-| fine-tuning *                   | better   | better ! | yes            | decreasing             |
+| the means                       | speed    | quality  | investissement | cost                |
+|---------------------------------|----------|----------|----------------|---------------------|
+| many powerful machines          | better   | the same | yes            | greater             |
+| many LLM accounts               | better   | the same | no             | greater             |
+| cross-analysis by several LLM   | worse    | better   |                | the same or greater |
+| prompt design                   | the same | better   | no or little   | the same            |
+| learning (prompt with examples) | the same | better   | no or little   | the same            |
+| fine-tuning *                   | better   | better ! | yes            | less                |
 
 (*) for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
