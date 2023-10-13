@@ -171,7 +171,7 @@ node server2/server2.js
 ```
 In the third terminal launch `Server 3`
 ```bash
-cd user_interface
+cd server3
 npm run dev
 ```
 
