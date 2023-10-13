@@ -59,34 +59,34 @@ This project wouldn't have been possible without the guidance of the faculty at 
 ![Capture d’écran de 2023-10-13 11-59-32](https://github.com/akostrik/stage_telegram/assets/22834202/a3d62bcc-3215-4064-accf-dd6ab5df59f8)
 
 ## Application components
-[_Server 1_](https://github.com/akostrik/stage_telegram/tree/main/) in python handles real-time data streaming from Telegram, processes messages, and interacts with OpenAI for analysis.
+[`Server 1`](https://github.com/akostrik/stage_telegram/tree/main/) in python handles real-time data streaming from Telegram, processes messages, and interacts with OpenAI for analysis.
 
-[_Server 2_](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) in node.js manages data retrieval from MongoDB and serves it to the frontend.
+[`Server 2`](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) in node.js manages data retrieval from MongoDB and serves it to the frontend.
 
-[_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js presents the analyzed data to users in an intuitive and interactive manner.
+[`Server 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js presents the analyzed data to users in an intuitive and interactive manner.
 
 ## Description of the application
-1) _Server 3_ gets from the web browser an identificator of Telegram channel to examinate, via _Server 3_ [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-2) _Server 3_ transmet the identificator of the channel to _Server 2_, via _Server 2_ API
-3) _Server 2_ put puts the identificator of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
-4) _Server 1_ permanently updates the list of the identificators from _MongoDB Atlas_, via MongoDB API
-5) _Server 1_ listens to the chosen channels, via Telegram API
-6) _Server 1_ treats every new message, that is:
+1) `Server 3` gets from the web browser an identificator of Telegram channel to examinate, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
+2) `Server 3` transmet the identificator of the channel to `Server 2`, via `Server 2` API
+3) `Server 2` put puts the identificator of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
+4) `Server 1` permanently updates the list of the identificators from _MongoDB Atlas_, via MongoDB API
+5) `Server 1` listens to the chosen channels, via Telegram API
+6) `Server 1` treats every new message, that is:
 - estimates the marks of the propaganda of the message, via OpenAI API
 - based on these marks of the propaganda, it calculates the trust coefficient of the message
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
 - compares these affirmations to the recent affirmations of the other followed channels
 - stocks the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
-1) _Server 3_ requests conbstantly the results of the computations from _Server 2_, via _Server 2_ API
-1) _Server 2_ fetchs the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to _Server 3_
-1) _Server 3_ passes the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via _Server 3_ API
+1) `Server 3` requests conbstantly the results of the computations from `Server 2`, via `Server 2` API
+1) `Server 2` fetchs the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to `Server 3`
+1) `Server 3` passes the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via `Server 3` API
 1) The web browser displays the graph to the user
 
 Simultaneously, the _Learning service_ is working:
-1) _Server 3_ proposes to the user to correct OpenAI's previous responses in the web browser, via the _Server 3_ API
-2) As soon as the user provides the corrected examples, _Server 3_ passes them to _Server 2_
-3) _Server 2_ puts the corrected examples to the database, via MongoDB API
-4) _Server 1_ attaches a limited number of corrected examples to every new OpenAI request 
+1) `Server 3` proposes to the user to correct OpenAI's previous responses in the web browser, via the `Server 3` API
+2) As soon as the user provides the corrected examples, `Server 3` passes them to `Server 2`
+3) `Server 2` puts the corrected examples to the database, via MongoDB API
+4) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
 
 # Setup and usage
 The user should have a web browser compatible with ECMAScript 5 (for example, IE8 and its previous versions are  not compatible with ECMAScript 5)
@@ -156,15 +156,15 @@ npm install dotenv --save
 _NB `npm install` should be executed in the same folder where `package.json` file is_
 
 ## Compile and run
-In the first terminal launch _Server 1_
+In the first terminal launch `Server 1`
 ```bash
 python server1/server1.py
 ```
-In the second terminal launch _Server 2_
+In the second terminal launch `Server 2`
 ```bash
 node server2/server2.js
 ```
-In the third terminal launch _Server 3_
+In the third terminal launch `Server 3`
 ```bash
 cd user_interface
 npm run dev
@@ -180,9 +180,9 @@ After having installed and configured all noted above, enjoy the service http://
 # Technical details of the deveppement
 _To unserstand this section, the reader should have basic knowledge of computer sciences teminology_
 
-Separation of the data treatment provided by _Server 1_ and the presentation functoinality provided by _Server 2_ and _Server 3_ falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
+Separation of the data treatment provided by `Server 1` and the presentation functoinality provided by `Server 2` and `Server 3` falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
-_Server 1_ and _Server 2_ represent the backend functionality, while _Server 3_ ensures the Frontend one.
+`Server 1` and `Server 2` represent the backend functionality, while `Server 3` ensures the Frontend one.
 
 ## The parameters of the application
 - The characteristics of the propaganda
@@ -205,7 +205,7 @@ The application executes 2 OpenAI requests par message.
 The application executes O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes contanstly MongoDB requests in order to integrate immediately a new channel added by the user.
 
 ## Python details
-The _Server 1_ is written in Python, because:
+The `Server 1` is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
 - Python is a rather easy language (partly becauseof its easy syntax)
 
@@ -215,7 +215,7 @@ The _Server 1_ is written in Python, because:
 
 The server creates a listening socket and then blocks while waiting for new connections. During this time, the kernel puts the process into an interruptible sleep state and runs other processes. [^14]
 
-[Express](https://expressjs.com/) Node web framework, is used by _Server 2_ to:
+[Express](https://expressjs.com/) Node web framework, is used by `Server 2` to:
 - write handlers for requests
 - set the port to use, and the location of templates that are used for rendering the response
 - integrate with "view" rendering engines in order to generate responses by inserting data into templates.
@@ -233,7 +233,7 @@ It consists of two major parts:
 - A `dev` server that provides feature enhancements over native ES modules, for example HMR.
 - A `build` command that bundles the code with Rollup, pre-configured to output highly optimized static assets.
 
-a HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides gets the data from _Server 2_ API.
+a HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides gets the data from `Server 2` API.
 
 The grap is visualizated with a a graph visualization library [Cytoscape](https://cytoscape.org/).
 
@@ -368,7 +368,7 @@ Future versions aim to:
 - comparison of the rusults with other projects
 - customizable detection parameters: Recognizing that propaganda can be subjective, I introduced features that allow users to customize detection parameters, tailoring the system to their individual needs
 - usage of docker containers for installation and configuration instructions
-- it addition to transmission of a channel identificator added by user via MongoDB, _Server 3_ will pass it directly to _Server 1_ via _Server 3_ API, in order to release _Server 1_ from constant observation of the MongoDB collection
+- it addition to transmission of a channel identificator added by user via MongoDB, `Server 3` will pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection
   
 # Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
