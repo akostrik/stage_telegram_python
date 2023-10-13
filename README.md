@@ -178,13 +178,13 @@ npm run dev
 Enjoy the service http://localhost:5173/ 
 
 # Technical details of the developement
-_To understand this section, the reader should have basic knowledge of computer sciences teminology_
+_To understand this section, the reader should have basic knowledge of computer sciences terminology_
 
 Separation of the data treatment provided by `Server 1` and the presentation functionality provided by `Server 2` and `Server 3` falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
 `Server 1` and `Server 2` represent the backend functionality, while `Server 3` ensures the Frontend one.
 
-`Server 1` creates a listening socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means, than the kernel puts the processus into an interruptible sleep state and runs other processes. [^14]
+`Server 1` creates a listening socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means that the kernel puts the processus into an interruptible sleep state and runs other processes. [^14]
 
 ## The parameters of the application
 - The characteristics of the propaganda
@@ -198,11 +198,11 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 - The time where a message is considered as recent (in hours)
 
 ## Computation details 
-`The similarity index of two channels (channel1, channel2)` is the numbre of their similar affirmations  - the number of their opposite affirmations
+`The similarity index of two channels (channel1, channel2)` is the number of their similar affirmations  - the number of their opposite affirmations
 
 `The trust coefficient of a channel` is a number in the interval [0 … 100]
 
-The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes contantly MongoDB requests in order to integrate immediately a new channel added by the user.
+The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes constantly MongoDB requests in order to integrate immediately a new channel added by the user.
 
 ## `Server 1` in python details
 The `Server 1` is written in Python, because:
@@ -266,9 +266,9 @@ OpenAI limitations make it necessary to limit the _Learning service_ of the appl
 
 The installation instructions are provided in this document only for the cloud version _MongoDB Atlas_, however the user can [install MongoDB locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
 
-The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means described above or others), the database requests can be accelerated by installing MongoDB locally et may be, by using other databases.
+The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means described above or others), the database requests can be accelerated by installing MongoDB locally and may be, by using other databases.
 
-A BSON document in MongoDB cannot exceede 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size.
+A BSON document in MongoDB cannot exceed 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size.
 
 ## The limitations related to Telegram
 The application could not read [this channel](https://t.me/generallsvr).
