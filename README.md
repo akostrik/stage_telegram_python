@@ -77,16 +77,16 @@ This project wouldn't have been possible without the guidance of the faculty at 
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
 - compares these affirmations to the recent affirmations of the other followed channels
 - stocks the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
-7) _Server 2_ consults permanently the results of the computations in _MongoDB Atlas_, via MongoDB API
-8) _Server 2_ returns permanently the current results of the computations to the _Server 3_, via _Server 2_ API
-9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via _Server 3_ API
-10) The web browser displays the graph to the user
+1) _Server 3_ requests conbstantly the results of the computations from _Server 2_, via _Server 2_ API
+1) _Server 2_ fetchs the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to _Server 3_
+1) _Server 3_ passes the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via _Server 3_ API
+1) The web browser displays the graph to the user
 
 Simultaneously, the _Learning service_ is working:
 1) _Server 3_ proposes to the user to correct OpenAI's previous responses in the web browser, via the _Server 3_ API
 2) As soon as the user provides the corrected examples, _Server 3_ passes them to _Server 2_
-3) _Server 3_ puts the corrected examples to the database, via MongoDB API
-4) _Server 1_ attaches (a limited number of) corrected examples to every new OpenAI request 
+3) _Server 2_ puts the corrected examples to the database, via MongoDB API
+4) _Server 1_ attaches a limited number of corrected examples to every new OpenAI request 
 
 # Setup and usage
 The user should have a web browser compatible with ECMAScript 5 (for example, IE8 and its previous versions are  not compatible with ECMAScript 5)
