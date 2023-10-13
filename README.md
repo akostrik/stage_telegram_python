@@ -233,13 +233,13 @@ The visualisation is provided by the graph visualisation library [Cytoscape](htt
 ## Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application. The `characteristics` are kept in the collections `characteristics` and `messages`.
 
-MongoDB usage is explained by its cloud database service _MongoDB Atlas_ and its popularity. The database operations of this project are simple, so another noSql databases would probably provide about the same functionnalty and speed.  
+MongoDB usage is explained by its cloud database service _MongoDB Atlas_ and its popularity. The database operations of this project are simple, so another noSql database would probably provide about the same functionality and speed.  
 
 _MongoDB Atlas_ provides automatic failover, ensuring high availability, to prevent data loss. 
 
-# Limitatoins, challenges and future enhancements 
+# Limitations, challenges and future enhancements 
 
-It is developped only for Linux.
+The application is developed only for Linux.
 
 ## The limitations related to OpenAI
 Gpt-4 :
