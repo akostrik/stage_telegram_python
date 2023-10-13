@@ -209,11 +209,11 @@ The `Server 1` is written in Python, because:
 - Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specilised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
 - it is a rather easy language (partly becauseof its easy syntax)
 
-## node.js details
+## Node.js details
 [Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, MongoDB site provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 ) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
-[Express](https://expressjs.com/) Node web framework, is used by `Server 2` to:
+[Express](https://expressjs.com/) framework is used by `Server 2` to:
 - write handlers for requests
 - set the port to use, and the location of templates that are used for rendering the response
 - integrate with "view" rendering engines in order to generate responses by inserting data into templates.
