@@ -56,7 +56,7 @@ This project wouldn't have been possible without the guidance of the faculty at 
 ![Capture d’écran de 2023-10-12 10-38-38](https://github.com/akostrik/stage_telegram/assets/22834202/41252982-3978-40d9-9b2b-20483566d203)
 
 ## Diagram of the application in the programmer style
-![Capture d’écran de 2023-10-13 11-59-32](https://github.com/akostrik/stage_telegram/assets/22834202/a3d62bcc-3215-4064-accf-dd6ab5df59f8)
+![Capture d’écran de 2023-10-13 13-44-03](https://github.com/akostrik/stage_telegram/assets/22834202/dee875cb-3956-4fe6-894c-c82164adebf5)
 
 ## Application components
 [`Server 1`](https://github.com/akostrik/stage_telegram/tree/main/) in python handles real-time data streaming from Telegram, processes messages, and interacts with OpenAI for analysis.
