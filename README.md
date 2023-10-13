@@ -218,11 +218,11 @@ The `Server 1` is written in Python, because:
 - set the port to use and the location of templates rendering the response
 
 ## `Server 3` in Vue details
-[Vue](https://vuejs.org/) framework choice as programming model to manipulate the DOM on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers. [^7] [^9]
+[Vue](https://vuejs.org/) choice as a framework to manipulate the DOM on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers. [^7] [^9]
 
-[Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited (only the specific file being changed) through a process called Hot Module Replacement (HMR). [^5]
+Vue uses [Vite](https://vitejs.dev/), a server that monitors files as they're being edited. 
 
-An HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides gets the data from `Server 2` API.
+An HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides requests from the browser to `Server 3` API. And upon file save, the web browser reloads the code being edited (only the specific file being changed) through a process called Hot Module Replacement (HMR). [^5]
 
 The visualization is provided by the graph visualization library [Cytoscape](https://cytoscape.org/).
 
