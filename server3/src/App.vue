@@ -33,7 +33,7 @@
 <script>
 import DataEditor   from './components/DataEditor.vue';
 import LandingPage  from './components/LandingPage.vue';
-import BinaryEditor from './components/BinaryEditor.vue'; // make sure to import this
+import BinaryEditor from './components/BinaryEditor.vue';
 
 export default {
   name: 'App',

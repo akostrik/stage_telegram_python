@@ -53,7 +53,7 @@ export default {
     affirmation: {
       deep: true,
       handler(newAffirmation) {
-        this.affirmationKeys.gpt = Object.keys(newAffirmation.affirmations);
+        this.affirmationKeys.gpt       = Object.keys(newAffirmation.affirmations);
         this.affirmationKeys.corrected = Object.keys(newAffirmation.affirmations_corrections);
       }
     }

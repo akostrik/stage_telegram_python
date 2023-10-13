@@ -44,11 +44,9 @@ export default {
       }, {});
 
       var elements = [];
-
       relations.forEach(relation => {
         const channelA = channelMap[relation.channel_a];
         const channelB = channelMap[relation.channel_b];
-
         // Add 2 nodes and un edge
         elements.push({ data: { id: channelA.channelId, average_score: channelA.average_score } });  // Adjusted to use channelId
         elements.push({ data: { id: channelB.channelId, average_score: channelB.average_score } });

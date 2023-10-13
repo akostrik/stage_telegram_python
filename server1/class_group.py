@@ -26,8 +26,8 @@ class Group:
         await self.update_channels_score(message, collection_messages, collection_channels_score)
         await self.update_channels_similarity(message, collection_messages, collection_channels_similarity, how_many_hours_verification)
 
-    async def update_channels_from_mongo(self, collection_channels_id):
-        channels = collection_channels_id.find({}, {})
+    def update_channels_from_mongo(self, collection_channels_id): # async 
+        channels = collection_channels_id.find({}, {}) # await ?
         self.channels = set() # ?
         for channel in channels:
             if (isinstance(channel['telegram_id'], float)):

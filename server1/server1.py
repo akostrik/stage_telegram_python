@@ -55,12 +55,12 @@ collection_messages           = db['messages']
 collection_channels_id        = db['channels_id']
 collection_channels_score     = db['channels_score']
 collection_channels_simiarity = db['channels_similarity']
-try:
-    collection_messages.create_index   ([('telegram_id', pymongo.ASCENDING)], unique=True)
-    collection_channels_id.create_index([('telegram_id', pymongo.ASCENDING)], unique=True)
+# try:
+    # collection_messages.create_index   ([('telegram_id', pymongo.ASCENDING)], unique=True)
+    # collection_channels_id.create_index([('telegram_id', pymongo.ASCENDING)], unique=True)
     #collection_channels_score.create_index([('telegram_id', pymongo.ASCENDING)], unique=True) #telegram_idf
-except pymongo.errors.ServerSelectionTimeoutError:
-    print("Have you added this IP addresse in your MongoDB account?")
+# except pymongo.errors.ServerSelectionTimeoutError:
+#     print("Have you added this IP addresse in your MongoDB account?")
 #collection_log               = db['log']
 model_c                       = "gpt-3.5-turbo"
 model_a                       = "gpt-4"
