@@ -292,13 +292,13 @@ The initial prototype relied on keyword matching to flag potential propaganda me
 
 Integration of LLM to analyze the context of messages significantly improved detection accuracy but has its own set of challenges, especially false positives.
 
-Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "undesrstanding" of the meaning of a message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
+Extracting of detailed information (like the main subject, the people it deals with, etc) from a message, that is "understanding" of the meaning of a message, didn't worked correctly because of the poor quality of the analysis. Sorry for the example in Russian.
 
-The direct question to OpenAI, _Is there any marks of the propagande in this message?_, also didn't work correctly.
+The direct question to OpenAI, _Is there any marks of the propaganda in this message?_, also didn't work correctly.
 
 User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
-Keeping the data only in the application memory, and not in the database, prevented the application to have acces to the results of the previous executions. Channels identificators to follow was fixed direclty in the code.
+Keeping the data only in the application memory, and not in the database, prevented the application from having access to the results of the previous executions. Channels identificators was fixed directlty in the code.
 
 The experimentations were important to understand challenges to face.
 
