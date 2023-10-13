@@ -16,12 +16,12 @@ The technologies has been always influenced greatly the social relations. In par
 This project is aimed at automatical detecting of propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
 
 ## Some projects of similar orientation
-- [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/)
-- [The project of Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc
-- Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386)
+- [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab] (https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (United States)
+- [The project of Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localistation of the users, etc (China)
+- Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386) (United States)
 - Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
 - Machine learning project by [The Institute of Mathematical and Computing Sciences (Brazil)](https://cemeai.icmc.usp.br/)
-- Machine learning project [Buster.ai](https://www.buster.ai/)
+- Machine learning project [Buster.ai](https://www.buster.ai/) (France)
 - Workshops [Fever](https://fever.ai/workshop.html)
 - [Auxipresse](https://auxipress.be/)
 
@@ -210,11 +210,9 @@ The _Server 1_ is written in Python, because:
 - Python is a rather easy language (partly becauseof its easy syntax)
 
 ## node.js details
-[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in Node.js directly performs I/O, so the process never blocks [^10].
+[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in Node.js directly performs I/O, so the process never blocks [^10]. MpongoDB provides [detailes examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+) of its usage. So Node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
-between [other possibilities](https://www.mongodb.com/docs/drivers/) 
-
-https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 
 The server creates a listening socket and then blocks while waiting for new connections. During this time, the kernel puts the process into an interruptible sleep state and runs other processes. [^14]
 
@@ -222,6 +220,10 @@ The server creates a listening socket and then blocks while waiting for new conn
 - write handlers for requests
 - set the port to use, and the location of templates that are used for rendering the response
 - integrate with "view" rendering engines in order to generate responses by inserting data into templates.
+
+Routing refers to how an application’s endpoints (URIs) respond to client requests. For an introduction to routing, see Basic routing.
+
+You define routing using methods of the Express app object that correspond to HTTP methods; for example, app.get() to handle GET requests and app.post to handle POST requests. For a full list, see app.METHOD. You can also use app.all() to handle all HTTP methods and app.use() to specify middleware as the callback function (See Using middleware for details).
 
 ## Vue details
 [Vue](https://vuejs.org/) framework choice as programming model to develop the user interface (regarding to Angular and React as its possible alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for smalle projects and novice developers [^7] [^9].
