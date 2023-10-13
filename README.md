@@ -186,6 +186,8 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 
 `Server 1` creates a listening socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means, than the kernel puts the processus into an interruptible sleep state and runs other processes. [^14]
 
+Output of `Server 1` is written to the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log), to keep trace of all the experimentations.
+
 ## The parameters of the application
 - The characteristics of the propaganda
 - [The text of the characteristics OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
@@ -231,14 +233,11 @@ The visualization is provided by the graph visualization library [Cytoscape](htt
 [Asynchrony](https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)) refers to the actions instigated by a program that take place concurrently with program execution, without the program blocking to wait for results. In this application, it concerns many requests (see the dotted arrows on the application diagram).
 
 ## Database details
-A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application (it concerns the collections `characteristics` and `messages`).
+A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application. The `characteristics` are kept in the collections `characteristics` and `messages`.
 
 MongoDB usage is explained by its cloud database service _MongoDB Atlas_ and its popularity. The database operations of this project are simple, so another noSql databases would probably provide about the same functionnalty and speed.  
 
 _MongoDB Atlas_ provides automatic failover, ensuring high availability, to prevent data loss. 
-
-## Other technical details
-Output of server 1 is saved in the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log)
 
 # Limitatoins, challenges and future enhancements 
 
