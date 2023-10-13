@@ -38,7 +38,7 @@ The approach to development followed the Scrum principles like:
 A lot of completely new experience was acquired, like:
 - the conception of a whole application with several servers, several API, several external services;
 - programming languages (python, node.js);
-- frameworks (Vue, express, ...).
+- frameworks (Vue, express).
 
 ## Acknowledgements
 This project wouldn't have been possible without the guidance of the faculty at Sorbonne University, the feedback from early users and the continuous support from the associations.
