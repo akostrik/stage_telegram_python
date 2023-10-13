@@ -272,13 +272,16 @@ The speed of MongoDB requests is not critical in this project, because they are 
 
 A BSON document in MongoDB cannot exceed 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size.
 
-In addition to putting of a channel identifier added by user to MongoDB, `Server 3` should pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection.
-
 ## The limitations related to Telegram
 The application could not read [this channel](https://t.me/generallsvr).
 
 ## The limitations related to Vue
 Vue supports web browsers compatible with ECMAScript 5.
+
+## Other technical limitations
+In addition to putting of a channel identifier added by user to MongoDB, `Server 3` should pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection.
+
+Asynchrony of all MongoDB requests and OpenAI requests is not implemented yet.
 
 ## Conceptual limitations 
 The learning and the choice of the characteristics are founded on a human subjective opinion, where there's a margin of error.
@@ -345,7 +348,6 @@ Future versions aim to:
 - comparison of the results with other projects
 - customizable detection parameters: features that allow users to customise detection parameters, tailoring the system to their individual needs
 - usage of docker containers for installation and configuration instructions
-- asynchrony of all database requests and OpenAI requests
   
 # Welcome
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
