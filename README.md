@@ -316,13 +316,13 @@ Gpt-4 improved the quality of the analysis by characteristics, though extraction
 
 The comparison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and proved to be too long.
 
-The analysis of a series of messages, instead of analysing messages one by one did not prove acceptable results.
+The analysis of a series of messages, instead of analysing messages one by one, did not prove acceptable results.
 
-Detecting the subject of a channel content was tested, in order to help the user to choose the channels to follow. The clustering of channels according to their subject, so [the cluster_analysis](https://en.wikipedia.org/wiki/Cluster_analysis) was postponed.
+Detecting the subject of a channel content was tested, in order to help the user to choose the channels to follow. The [clustering]((https://en.wikipedia.org/wiki/Cluster_analysis)) of channels according to their subject was postponed, as not prioritary task.
 
 The idea of definition of a _similarity index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enough to test all these approaches. 
 
-NB The terms _metric_ or _distance_ should not be involved, because the positivity axiom [^16] doesn't necessarily hold true for a set of channels.
+NB The terms _metric_ or _distance_ regarding a pait of channels should not be involved, because the positivity axiom [^16] doesn't necessarily hold true for the set of channels.
 
 ## Version 3.0 (Current)
 Real-time analysis of messages, giving users instant feedback on the content they are consuming.
