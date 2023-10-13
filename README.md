@@ -67,9 +67,9 @@ This project wouldn't have been possible without the guidance of the faculty at 
 
 ## Description of the application
 1) _Server 3_ gets from the web browser an identificator of Telegram channel to examinate, via _Server 3_ [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-2) _Server 3_ transmet the name of the channel to _Server 2_, via _Server 2_ API
-3) _Server 2_ put puts the name of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
-4) _Server 1_ permanently gets the names of the channels from _MongoDB Atlas_, via MongoDB API
+2) _Server 3_ transmet the identificator of the channel to _Server 2_, via _Server 2_ API
+3) _Server 2_ put puts the identificator of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
+4) _Server 1_ permanently gets the identificators of the channels from _MongoDB Atlas_, via MongoDB API
 5) _Server 1_ listens permanently to the chosen channels, via Telegram API
 6) _Server 1_ treats every new message, that is:
 - estimates the marks of the propaganda of the message, via OpenAI API
