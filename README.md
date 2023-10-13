@@ -218,7 +218,7 @@ The `Server 1` is written in Python, because:
 - set the port to use and the location of templates rendering the response
 - **integrate with _view_ rendering engines in order to generate responses by inserting data into templates**
 
-## Vue details
+## `Server 3` in Vue details
 [Vue](https://vuejs.org/) framework choice as programming model to manipulate the DOM on the user's side (regarding to Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers. [^7] [^9]
 
 [Vite](https://vitejs.dev/), a local development server used by Vue, monitors files as they're being edited. Upon file save the web browser reloads the code being edited (only the specific file being changed) through a process called Hot Module Replacement (HMR). [^5]
