@@ -66,24 +66,24 @@ This project wouldn't have been possible without the guidance of the faculty at 
 [_Server 3_](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js presents the analyzed data to users in an intuitive and interactive manner.
 
 ## Description of the application
-1) _Server 3_ gets from the web browser a name of Telegram channel to examinate, via Server 3 [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-2) _Server 3_ transmet the name of the channel to _Server 2_, via Server 2 API
+1) _Server 3_ gets from the web browser a name of Telegram channel to examinate, via _Server 3_ [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
+2) _Server 3_ transmet the name of the channel to _Server 2_, via _Server 2_ API
 3) _Server 2_ put puts the name of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
-4) _Server 1_ permanently gets the names of the channels from MongoDB Atlas, via MongoDB API
+4) _Server 1_ permanently gets the names of the channels from _MongoDB Atlas_, via MongoDB API
 5) _Server 1_ listens permanently to the chosen channels, via Telegram API
 6) _Server 1_ treats every new message, that is:
 - estimates the marks of the propaganda of the message, via OpenAI API
 - based on these marks of the propaganda it calculates the trust coefficient of the message
 - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
 - compares these affirmations to the recent affirmations of the other followed channels
-- stocks all obtained information in MongoDB Atlas database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the index of similarity of the channels), via MongoDB API
-7) _Server 2_ consults permanently the results of the computations in MongoDB Atlas, via MongoDB API
-8) _Server 2_ returns permanently the current results of the computations to the _Server 3_, via Server 2 API
-9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via Server 3 API
+- stocks all obtained information in _MongoDB Atlas_ database (the message itself, the result if its analisys, updates the trust coefficients of the channels, updates the index of similarity of the channels), via MongoDB API
+7) _Server 2_ consults permanently the results of the computations in _MongoDB Atlas_, via MongoDB API
+8) _Server 2_ returns permanently the current results of the computations to the _Server 3_, via _Server 2_ API
+9) _Server 3_ passes the the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via _Server 3_ API
 10) The web browser displays the graph to the user
 
 Simultaneously, the _Learning service_ is working:
-1) _Server 3_ proposes to the user to correct OpenAI's previous responses in the web browser, via the Server 3 API
+1) _Server 3_ proposes to the user to correct OpenAI's previous responses in the web browser, via the _Server 3_ API
 2) As soon as the user provides the corrected examples, _Server 3_ passes them to _Server 2_
 3) _Server 3_ puts the corrected examples to the database, via MongoDB API
 4) _Server 1_ attaches (a limited number of) corrected examples to every new OpenAI request 
@@ -233,6 +233,8 @@ It consists of two major parts:
 - A dev server that provides feature enhancements over native ES modules, for example HMR.
 - A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
 
+a HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides gets the data from _Server 2_ API.
+
 A software platform [Cytoscape](https://cytoscape.org/) provides visualizing of the graphe.
 
 ## Asynchrony details
@@ -286,7 +288,7 @@ The length of an examined message is limited (see [The parameters of the applica
 
 ## The limits related to MongoDB
 
-The installation instructions are provided in this document only for the cloud version MongoDB (MongoDB Atlas), however the user can [install MongoDB locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
+The installation instructions are provided in this document only for the cloud version _MongoDB Atlas_, however the user can [install MongoDB locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
 
 The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means descibed above or others), the databade requests can be accelerated by installing MongoDn locally et may be by using other databases.
 
