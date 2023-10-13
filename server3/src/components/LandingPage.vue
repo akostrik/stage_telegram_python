@@ -32,35 +32,55 @@ export default {
       }
     };
   },
-    mounted() {
-    axios.get('http://localhost:3001/relations/').then(response => {
-      const elements = [];
+  async mounted() {
+    try {
+      // Fetch relations
+      const relationResponse = await axios.get('http://localhost:3001/relations/');
+      const relations = relationResponse.data;
 
-      response.data.forEach(relation => {
-        // Add nodes for channels
-        elements.push({ data: { id: relation.channel_a } });
-        elements.push({ data: { id: relation.channel_b } });
-        
+      // Fetch channels
+      const channelResponse = await axios.get('http://localhost:3001/channels/');
+      const channels = channelResponse.data;
+
+      // Convert channels to a map for easy lookup
+      const channelMap = channels.reduce((acc, channel) => {
+        acc[channel.channelId] = channel; // Adjusted to use channelId
+        return acc;
+      }, {});
+
+      var elements = [];
+
+      relations.forEach(relation => {
+        const channelA = channelMap[relation.channel_a];
+        const channelB = channelMap[relation.channel_b];
+
+        // Add nodes for channels with average_score
+        elements.push({ data: { id: channelA.channelId, average_score: channelA.average_score } }); // Adjusted to use channelId
+        elements.push({ data: { id: channelB.channelId, average_score: channelB.average_score } }); // Adjusted to use channelId
+            
         // Add edges between channels
         elements.push({
           data: {
             id: relation.channel_a + '-' + relation.channel_b,
             source: relation.channel_a,
             target: relation.channel_b,
-            relation: relation.relation // This assumes relation is a numerical value indicating the strength or number of attachments.
+            relation: relation.relation 
           }
         });
       });
 
-      // Initialize Cytoscape
+
       cytoscape({
-        container: document.getElementById('cy'),
-        elements: elements,
-        style: [
+          container: document.getElementById('cy'),
+          elements: elements,
+          style: [
           {
             selector: 'node',
             style: {
-              label: 'data(id)'
+              label: function( ele ){
+                return ele.data('id') + ' : ' + ele.data('average_score');
+              },
+              'font-size': '5px',
             }
           },
           {
@@ -70,15 +90,20 @@ export default {
               'width': 'data(relation)', // This will set the edge width based on the relation value.
               'label': 'data(relation)', // This will display the relation value as a label on the edge.
               'text-rotation': 'autorotate', // This rotates the text so it's aligned with the edge.
-              'text-margin-y': -10 // This offsets the text a bit from the edge to make it more readable.
+              'text-margin-y': -10, // This offsets the text a bit from the edge to make it more readable.
+              'font-size': '8px'
             }
           }
         ],
-        layout: {
-          name: 'cose' // This is a force-directed layout.
-        }
-      });
-    });
+          layout: {
+            name: 'cose', // This is a force-directed layout.
+          }
+        });
+      // Initialize Cytoscape with modified elements
+      // (The initialization code remains the same as before)
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   },
   methods: {
     navigate(route) {

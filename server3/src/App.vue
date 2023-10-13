@@ -31,9 +31,9 @@
 </template>
 
 <script>
-import DataEditor from './components/DataEditor.vue';
-import LandingPage from './components/LandingPage.vue';
-import BinaryEditor from './components/BinaryEditor.vue'; // Make sure to import this
+import DataEditor   from './components/DataEditor.vue';
+import LandingPage  from './components/LandingPage.vue';
+import BinaryEditor from './components/BinaryEditor.vue'; // make sure to import this
 
 export default {
   name: 'App',
@@ -44,10 +44,10 @@ export default {
   },
   data() {
     return {
-      messages: [], // You might want to fetch these from server too
-      currentRecord: null,
-      currentAffirmation: null, // This will hold the current affirmation being edited
-      currentView: 'landing'
+      messages:           [],   // to fetch these from server too
+      currentRecord:      null,
+      currentAffirmation: null, // the current affirmation being edited
+      currentView:        'landing'
     };
   },
   mounted() {
@@ -64,7 +64,7 @@ export default {
     editRecord(record) {
       this.currentRecord = record;
     },
-    editAffirmation(affirmation) { // This will be used when you want to edit a specific affirmation
+    editAffirmation(affirmation) { // to edit a specific affirmation
       this.currentAffirmation = affirmation;
     },
     onSaved() {
