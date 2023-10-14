@@ -95,7 +95,7 @@ This project wouldn't have been possible without the guidance of the faculty at 
 1. Real-time Telegram messages verification by two methods:
 - Scan individual messages for [propaganda markers](https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.html) via [OpenAI API](https://openai.com/product);
 - Analyze recent information from various channels to identify and highlight similarities, ensuring users are aware of potential echo chambers.
-2. Continuous learning and improvement:
+2. Continuous improvement:
 - Feedback Loop: The application learns from its mistakes. By leveraging previous OpenAI responses, which are corrected by users, the system refines its accuracy over time.
 
 ## Simplified diagram of the application (except _Learning service_)
