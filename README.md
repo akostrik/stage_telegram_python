@@ -134,7 +134,7 @@ Simultaneously, the _Learning service_ is working:
 1) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
 
 # Setup and usage
-The user should have a web browser compatible with ECMAScript 5 (for example, IE8 and its previous versions are  not compatible with ECMAScript 5).
+The user should have a web browser compatible with [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (for example, IE8 and its previous versions are  not compatible with ECMAScript 5).
 
 ## MongoDB Atlas configuration
 
