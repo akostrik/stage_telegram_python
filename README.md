@@ -119,8 +119,8 @@ This project wouldn't have been possible without the guidance of the faculty at 
 1) `Server 1` permanently updates the list of the identifiers from _MongoDB Atlas_, via MongoDB API
 1) `Server 1` listens to the chosen channels, via Telegram API
 1) `Server 1` treats every new message, that is:
-  - estimates the marks of the propaganda of the message, via OpenAI API
-  - based on these marks of the propaganda, it calculates the trust coefficient of the message
+  - estimates the propaganda marks of the message, via OpenAI API
+  - based on these propaganda marks, it calculates the trust coefficient of the message
   - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
   - compares these affirmations to the recent affirmations of the other followed channels
   - stocks the message itself, the result if its analysis, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
@@ -237,7 +237,7 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 - Propaganda marks (`characteristics`)
 - [The text of the characteristics OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
 - [The text of the affirmations OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
-- [OpenAI model](https://platform.openai.com/docs/models) for a propaganda marks request
+- [OpenAI model](https://platform.openai.com/docs/models) for a `characteristics`
 - [OpenAI model](https://platform.openai.com/docs/models) for a affirmations request
 - [OpenAI temperature](https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature), between 0 and 1: higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic (if set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit)
 - OpenAI request maximal length (in tokens [^1])
@@ -350,7 +350,7 @@ Integration of LLM to analyze the context of messages significantly improved det
 
 Extracting detailed information (like the main subject, the people it deals with, etc) from a message, that is "understanding" of the meaning of a message, didn't work correctly because of the poor quality of the analysis. Sorry for the example in Russian.
 
-The direct question to OpenAI, _Is there any marks of the propaganda in this message?_, also didn't work correctly.
+The direct question to OpenAI, _Are there any propaganda marks in this message?_, also didn't work correctly.
 
 User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
 
