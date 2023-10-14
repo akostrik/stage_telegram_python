@@ -57,7 +57,7 @@ The project has been developed during an Internship of 5 months, from the 3d Apr
 ## The context and motivation
 Technologiy has always greatly influenced the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection, with a huge potential to bring many changes into the people's organisation. 
 
-This project is aimed at automaticalle detecting propagandistic information in [Telegram](https://telegram.org/faq?setln=en#q-what-is-telegram-what-do-i-do-here) [channels](https://telegram.org/faq?setln=en#q-what-39s-the-difference-between-groups-and-channels). That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
+This project is aimed at automaticalle detecting [propagandistic information](https://www.britannica.com/topic/propaganda) in [Telegram](https://telegram.org/faq?setln=en#q-what-is-telegram-what-do-i-do-here) [channels](https://telegram.org/faq?setln=en#q-what-39s-the-difference-between-groups-and-channels). That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
 
 Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects, chiefly in Russian, with little censorship. 
 
