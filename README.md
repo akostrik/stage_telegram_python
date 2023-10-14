@@ -101,6 +101,8 @@ This project wouldn't have been possible without the guidance of the faculty at 
 ## Simplified diagram of the application (except _Learning service_)
 ![Capture d’écran de 2023-10-14 01-59-09](https://github.com/akostrik/stage_telegram/assets/22834202/5a86cb95-3eb7-4a32-8a0e-5cd67cd9e578)
 
+The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), a database in the cloud.
+
 ## Diagram of the application in the programmer style
 ![Capture d’écran de 2023-10-13 13-44-03](https://github.com/akostrik/stage_telegram/assets/22834202/dee875cb-3956-4fe6-894c-c82164adebf5)
 
@@ -139,8 +141,6 @@ Simultaneously, the _Learning service_ is working:
 The user should have a web browser compatible with [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (for example, Internet Explorer 8 and its previous versions are not compatible with ECMAScript 5).
 
 ## MongoDB Atlas configuration
-
-[MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4) in a database MongoDB in the cloud.
 
 [Create a MongoDB account](https://cloud.mongodb.com/) 
 
