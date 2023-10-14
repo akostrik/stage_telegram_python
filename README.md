@@ -1,3 +1,5 @@
+# Table of contents 
+
 - [Internship in the context of Master II study at Sorbonne University (Paris)](#internship-in-the-context-of-master-ii-study-at-sorbonne-university--paris-)
   * [The objectives of the internship](#the-objectives-of-the-internship)
   * [The context and motivation](#the-context-and-motivation)
@@ -40,8 +42,6 @@
   * [Version 3.0 (Current)](#version-30--current-)
   * [Future enhancements](#future-enhancements)
 - [Welcome](#welcome)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # Internship in the context of Master II study at Sorbonne University (Paris) 
 The project has been developed during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realised in Paris associations.
