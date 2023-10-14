@@ -80,9 +80,9 @@ The approach to development followed the Scrum principles like:
 - continuous feedback and flexibility; 
 - changing of the requirements as the project evolves.
 
-## Acquired competences
-A lot of completely new experience was acquired, like:
-- the conception of a whole application with several servers, several API, several external services;
+## Acquired skills
+A lot of new aquirements were gained, like:
+- the conception of a whole application with several servers, API, external services;
 - programming languages (python, node.js);
 - frameworks (Vue, express).
 
