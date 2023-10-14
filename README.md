@@ -305,7 +305,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 | learning (prompt with examples) | the same | better   | no             | the same            |
 | fine-tuning *                   | better ! | better ! | yes            | 0                   |
 
-(*) for example, to train a self-hosted model (like LLama2) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
+(*) for example, to train a self-hosted model (like [LLama2](https://ai.meta.com/llama/)) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
 (**) we consider all the LLM being paying, except self-hosted ones
 
