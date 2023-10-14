@@ -309,7 +309,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 (**) we consider all the LLM being paying, except self-hosted ones
 
-OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application). The adjustement of this limitation [depending of the model](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) will be implemented.
+OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). The adjustement of this limitation [depending of the model](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) will be implemented.
 
 ## The limitations related to MongoDB
 
