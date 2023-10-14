@@ -200,7 +200,7 @@ npm install dotenv --save
 ```
 [Install Node and npm](https://www.mongodb.com/docs/drivers/node/current/quick-start/download-and-install/#std-label-node-quick-start-download-and-install)
 
-Install Vue [^15]
+[Install Vue](https://v2.fr.vuejs.org/v2/guide/installation.html)
 ```bash
 npm install vue
 ```
@@ -231,7 +231,7 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 
 `Server 1` and `Server 2` represent the backend functionality, while `Server 3` ensures the frontend one.
 
-`Server 1` creates a listening socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means that the kernel puts the processus into an interruptible sleep state and runs other processes. [^14]
+`Server 1` creates a [listening](https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes) socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means that the kernel puts the processus into an interruptible sleep state and runs other processes.
 
 ## The parameters of the application
 - The characteristics of the propaganda
@@ -415,6 +415,4 @@ Future versions aim to:
 [^10]: https://nodejs.org/en/about
 [^11]: https://www.mongodb.com/docs/manual/reference/limits/
 [^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms  
-[^14]: https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes.
-[^15]: https://v2.fr.vuejs.org/v2/guide/installation.html 
 [^16]: the distance between two distinct points is always positive https://en.wikipedia.org/wiki/Metric_space 
