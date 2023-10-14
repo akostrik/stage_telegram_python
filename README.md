@@ -57,7 +57,7 @@ The project has been developed during an Internship of 5 months, from the 3d Apr
 ## The context and motivation
 Technologiy has always greatly influenced the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection, with a huge potential to bring many changes into the people's organisation. 
 
-This project is aimed at automaticalle detecting [propagandistic information](https://www.britannica.com/topic/propaganda) in [Telegram](https://telegram.org/faq?setln=en#q-what-is-telegram-what-do-i-do-here) [channels](https://telegram.org/faq?setln=en#q-what-39s-the-difference-between-groups-and-channels). That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
+This project is aimed at automaticalle detecting [propagandistic information](https://www.britannica.com/topic/propaganda) in [Telegram](https://telegram.org/faq?setln=en#q-what-is-telegram-what-do-i-do-here) [channels](https://telegram.org/faq?setln=en#q-what-39s-the-difference-between-groups-and-channels). That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information.
 
 Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels on different subjects, chiefly in Russian, with little censorship. 
 
@@ -93,7 +93,7 @@ This project wouldn't have been possible without the guidance of the faculty at 
 
 ## Application features
 1. Real-time Telegram messages verification by two methods:
-- Scan individual messages for propaganda markers via OpenAI [^8];
+- Scan individual messages for [propaganda markers](https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.html) via [OpenAI API](https://openai.com/product);
 - Analyze recent information from various channels to identify and highlight similarities, ensuring users are aware of potential echo chambers.
 2. Continuous learning and improvement:
 - Feedback Loop: The application learns from its mistakes. By leveraging previous OpenAI responses, which are corrected by users, the system refines its accuracy over time.
@@ -411,7 +411,6 @@ Future versions aim to:
 [^5]: https://en.wikipedia.org/wiki/Vite_(software)
 [^6]: https://www.britannica.com/topic/propaganda
 [^7]: https://skillbox.ru/media/code/vuejs-chto-takoe-kak-on-ustroen-i-chem-otlichaetsya-ot-react/ 
-[^8]: https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.htm 
 [^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
 [^10]: https://nodejs.org/en/about
 [^11]: https://www.mongodb.com/docs/manual/reference/limits/
