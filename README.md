@@ -57,7 +57,9 @@ The project has been developed during an Internship of 5 months, from the 3d Apr
 ## The context and motivation
 Technologiy has always greatly influenced the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection, with a huge potential to bring many changes into the people's organisation. 
 
-This project is aimed at automaticalle detecting propagandistic information in Telegram [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
+This project is aimed at automaticalle detecting propagandistic information in [Telegram]([https://telegram.org/](https://telegram.org/faq#q-qu-39est-ce-que-telegram-qu-39est-ce-que-je-peux-y-faire)) [^13] channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information. [^6]
+
+Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of [channels](https://telegram.org/faq#q-quelle-est-la-difference-entre-les-groupes-et-les-canaux) on different subjects, chiefly in Russian, with little censorship. 
 
 ## Some projects of similar orientation
 - [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DRFLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (United States)
@@ -413,8 +415,7 @@ Future versions aim to:
 [^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
 [^10]: https://nodejs.org/en/about
 [^11]: https://www.mongodb.com/docs/manual/reference/limits/
-[^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms 
-[^13]: Telegram is an application similar to WhatApp, Viber, Signal, etc. Its particularities are that it has a lot of channels (a channel is a one-way broadcast tool) on different subjects, chiefly in Russian, with little censorship.  
+[^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms  
 [^14]: https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes.
 [^15]: https://v2.fr.vuejs.org/v2/guide/installation.html 
 [^16]: the distance between two distinct points is always positive https://en.wikipedia.org/wiki/Metric_space 
