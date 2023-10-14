@@ -284,7 +284,7 @@ MongoDB usage is explained by its cloud database service _MongoDB Atlas_ and its
 
 _MongoDB Atlas_ provides automatic failover, ensuring high availability, to prevent data loss. 
 
-# Limitations, challenges and future enhancements 
+# Limitations and challenges 
 
 The application is developed only for Linux.
 
@@ -339,7 +339,7 @@ The application may help the malefactors to adjust propagandistic messages to ma
 
 The application doesn't aime at the deep causes of the propaganda.
 
-# Experimentations, evolution, iterations
+# Experimentations, evolution, future enhancements 
 ## Prototype Phase
 The initial prototype relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
 
