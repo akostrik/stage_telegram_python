@@ -309,7 +309,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 (**) we consider all the LLM being paying, except self-hosted ones
 
-OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application).
+OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). See [The parameters of the application](https://github.com/akostrik/stage_telegram/blob/main/README.md#the-parameters-of-the-application). The adjustement of this limitation [depending of the model](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) will be implemented.
 
 ## The limitations related to MongoDB
 
@@ -328,9 +328,9 @@ Vue supports web browsers compatible with ECMAScript 5.
 ## Other technical limitations
 In addition to putting of a channel identifier added by user to MongoDB, `Server 3` should pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection.
 
-Asynchrony of all MongoDB requests and OpenAI requests is not implemented yet.
+Asynchrony of all MongoDB requests and OpenAI requests will be implemented.
 
-Installation an configuration instructions are complicated, bacause usage of docker containers for them is not implemented yet.
+Installation an configuration instructions are complicated, bacause usage of docker containers for them will be implemented.
 
 ## Conceptual limitations 
 The learning and the choice of the characteristics are founded on a human subjective opinion, where there's a margin of error.
@@ -405,7 +405,7 @@ Future versions aim to:
 [Get help to install the application](mailto:stage.mongodb@gmail.com) 
 
 
-[^1]: in English 1 token ≈ 3/4 of a word 
+[^1]: in English 1 token ≈ 3/4 of a word https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them 
 [^3]: [https://www.scalablepath.com/front-end/vue-vs-react](https://vuejs.org/guide/introduction.html#what-is-vue)https://vuejs.org/guide/introduction.html#what-is-vue 
 [^5]: https://en.wikipedia.org/wiki/Vite_(software)
 [^6]: https://www.britannica.com/topic/propaganda
