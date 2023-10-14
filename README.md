@@ -11,7 +11,6 @@
   * [Application features](#application-features)
   * [Simplified diagram of the application (except _Learning service_)](#simplified-diagram-of-the-application--except--learning-service--)
   * [Diagram of the application in the programmer style](#diagram-of-the-application-in-the-programmer-style)
-  * [Application components](#application-components)
   * [Description of the application](#description-of-the-application)
 - [Setup and usage](#setup-and-usage)
   * [MongoDB Atlas configuration](#mongodb-atlas-configuration)
