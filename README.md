@@ -75,7 +75,7 @@ The project is aimed at automaticalle detecting [propagandistic information](htt
 The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organising and cross-functional teams with the users, except that both the developers team and the users were represented by myself only.
 
 The approach to development followed the Scrum principles like:
-- to break work into goals to be completed within time-boxed iterations, called sprints, where the sprints were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, vue.js, the rappprt);
+- breaking work into goals to be completed within time-boxed iterations, called sprints, which were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, vue.js, the rapport);
 - bringing decision-making authority to an operational level;
 - continuous feedback and flexibility; 
 - changing of the requirements as the project evolves.
