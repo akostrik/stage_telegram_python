@@ -234,7 +234,7 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 `Server 1` creates a [listening](https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes) socket on Telegram API, and then blocks while waiting for new connections. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. It means that the kernel puts the processus into an interruptible sleep state and runs other processes.
 
 ## The parameters of the application
-- The characteristics of the propaganda
+- Propaganda marks (`characteristics`)
 - [The text of the characteristics OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
 - [The text of the affirmations OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
 - [OpenAI model](https://platform.openai.com/docs/models) for a propaganda marks request
