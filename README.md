@@ -239,7 +239,7 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 - [The text of the affirmations OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
 - OpenAI model for a characteristics request
 - OpenAI model for a affirmations request
-- OpenAI temperature, between 0 and 1: higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic (if set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit [^2])
+- [OpenAI temperature](https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature), between 0 and 1: higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic (if set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit)
 - OpenAI request maximal length (in tokens [^1])
 - Telegram message maximal length (in characters)
 - The time where a message is considered as recent (in hours)
@@ -257,7 +257,7 @@ The `Server 1` is written in Python, because:
 - it is a rather easy language (partly because of its easy syntax).
 
 ## `Server 2` (node.js) details
-[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks [^10]. Besides, the MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks. Besides, the MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
 ) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
 `Server 2` uses [Express](https://expressjs.com/) framework in order to:
@@ -369,7 +369,7 @@ Detecting the subject of a channel content was tested, in order to help the user
 
 The idea of definition of a _similarity index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enough to test all these approaches. 
 
-NB The terms _metric_ or _distance_ regarding a pair of channels should not be involved, because the positivity axiom [^16] doesn't necessarily hold true for the set of channels.
+NB The terms _metric_ or _distance_ regarding a pair of channels should not be involved, because [the positivity axiom](https://en.wikipedia.org/wiki/Metric_space) doesn't necessarily hold true for the set of channels.
 
 ## Version 3.0 (Current)
 Real-time analysis of messages, giving users instant feedback on the content they are consuming.
@@ -405,14 +405,11 @@ Future versions aim to:
 [Get help to install the application](mailto:stage.mongodb@gmail.com) 
 
 
-[^1]: in English 1 token ≈ 3/4 of a word
-[^2]: https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature 
+[^1]: in English 1 token ≈ 3/4 of a word 
 [^3]: [https://www.scalablepath.com/front-end/vue-vs-react](https://vuejs.org/guide/introduction.html#what-is-vue)https://vuejs.org/guide/introduction.html#what-is-vue 
 [^5]: https://en.wikipedia.org/wiki/Vite_(software)
 [^6]: https://www.britannica.com/topic/propaganda
 [^7]: https://skillbox.ru/media/code/vuejs-chto-takoe-kak-on-ustroen-i-chem-otlichaetsya-ot-react/ 
 [^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
-[^10]: https://nodejs.org/en/about
 [^11]: https://www.mongodb.com/docs/manual/reference/limits/
 [^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms  
-[^16]: the distance between two distinct points is always positive https://en.wikipedia.org/wiki/Metric_space 
