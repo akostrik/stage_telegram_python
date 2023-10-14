@@ -386,7 +386,7 @@ Two tests on the values of the trust coefficient depending on the temperature pa
 | difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | difference (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
-Output of `Server 1` is written to the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log), to keep trace of all the experimentations.
+Output of `Server 1` is written to the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log), in order to keep trace of all the experimentations.
 
 ## Future enhancements
 As technology and misinformation tactics evolve, so will this application.
