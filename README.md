@@ -83,7 +83,7 @@ The project is aimed at automaticalle detecting [propagandistic information](htt
 
 <!-- TOC --><a name="methodology"></a>
 ## Methodology
-The project was based on the main pillars of [Agile_development method] (https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solution improvement through self-organizing, cross-functional teams with users. With the exception that, as part of the internship, the team of developers and the users were represented only by myself.
+The project was based on the main pillars of [Agile_development method](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solution improvement through self-organizing, cross-functional teams with users. With the exception that, as part of the internship, the team of developers and the users were represented only by myself.
 
 The approach to development followed the Scrum principles like:
 - breaking work into goals to be completed within time-boxed iterations, called sprints, which were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, Vue, the report);
