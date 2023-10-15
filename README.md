@@ -43,7 +43,7 @@
 - [Welcome](#welcome)
 
 # Internship carried out as part of the Master II Software Sciences and Technologies, Sorbonne University (Paris)
-The project has been developed during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realised in Paris associations.
+The project presented was developed during a 5-month internship (from April 3, 2023 to September 12, 2023) carried out with two Parisian associations operating in the sector of alternative innovation solidarity projects.
 
 ## Objectives of the internship
 - Professional experience: Engage in full-time professional practice
@@ -52,7 +52,7 @@ The project has been developed during an Internship of 5 months, from the 3d Apr
 - Hands-on learning: Immerse in new techniques, methodologies, tools, and their practical applications
 - Association ethics: Grasp the ethical considerations and operational nuances of associations
 - Professional adaptability: Evaluate the ability to integrate and adapt in a professional environment
-- Job market tеransition: Equip oneself with the skills and experience to seamlessly enter the job market
+- in terms of transition into the labor market: equipping yourself with the skills and experience necessary to enter the labor market smoothly.
 
 ## Context and motivation
 Technologiy has always greatly influenced the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection, with a huge potential to bring many changes into the people's organisation. 
@@ -71,7 +71,7 @@ The project is aimed at automaticalle detecting [propagandistic information](htt
 - Workshops [Fever](https://fever.ai/workshop.html) (international)
 - [Auxipresse](https://auxipress.be/) (Belgium)
 
-## The methodology
+## Methodology
 The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organising and cross-functional teams with the users, except that both the developers team and the users were represented by myself only.
 
 The approach to development followed the Scrum principles like:
@@ -397,7 +397,7 @@ Future versions aim to:
 - comparison of the results with ones of the other projects
 - customizable detection parameters: features that allow users to customise detection parameters, tailoring the system to their individual needs
   
-# Welcome
+# Welcome to the app 
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
