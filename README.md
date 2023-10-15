@@ -113,7 +113,7 @@ The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/l
 
 ### Functionality
 1) `Server 3` gets from the web browser an identifier of Telegram channel to examine, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-1) `Server 3` transmits the channel identifier to `Server 2`, via `Server 2`'s API
+1) `Server 3` transmits the channel identifier to `Server 2`, via `Server 2` API
 1) `Server 2` put puts the channel identifier in the [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via the MongoDB API
 1) `Server 1` permanently updates the list of the identifiers from _MongoDB Atlas_, via MongoDB API
 1) `Server 1` listens to the chosen channels, via Telegram API
@@ -126,9 +126,10 @@ The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/l
 7) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
 8) `Server 2` retrieves the calculation results from _MongoDB Atlas_, via MongoDB API, and sends them back to `Server 3`
 9) `Server 3` transmits the results to the web browser in the form of a channel graph, where each vertex contains the channel identifier and its confidence coefficient, and each edge is the similarity index of the two channels concerned, via `Server 3` API
+
 10) The web browser displays the graph to the user
 
-Simultaneously, the _Learning service_ is working:
+The Learning service runs concurrently. Which means that : 
 1) `Server 3` proposes to the user to correct OpenAI's previous responses in the web browser, via the `Server 3` API
 1) As soon as the user provides the corrected examples, `Server 3` passes them to `Server 2`
 1) `Server 2` puts the corrected examples to the database, via MongoDB API
