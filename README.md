@@ -42,10 +42,10 @@
   * [Future enhancements](#future-enhancements)
 - [Welcome](#welcome)
 
-# Internship in the context of Master II study at Sorbonne University (Paris) 
+# Internship carried out as part of the Master II Software Sciences and Technologies, Sorbonne University (Paris)
 The project has been developed during an Internship of 5 months, from the 3d April 2023 to the 12th September 2023, realised in Paris associations.
 
-## The objectives of the internship
+## Objectives of the internship
 - Professional experience: Engage in full-time professional practice
 - Skill development: Cultivate skills as a development engineer, focusing on real-world applications
 - Career exploration: Investigate potential career trajectories, especially in computer sciences applied to societal challenges
@@ -54,14 +54,14 @@ The project has been developed during an Internship of 5 months, from the 3d Apr
 - Professional adaptability: Evaluate the ability to integrate and adapt in a professional environment
 - Job market tеransition: Equip oneself with the skills and experience to seamlessly enter the job market
 
-## The context and motivation
+## Context and motivation
 Technologiy has always greatly influenced the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection, with a huge potential to bring many changes into the people's organisation. 
 
 This project deals with an application [Telegram](https://telegram.org/faq?setln=en#q-what-is-telegram-what-do-i-do-here), which is a messenger similar to WhatApp, Viber, Signal, etc. Its particularity is that it has a lot of [channels](https://telegram.org/faq?setln=en#q-what-39s-the-difference-between-groups-and-channels) on different subjects, chiefly in Russian, with little censorship. 
 
 The project is aimed at automaticalle detecting [propagandistic information](https://www.britannica.com/topic/propaganda) in the channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information.
 
-## Some projects of similar orientation
+## Presentation of projects of similar orientation 
 - [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DFRLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (United States)
 - [The project of Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localization of the users, etc (China)
 - Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386) (United States)
