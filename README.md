@@ -119,10 +119,10 @@ The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/l
 1) `Server 1` listens to the chosen channels, via Telegram API
 1) `Server 1` treats every new message, that is:
   - estimates the propaganda marks of the message, via OpenAI API
-  - based on these propaganda marks, it calculates the trust coefficient of the message
+  - based on these propaganda marks, it calculates the confidence coefficient of the message
   - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
   - compares these affirmations to the recent affirmations of the other followed channels
-  - stocks the message itself, the result if its analysis, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
+  - stocks the message itself, the result if its analysis, updates the confidence coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
 7) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
 8) `Server 2` retrieves the calculation results from _MongoDB Atlas_, via MongoDB API, and sends them back to `Server 3`
 9) `Server 3` transmits the results to the web browser in the form of a channel graph, where each vertex contains the channel identifier and its confidence coefficient, and each edge is the similarity index of the two channels concerned, via `Server 3` API
@@ -242,9 +242,14 @@ Separation of the data treatment provided by `Server 1` and the presentation fun
 - The time where a message is considered as recent (in hours)
 
 ## Computation details 
-`The similarity index of two channels (channel1, channel2)` is the number of their similar affirmations  - the number of their opposite affirmations.
 
-`The trust coefficient of a channel` is a number in the interval [0 … 100].
+_The confidence coefficient of a message_ is the summe a points attribuated by OpenAI for all the `characteristics`.
+
+_The confidence coefficient of a channel_ is the summe of the confidence coefficients of its messages.
+
+_The confidence coefficient of a group of channels_ is the normalized summe of the confidence coefficients of its channels, in the interval [0 … 100].
+
+_The similarity index of two channels_ = _the number of their similar affirmations_ minus _the number of their opposite affirmations_.
 
 The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes constantly MongoDB requests in order to integrate immediately a new channel added by the user.
 
@@ -373,11 +378,11 @@ Real-time analysis of messages, giving users instant feedback on the content the
 
 Echo chamber detection: One of the standout features of the current version is the ability to detect echo chambers, where multiple channels promote the same narrative, potentially indicating coordinated propaganda efforts.
 
-The tests launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average trust coefficients of the groups between 3 and 8 points:
+The tests launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average confidence coefficients of the groups between 3 and 8 points:
 
 ![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
 
-Two tests on the values of the trust coefficient depending on the temperature parameter, every of the tests launched on the two groups of channels, show a tendency of better distinction between the two groups while the temperature parameter is higher.    
+Two tests on the values of the confidence coefficient depending on the temperature parameter, every of the tests launched on the two groups of channels, show a tendency of better distinction between the two groups while the temperature parameter is higher.    
 | Temperature         | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |---------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
