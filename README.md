@@ -150,7 +150,7 @@ Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments 
 
 Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - `to get you MongoDB connection string` 
 
-_Be careful not to publish your MongoDB connection token on the internet and not to transmit it to unfamiliar people_
+Note: Be careful not to publish your MongoDB connection token on the internet and not to transmit it to unknown people.
 
 ## OpenAI configuration 
 
@@ -158,7 +158,7 @@ _Be careful not to publish your MongoDB connection token on the internet and not
 
 Your account should have access to gpt-4 (a paying option)
 
-_Be very very careful not to publish your OpenAI connection token on the internet and not to transmit it to unfamiliar people_
+Note: Be careful not to publish your OpenAI connection token on the internet and not to transmit it to unknown people.
 
 ## Telegram configuration
 
@@ -168,7 +168,7 @@ During the first launching of the application, enter the phone number of your Te
 
 The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) `anon.session` in the folder `server1` in order to you can to login without re-sending the code. 
 
-_Be very very careful not to publish the Telegram credentials on the internet and not to transmit them to unfamiliar people_
+Note: Be careful not to publish your Telegram credentials on the internet and not to transmit them to unknown people.
 
 ## `.env` file configuration 
 Put your MongoDB connection token (`MONGO`), OpenAI connection token (`OPENAI`) and Telegram credentials (`API_ID`, `API_HASH`) in the file `server1/.env.example`: 
