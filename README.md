@@ -124,7 +124,7 @@ The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/l
   - compares these affirmations to the recent affirmations of the other followed channels
   - stocks the message itself, the result if its analysis, updates the trust coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
 7) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
-8) `Server 2` fetches the results of the computations in _MongoDB Atlas_, via MongoDB API, and returns them to `Server 3`
+8) `Server 2` retrieves the calculation results from _MongoDB Atlas_, via MongoDB API, and sends them back to `Server 3`
 9) `Server 3` passes the results to the web browser in the form of a graph of the channels, where every summit contains the id of the channel and its trust coefficient, and every edge is the index of similarity of two concerned channels, via `Server 3` API
 10) The web browser displays the graph to the user
 
