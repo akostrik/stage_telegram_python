@@ -75,7 +75,7 @@ The project is aimed at automaticalle detecting [propagandistic information](htt
 The project was based on the main pillars of [Agile_development method] (https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solution improvement through self-organizing, cross-functional teams with users. With the exception that, as part of the internship, the team of developers and the users were represented only by myself.
 
 The approach to development followed the Scrum principles like:
-- breaking work into goals to be completed within time-boxed iterations, called sprints, which were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, vue.js, the report);
+- breaking work into goals to be completed within time-boxed iterations, called sprints, which were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, Vue, the report);
 - bringing decision-making authority to an operational level;
 - continuous feedback and flexibility; 
 - evolve requirements as the project evolves.
@@ -268,7 +268,7 @@ The `Server 1` is written in Python, because:
 - set the port to use and the location of templates rendering the response.
 
 ## `Server 3` (Vue) details
-[Vue](https://vuejs.org/) choice as a framework to manipulate the DOM on the user's side (regarding Angular and React as its alternatives), is explained by the simple syntax of Vue, its intuitive documentation and its pertinence for small projects and novice developers. [^7] [^9]
+The choice of [Vue](https://vuejs.org/) as a framework to manipulate the DOM on the user side (considering Angular and React as its alternatives), is explained by Vue's simple syntax, its intuitive documentation and its suitability for small projects and novice developers. [^7] [^9]
 
 Vue uses [Vite](https://vitejs.dev/), a server that monitors files as they're being edited. 
 
