@@ -250,7 +250,7 @@ _The confidence coefficient of a channel_ is the summe of the confidence coeffic
 
 _The confidence coefficient of a group of channels_ is the normalized summe of the confidence coefficients of its channels, in the interval [0 … 100].
 
-_The similarity index of two channels_ = _the number of their similar affirmations_ minus _the number of their opposite affirmations_.
+_The similarity index of two channels_ is based on the number of similar affirmations contained in these channels and the number of opposing affiramtions.
 
 The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes constantly MongoDB requests in order to integrate immediately a new channel added by the user.
 
