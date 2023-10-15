@@ -278,7 +278,7 @@ _The confidence coefficient of a message_ is the summe a points attribuated by O
 
 _The confidence coefficient of a channel_ is the summe of the confidence coefficients of its messages.
 
-_The confidence coefficient of a group of channels_ is the normalized summe of the confidence coefficients of its channels, in the interval [0 … 100].
+_The confidence coefficient of a group of channels_ is the normalized (in the interval [0 … 100]) summe of the confidence coefficients of its channels.
 
 _The similarity index of two channels_ equals to the number of similar affirmations contained in these channels, minus the number of opposing affiramtions.
 
