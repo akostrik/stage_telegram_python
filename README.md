@@ -251,7 +251,7 @@ Enjoy the service http://localhost:5173/
 
 <!-- TOC --><a name="technical-details-of-the-developement"></a>
 # Technical details of the developement
-_To understand this section, the reader should have basic knowledge of computer sciences terminology._
+Note : To understand this section, the reader should have basic knowledge of computer sciences terminology.
 
 Separation of the data treatment provided by `Server 1` and the presentation functionality provided by `Server 2` and `Server 3` falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
