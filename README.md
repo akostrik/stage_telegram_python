@@ -353,7 +353,7 @@ The initial prototype relied on keyword matching to flag potential propaganda me
 
 Integration of LLM to analyze the context of messages significantly improved detection accuracy but has its own set of challenges, especially false positives.
 
-Extracting detailed information (like the main subject, the people it deals with, etc) from a message, that is "understanding" of the meaning of a message, didn't work correctly because of the poor quality of the analysis. Sorry for the example in Russian.
+Indeed, the extraction of detailed information (such as the main subject, the people to whom it is addressed, etc.) from a message, which therefore affects the “understanding” of the meaning of a message, did not work correctly due to the poor quality of the analysis (see an example in Russian onthe screen shot).
 
 The direct question to OpenAI, _Are there any propaganda marks in this message?_, also didn't work correctly.
 
