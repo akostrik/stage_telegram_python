@@ -264,7 +264,7 @@ The `Server 1` is written in Python, because:
 ) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
 
 `Server 2` uses [Express](https://expressjs.com/) framework in order to:
-- set up write handlers for requests : thus, the Express framework defines routing using methods (that is to how an application’s endpoints respond to client requests) of the Express app object that correspond to HTTP methods;
+- set up write handlers for requests : thus, the Express framework defines how the application’s endpoint respond to client requests (the routing);
 - set the port to use and the location of templates rendering the response.
 
 ## `Server 3` (Vue) details
