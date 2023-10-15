@@ -285,7 +285,7 @@ The visualisation is provided by the graph visualisation library [Cytoscape](htt
 ## Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application. The `characteristics` are kept in the collections `characteristics` and `messages`.
 
-MongoDB usage is explained by its cloud database service _MongoDB Atlas_ and its popularity. The database operations of this project are simple, so another noSql database would probably provide about the same functionality and speed.  
+The reason for using MongoDB is its _MongoDB Atlas_ cloud database service and its popularity. The operations affecting the database of this project are simple. As a result, another noSql database would likely provide roughly the same functionality and at the same speed.
 
 _MongoDB Atlas_ provides automatic failover, ensuring high availability, to prevent data loss. 
 
