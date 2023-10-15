@@ -338,11 +338,11 @@ Asynchrony of all MongoDB requests and OpenAI requests will be implemented.
 Installation an configuration instructions are complicated, bacause usage of docker containers for them will be implemented.
 
 ## Conceptual limitations 
-The learning and the choice of the characteristics are founded on a human subjective opinion, where there's a margin of error.
+The learning and the choice of the `characteristics` are  based on subjective human opinion. Therefore, there is a margin of error. 
 
-The application may help the malefactors to adjust propagandistic messages to make them pass unnoticed.
+Moreover, the application can help malefactors adjust their propaganda messages to make them go unnoticed.
 
-The application doesn't aime at the deep causes of the propaganda.
+Thirdly, the applicaiton doesn't aime at the deep causes of the propaganda.
 
 # Experimentations, evolution, future enhancements 
 ## Prototype Phase
