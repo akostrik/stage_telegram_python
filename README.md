@@ -93,7 +93,10 @@ The approach to development followed the Scrum principles like:
 
 <!-- TOC --><a name="acquired-skills"></a>
 ## Acquired skills
-During this experience, many completely new skills were acquired such as: the design of a complete application with several servers, several APIs, several external services; the use of programming languages (Python, node.js); the use of frameworks (Vue, express, etc.)
+During this experience, many completely new skills were acquired such as: 
+- the design of a complete application with several servers, several APIs, several external services;
+- the use of programming languages (Python, node.js);
+- the use of frameworks (Vue, express).
 
 <!-- TOC --><a name="acknowledgements"></a>
 ## Acknowledgements
