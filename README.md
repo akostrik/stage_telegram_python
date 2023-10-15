@@ -272,7 +272,9 @@ The choice of [Vue](https://vuejs.org/) as a framework to manipulate the DOM on 
 
 Vue uses [Vite](https://vitejs.dev/), a server that monitors files as they're being edited. 
 
-An HTTP client [axios](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides requests from the browser to `Server 3` API. And upon file save, the web browser reloads the code being edited (only the specific file being changed) through a process called Hot Module Replacement (HMR). [^5]
+The [axios HTTP client](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides browser requests to the `Server 3` API. 
+
+And when saving the file, the web browser reloads the code being edited (only the specific part being changed) through a process called Hot Module Replacement (HMR). [^5]
 
 The visualisation is provided by the graph visualisation library [Cytoscape](https://cytoscape.org/).
 
