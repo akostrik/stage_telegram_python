@@ -55,11 +55,11 @@ The project presented was developed during a 5-month internship (from April 3, 2
 - in terms of transition into the labor market: equipping yourself with the skills and experience necessary to enter the labor market smoothly.
 
 ## Context and motivation
-Technologiy has always greatly influenced the social relations. In particular, the present-day computer science is an exceptional tool for cooperation and co-reflection, with a huge potential to bring many changes into the people's organisation. 
+Technology has always greatly influenced social relations. Nowadays, the IT sector constitutes an exceptional tool for cooperation and co-reflection, with exceptional potential to bring about changes in the organization of daily life.
 
 This project deals with an application [Telegram](https://telegram.org/faq?setln=en#q-what-is-telegram-what-do-i-do-here), which is a messenger similar to WhatApp, Viber, Signal, etc. Its particularity is that it has a lot of [channels](https://telegram.org/faq?setln=en#q-what-39s-the-difference-between-groups-and-channels) on different subjects, chiefly in Russian, with little censorship. 
 
-The project is aimed at automaticalle detecting [propagandistic information](https://www.britannica.com/topic/propaganda) in the channels. That is, the information, which may not be objective and may be selectively presenting facts to encourage a particular perception, or using loaded language to produce an emotional rather than a rational response to the information.
+The project is aimed at automaticalle detecting [propagandistic information](https://www.britannica.com/topic/propaganda) in the channels. In other words, it involves detecting information that may not be objective, presenting facts selectively to encourage a particular perception, or using particularly salient language to produce an emotional rather than rational response to the information.
 
 ## Presentation of projects of similar orientation 
 - [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DFRLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (United States)
@@ -72,7 +72,7 @@ The project is aimed at automaticalle detecting [propagandistic information](htt
 - [Auxipresse](https://auxipress.be/) (Belgium)
 
 ## Methodology
-The project followed the [agile practices](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solutions improvement through self-organising and cross-functional teams with the users, except that both the developers team and the users were represented by myself only.
+The project was based on the main pillars of [Agile_development method] (https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solution improvement through self-organizing, cross-functional teams with users. With the exception that, as part of the internship, the team of developers and the users were represented only by myself.
 
 The approach to development followed the Scrum principles like:
 - breaking work into goals to be completed within time-boxed iterations, called sprints, which were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, vue.js, the report);
