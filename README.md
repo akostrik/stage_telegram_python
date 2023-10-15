@@ -1,3 +1,6 @@
+# Internship carried out as part of the Master II Software Sciences and Technologies, Sorbonne University (Paris)
+The project presented was developed during a 5-month internship (from April 3, 2023 to September 12, 2023) carried out with two Parisian associations operating in the sector of alternative innovation solidarity projects.
+
 # Table of contents 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 - [Internship carried out as part of the Master II Software Sciences and Technologies, Sorbonne University (Paris)](#internship-carried-out-as-part-of-the-master-ii-software-sciences-and-technologies-sorbonne-university-paris)
@@ -46,9 +49,6 @@
 
 <!-- TOC end -->
 
-<!-- TOC --><a name="internship-carried-out-as-part-of-the-master-ii-software-sciences-and-technologies-sorbonne-university-paris"></a>
-# Internship carried out as part of the Master II Software Sciences and Technologies, Sorbonne University (Paris)
-The project presented was developed during a 5-month internship (from April 3, 2023 to September 12, 2023) carried out with two Parisian associations operating in the sector of alternative innovation solidarity projects.
 
 <!-- TOC --><a name="objectives-of-the-internship"></a>
 ## Objectives of the internship
