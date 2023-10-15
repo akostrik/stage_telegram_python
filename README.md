@@ -175,7 +175,7 @@ Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments 
 
 Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - `to get you MongoDB connection string` 
 
-Note: Be careful not to publish your MongoDB connection token on the internet and not to transmit it to unknown people.
+Note: Be careful not to publish your MongoDB connection token on the internet and not to transmit it to unknown people
 
 <!-- TOC --><a name="openai-configuration"></a>
 ## OpenAI configuration 
@@ -184,7 +184,7 @@ Note: Be careful not to publish your MongoDB connection token on the internet an
 
 Your account should have access to gpt-4 (a paying option)
 
-Note: Be careful not to publish your OpenAI connection token on the internet and not to transmit it to unknown people.
+Note: Be careful not to publish your OpenAI connection token on the internet and not to transmit it to unknown people
 
 <!-- TOC --><a name="telegram-configuration"></a>
 ## Telegram configuration
@@ -195,7 +195,7 @@ During the first launching of the application, enter the phone number of your Te
 
 The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) `anon.session` in the folder `server1` in order to you can to login without re-sending the code. 
 
-Note: Be careful not to publish your Telegram credentials on the internet and not to transmit them to unknown people.
+Note: Be careful not to publish your Telegram credentials on the internet and not to transmit them to unknown people
 
 <!-- TOC --><a name="env-file-configuration"></a>
 ## `.env` file configuration 
@@ -210,7 +210,7 @@ Rename `server1/.env.example` to `server1/.env`
 
 Copy `server1/.env` to `server2/.env`
 
-Note: Be careful not to publish this file on the internet and not to transmit it to unknown people. 
+Note: Be careful not to publish this file on the internet and not to transmit it to unknown people
 
 <!-- TOC --><a name="setup"></a>
 ## Setup
