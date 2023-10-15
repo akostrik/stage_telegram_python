@@ -229,7 +229,7 @@ npm install dotenv --save
 
 [Install Vue](https://v2.fr.vuejs.org/v2/guide/installation.html)
 
-_NB `npm install` should be executed in the same folder where `package.json` file is_
+Note: `npm install` should be executed in the same folder where `package.json` file is
 
 <!-- TOC --><a name="compile-and-run"></a>
 ## Compile and run
