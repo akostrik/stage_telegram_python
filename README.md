@@ -78,13 +78,10 @@ The approach to development followed the Scrum principles like:
 - breaking work into goals to be completed within time-boxed iterations, called sprints, which were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, vue.js, the report);
 - bringing decision-making authority to an operational level;
 - continuous feedback and flexibility; 
-- changing of the requirements as the project evolves.
+- evolve requirements as the project evolves.
 
 ## Acquired skills
-A lot of new aquirements were gained, like:
-- the conception of a whole application with several servers, API, external services;
-- programming languages (python, node.js);
-- frameworks (Vue, express).
+During this experience, many completely new skills were acquired such as: the design of a complete application with several servers, several APIs, several external services; the use of programming languages (Python, node.js); the use of frameworks (Vue, express, etc.)
 
 ## Acknowledgements
 This project wouldn't have been possible without the guidance of the faculty at Sorbonne University, the feedback from early users and the continuous support from the associations.
