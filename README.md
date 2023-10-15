@@ -122,7 +122,7 @@ The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/l
   - based on these propaganda marks, it calculates the confidence coefficient of the message
   - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
   - compares these affirmations to the recent affirmations of the other followed channels
-  - stocks the message itself, the result if its analysis, updates the confidence coefficients of the channels, updates the index of similarity of the channels in _MongoDB Atlas_ database, via MongoDB API
+  - stocks the message itself, the result if its analysis, updates the confidence coefficients of the channels, updates the similarity index of the channels in _MongoDB Atlas_ database, via MongoDB API
 7) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
 8) `Server 2` retrieves the calculation results from _MongoDB Atlas_, via MongoDB API, and sends them back to `Server 3`
 9) `Server 3` transmits the results to the web browser in the form of a channel graph, where each vertex contains the channel identifier and its confidence coefficient, and each edge is the similarity index of the two channels concerned, via `Server 3` API
@@ -250,7 +250,7 @@ _The confidence coefficient of a channel_ is the summe of the confidence coeffic
 
 _The confidence coefficient of a group of channels_ is the normalized summe of the confidence coefficients of its channels, in the interval [0 … 100].
 
-_The similarity index of two channels_ is based on the number of similar affirmations contained in these channels and the number of opposing affiramtions.
+_The similarity index of two channels_ equals to the number of similar affirmations contained in these channels, minus the number of opposing affiramtions.
 
 The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes constantly MongoDB requests in order to integrate immediately a new channel added by the user.
 
