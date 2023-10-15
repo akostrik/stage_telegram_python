@@ -3,7 +3,7 @@ The project presented was developed during a 5-month internship (from April 3, 2
 
 # Table of contents 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-- [Internship details](#internship-carried-out-as-part-of-the-master-ii-software-sciences-and-technologies-sorbonne-university-paris)
+- [Internship details](#internship-details)
    * [Objectives of the internship](#objectives-of-the-internship)
    * [Context and motivation](#context-and-motivation)
    * [Presentation of projects of similar orientation ](#presentation-of-projects-of-similar-orientation)
@@ -49,6 +49,8 @@ The project presented was developed during a 5-month internship (from April 3, 2
 
 <!-- TOC end -->
 
+<!-- TOC --><a name="internship-details"></a>
+# Internship details
 
 <!-- TOC --><a name="objectives-of-the-internship"></a>
 ## Objectives of the internship
