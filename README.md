@@ -60,7 +60,7 @@ The project presented was developed during a 5-month internship (from April 3, 2
 - Hands-on learning: Immerse in new techniques, methodologies, tools, and their practical applications
 - Association ethics: Grasp the ethical considerations and operational nuances of associations
 - Professional adaptability: Evaluate the ability to integrate and adapt in a professional environment
-- In terms of transition into the labor market: equipping yourself with the skills and experience necessary to enter the labor market smoothly.
+- In terms of transition into the labor market: equipping yourself with the skills and experience necessary to enter the labor market smoothly
 
 <!-- TOC --><a name="context-and-motivation"></a>
 ## Context and motivation
