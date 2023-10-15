@@ -280,7 +280,7 @@ The visualisation is provided by the graph visualisation library [Cytoscape](htt
 
 ## Asynchrony details
 
-[Asynchrony](https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)) refers to the actions instigated by a program that take place concurrently with program execution, without the program blocking to wait for results. In this application, it concerns many requests (see the dotted arrows on the application diagram).
+[Asynchrony](https://en.wikipedia.org/wiki/Asynchrony_(computer_programming)) refers to the actions instigated by a program that take place concurrently with program execution, without the program blocking to wait for results. In this application, many requests are affected (see the dotted arrows on the application diagram).
 
 ## Database details
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application. The `characteristics` are kept in the collections `characteristics` and `messages`.
