@@ -113,8 +113,8 @@ The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/l
 
 ### Functionality
 1) `Server 3` gets from the web browser an identifier of Telegram channel to examine, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-1) `Server 3` transmet the identifier of the channel to `Server 2`, via `Server 2` API
-1) `Server 2` put puts the identifier of the channel to [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via MongoDB API
+1) `Server 3` transmits the channel identifier to `Server 2`, via `Server 2`'s API
+1) `Server 2` put puts the channel identifier in the [MongoDB Atlas database](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), via the MongoDB API
 1) `Server 1` permanently updates the list of the identifiers from _MongoDB Atlas_, via MongoDB API
 1) `Server 1` listens to the chosen channels, via Telegram API
 1) `Server 1` treats every new message, that is:
