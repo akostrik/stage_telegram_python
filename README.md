@@ -420,7 +420,7 @@ Detecting the subject of a channel content was tested, in order to help the user
 
 The idea of definition of a _similarity index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enough to test all these approaches. 
 
-NB The terms _metric_ or _distance_ regarding a pair of channels should not be involved, because [the positivity axiom](https://en.wikipedia.org/wiki/Metric_space) doesn't necessarily hold true for the set of channels.
+Note: The terms _metric_ or _distance_ regarding a pair of channels should not be involved, because [the positivity axiom](https://en.wikipedia.org/wiki/Metric_space) doesn't necessarily hold true for the set of channels.
 
 <!-- TOC --><a name="version-30-current"></a>
 ## Version 3.0 (Current)
