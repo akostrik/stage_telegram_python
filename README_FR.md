@@ -4,12 +4,12 @@ Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avr
 # Table of contents 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 - [Internship details](#internship-details)
-   * [Objectives of the internship](#objectives-of-the-internship)
-   * [Context and motivation](#context-and-motivation)
-   * [Presentation of projects of similar orientation ](#presentation-of-projects-of-similar-orientation)
-   * [Methodology](#methodology)
-   * [Acquired skills](#acquired-skills)
-   * [Acknowledgements](#acknowledgements)
+   * [Les objectifs du stage](#objectives-of-the-internship)
+   * [Le contexte et la motivation ](#context-and-motivation)
+   * [Présentation de projets d'orientation similaire](#presentation-of-projects-of-similar-orientation)
+   * [La méthodologie employée](#methodology)
+   * [Compétences acquises](#acquired-skills)
+   * [Remerciements](#acknowledgements)
 - [Project overview](#project-overview)
    * [Application features](#application-features)
    * [Simplified diagram of the application (except _Learning service_)](#simplified-diagram-of-the-application-except-_learning-service_)
