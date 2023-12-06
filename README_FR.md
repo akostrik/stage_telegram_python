@@ -81,36 +81,33 @@ Ce projet vise à détecter de manière automatique les informations relevant de
 - [Auxipresse](https://auxipress.be/) (Belgique).
 
 <!-- TOC --><a name="methodology"></a>
-## Methodology
-The project was based on the main pillars of [Agile development method](https://en.wikipedia.org/wiki/Agile_software_development) which include requirements discovery and solution improvement through self-organizing, cross-functional teams with users. With the exception that, as part of the internship, the team of developers and the users were represented only by myself.
+## La méthodologie employée  
+Le projet s’est fondé sur les principaux piliers des [méthodes Agile](https://en.wikipedia.org/wiki/Agile_software_development) qui incluent la découverte des exigences et l'amélioration des solutions grâce à des équipes auto-organisées et inter-fonctionnelles avec les utilisateurs. À la nuance près que, dans le cadre du stage réalisé, l'équipe de développeurs et les utilisateurs étaient représentés uniquement par moi-même.
 
-The approach to development followed the Scrum principles like:
-- breaking work into goals to be completed within time-boxed iterations, called sprints, which were dedicated to the context study, the [large language models](https://en.wikipedia.org/wiki/Large_language_model) study, the architecture, python and its interactions with the concerned API, the datababases and elasticsearch, node.js, Vue, the report);
-- bringing decision-making authority to an operational level;
-- continuous feedback and flexibility; 
-- evolve requirements as the project evolves.
+L'approche du développement a suivi les valeurs Scrum fondamentales, à savoir : 
+- diviser le travail en objectifs à réaliser au sein d'itérations temporelles appelées sprints. Les sprints étant dédiés à l'étude : du contexte, des [grands modèles de language](https://en.wikipedia.org/wiki/Large_language_model) de l'architecture, de Python et de ses interactions avec l'API concernée, des bases de données et d’elasticsearch1 en node.js, vue.js) ; 
+- amener le pouvoir de décision à un niveau opérationnel ; 
+- mettre en place une rétroaction continue et flexibilité ; 
+- faire évoluer les exigences au fur et à mesure de l'évolution du projet.
 
 <!-- TOC --><a name="acquired-skills"></a>
-## Acquired skills
-During this experience, many completely new skills were acquired such as: 
-- the design of a complete application with several servers, several APIs, several external services;
-- the use of programming languages (Python, node.js);
-- the use of frameworks (Vue, express).
+## Compétences acquises 
+Au cours de cette expérience, de nombreuses compétences totalement nouvelles ont été acquises comme : la conception d'une application complète avec plusieurs serveurs, plusieurs API, plusieurs services externes ; l’utilisation de langages de programmation (Python, node.js) ; l’utilisation de frameworks (Vue, express, ...) 
 
 <!-- TOC --><a name="acknowledgements"></a>
-## Acknowledgements
-This project wouldn't have been possible without the guidance of the faculty at Sorbonne University, the feedback from early users and the continuous support from the associations.
+## Remerciements 
+Ce projet n'aurait pas été possible sans l'encadrement du corps professoral de la Sorbonne Université, les retours des premiers utilisateurs et le soutien continu des associations. 
 
 <!-- TOC --><a name="project-overview"></a>
-# Project overview
+# Aperçu du projet
 
 <!-- TOC --><a name="application-features"></a>
-## Application features
-1. Real-time Telegram messages verification by two methods:
-- Scan individual messages for [propaganda markers](https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.html) via [OpenAI API](https://openai.com/product);
-- Analyze recent information from various channels to identify and highlight similarities, ensuring users are aware of potential echo chambers.
-2. Continuous improvement:
-- Feedback Loop: The application learns from its mistakes. By leveraging previous OpenAI responses, which are corrected by users, the system refines its accuracy over time.
+## Fonctionnalités de l'application 
+1. Vérification des messages Telegram en temps réel par le biais de deux méthodes : 
+- l’analyse des messages individuels à la recherche de [marqueurs de propagande](https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.html) via [OpenAI API](https://openai.com/product) ;
+l’analyse des informations récentes provenant de différents canaux pour identifier et mettre en évidence les similitudes, en veillant à ce que les utilisateurs soient conscients des chambres d'écho potentielles 
+2. Apprentissage et amélioration continue 
+- Boucle de rétroaction : l'application apprend de ses erreurs. En tirant parti des précédentes réponses fournies par OpenAI, qui sont corrigées par les utilisateurs, le système affine sa précision au fil du temps.
 
 <!-- TOC --><a name="simplified-diagram-of-the-application-except-_learning-service_"></a>
 ## Simplified diagram of the application (except _Learning service_)
