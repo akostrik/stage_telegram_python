@@ -385,19 +385,22 @@ A BSON document in MongoDB cannot exceed 16 Mb and a MongoDB database cannot exc
 
 <!-- TOC --><a name="the-limitations-related-to-telegram"></a>
 ## The limitations related to Telegram
+
 The application could not read [this channel](https://t.me/generallsvr).
 
 <!-- TOC --><a name="the-limitations-related-to-vue"></a>
 ## The limitations related to Vue
+
 The user should have a web browser compatible with [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (for example, Internet Explorer 8 and its previous versions are not compatible with ECMAScript 5).
 
 <!-- TOC --><a name="other-technical-limitations"></a>
 ## Other technical limitations
-In addition to putting of a channel identifier added by user to MongoDB, `Server 3` should pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection.
 
-Asynchrony of all MongoDB requests and OpenAI requests will be implemented.
+The application would be more performant, if `Server 3` passed a new channel identificator directly to `Server 1`, in order to release `Server 1` from constant observation of the MongoDB collection.
 
-Installation an configuration instructions are complicated, bacause usage of docker containers for them will be implemented.
+Asynchrony of all MongoDB requests and OpenAI requests has not been implemented.
+
+Docker containers can save the user from the complicatied configuration.
 
 <!-- TOC --><a name="conceptual-limitations"></a>
 ## Conceptual limitations 
@@ -410,6 +413,7 @@ Thirdly, the applicaiton doesn't aime at the deep causes of the propaganda.
 <!-- TOC --><a name="experimentations-evolution-future-enhancements"></a>
 # Experimentations, evolution, future enhancements 
 <!-- TOC --><a name="prototype-phase"></a>
+
 ## Prototype Phase
 The initial prototype relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
 
