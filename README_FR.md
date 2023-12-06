@@ -491,9 +491,7 @@ Les futures versions auront pour objectif de :
     
   
 <!-- TOC --><a name="welcome-to-the-app"></a>
-# Bienvenue 
-
-<img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
+# Bienvenue <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
 [Toutes les questions sont les bienvenues](mailto:stage.mongodb@gmail.com)
 
