@@ -382,7 +382,7 @@ The installation instructions are provided in this document only for the cloud v
 
 The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means described above or others), the database requests can be accelerated by installing MongoDB locally and may be, by using other databases.
 
-A BSON document in MongoDB cannot exceed 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size.
+A BSON document in MongoDB cannot exceed 16 Mb and a MongoDB database cannot exceed 64 TB in size.
 
 <!-- TOC --><a name="the-limitations-related-to-telegram"></a>
 ## The limitations related to Telegram
@@ -487,5 +487,4 @@ Future versions aim to:
 [^6]: https://www.britannica.com/topic/propaganda
 [^7]: https://skillbox.ru/media/code/vuejs-chto-takoe-kak-on-ustroen-i-chem-otlichaetsya-ot-react/ 
 [^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
-[^11]: https://www.mongodb.com/docs/manual/reference/limits/
 [^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms  
