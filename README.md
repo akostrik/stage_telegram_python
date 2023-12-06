@@ -312,12 +312,10 @@ The `Server 1` is written in Python, because:
 
 <!-- TOC --><a name="server-2-nodejs-details"></a>
 ## `Server 2` (node.js) details
-[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks. Besides, the MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
-) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
+[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. The process never blocks, for no function in node.js directly performs I/O, so. The MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+) of node.js usage. So node.js matches well to deal with MongoDB (though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it).
 
-`Server 2` uses [Express](https://expressjs.com/) framework in order to:
-- set up write handlers for requests : thus, the Express framework defines how the application’s endpoint respond to client requests (the routing);
-- set the port to use and the location of templates rendering the response.
+`Server 2` uses [Express](https://expressjs.com/) framework in order to set up write handlers for requestsn that is to set the port to use and the location of templates rendering the response.
 
 <!-- TOC --><a name="server-3-vue-details"></a>
 ## `Server 3` (Vue) details
