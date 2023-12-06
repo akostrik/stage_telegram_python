@@ -357,7 +357,7 @@ Gpt-4 :
 
 However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
                                 
-| the means                       | speed    | quality  | investissement | a request cost **   |
+| the means                       | speed    | quality  | investissement | one request cost ** |
 |---------------------------------|----------|----------|----------------|---------------------|
 | many powerful machines          | better   | the same | yes            | 0                   |
 | many LLM accounts               | better   | the same | no             | the same            |
@@ -368,7 +368,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 (*) for example, to train a self-hosted model (like [LLama2](https://ai.meta.com/llama/)) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
-(**) we consider all the LLM being paying, except self-hosted ones
+(**) considing all the LLM being paying, except self-hosted ones
 
 OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). The adjustement of this limitation [depending of the model](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) will be implemented.
 
