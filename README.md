@@ -307,7 +307,7 @@ The application executes 2 OpenAI requests par message and O(K) MongoDB requests
 <!-- TOC --><a name="server-1-python-details"></a>
 ## `Server 1` (python) details
 The `Server 1` is written in Python, because:
-- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specialised libraries];(https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
+- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specialised libraries](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
 - it is a rather easy language (partly because of its easy syntax).
 
 <!-- TOC --><a name="server-2-nodejs-details"></a>
