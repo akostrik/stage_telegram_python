@@ -333,12 +333,13 @@ La visualisation est assurée par la bibliothèque de visualisation graphique [C
 Dans cette application, de nombreuses requêtes peuvent être concernées (voir les flèches en pointillés sur le schéma de l'application). 
 
 <!-- TOC --><a name="database-details"></a>
-## Database details
-A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application. The `characteristics` are kept in the collections `characteristics` and `messages`.
+## Détails de la base de données 
 
-The reason for using MongoDB is its _MongoDB Atlas_ cloud database service and its popularity. The operations affecting the database of this project are simple. As a result, another noSql database would likely provide roughly the same functionality and at the same speed.
+L’utilisation d'une base de données noSql s'explique principalement par l'évolution du nombre de caractéristiques, ainsi que par l'évolution des caractéristiques elles-mêmes, lors de l'ajustement de l'application. Les caractéristiques sont conservées dans les collections `caractéristics` et `messages`. 
 
-_MongoDB Atlas_ provides automatic failover, ensuring high availability, to prevent data loss. 
+L'utilisation de MongoDB s'explique par son service de base de données cloud MongoDB Atlas et par sa popularité. Les opérations touchant la base de données de ce projet sont simples. De ce fait, une autre base de données noSql fournirait probablement à peu près les mêmes fonctionnalités et ce, à la même vitesse. 
+
+À noter que MongoDB Atlas fournit un basculement automatique, garantissant ainsi une haute disponibilité pour éviter la perte de données. 
 
 <!-- TOC --><a name="limitations-and-challenges"></a>
 # Limitations and challenges 
