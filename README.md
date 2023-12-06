@@ -1,6 +1,9 @@
 https://github.com/akostrik/stage_telegram/blob/main/README_FR.md 
 
-<img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
+<img align="right" width="60" height="60" src="[https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e](https://github.com/akostrik/stage_telegram/assets/22834202/2c0c7670-60da-406e-9238-bbc68f1528d9)"> 
+
+![FR](https://github.com/akostrik/stage_telegram/assets/22834202/2c0c7670-60da-406e-9238-bbc68f1528d9)
+
 
 # Internship carried out as part of the Master II Software Sciences and Technologies, Sorbonne University (Paris)
 The project presented was developed during a 5-month internship (from April 3, 2023 to September 12, 2023) carried out with two Parisian associations operating in the sector of alternative innovation solidarity projects.
