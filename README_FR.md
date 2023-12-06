@@ -386,9 +386,9 @@ Un document BSON dans MongoDB ne peut pas dépasser 16 Mo et une base de donnée
 L'application n'a pas pu lire  [cette chaîne](https://t.me/generallsvr).
 
 <!-- TOC --><a name="the-limitations-related-to-vue"></a>
-## Limitations liées à Vue 
+## Limitations liées à _Vue_ 
 
-Vue prend en charge les navigateurs Web compatibles avec [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (ainsi, et par exemple, IE8 et ses versions précédentes ne sont pas compatibles avec ECMAScript 5).
+_Vue_ prend en charge les navigateurs Web compatibles avec [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (ainsi, et par exemple, IE8 et ses versions précédentes ne sont pas compatibles avec ECMAScript 5).
 
 <!-- TOC --><a name="other-technical-limitations"></a>
 ## Autres limitations techniques 
@@ -400,18 +400,20 @@ L'asynchronie de toutes les requêtes MongoDB et OpenAI n'a pas été implément
 Les instructions d'installation et de configuration peuvent être simplifiées par l'utilisation de conteineurs Docker.
 
 <!-- TOC --><a name="conceptual-limitations"></a>
-## Conceptual limitations 
+## Limites conceptuelles  
 
-The learning and the choice of the `characteristics` are  based on subjective human opinion. Therefore, there is a margin of error. 
+L'apprentissage et le choix des caractéristiques sont fondés sur une opinion humaine subjective. De ce fait, il existe une marge d'erreur. 
 
-Moreover, the application can help malefactors adjust their propaganda messages to make them go unnoticed.
+Ainsi, l'application peut aider des « malfaiteurs » à ajuster leurs messages de propagande pour les faire passer inaperçus. 
 
-Thirdly, the applicaiton doesn't aime at the deep causes of the propaganda.
+Enfin, l'application ne vise pas les causes profondes de la propagande. 
 
 <!-- TOC --><a name="experimentations-evolution-future-enhancements"></a>
 # Experimentations, evolution, future enhancements 
+
 <!-- TOC --><a name="prototype-phase"></a>
 ## Prototype Phase
+
 The initial prototype relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
 
 <!-- TOC --><a name="version-10"></a>
