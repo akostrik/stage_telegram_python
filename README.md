@@ -1,8 +1,8 @@
-https://github.com/akostrik/stage_telegram/blob/main/README_FR.md 
+[EN](https://github.com/akostrik/stage_telegram/blob/main/README.md)
+[FR](https://github.com/akostrik/stage_telegram/blob/main/README_FR.md)
 
-<img align="right" width="60" height="60" src="[https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e](https://github.com/akostrik/stage_telegram/assets/22834202/2c0c7670-60da-406e-9238-bbc68f1528d9)"> 
+[<img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/2c0c7670-60da-406e-9238-bbc68f1528d9>"](https://github.com/akostrik/stage_telegram/blob/main/README_FR.md)) 
 
-![FR](https://github.com/akostrik/stage_telegram/assets/22834202/2c0c7670-60da-406e-9238-bbc68f1528d9)
 
 
 # Internship carried out as part of the Master II Software Sciences and Technologies, Sorbonne University (Paris)
