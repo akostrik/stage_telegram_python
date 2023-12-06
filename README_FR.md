@@ -288,7 +288,7 @@ De la même manière, le `Serveur 2` écoute l'API du `Serveur 2` et le `Serveur
 - choix de la [température](https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature) d’OpenAI, entre 0 et 1 : des valeurs plus élevées comme 0,8 rendront la sortie plus aléatoire, tandis que des valeurs plus faibles comme 0,2 la rendront plus déterministe (si elle est définie sur 0, le modèle utilisera la probabilité logarithmique pour augmenter automatiquement la température jusqu'à ce que certains seuils soient atteints) ;
 - longueur maximale de la requête OpenAI (en tokens [^1])
 - longueur maximale du message sur Telegram (en nombre de caractères) ; 
-- 'heure à laquelle un message est considéré comme récent (en heures). 
+- heure à laquelle un message est considéré comme récent (en heures). 
 
 <!-- TOC --><a name="computation-details"></a>
 ## Détails du calcul 
@@ -301,7 +301,7 @@ _Le coefficient de confiance d’un groupe de chaînes_ est la somme normalilis�
 
 _L’indice de similarité de deux canaux_ est la nombre d’affirmations similaires, delaquelle on déduit le nombre d’affirmations contraires contenues dans les deux chaînes. 
 
-L'application exécute 2 requêtes OpenAI par message, et O(K) requêtes MongoDB par message (ici, K est le nombre de canaux suivis). 
+L'application exécute 2 requêtes OpenAI par message, et `O(K)` requêtes MongoDB par message (ici, `K` est le nombre de canaux suivis). 
 
 De plus, elle exécute en permanence des requêtes MongoDB afin d'intégrer immédiatement un nouveau canal ajouté par l'utilisateur. 
 
