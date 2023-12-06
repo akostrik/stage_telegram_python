@@ -146,26 +146,27 @@ Le [`server 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interf
 9) Le `Serveur 3` transmet les résultats au navigateur web sous la forme d'un graphe des canaux, où chaque sommet contient l'identifiant du canal et son coefficient de confiance. Chaque bord est l'indice de similarité des deux canaux concernés, via l'API du `Serveur 3`.
 10) Le navigateur Web affiche le graphique à l'utilisateur. 
 
-The Learning service runs concurrently. Which means that : 
-1) `Server 3` proposes to the user to correct OpenAI's previous responses in the web browser, via the `Server 3` API
-1) As soon as the user provides the corrected examples, `Server 3` passes them to `Server 2`
-1) `Server 2` puts the corrected examples to the database, via MongoDB API
-1) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
+Le service Learning fonctionne simultanément. Ce qui signifie que :  
+1) Le `Serveur 3` propose à l'utilisateur de corriger les réponses précédentes d'OpenAI dans le navigateur web, via l'API du `Serveur 3`.
+1) Dès que l'utilisateur fournit les exemples corrigés, le `Serveur 3` les transmet au `Serveur 2`.
+1) Le `Serveur 2` met les exemples corrigés dans la base de données, via l'API MongoDB. 
+1) Le `Serveur 1`  attache un nombre limité d'exemples corrigés à chaque nouvelle requête OpenAI.
 
 <!-- TOC --><a name="output-example"></a>
-## Output example 
+## Un exemple d'exécution 
 
 ![output 6](https://github.com/akostrik/stage_telegram/assets/22834202/298cab88-cca6-4585-8982-91c7f060ed7a)
 
-Channel 1: Focuses on positive aspects of government policies (e.g., new fiscal policy, economic growth, health budget increase, reforestation program, diplomatic alliances).
+La chaîne 1 se concentre sur les aspects positifs des politiques gouvernementales (par exemple, nouvelle politique fiscale, croissance économique, augmentation du budget de la santé, programme de reforestation, alliances diplomatiques).
 
-Channel 2: Criticizes government policies and predicts negative outcomes (e.g., negative view on fiscal policy, economic stagnation, public spending cuts, ineffective reforestation, diplomatic tensions).
+La chaîne  2 critique la politique du  government et predicts negative outcomes (e.g., negative view on fiscal policy, economic stagnation, public spending cuts, ineffective reforestation, diplomatic tensions).
+prédit des événements négatifs (par exemple, une vision négative de la politique budgétaire, une stagnation économique, des réductions des dépenses publiques, une reforestation inefficace, des tensions diplomatiques).
 
-Channel 3: Presents a balanced view of government reforms (e.g., fiscal reform for all, economic recovery, education funding, positive environmental plan, strengthening international relations).
+La chaîne 3: Présente une vision équilibrée des réformes gouvernementales (par exemple, réforme fiscale pour tous, reprise économique, financement de l’éducation, plan environnemental positif, renforcement des relations internationales).
 
-Channel 4: Criticizes some government policies, showing concern about economic stability and environmental plans.
+La chaîne 4: Critique certaines politiques gouvernementales, se montrant préoccupé par la stabilité économique et les plans environnementaux.
 
-Channel 5: Offers a divided opinion on government policies, highlighting debates and contrasting views.
+La chaîne 5: Offre une opinion partagée sur les politiques gouvernementales, mettant en lumière les débats et les points de vue contrastés.
 
 ![output 1+](https://github.com/akostrik/stage_telegram/assets/22834202/d88d7f54-ff08-40cc-ae85-b8b15349b44e)
 
