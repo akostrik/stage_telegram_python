@@ -1,5 +1,5 @@
 # Stage en entreprise réalisé dans le cadre du Master II Sciences et Technologies du Logiciel, Sorbonne Université (Paris)
-Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avril 2023 au 12 septembre 2023) réalisé auprès de deux associations parisiennes exerçant dans le secteur des projets solidaires d’innovation alternative.
+Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avril 2023 au 12 septembre 2023) réalisé auprès de deux associations parisiennes exerçant dans le secteur des projets solidaires.
 
 # Table of contents 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
