@@ -194,43 +194,44 @@ N.B. : Attention à ne pas publier le lien de connexio sur internet et à ne pa
 <!-- TOC --><a name="openai-configuration"></a>
 ## Configuration d’OpenAI  
 
-[Get your OpenAI connection token](https://platform.openai.com/account/api-keys)
+[Il faut récupérer le token de connexion OpenAi](https://platform.openai.com/account/api-keys).
 
-Your account should have access to gpt-4 (a paying option)
+Le compte doit avoir accès à gpt-4 (une option payante). 
 
-Note: Be careful not to publish your OpenAI connection token on the internet and not to transmit it to unknown people
+N.B. : Attention à ne pas publier le token sur internet et à ne pas le transmettre à des personnes inconnues. 
 
 <!-- TOC --><a name="telegram-configuration"></a>
-## Telegram configuration
+## Configuration du Telegram
 
-[Get Telegram credentials api_id and api_hash ](https://my.telegram.org/auth)
+[Obtenez les informations d’identification Telegram api_id and api_hash](https://my.telegram.org/auth)
 
-During the first launching of the application, enter the phone number of your Telegram account and then, enter the confirmation code.
+Lors du premier lancement de l'application, saisissez le numéro de téléphone de votre compte Telegram puis saisissez le code de confirmation. 
 
-The application will create a [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) `anon.session` in the folder `server1` in order to you can to login without re-sending the code. 
+L'application créera un [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) `anon.session` dans le dossier `serveur1` afin que vous puissiez vous connecter sans renvoyer le code. 
 
-Note: Be careful not to publish your Telegram credentials on the internet and not to transmit them to unknown people
+N.B. Faites très attention à ne pas publier les identifiants du Telegram sur Internet et à ne pas les transmettre à des personnes inconnues. 
 
 <!-- TOC --><a name="env-file-configuration"></a>
-## `.env` file configuration 
-Put your MongoDB connection token (`MONGO`), OpenAI connection token (`OPENAI`) and Telegram credentials (`API_ID`, `API_HASH`) in the file `server1/.env.example`: 
+## Configuration du fichier `.env`. 
+Mettre son token de connexion MongoDB (`MONGO`), puis le token de connexion OpenAI (`OPENAI`) et ses informations d'identification Telegram (`API_ID`, `API_HASH`) dans le fichier `server1/.env.example` : 
+
 ```
 API_ID=...
 API_HASH=...
 OPENAI=...
 MONGO=...
 ```
-Rename `server1/.env.example` to `server1/.env`
+Renommez `server1/.env.example` et `server1/.env`.
 
-Copy `server1/.env` to `server2/.env`
+Copiez `server1/.env` vers `server2/.env`.
 
-Note: Be careful not to publish this file on the internet and not to transmit it to unknown people
+N.B. : Attention à ne pas publier ce fichier sur internet et à ne pas le transmettre à des personnes inconnues.
 
 <!-- TOC --><a name="setup"></a>
-## Setup
-[Install python](https://www.python.org/downloads/) (version >= 3.7.1)
+## Installation
+[Installer python](https://www.python.org/downloads/) de la version au mmoin 3.7.1.
 
-Install python libraries and modules:
+Installer les bibliothèques et modules Python :
 ```bash
 pip3 install telethon
 pip install DateTime
@@ -239,14 +240,14 @@ pip install pymongo
 pip install --upgrade openai
 npm install dotenv --save
 ```
-[Install Node and npm](https://www.mongodb.com/docs/drivers/node/current/quick-start/download-and-install/#std-label-node-quick-start-download-and-install)
+[Installer Node et npm](https://www.mongodb.com/docs/drivers/node/current/quick-start/download-and-install/#std-label-node-quick-start-download-and-install)
 
-[Install Vue](https://v2.fr.vuejs.org/v2/guide/installation.html)
+[Installer Vue](https://v2.fr.vuejs.org/v2/guide/installation.html)
 
-Note: `npm install` should be executed in the same folder where `package.json` file is
+N.B. : `npm install` doit être exécuté dans le même dossier où se trouve le fichier `package.json`
 
 <!-- TOC --><a name="compile-and-run"></a>
-## Compile and run
+## Compiler et exécuter 
 In the first terminal launch `Server 1`
 ```bash
 python server1/server1.py
