@@ -409,42 +409,46 @@ Ainsi, l'application peut aider des « malfaiteurs » à ajuster leurs message
 Enfin, l'application ne vise pas les causes profondes de la propagande. 
 
 <!-- TOC --><a name="experimentations-evolution-future-enhancements"></a>
-# Experimentations, evolution, future enhancements 
+# Expérimentations, évolution, itérations 
 
 <!-- TOC --><a name="prototype-phase"></a>
-## Prototype Phase
+## Phase prototype 
 
-The initial prototype relied on keyword matching to flag potential propaganda messages. It was a simplistic approach that served as a proof of concept.
+Le prototype initial reposait sur la correspondance de mots clés pour signaler les messages de propagande potentiels. Il s’agissait d’une approche simpliste qui servait de preuve de concept.
 
 <!-- TOC --><a name="version-10"></a>
 ## Version 1.0
+
 <img align="right" width="300" height="300" src="https://github.com/akostrik/stage_telegram/assets/22834202/9176b2d8-a75b-4335-8a97-80e82197579a">
 
-Integration of LLM to analyze the context of messages significantly improved detection accuracy but has its own set of challenges, especially false positives.
+L'intégration de LLM pour analyser le contexte des messages a considérablement amélioré la précision de la détection. 
 
-Indeed, the extraction of detailed information (such as the main subject, the people to whom it is addressed, etc.) from a message, which therefore affects the “understanding” of the meaning of a message, did not work correctly due to the poor quality of the analysis (see an example in Russian onthe screen shot).
+Cette version présente son propre ensemble de défis, notamment les faux positifs. En effet, l'extraction d'informations détaillées (comme le sujet principal, les personnes auxquelles il s'adresse, etc.) d'un message, qui touche donc la « compréhension » du sens d'un message, ne fonctionnait pas correctement en raison de la mauvaise qualité de l'analyse. 
 
-The direct question to OpenAI, _Are there any propaganda marks in this message?_, also didn't work correctly.
+Un essay de poser directement à OpenAIles les question de type : « Y a-t-il des marques de propagande dans ce message ? » n'a pas abouti.
 
-User Feedback Mechanism, where the user could flag incorrect detections, was the first step towards a self-improving system.
+Le mécanisme de retour d'information des utilisateurs, grâce auquel l'utilisateur peut signaler les détections incorrectes, constitue la première étape vers un système d'auto-amélioration. 
 
-Keeping the data only in the application memory, and not in the database, prevented the application from having access to the results of the previous executions. Channels identifiers was fixed directly in the code.
+En outre, conserver les données uniquement dans la mémoire de l'application, et non dans la base de données, empêche l'application d'avoir accès aux résultats des exécutions précédentes. Les identifiants des chaînes ont été gardés directement dans le code. 
 
-The experimentations were important to understand challenges to face.
+Ces expérimentations étaient importantes pour comprendre les défis à relever.
 
 <!-- TOC --><a name="version-20"></a>
 ## Version 2.0
-Gpt-4 improved the quality of the analysis by characteristics, though extraction of affirmations via Extraction via Gpt-3, as well as via Gpt-4 without examples attached to the prompt, didn't work correctly.
 
-The comparison of paires of messages directly via OpenAI (instead of extracting the principal information in the form of affirmations) demands O(N<sup>2</sup>) operations and proved to be too long.
+Gpt-4 a amélioré la qualité de l'analyse par caractéristiques, bien que l'extraction des affirmations via Extraction via Gpt-3, ainsi que via Gpt-4 sans apprentissage (les exemples joints au prompt), n’ait pas fonctionné correctement. 
 
-The analysis of a series of messages, instead of analysing messages one by one, did not prove acceptable results.
+La comparaison de paires de messages directement sur OpenAI (au lieu d'extraire les informations principales sous forme d'affirmations) nécessite des O(N<sup>2</sup>) opérations et s'avère trop longue. 
 
-Detecting the subject of a channel content was tested, in order to help the user to choose the channels to follow. The [clustering]((https://en.wikipedia.org/wiki/Cluster_analysis)) of channels according to their subject was postponed, as not prioritary task.
+L’analyse d’un paquet de messages, au lieu d’analyser les messages un par un, n’a pas donné de résultats acceptables. 
 
-The idea of definition of a _similarity index_ of channels via [Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), [Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [Jaccard similarity coefficient](https://en.wikipedia.org/wiki/Jaccard_index) or [cosine similarity](https://en.wikipedia.org/wiki/Cosine_similarity) was postponed till the moment when the application will be fast enough to test all these approaches. 
+La détection du sujet du contenu d'une chaîne a été testée, afin d'aider l'utilisateur à choisir les chaînes à suivre. 
 
-Note: The terms _metric_ or _distance_ regarding a pair of channels should not be involved, because [the positivity axiom](https://en.wikipedia.org/wiki/Metric_space) doesn't necessarily hold true for the set of channels.
+Le [regroupement des chaînes](https://en.wikipedia.org/wiki/Cluster_analysis) selon leur sujet a été reporté, car il ne s'agissait pas d'une tâche prioritaire. 
+
+L'idée de définition d'un _indice de similarité_ des canaux par le biais de [la distance Euclidienne](https://en.wikipedia.org/wiki/Euclidean_distance), de la [distance Levenshtein](https://en.wikipedia.org/wiki/Levenshtein_distance), de la [distance Damerau–Levenshtein](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance), [conefficient similarité Jaccard](https://en.wikipedia.org/wiki/Jaccard_index), [la similarité cosinus](https://en.wikipedia.org/wiki/Cosine_similarity), etc a été reportée à un temps futur où l'application sera devenue suffisamment rapide pour tester toutes ces approches. 
+
+N.B. : Les termes « métrique » ou « distance » concernant une paire de canaux ne doivent pas être impliqués, car [l'axiome de positivité](https://en.wikipedia.org/wiki/Metric_space) n'est pas valable sur l'ensemble des canaux.
 
 <!-- TOC --><a name="version-30-current"></a>
 ## Version 3.0 (Current)
