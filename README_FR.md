@@ -73,7 +73,7 @@ Ce projet vise à détecter de manière automatique les informations relevant de
 <!-- TOC --><a name="presentation-of-projects-of-similar-orientation"></a>
 ## Présentation de projets d'orientation similaire 
 - projet de [détection des communautés ayant des idéologies similaires, par des interactions cross-cheannl](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) par le biais de [DFRLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (États-Unis) ;
-- projet de [Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), ouchant l’exploration de l'activité et de la localisation des utilisateurs etc. (Chine) ; 
+- projet de [Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), touchant l’exploration de l'activité et de la localisation des utilisateurs etc. (Chine) ; 
 - projet d'apprentissage automatique consistant à transmettre de « fausses fausses nouvelles » pour détecter les vraies fausses nouvelles, avec génération de données de formation chargées de propagande [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386) (États-Unis) ;
 - projet d'apprentissage automatique [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works) (États-Unis) ;
 - projet d'apprentissage automatique de [l’Institut des Sciences mathématiques et informatiques](https://cemeai.icmc.usp.br/) (Brésil) ;
@@ -114,7 +114,7 @@ Ce projet n'aurait pas été possible sans l'encadrement du corps professoral de
 - Boucle de rétroaction : l'application apprend de ses erreurs. En tirant parti des précédentes réponses fournies par OpenAI, qui sont corrigées par les utilisateurs, le système affine sa précision au fil du temps.
 
 <!-- TOC --><a name="simplified-diagram-of-the-application-except-_learning-service_"></a>
-## Schéma simplifié de l'application (hors service Learning) 
+## Schéma simplifié de l'application (hors service Apprentissage) 
 ![Capture d’écran de 2023-10-14 01-59-09](https://github.com/akostrik/stage_telegram/assets/22834202/5a86cb95-3eb7-4a32-8a0e-5cd67cd9e578)
 
 <!-- TOC --><a name="diagram-of-the-application-in-the-programmer-style"></a>
@@ -152,7 +152,7 @@ Le [`Serveur 3`](https://github.com/akostrik/stage_telegram/tree/main/user_inter
 9) Le `Serveur 3` transmet les résultats au navigateur web sous la forme d'un graphe des canaux, où chaque sommet contient l'identifiant du canal et son coefficient de confiance. Chaque bord est l'indice de similarité des deux canaux concernés, via l'API du `Serveur 3`.
 10) Le navigateur Web affiche le graphique à l'utilisateur. 
 
-Le service Learning fonctionne simultanément. Ce qui signifie que :  
+Le service Apprentissage fonctionne simultanément. Ce qui signifie que :  
 1) Le `Serveur 3` propose à l'utilisateur de corriger les réponses précédentes d'OpenAI dans le navigateur web, via l'API du `Serveur 3`.
 1) Dès que l'utilisateur fournit les exemples corrigés, le `Serveur 3` les transmet au `Serveur 2`.
 1) Le `Serveur 2` met les exemples corrigés dans la base de données, via l'API MongoDB. 
