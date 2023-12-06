@@ -358,20 +358,20 @@ Gpt-4 :
 Cependant, l'analyse par un [grand modèle de langage](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) peut être améliorée par le recours à des outils tels que :
 
                  
-| Outils                            | rapidité       | qualité        | investissement | le coût d'un reauête ** |
-|-----------------------------------|----------------|----------------|----------------|-------------------------|
-| nombreuses machines puissantes    | meilleure      | égale          | oui            | 0                       |
-| nombreux comptes LLM              | meilleure      | égale          | non            | égale                   |
-| analyse croisée par plusieurs LLM | pire           | meilleure      | non            | plus grand              |
-| prompt design                     | égale          | meilleure      | non            | égale                   |
-| apprentissage                     | égale          | meilleure      | non            | égale                   |
-| fine-tuning *                     | bien meilleure | bien meilleure | oui            | 0                       |
+| outils                            | rapidité       | qualité        | investissement | le coût d'une requête ** |
+|-----------------------------------|----------------|----------------|----------------|--------------------------|
+| nombreuses machines puissantes    | meilleure      | égale          | oui            | 0                        |
+| nombreux comptes LLM              | meilleure      | égale          | non            | égale                    |
+| analyse croisée par plusieurs LLM | pire           | meilleure      | non            | plus grand               |
+| prompt design                     | égale          | meilleure      | non            | égale                    |
+| apprentissage                     | égale          | meilleure      | non            | égale                    |
+| fine-tuning *                     | bien meilleure | bien meilleure | oui            | 0                        |
 
 (*) par exemple, pour entraîner un modèle auto-hébergé (comme LLama2) sur un corpus relu par des humains, car il a été prouvé que des modèles plus petits peuvent être bien plus performants que des modèles plus grands [^12]
 
 (**) en considératnt que tous les LLM sont payants, sauf ceux auto-hébergé
 
-OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). The adjustement of this limitation [depending of the model](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) will be implemented.
+Les limitations d'OpenAI obligent à limiter le service Apprentissage de l'application (5 exemples ou moins par requête) et la longueur d'un message examiné (un message est coupé au-delà de cette longueur). 
 
 <!-- TOC --><a name="the-limitations-related-to-mongodb"></a>
 ## The limitations related to MongoDB
