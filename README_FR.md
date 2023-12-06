@@ -317,7 +317,7 @@ Python représente un langage plutôt simple (en partie à cause de sa syntaxe s
 Le `Serveur 2` utilise le framework [Express](https://expressjs.com/) pour  mettre en place des gestionnaires des requêtes, notamment définir le port à utiliser et l'emplacement des templates rendant la réponse.
 
 <!-- TOC --><a name="server-3-vue-details"></a>
-## `Server 3` (Vue) details
+## Détails du Serveur 3 (Vue)
 
 Le choix de [`Vue`](https://vuejs.org/) comme framework pour manipuler le DOM côté utilisateur (en considérant Angular et React comme des alternatives), s'explique par la syntaxe simple de Vue, sa documentation intuitive et sa pertinence pour les petits projets et les développeurs novices. [^7] [^9]
 
