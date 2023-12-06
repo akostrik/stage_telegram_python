@@ -497,7 +497,7 @@ Les futures versions auront pour objectif de :
 
 [Obtenir de l’aide pour installer l’application ](mailto:stage.mongodb@gmail.com) 
 
-[^1]: in English 1 token ≈ 3/4 of a word https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them 
+[^1]: en anglais, 1 token ≈ 3/4 d'un mot https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them 
 [^3]: [https://www.scalablepath.com/front-end/vue-vs-react](https://vuejs.org/guide/introduction.html#what-is-vue)https://vuejs.org/guide/introduction.html#what-is-vue 
 [^5]: https://en.wikipedia.org/wiki/Vite_(software)
 [^6]: https://www.britannica.com/topic/propaganda
