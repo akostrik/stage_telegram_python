@@ -321,8 +321,7 @@ Le `Serveur 2` utilise le framework [Express](https://expressjs.com/) pour  mett
 
 Le choix de [`Vue`](https://vuejs.org/) comme framework pour manipuler le DOM côté utilisateur (en considérant Angular et React comme des alternatives), s'explique par la syntaxe simple de Vue, sa documentation intuitive et sa pertinence pour les petits projets et les développeurs novices. [^7] [^9]
 
-`Vue` utilise `Vite`, un serveur qui surveille les fichiers au fur et à mesure de leur modification. Un [axios HTTP client](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) fournit des requêtes du navigateur Web à l'API du `Serveur 3`. Lors de l'enregistrement du fichier, le navigateur Web recharge le code en cours d'édition 
- - uniquement le fichier spécifique en cours de modification - via un processus appelé [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/). 
+`Vue` utilise `Vite`, un serveur qui surveille les fichiers au fur et à mesure de leur modification. Un [axios HTTP client](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) fournit des requêtes du navigateur Web à l'API du `Serveur 3`. Lors de l'enregistrement du fichier, le navigateur Web recharge le code en cours d'édition ( - uniquement le fichier spécifique en cours de modification) via un processus appelé [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/). 
 
 La visualisation est assurée par la bibliothèque de visualisation graphique [Cytoscape](https://cytoscape.org/).
 
