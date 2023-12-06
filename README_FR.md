@@ -105,7 +105,7 @@ Ce projet n'aurait pas été possible sans l'encadrement du corps professoral de
 ## Fonctionnalités de l'application 
 1. Vérification des messages Telegram en temps réel par le biais de deux méthodes : 
 - l’analyse des messages individuels à la recherche de [marqueurs de propagande](https://www.cairn.info/revue-questions-de-communication-2020-2-page-371.html) via [OpenAI API](https://openai.com/product) ;
-l’analyse des informations récentes provenant de différents canaux pour identifier et mettre en évidence les similitudes, en veillant à ce que les utilisateurs soient conscients des chambres d'écho potentielles 
+- l’analyse des informations récentes provenant de différents canaux pour identifier et mettre en évidence les similitudes, en veillant à ce que les utilisateurs soient conscients des chambres d'écho potentielles 
 2. Apprentissage et amélioration continue 
 - Boucle de rétroaction : l'application apprend de ses erreurs. En tirant parti des précédentes réponses fournies par OpenAI, qui sont corrigées par les utilisateurs, le système affine sa précision au fil du temps.
 
