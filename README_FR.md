@@ -122,11 +122,11 @@ Ce projet n'aurait pas été possible sans l'encadrement du corps professoral de
 
 <!-- TOC --><a name="application-components"></a>
 ### Application components
-Le [`server 1`](https://github.com/akostrik/stage_telegram/tree/main/) onctionne sous Python et gère le streaming de données en temps réel, à partir de Telegram. Il traite les messages et interagit avec OpenAI pour l'analyse.
+Le [`Serveur 1`](https://github.com/akostrik/stage_telegram/tree/main/) fonctionne sous Python et gère le streaming de données en temps réel, à partir de Telegram. Il traite les messages et interagit avec OpenAI pour l'analyse.
 
-Le [`server 2`](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) fonctionne sous node.js. Il gère la récupération des données de MongoDB et les sert au frontend. 
+Le [`Serveur 2`](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) fonctionne sous node.js. Il gère la récupération des données de MongoDB et les sert au frontend. 
 
-Le [`server 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) fonctionne sous vue.js.Il présente les données analysées aux utilisateurs de manière intuitive et interactive. 
+Le [`Serveur 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) fonctionne sous vue.js.Il présente les données analysées aux utilisateurs de manière intuitive et interactive. 
 
 <!-- TOC --><a name="functionality"></a>
 ### Description de l’application
