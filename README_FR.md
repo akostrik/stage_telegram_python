@@ -339,34 +339,37 @@ L’utilisation d'une base de données noSql s'explique principalement par l'év
 
 L'utilisation de MongoDB s'explique par son service de base de données cloud MongoDB Atlas et par sa popularité. Les opérations touchant la base de données de ce projet sont simples. De ce fait, une autre base de données noSql fournirait probablement à peu près les mêmes fonctionnalités et ce, à la même vitesse. 
 
-À noter que MongoDB Atlas fournit un basculement automatique, garantissant ainsi une haute disponibilité pour éviter la perte de données. 
+À noter que MongoDB Atlas fournit un sauvegarde automatique pour éviter la perte de données. 
 
 <!-- TOC --><a name="limitations-and-challenges"></a>
-# Limitations and challenges 
+# Limites, défis et améliorations futures 
 
-The application is developed only for Linux.
+## Limitations liées au système d'exploitation
+L'application est développée uniquement pour Linux. 
 
 <!-- TOC --><a name="the-limitations-related-to-openai"></a>
-## The limitations related to OpenAI
-Gpt-4 :
-- treats about 5 requests per minute and represents the slowest part of the application;
-- doesn't provide always the analysis of high-quality;
-- is paying.
+## Limitations liées à OpenAI 
 
-However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
-                                
-| the means                       | speed    | quality  | investissement | a request cost **   |
-|---------------------------------|----------|----------|----------------|---------------------|
-| many powerful machines          | better   | the same | yes            | 0                   |
-| many LLM accounts               | better   | the same | no             | the same            |
-| cross-analysis by several LLM   | worse    | better   | no             | greater             |
-| prompt design                   | the same | better   | no             | the same            |
-| learning (prompt with examples) | the same | better   | no             | the same            |
-| fine-tuning *                   | better ! | better ! | yes            | 0                   |
+Gpt-4 : 
+- traite environ 5 requêtes par minute et représente la partie la plus lente de l'application ; 
+- ne fournit pas toujours une analyse de haute qualité ; 
+- est payant. 
 
-(*) for example, to train a self-hosted model (like [LLama2](https://ai.meta.com/llama/)) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
+Cependant, l'analyse par un [grand modèle de langage](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) peut être améliorée par le recours à des outils tels que :
 
-(**) we consider all the LLM being paying, except self-hosted ones
+                 
+| Outils                            | rapidité       | qualité        | investissement | le coût d'un reauête ** |
+|-----------------------------------|----------------|----------------|----------------|-------------------------|
+| nombreuses machines puissantes    | meilleure      | égale          | oui            | 0                       |
+| nombreux comptes LLM              | meilleure      | égale          | non            | égale                   |
+| analyse croisée par plusieurs LLM | pire           | meilleure      | non            | plus grand              |
+| prompt design                     | égale          | meilleure      | non            | égale                   |
+| apprentissage                     | égale          | meilleure      | non            | égale                   |
+| fine-tuning *                     | bien meilleure | bien meilleure | oui            | 0                       |
+
+(*) par exemple, pour entraîner un modèle auto-hébergé (comme LLama2) sur un corpus relu par des humains, car il a été prouvé que des modèles plus petits peuvent être bien plus performants que des modèles plus grands [^12]
+
+(**) en considératnt que tous les LLM sont payants, sauf ceux auto-hébergé
 
 OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). The adjustement of this limitation [depending of the model](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) will be implemented.
 
