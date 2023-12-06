@@ -172,7 +172,6 @@ La chaîne 5 offre une opinion partagée sur les politiques gouvernementales, me
 
 <!-- TOC --><a name="setup-and-usage"></a>
 # Configuration et utilisation 
-L'utilisateur doit disposer d'un navigateur Web compatible avec [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (ainsi, et par exemple, IE8 et ses versions précédentes ne sont pas compatibles avec ECMAScript 5).
 
 <!-- TOC --><a name="mongodb-atlas-configuration"></a>
 ## Configuration de MongoDB Atlas 
@@ -383,23 +382,26 @@ La vitesse des requêtes MongoDB n'est pas un point de critique dans ce projet, 
 Un document BSON dans MongoDB ne peut pas dépasser 16 Mo et une base de données MongoDB ne peut pas dépasser 64 To.
 
 <!-- TOC --><a name="the-limitations-related-to-telegram"></a>
-## The limitations related to Telegram
-The application could not read [this channel](https://t.me/generallsvr).
+## Limitations liées à Telegram 
+L'application n'a pas pu lire  [cette chaîne](https://t.me/generallsvr).
 
 <!-- TOC --><a name="the-limitations-related-to-vue"></a>
-## The limitations related to Vue
-Vue supports web browsers compatible with ECMAScript 5.
+## Limitations liées à Vue 
+
+Vue prend en charge les navigateurs Web compatibles avec [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (ainsi, et par exemple, IE8 et ses versions précédentes ne sont pas compatibles avec ECMAScript 5).
 
 <!-- TOC --><a name="other-technical-limitations"></a>
-## Other technical limitations
-In addition to putting of a channel identifier added by user to MongoDB, `Server 3` should pass it directly to `Server 1` via `Server 3` API, in order to release `Server 1` from constant observation of the MongoDB collection.
+## Autres limitations techniques 
 
-Asynchrony of all MongoDB requests and OpenAI requests will be implemented.
+L'application serait plue performante, si le `Serveur 3` transmettait l'identificateur d'une chaîne nouvellement ajoutée par l'utlisateur, directement au `Serveur 1`, afin de libérer le `Serveur 1` de l'observation constante de la collection MongoDB. 
 
-Installation an configuration instructions are complicated, bacause usage of docker containers for them will be implemented.
+L'asynchronie de toutes les requêtes MongoDB et OpenAI n'a pas été implémentée. 
+
+Les instructions d'installation et de configuration sont compliquées, ce que peut être amélioré par l'utilisation de conteneurs Docker.
 
 <!-- TOC --><a name="conceptual-limitations"></a>
 ## Conceptual limitations 
+
 The learning and the choice of the `characteristics` are  based on subjective human opinion. Therefore, there is a margin of error. 
 
 Moreover, the application can help malefactors adjust their propaganda messages to make them go unnoticed.
@@ -485,5 +487,4 @@ Future versions aim to:
 [^6]: https://www.britannica.com/topic/propaganda
 [^7]: https://skillbox.ru/media/code/vuejs-chto-takoe-kak-on-ustroen-i-chem-otlichaetsya-ot-react/ 
 [^9]: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#gref
-[^11]: https://www.mongodb.com/docs/manual/reference/limits/
 [^12]: https://deepgram.com/learn/the-underdog-revolution-how-smaller-language-models-outperform-llms  
