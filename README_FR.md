@@ -96,7 +96,7 @@ L'approche du développement a suivi les valeurs Scrum fondamentales, à savoir�
 Au cours de cette expérience, de nombreuses compétences nouvelles ont été acquises comme : 
 - la conception d'une application complète avec plusieurs serveurs, plusieurs API, plusieurs services externes ;
 -  l’utilisation de langages Python et node.js ;
--  l’utilisation de frameworks (Vue, express, ...).
+-  l’utilisation de frameworks (Vue et Express).
 
 <!-- TOC --><a name="acknowledgements"></a>
 ## Remerciements 
