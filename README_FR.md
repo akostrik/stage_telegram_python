@@ -3,20 +3,20 @@ Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avr
 
 # Table of contents 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-- [Internship details](#internship-details)
+- [L'organisation du stage](#internship-details)
    * [Les objectifs du stage](#objectives-of-the-internship)
    * [Le contexte et la motivation ](#context-and-motivation)
    * [Présentation de projets d'orientation similaire](#presentation-of-projects-of-similar-orientation)
    * [La méthodologie employée](#methodology)
    * [Compétences acquises](#acquired-skills)
    * [Remerciements](#acknowledgements)
-- [Project overview](#project-overview)
-   * [Application features](#application-features)
-   * [Simplified diagram of the application (except _Learning service_)](#simplified-diagram-of-the-application-except-_learning-service_)
-   * [Diagram of the application in the programmer style](#diagram-of-the-application-in-the-programmer-style)
-   * [Description of the application](#description-of-the-application)
-      + [Application components](#application-components)
-      + [Functionality](#functionality)
+- [Aperçu du projet](#project-overview)
+   * [Fonctionnalités de l'application](#application-features)
+   * [Schéma simplifié de l'application (hors service Apprentissage)](#simplified-diagram-of-the-application-except-_learning-service_)
+   * [Schéma de l'application dans le style du programmeur](#diagram-of-the-application-in-the-programmer-style)
+   * [Description de l'application](#description-of-the-application)
+      + [Composantes](#application-components)
+      + [Fonctionnement](#functionality)
    * [Output example](#output-example)
 - [Setup and usage](#setup-and-usage)
    * [MongoDB Atlas configuration](#mongodb-atlas-configuration)
@@ -51,7 +51,7 @@ Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avr
 <!-- TOC end -->
 
 <!-- TOC --><a name="internship-details"></a>
-# Les détails du stage
+# L'organisation du stage
 
 <!-- TOC --><a name="objectives-of-the-internship"></a>
 ## Les objectifs du stage
@@ -118,10 +118,11 @@ Ce projet n'aurait pas été possible sans l'encadrement du corps professoral de
 ![Capture d’écran de 2023-10-13 13-44-03](https://github.com/akostrik/stage_telegram/assets/22834202/dee875cb-3956-4fe6-894c-c82164adebf5)
 
 <!-- TOC --><a name="description-of-the-application"></a>
-## Composantes de l'application 
+## Description de l'application
 
 <!-- TOC --><a name="application-components"></a>
-### Application components
+### Composantes
+
 Le [`Serveur 1`](https://github.com/akostrik/stage_telegram/tree/main/) fonctionne sous Python et gère le streaming de données en temps réel, à partir de Telegram. Il traite les messages et interagit avec OpenAI pour l'analyse.
 
 Le [`Serveur 2`](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) fonctionne sous node.js. Il gère la récupération des données de MongoDB et les sert au frontend. 
@@ -129,7 +130,8 @@ Le [`Serveur 2`](https://github.com/akostrik/stage_telegram/tree/main/server2/se
 Le [`Serveur 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) fonctionne sous vue.js.Il présente les données analysées aux utilisateurs de manière intuitive et interactive. 
 
 <!-- TOC --><a name="functionality"></a>
-### Description de l’application
+### Fonctionnement
+
 1) Le `Serveur 3` obtient du navigateur Web, un identifiant du canal Telegram à examiner, via l'API du `Serveur 3`.
 1) Le `Serveur 3` ttransmet l'identifiant du canal au `Serveur 2`, via l'API du `serveur 2`.
 1) Le `Serveur 2` met l'identifiant du canal dans la base de données _MongoDB Atlas_ database, via l'API MongoDB. 
