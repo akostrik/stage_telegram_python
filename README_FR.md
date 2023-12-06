@@ -56,7 +56,7 @@ Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avr
 
 <!-- TOC --><a name="objectives-of-the-internship"></a>
 ## Les objectifs du stage
-- développement de l’expérience professionnelle par un engagement dans une pratique professionnelle à temps plein ; 
+- Développement de l’expérience professionnelle par un engagement dans une pratique professionnelle à temps plein ; 
 - développement des compétences : cultiver ses compétences en tant qu'ingénieur en développement informatique, en se concentrant sur les applications du monde réel ; 
 - objectifs de carrière : étudier les trajectoires de carrière potentielles, notamment dans les sciences informatiques appliquées aux défis sociétaux ; 
 - en matière d’apprentissage pratique : immersion dans de nouvelles techniques, méthodologies, outils et leurs applications pratiques ; 
