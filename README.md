@@ -303,7 +303,7 @@ _The confidence coefficient of a group of channels_ is the normalized (in the in
 
 _The similarity index of two channels_ equals to the number of similar affirmations contained in these channels, minus the number of opposing affiramtions.
 
-The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes constantly MongoDB requests in order to integrate immediately a new channel added by the user.
+The application executes 2 OpenAI requests par message and `O(K)` MongoDB requests par message, where `K` is the number of followed channels. Besides, it executes constantly MongoDB requests in order to integrate immediately a new channel added by the user.
 
 <!-- TOC --><a name="server-1-python-details"></a>
 ## `Server 1` (python) details
