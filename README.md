@@ -340,7 +340,7 @@ A noSql database usage is explained chiefly by the changing number of the `chara
 
 The reason for using MongoDB is its _MongoDB Atlas_ cloud database service and its popularity. The operations affecting the database of this project are simple. As a result, another noSql database would likely provide roughly the same functionality and at the same speed.
 
-_MongoDB Atlas_ provides automatic failover, ensuring high availability, to prevent data loss. 
+_MongoDB Atlas_ provides automatic failover to prevent data loss. 
 
 <!-- TOC --><a name="limitations-and-challenges"></a>
 # Limitations and challenges 
