@@ -110,44 +110,41 @@ l’analyse des informations récentes provenant de différents canaux pour iden
 - Boucle de rétroaction : l'application apprend de ses erreurs. En tirant parti des précédentes réponses fournies par OpenAI, qui sont corrigées par les utilisateurs, le système affine sa précision au fil du temps.
 
 <!-- TOC --><a name="simplified-diagram-of-the-application-except-_learning-service_"></a>
-## Simplified diagram of the application (except _Learning service_)
+## Schéma simplifié de l'application (hors service Learning) 
 ![Capture d’écran de 2023-10-14 01-59-09](https://github.com/akostrik/stage_telegram/assets/22834202/5a86cb95-3eb7-4a32-8a0e-5cd67cd9e578)
 
-The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/lp/try4), a database in the cloud.
-
 <!-- TOC --><a name="diagram-of-the-application-in-the-programmer-style"></a>
-## Diagram of the application in the programmer style
+## Schéma de l'application dans le style du programmeur
 ![Capture d’écran de 2023-10-13 13-44-03](https://github.com/akostrik/stage_telegram/assets/22834202/dee875cb-3956-4fe6-894c-c82164adebf5)
 
 <!-- TOC --><a name="description-of-the-application"></a>
-## Description of the application
+## Composantes de l'application 
 
 <!-- TOC --><a name="application-components"></a>
 ### Application components
-[`Server 1`](https://github.com/akostrik/stage_telegram/tree/main/) in python handles real-time data streaming from Telegram, processes messages, and interacts with OpenAI for analysis.
+Le [`server 1`](https://github.com/akostrik/stage_telegram/tree/main/) onctionne sous Python et gère le streaming de données en temps réel, à partir de Telegram. Il traite les messages et interagit avec OpenAI pour l'analyse.
 
-[`Server 2`](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) in node.js manages data retrieval from MongoDB and serves it to the frontend.
+Le [`server 2`](https://github.com/akostrik/stage_telegram/tree/main/server2/server.js) fonctionne sous node.js. Il gère la récupération des données de MongoDB et les sert au frontend. 
 
-[`Server 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) in vue.js presents the analysed data to users in an intuitive and interactive manner.
+Le [`server 3`](https://github.com/akostrik/stage_telegram/tree/main/user_interface/src) fonctionne sous vue.js.Il présente les données analysées aux utilisateurs de manière intuitive et interactive. 
 
 <!-- TOC --><a name="functionality"></a>
-### Functionality
-1) `Server 3` gets from the web browser an identifier of Telegram channel to examine, via `Server 3` [API](https://fr.wikipedia.org/wiki/Interface_de_programmation)
-1) `Server 3` transmits the channel identifier to `Server 2`, via `Server 2` API
-1) `Server 2` put puts the channel identifier in the _MongoDB Atlas_ database, via the MongoDB API
-1) `Server 1` permanently updates the list of the identifiers from _MongoDB Atlas_, via MongoDB API
-1) `Server 1` listens to the chosen channels, via Telegram API
-1) `Server 1` treats every new message, that is:
-  - estimates the propaganda marks of the message, via OpenAI API
-  - based on these propaganda marks, it calculates the confidence coefficient of the message
-  - extracts the principal information of the new message, in the form of several affirmations, via OpenAI API
-  - compares these affirmations to the recent affirmations of the other followed channels
-  - stocks the message itself, the result if its analysis, updates the confidence coefficients of the channels, updates the similarity index of the channels in _MongoDB Atlas_ database, via MongoDB API
-7) `Server 3` requests constantly the results of the computations from `Server 2`, via `Server 2` API
-8) `Server 2` retrieves the calculation results from _MongoDB Atlas_, via MongoDB API, and sends them back to `Server 3`
-9) `Server 3` transmits the results to the web browser in the form of a channel graph, where each vertex contains the channel identifier and its confidence coefficient, and each edge is the similarity index of the two channels concerned, via `Server 3` API
-
-10) The web browser displays the graph to the user
+### Description de l’application
+1) Le `Serveur 3` obtient du navigateur Web, un identifiant du canal Telegram à examiner, via l'API du `Serveur 3`.
+1) Le `Serveur 3` ttransmet l'identifiant du canal au `Serveur 2`, via l'API du `serveur 2`.
+1) Le `Serveur 2` met l'identifiant du canal dans la base de données _MongoDB Atlas_ database, via l'API MongoDB. 
+1) Le `Serveur 1` met à jour en permanence la liste des identifiants de MongoDB Atlas, via l'API MongoDB. 
+1) Le `Serveur 1` écoute les chaînes choisies, via l'API Telegram. 
+1) Le `Serveur 1` traite chaque nouveau message. Cela signifie que le Serveur 1 : 
+- estime les marqueurs de la propagande du message, via OpenAI API ; 
+- qu’il calcule, à partir de ces marqueurs de la propagande, le coefficient de confiance du message ; 
+- puis qu’il extrait les principales informations du nouveau message, sous forme de plusieurs affirmations, via l'API OpenAI ; 
+- ensuite il compare ces affirmations aux affirmations récentes des autres chaînes suivies, et stocke le message lui-même ;
+- enfin, le résultat de son analyse met à jour les coefficients de confiance des canaux mais aussi l'indice de similarité des canaux dans la base de données MongoDB Atlas, via l'API MongoDB.
+7) Le `Serveur 3` demande en permanence les résultats des calculs du `Serveur 2`, via l'API du `Serveur 2`.
+8) Le `Serveur 2` écupère les résultats des calculs dans MongoDB Atlas, via l'API MongoDB, et les renvoie au `Serveur 3`.
+9) Le `Serveur 3` transmet les résultats au navigateur web sous la forme d'un graphe des canaux, où chaque sommet contient l'identifiant du canal et son coefficient de confiance. Chaque bord est l'indice de similarité des deux canaux concernés, via l'API du `Serveur 3`.
+10) Le navigateur Web affiche le graphique à l'utilisateur. 
 
 The Learning service runs concurrently. Which means that : 
 1) `Server 3` proposes to the user to correct OpenAI's previous responses in the web browser, via the `Server 3` API
