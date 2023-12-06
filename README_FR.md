@@ -451,12 +451,13 @@ L'idée de définition d'un _indice de similarité_ des canaux par le biais de [
 N.B. : Les termes « métrique » ou « distance » concernant une paire de canaux ne doivent pas être impliqués, car [l'axiome de positivité](https://en.wikipedia.org/wiki/Metric_space) n'est pas valable sur l'ensemble des canaux.
 
 <!-- TOC --><a name="version-30-current"></a>
-## Version 3.0 (Current)
-Real-time analysis of messages, giving users instant feedback on the content they are consuming.
+## Version 3.0 (actuelle) 
 
-Echo chamber detection: One of the standout features of the current version is the ability to detect echo chambers, where multiple channels promote the same narrative, potentially indicating coordinated propaganda efforts.
+Analyse des messages en temps réel, donnant aux utilisateurs un retour instantané sur le contenu qu'ils consomment. 
 
-The tests launched on two groups of channels, a propagandistic group and a non-propagandistic one (accordingly to personal intuition), shows the difference of the average confidence coefficients of the groups between 3 and 8 points:
+Détection des chambres d'écho : l'une des fonctionnalités remarquables de la version actuelle est la capacité de détecter les chambres d'écho, où plusieurs canaux promeuvent le même récit, indiquant potentiellement des efforts de propagande coordonnés. 
+
+Les tests lancés sur deux groupes de chaînes, un groupe propagandiste et un groupe non propagandiste (selon l'intuition personnelle), montrent la différence des coefficients de confiance moyens des groupes entre 3 et 8 points :
 
 ![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
 
@@ -470,6 +471,7 @@ Output of `Server 1` is written to the [logs](https://github.com/akostrik/stage_
 
 <!-- TOC --><a name="future-enhancements"></a>
 ## Future enhancements
+
 As technology and misinformation tactics evolve, so will this application.
 Future versions aim to:
 - integrate with other messaging platforms beyond Telegram
