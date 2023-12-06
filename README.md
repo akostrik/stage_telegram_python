@@ -319,6 +319,7 @@ The `Server 1` is written in Python, because:
 
 <!-- TOC --><a name="server-3-vue-details"></a>
 ## `Server 3` (Vue) details
+
 The choice of [Vue](https://vuejs.org/) as a framework to manipulate the DOM on the user side (considering Angular and React as its alternatives), is explained by Vue's simple syntax, its intuitive documentation and its suitability for small projects and novice developers. [^7] [^9]
 
 Vue uses [Vite](https://vitejs.dev/), a server that monitors files as they're being edited. 
@@ -336,6 +337,7 @@ The visualisation is provided by the graph visualisation library [Cytoscape](htt
 
 <!-- TOC --><a name="database-details"></a>
 ## Database details
+
 A noSql database usage is explained chiefly by the changing number of the `characteristics`, as well as by changing of the `characteristics` themselves, while adjusting the application. The `characteristics` are kept in the collections `characteristics` and `messages`.
 
 The reason for using MongoDB is its _MongoDB Atlas_ cloud database service and its popularity. The operations affecting the database of this project are simple. As a result, another noSql database would likely provide roughly the same functionality and at the same speed.
@@ -350,6 +352,7 @@ The application is developed only for Linux.
 
 <!-- TOC --><a name="the-limitations-related-to-openai"></a>
 ## The limitations related to OpenAI
+
 Gpt-4 :
 - treats about 5 requests per minute and represents the slowest part of the application;
 - doesn't provide always the analysis of high-quality;
@@ -370,7 +373,7 @@ However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A
 
 (**) considing all the LLM being paying, except self-hosted ones
 
-OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). The adjustement of this limitation [depending of the model](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) will be implemented.
+OpenAI limitations make it necessary to limit the _Learning service_ of the application (5 examples or less per request) and the length of an examined message (a message is cut off beyond this length). 
 
 <!-- TOC --><a name="the-limitations-related-to-mongodb"></a>
 ## The limitations related to MongoDB
