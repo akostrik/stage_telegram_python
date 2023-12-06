@@ -284,7 +284,7 @@ De la même manière, le `Serveur 2` écoute l'API du `Serveur 2` et le `Serveur
 
 <!-- TOC --><a name="the-parameters-of-the-application"></a>
 ## Paramètres de l'application 
-- les caractéristiques de la propagande (`characteristics`) ;
+- Les caractéristiques de la propagande (`characteristics`) ;
 - [Characteristics prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) ;
 - [Affirmations prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations) ;
 - [OpenAI modèle](https://platform.openai.com/docs/models) pour une demande de caractéristiques ; 
