@@ -19,7 +19,7 @@ Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avr
    * [Description de l'application](#description-of-the-application)
       + [Composantes](#application-components)
       + [Fonctionnement](#functionality)
-   * [Output example](#output-example)
+   * [Exemple d'exécution](#output-example)
 - [Configuration et utilisation](#setup-and-usage)
    * [Configuration de MongoDB Atlas](#mongodb-atlas-configuration)
    * [Configuration d’OpenAI](#openai-configuration)
@@ -159,7 +159,7 @@ Le service Learning fonctionne simultanément. Ce qui signifie que :
 1) Le `Serveur 1`  attache un nombre limité d'exemples corrigés à chaque nouvelle requête OpenAI.
 
 <!-- TOC --><a name="output-example"></a>
-## Un exemple d'exécution 
+## Exemple d'exécution 
 
 ![output 6](https://github.com/akostrik/stage_telegram/assets/22834202/298cab88-cca6-4585-8982-91c7f060ed7a)
 
