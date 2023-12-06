@@ -461,8 +461,10 @@ Les tests lancés sur deux groupes de chaînes, un groupe propagandiste et un gr
 
 ![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
 
+Deux tests sur les valeurs du coefficient de confiance en fonction du paramètre température, chacun des tests lancés sur les deux groupes de voies, montrent une tendance à une meilleure distinction entre les deux groupes lorsque le paramètre température est plus élevé.
+
 Two tests on the values of the confidence coefficient depending on the temperature parameter, every of the tests launched on the two groups of channels, show a tendency of better distinction between the two groups while the temperature parameter is higher:    
-| Temperature         | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
+| Température         | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |---------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | difference (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
