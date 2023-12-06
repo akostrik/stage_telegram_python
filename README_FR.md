@@ -312,21 +312,19 @@ Python représente un langage plutôt simple (en partie à cause de sa syntaxe s
 
 <!-- TOC --><a name="server-2-nodejs-details"></a>
 ## Détails du Serveur 2 (node.js)
-[Node.js](https://nodejs.org/en/about), un environnement d'exécution JavaScript asynchrones pilotés par événements, exécute l'application en dehors du navigateur Web du client. Aucune fonction dans node.js n'effectue directement les  opérations d'entrée et sortie, donc le processus n'en bloque jamais. De plus, le site MongoDB fournit des [exemples détaillés](https://www.mongodb.com/docs/drivers/node/current/usage-examples/) d'utilisation de node.js. Node.js convient donc bien à MongoDB, bien qu'il existe également de nombreuses [autres possibilités](https://www.mongodb.com/docs/drivers/) pour le faire.
+[Node.js](https://nodejs.org/en/about), un environnement d'exécution JavaScript asynchrones piloté par événements, exécute l'application en dehors du navigateur Web du client. Aucune fonction dans node.js n'effectue directement les  opérations d'entrée et sortie, donc le processus n'en bloque jamais. De plus, le site MongoDB fournit des [exemples détaillés](https://www.mongodb.com/docs/drivers/node/current/usage-examples/) d'utilisation de node.js. Node.js convient donc bien à MongoDB, bien qu'il existe également de nombreuses [autres possibilités](https://www.mongodb.com/docs/drivers/) pour le faire.
 
 Le `Serveur 2` utilise le framework [Express](https://expressjs.com/) pour  mettre en place des gestionnaires des requêtes, notamment définir le port à utiliser et l'emplacement des templates rendant la réponse.
 
 <!-- TOC --><a name="server-3-vue-details"></a>
 ## `Server 3` (Vue) details
-The choice of [Vue](https://vuejs.org/) as a framework to manipulate the DOM on the user side (considering Angular and React as its alternatives), is explained by Vue's simple syntax, its intuitive documentation and its suitability for small projects and novice developers. [^7] [^9]
 
-Vue uses [Vite](https://vitejs.dev/), a server that monitors files as they're being edited. 
+Le choix de [`Vue`](https://vuejs.org/) comme framework pour manipuler le DOM côté utilisateur (en considérant Angular et React comme des alternatives), s'explique par la syntaxe simple de Vue, sa documentation intuitive et sa pertinence pour les petits projets et les développeurs novices. [^7] [^9]
 
-The [axios HTTP client](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) provides browser requests to the `Server 3` API. 
+`Vue` utilise `Vite`, un serveur qui surveille les fichiers au fur et à mesure de leur modification. Un [axios HTTP client](https://v2.fr.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html) fournit des requêtes du navigateur Web à l'API du `Serveur 3`. Lors de l'enregistrement du fichier, le navigateur Web recharge le code en cours d'édition 
+ - uniquement le fichier spécifique en cours de modification - via un processus appelé [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/). 
 
-And when saving the file, the web browser reloads the code being edited (only the specific part being changed) through a process called Hot Module Replacement (HMR). [^5]
-
-The visualisation is provided by the graph visualisation library [Cytoscape](https://cytoscape.org/).
+La visualisation est assurée par la bibliothèque de visualisation graphique [Cytoscape](https://cytoscape.org/).
 
 <!-- TOC --><a name="asynchrony-details"></a>
 ## Asynchrony details
