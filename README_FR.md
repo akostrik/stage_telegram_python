@@ -313,8 +313,7 @@ Python représente un langage plutôt simple (en partie à cause de sa syntaxe s
 
 <!-- TOC --><a name="server-2-nodejs-details"></a>
 ## Détails du Serveur 2 (node.js)
-[Node.js](https://nodejs.org/en/about), un environnement d'exécution et une bibliothèque JavaScript asynchrones pilotés par événements, exécute l'application en dehors du navigateur Web du client. Aucune fonction dans node.js n'effectue directement des E/S, donc le processus n'en bloque jamais 8. De plus, le site MongoDB fournit des [exemples détaillés](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
-) d'utilisation de node.js. Node.js convient donc bien à MongoDB, bien qu'il existe également de nombreuses [autres possibilités](https://www.mongodb.com/docs/drivers/) pour le faire.
+[Node.js](https://nodejs.org/en/about), un environnement d'exécution JavaScript asynchrones pilotés par événements, exécute l'application en dehors du navigateur Web du client. Aucune fonction dans node.js n'effectue directement les  opérations d'entrée et sortie, donc le processus n'en bloque jamais. De plus, le site MongoDB fournit des [exemples détaillés](https://www.mongodb.com/docs/drivers/node/current/usage-examples/) d'utilisation de node.js. Node.js convient donc bien à MongoDB, bien qu'il existe également de nombreuses [autres possibilités](https://www.mongodb.com/docs/drivers/) pour le faire.
 
 Le `Serveur 2` utilise le framework [Express](https://expressjs.com/) pour  mettre en place des gestionnaires des requêtes, notamment définir le port à utiliser et l'emplacement des templates rendant la réponse.
 
