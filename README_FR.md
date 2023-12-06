@@ -177,7 +177,7 @@ L'utilisateur doit disposer d'un navigateur Web compatible avec [ECMAScript 5](h
 <!-- TOC --><a name="mongodb-atlas-configuration"></a>
 ## Configuration de MongoDB Atlas 
 
-[MondoDB Atlas](https://cloud.mongodb.com/) est une base de données présente sur MongoDB dans le cloud. 
+[MondoDB Atlas](https://cloud.mongodb.com/) est une base de données présentée dans le cloud. 
 
 Il faut créer un compte MongoDB.
 
@@ -307,10 +307,9 @@ L'application exécute 2 requêtes OpenAI par message, et O(K) requêtes MongoDB
 De plus, elle exécute en permanence des requêtes MongoDB afin d'intégrer immédiatement un nouveau canal ajouté par l'utilisateur. 
 
 <!-- TOC --><a name="server-1-python-details"></a>
-## `Server 1` (python) details
-The `Server 1` is written in Python, because:
-- Python is well adapted to [data science projects](https://en.wikipedia.org/wiki/Data_science) because of its [specialised libraries];(https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) like `telethon`, `DateTime`, `requests`, `pymongo`, `openai`
-- it is a rather easy language (partly because of its easy syntax).
+## Détails du Serveur 1 (Python) 
+Python est bien adapté aux [projets de science des données](https://en.wikipedia.org/wiki/Data_science) grâce à ses [bibliothèques spécialisées](https://datascientest.com/top-10-des-librairies-python-pour-un-data-scientist) comme par exemple  `telethon`, `DateTime`, `requests`, `pymongo`, `openai`.
+Python représente un langage plutôt simple (en partie à cause de sa syntaxe simple). 
 
 <!-- TOC --><a name="server-2-nodejs-details"></a>
 ## `Server 2` (node.js) details
