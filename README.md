@@ -167,23 +167,15 @@ The Learning service runs concurrently. Which means that :
 
 Channel 1: Focuses on positive aspects of government policies (e.g., new fiscal policy, economic growth, health budget increase, reforestation program, diplomatic alliances).
 
-![output 1](https://github.com/akostrik/stage_telegram/assets/22834202/ca4a8e32-c52e-44fa-a37e-cac938e44cdb)
-
 Channel 2: Criticizes government policies and predicts negative outcomes (e.g., negative view on fiscal policy, economic stagnation, public spending cuts, ineffective reforestation, diplomatic tensions).
-
-![output 2](https://github.com/akostrik/stage_telegram/assets/22834202/f7eb9d39-8c7a-4810-bf7e-878e459ef469)
 
 Channel 3: Presents a balanced view of government reforms (e.g., fiscal reform for all, economic recovery, education funding, positive environmental plan, strengthening international relations).
 
-![output 3](https://github.com/akostrik/stage_telegram/assets/22834202/db8ffab8-8836-4661-8bf2-af0366a242c2)
-
 Channel 4: Criticizes some government policies, showing concern about economic stability and environmental plans.
-
-![output 4](https://github.com/akostrik/stage_telegram/assets/22834202/f88cd013-ee1a-4152-80f0-8f27212aaa3f)
 
 Channel 5: Offers a divided opinion on government policies, highlighting debates and contrasting views.
 
-![output 5](https://github.com/akostrik/stage_telegram/assets/22834202/b699f872-8e8d-4df3-abab-8eff0edd832c)
+![output 1+](https://github.com/akostrik/stage_telegram/assets/22834202/d88d7f54-ff08-40cc-ae85-b8b15349b44e)
 
 
 <!-- TOC --><a name="setup-and-usage"></a>
