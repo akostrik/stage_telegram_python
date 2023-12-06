@@ -248,31 +248,35 @@ N.B. : `npm install` doit être exécuté dans le même dossier où se trouve l
 
 <!-- TOC --><a name="compile-and-run"></a>
 ## Compiler et exécuter 
-In the first terminal launch `Server 1`
+
+Dans le premier terminal, lancez le `Serveur 1`
 ```bash
 python server1/server1.py
 ```
-In the second terminal launch `Server 2`
+Dans le deuxième terminal, lancez le `Serveur 2`
 ```bash
 node server2/server2.js
 ```
-In the third terminal launch `Server 3`
+Dans le troisième terminal, lancez le Serveur `Serveur 3`
 ```bash
 cd server3
 npm run dev
 ```
 
-Enjoy the service http://localhost:5173/ 
+Profitez du service http://localhost:5173/ 
 
 <!-- TOC --><a name="technical-details-of-the-developement"></a>
-# Technical details of the developement
-Note : To understand this section, the reader should have basic knowledge of computer sciences terminology.
+#  Détails techniques du développement 
 
-Separation of the data treatment provided by `Server 1` and the presentation functionality provided by `Server 2` and `Server 3` falls into the pattern of [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
+Pour comprendre cette section, le lecteur doit avoir des connaissances de base en terminologie informatique. 
 
-`Server 1` and `Server 2` represent the backend functionality, while `Server 3` ensures the frontend one.
+La séparation du traitement des données fourni par le Serveur 1 et de la fonctionnalité de présentation fournie par le Serveur 2 et le Serveur 1 s'inscrit dans le [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
-`Server 1` creates a [listening](https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes) socket on Telegram API, and then blocks while waiting for new connections, the kernel puts the processus into an interruptible sleep state and runs other processes. `Server 2` listens, by the same means, to `Server 2` API, and `Server 3` listens to `Server 3` API. 
+Le `Serveur 1` et le `Serveur 2` r représentent la fonctionnalité backend, tandis que le `Serveur 3` ssure celle du frontend. 
+
+Le `Serveur 1` crée [un socket d'écoute](https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes) osur l'API Telegram, puis se bloque en attendant de nouvelles connexions, cela signifie que le noyau met le processus dans un état de veille interruptible, et exécute d'autres processus. 
+
+De la même manière, le `Serveur 2` écoute l'API du `Serveur 2` et le `Serveur 3` écoute l'API du `Serveur 3`.
 
 <!-- TOC --><a name="the-parameters-of-the-application"></a>
 ## The parameters of the application
