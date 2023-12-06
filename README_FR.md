@@ -292,17 +292,19 @@ De la même manière, le `Serveur 2` écoute l'API du `Serveur 2` et le `Serveur
 - 'heure à laquelle un message est considéré comme récent (en heures). 
 
 <!-- TOC --><a name="computation-details"></a>
-## Computation details 
+## Détails du calcul 
 
-_The confidence coefficient of a message_ is the summe a points attribuated by OpenAI for all the `characteristics`.
+_Le coefficient de confiance d’un message_ est la somme de points attribués par OpenAI pour chaque charactéristique ;
 
-_The confidence coefficient of a channel_ is the summe of the confidence coefficients of its messages.
+_Le coefficient de confiance d’une chaîne_ est la somme des coefficients de ses messages. 
 
-_The confidence coefficient of a group of channels_ is the normalized (in the interval [0 … 100]) summe of the confidence coefficients of its channels.
+_Le coefficient de confiance d’un groupe de chaînes_ est la somme normalilisée, dans l'intervalle [0 … 100], des coefficients de ses chaînes. 
 
-_The similarity index of two channels_ equals to the number of similar affirmations contained in these channels, minus the number of opposing affiramtions.
+_L’indice de similarité de deux canaux_ est la nombre d’affirmations similaires, delaquelle on déduit le nombre d’affirmations contraires contenues dans les deux chaînes. 
 
-The application executes 2 OpenAI requests par message and O(K) MongoDB requests par message, where K is the number of followed channels. Besides, it executes constantly MongoDB requests in order to integrate immediately a new channel added by the user.
+L'application exécute 2 requêtes OpenAI par message, et O(K) requêtes MongoDB par message (ici, K est le nombre de canaux suivis). 
+
+De plus, elle exécute en permanence des requêtes MongoDB afin d'intégrer immédiatement un nouveau canal ajouté par l'utilisateur. 
 
 <!-- TOC --><a name="server-1-python-details"></a>
 ## `Server 1` (python) details
