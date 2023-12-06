@@ -158,6 +158,31 @@ The Learning service runs concurrently. Which means that :
 1) `Server 2` puts the corrected examples to the database, via MongoDB API
 1) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
 
+## Output example 
+
+![output 6](https://github.com/akostrik/stage_telegram/assets/22834202/298cab88-cca6-4585-8982-91c7f060ed7a)
+
+Channel 1: Focuses on positive aspects of government policies (e.g., new fiscal policy, economic growth, health budget increase, reforestation program, diplomatic alliances).
+
+![output 1](https://github.com/akostrik/stage_telegram/assets/22834202/ca4a8e32-c52e-44fa-a37e-cac938e44cdb)
+
+Channel 2: Criticizes government policies and predicts negative outcomes (e.g., negative view on fiscal policy, economic stagnation, public spending cuts, ineffective reforestation, diplomatic tensions).
+
+![output 2](https://github.com/akostrik/stage_telegram/assets/22834202/f7eb9d39-8c7a-4810-bf7e-878e459ef469)
+
+Channel 3: Presents a balanced view of government reforms (e.g., fiscal reform for all, economic recovery, education funding, positive environmental plan, strengthening international relations).
+
+![output 3](https://github.com/akostrik/stage_telegram/assets/22834202/db8ffab8-8836-4661-8bf2-af0366a242c2)
+
+Channel 4: Criticizes some government policies, showing concern about economic stability and environmental plans.
+
+![output 4](https://github.com/akostrik/stage_telegram/assets/22834202/f88cd013-ee1a-4152-80f0-8f27212aaa3f)
+
+Channel 5: Offers a divided opinion on government policies, highlighting debates and contrasting views.
+
+![output 5](https://github.com/akostrik/stage_telegram/assets/22834202/b699f872-8e8d-4df3-abab-8eff0edd832c)
+
+
 <!-- TOC --><a name="setup-and-usage"></a>
 # Setup and usage
 The user should have a web browser compatible with [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (for example, Internet Explorer 8 and its previous versions are not compatible with ECMAScript 5).
