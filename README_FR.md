@@ -312,13 +312,11 @@ Python est bien adapté aux [projets de science des données](https://en.wikiped
 Python représente un langage plutôt simple (en partie à cause de sa syntaxe simple). 
 
 <!-- TOC --><a name="server-2-nodejs-details"></a>
-## `Server 2` (node.js) details
-[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. No function in node.js directly performs I/O, so the process never blocks. Besides, the MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
-) of node.js usage. So node.js matches well to deal with MongoDB, though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it.
+## Détails du Serveur 2 (node.js)
+[Node.js](https://nodejs.org/en/about), un environnement d'exécution et une bibliothèque JavaScript asynchrones pilotés par événements, exécute l'application en dehors du navigateur Web du client. Aucune fonction dans node.js n'effectue directement des E/S, donc le processus n'en bloque jamais 8. De plus, le site MongoDB fournit des [exemples détaillés](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+) d'utilisation de node.js. Node.js convient donc bien à MongoDB, bien qu'il existe également de nombreuses [autres possibilités](https://www.mongodb.com/docs/drivers/) pour le faire.
 
-`Server 2` uses [Express](https://expressjs.com/) framework in order to:
-- set up write handlers for requests : thus, the Express framework defines how the application’s endpoint respond to client requests (the routing);
-- set the port to use and the location of templates rendering the response.
+Le `Serveur 2` utilise le framework [Express](https://expressjs.com/) pour  mettre en place des gestionnaires des requêtes, notamment définir le port à utiliser et l'emplacement des templates rendant la réponse.
 
 <!-- TOC --><a name="server-3-vue-details"></a>
 ## `Server 3` (Vue) details
