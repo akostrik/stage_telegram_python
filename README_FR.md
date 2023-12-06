@@ -159,14 +159,14 @@ Le service Learning fonctionne simultanément. Ce qui signifie que :
 
 La chaîne 1 se concentre sur les aspects positifs des politiques gouvernementales (par exemple, nouvelle politique fiscale, croissance économique, augmentation du budget de la santé, programme de reforestation, alliances diplomatiques).
 
-La chaîne  2 critique la politique du  government et predicts negative outcomes (e.g., negative view on fiscal policy, economic stagnation, public spending cuts, ineffective reforestation, diplomatic tensions).
+La chaîne 2 critique la politique du  government et predicts negative outcomes (e.g., negative view on fiscal policy, economic stagnation, public spending cuts, ineffective reforestation, diplomatic tensions).
 prédit des événements négatifs (par exemple, une vision négative de la politique budgétaire, une stagnation économique, des réductions des dépenses publiques, une reforestation inefficace, des tensions diplomatiques).
 
-La chaîne 3: Présente une vision équilibrée des réformes gouvernementales (par exemple, réforme fiscale pour tous, reprise économique, financement de l’éducation, plan environnemental positif, renforcement des relations internationales).
+La chaîne 3 présente une vision équilibrée des réformes gouvernementales (par exemple, réforme fiscale pour tous, reprise économique, financement de l’éducation, plan environnemental positif, renforcement des relations internationales).
 
-La chaîne 4: Critique certaines politiques gouvernementales, se montrant préoccupé par la stabilité économique et les plans environnementaux.
+La chaîne 4 critique certaines politiques gouvernementales, se montrant préoccupé par la stabilité économique et les plans environnementaux.
 
-La chaîne 5: Offre une opinion partagée sur les politiques gouvernementales, mettant en lumière les débats et les points de vue contrastés.
+La chaîne 5 offre une opinion partagée sur les politiques gouvernementales, mettant en lumière les débats et les points de vue contrastés.
 
 ![output 1+](https://github.com/akostrik/stage_telegram/assets/22834202/d88d7f54-ff08-40cc-ae85-b8b15349b44e)
 
@@ -279,16 +279,17 @@ Le `Serveur 1` crée [un socket d'écoute](https://superuser.com/questions/83793
 De la même manière, le `Serveur 2` écoute l'API du `Serveur 2` et le `Serveur 3` écoute l'API du `Serveur 3`.
 
 <!-- TOC --><a name="the-parameters-of-the-application"></a>
-## The parameters of the application
-- Propaganda marks (`characteristics`)
-- [The text of the characteristics OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) 
-- [The text of the affirmations OpenAI prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations)
-- [OpenAI model](https://platform.openai.com/docs/models) for a `characteristics`
-- [OpenAI model](https://platform.openai.com/docs/models) for a affirmations request
-- [OpenAI temperature](https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature), between 0 and 1: higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic (if set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit)
-- OpenAI request maximal length (in tokens [^1])
-- Telegram message maximal length (in characters)
-- The time where a message is considered as recent (in hours)
+## Paramètres de l'application 
+- les caractéristiques de la propagande (`characteristics`) ;
+- [Characteristics prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20request%20characteristics) ;
+- [Affirmations prompt](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/example%20reauest%20affirmations) ;
+- [OpenAI modèle](https://platform.openai.com/docs/models) pour une demande de caractéristiques ; 
+- [OpenAI modèle OpenAI](https://platform.openai.com/docs/models) pour une demande d'affirmations ;
+- choix de la [température](https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature) d’OpenAI, entre 0 et 1 : des valeurs plus élevées comme 0,8 rendront la sortie plus aléatoire, tandis que des valeurs plus faibles comme 0,2 la rendront plus déterministe (si elle est définie sur 0, le modèle utilisera la probabilité logarithmique pour augmenter automatiquement la température jusqu'à ce que certains seuils soient atteints) ;
+- , between 0 and 1: higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more deterministic (if set to 0, the model will use log probability to automatically increase the temperature until certain thresholds are hit)
+- longueur maximale de la requête OpenAI (en tokens [^1])
+- longueur maximale du message sur Telegram (en nombre de caractères) ; 
+- 'heure à laquelle un message est considéré comme récent (en heures). 
 
 <!-- TOC --><a name="computation-details"></a>
 ## Computation details 
