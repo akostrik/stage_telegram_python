@@ -17,6 +17,7 @@ The project presented was developed during a 5-month internship (from April 3, 2
    * [Description of the application](#description-of-the-application)
       + [Application components](#application-components)
       + [Functionality](#functionality)
+   * [Output example](#output-example)
 - [Setup and usage](#setup-and-usage)
    * [MongoDB Atlas configuration](#mongodb-atlas-configuration)
    * [OpenAI configuration ](#openai-configuration)
@@ -125,6 +126,7 @@ The data are kept in [MondoDB Atlas](https://www.mongodb.com/fr-fr/cloud/atlas/l
 
 <!-- TOC --><a name="description-of-the-application"></a>
 ## Description of the application
+
 <!-- TOC --><a name="application-components"></a>
 ### Application components
 [`Server 1`](https://github.com/akostrik/stage_telegram/tree/main/) in python handles real-time data streaming from Telegram, processes messages, and interacts with OpenAI for analysis.
@@ -158,6 +160,7 @@ The Learning service runs concurrently. Which means that :
 1) `Server 2` puts the corrected examples to the database, via MongoDB API
 1) `Server 1` attaches a limited number of corrected examples to every new OpenAI request 
 
+<!-- TOC --><a name="output-example"></a>
 ## Output example 
 
 ![output 6](https://github.com/akostrik/stage_telegram/assets/22834202/298cab88-cca6-4585-8982-91c7f060ed7a)
