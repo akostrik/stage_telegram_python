@@ -478,8 +478,7 @@ Future versions aim to:
 - customizable detection parameters: features that allow users to customise detection parameters, tailoring the system to their individual needs
   
 <!-- TOC --><a name="welcome-to-the-app"></a>
-# Welcome to the app 
-<img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
+# Welcome to the app <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
 [All the questions are welcome](mailto:stage.mongodb@gmail.com)
 
