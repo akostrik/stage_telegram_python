@@ -290,7 +290,7 @@ De la même manière, le `Serveur 2` écoute l'API du `Serveur 2` et le `Serveur
 - [OpenAI modèle](https://platform.openai.com/docs/models) pour une demande de caractéristiques ; 
 - [OpenAI modèle](https://platform.openai.com/docs/models) pour une demande d'affirmations ;
 - choix de la [température](https://platform.openai.com/docs/api-reference/audio/createTranscription#audio/createTranscription-temperature) d’OpenAI, entre 0 et 1 : des valeurs plus élevées comme 0,8 rendront la sortie plus aléatoire, tandis que des valeurs plus faibles comme 0,2 la rendront plus déterministe (si elle est définie sur 0, le modèle utilisera la probabilité logarithmique pour augmenter automatiquement la température jusqu'à ce que certains seuils soient atteints) ;
-- longueur maximale de la requête OpenAI (en tokens [^1])
+- longueur maximale de la requête OpenAI (en tokens [^1]) ;
 - longueur maximale du message sur Telegram (en nombre de caractères) ; 
 - heure à laquelle un message est considéré comme récent (en heures). 
 
