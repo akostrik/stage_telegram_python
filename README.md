@@ -312,8 +312,8 @@ The `Server 1` is written in Python, because:
 
 <!-- TOC --><a name="server-2-nodejs-details"></a>
 ## `Server 2` (node.js) details
-[Node.js](https://nodejs.org/en/about), an asynchronous event-driven JavaScript runtime environment and library, runs the application outside of the client’s web browser. The process never blocks, for no function in node.js directly performs I/O, so. The MongoDB site provides [detailed examples](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
-) of node.js usage. So node.js matches well to deal with MongoDB (though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it).
+[Node.js](https://nodejs.org/en/about) is an asynchronous event-driven JavaScript runtime environment. The ability to run JavaScript code on the server is used to generate dynamic web page content before the page is sent to the user's web browser. The process never blocks, for no function in node.js directly performs I/O. The MongoDB site provides [detailed examples of node.js usage](https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+). So node.js matches well to deal with MongoDB (though there are also many [other possibilities](https://www.mongodb.com/docs/drivers/) to do it).
 
 `Server 2` uses [Express](https://expressjs.com/) framework in order to set up write handlers for requestsn that is to set the port to use and the location of templates rendering the response.
 
