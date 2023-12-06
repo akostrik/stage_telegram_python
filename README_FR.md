@@ -207,11 +207,11 @@ N.B. : Attention à ne pas publier le token sur internet et à ne pas le transm
 <!-- TOC --><a name="telegram-configuration"></a>
 ## Configuration du Telegram
 
-[Obtenez les informations d’identification Telegram api_id and api_hash](https://my.telegram.org/auth)
+[Obtenez les informations d’identification Telegram](https://my.telegram.org/auth), `api_id` and `api_hash`.
 
 Lors du premier lancement de l'application, saisissez le numéro de téléphone de votre compte Telegram puis saisissez le code de confirmation. 
 
-L'application créera un [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) `anon.session` dans le dossier `serveur1` afin que vous puissiez vous connecter sans renvoyer le code. 
+L'application créera un [session file](https://docs.telethon.dev/en/stable/concepts/sessions.html) `anon.session` dans le dossier `server1` afin que vous puissiez vous connecter sans renvoyer le code. 
 
 N.B. Faites très attention à ne pas publier les identifiants du Telegram sur Internet et à ne pas les transmettre à des personnes inconnues. 
 
