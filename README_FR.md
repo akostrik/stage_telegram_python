@@ -1,4 +1,10 @@
-# Stage en entreprise réalisé dans le cadre du Master II Sciences et Technologies du Logiciel, Sorbonne Université (Paris)
+<img align="right" width="60" height="60" src="[https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e]([https://github.com/akostrik/stage_telegram/assets/22834202/39060163-119c-44b7-8872-64e27f231256](https://github.com/akostrik/stage_telegram/edit/main/README.md))"> 
+
+![EN](https://github.com/akostrik/stage_telegram/assets/22834202/39060163-119c-44b7-8872-64e27f231256)
+
+
+# Stage en entreprise réalisé dans le cadre du Master II Sciences et Technologies du
+Logiciel, Sorbonne Université (Paris)
 Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avril 2023 au 12 septembre 2023) réalisé auprès de deux associations parisiennes exerçant dans le secteur des projets solidaires.
 
 # Table of contents 
