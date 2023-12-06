@@ -180,7 +180,6 @@ Channel 5: Offers a divided opinion on government policies, highlighting debates
 
 <!-- TOC --><a name="setup-and-usage"></a>
 # Setup and usage
-The user should have a web browser compatible with [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (for example, Internet Explorer 8 and its previous versions are not compatible with ECMAScript 5).
 
 <!-- TOC --><a name="mongodb-atlas-configuration"></a>
 ## MongoDB Atlas configuration
@@ -390,7 +389,7 @@ The application could not read [this channel](https://t.me/generallsvr).
 
 <!-- TOC --><a name="the-limitations-related-to-vue"></a>
 ## The limitations related to Vue
-Vue supports web browsers compatible with ECMAScript 5.
+The user should have a web browser compatible with [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (for example, Internet Explorer 8 and its previous versions are not compatible with ECMAScript 5).
 
 <!-- TOC --><a name="other-technical-limitations"></a>
 ## Other technical limitations
