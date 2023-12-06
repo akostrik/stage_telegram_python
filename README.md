@@ -345,6 +345,7 @@ _MongoDB Atlas_ provides automatic failover to prevent data loss.
 <!-- TOC --><a name="limitations-and-challenges"></a>
 # Limitations and challenges 
 
+## The limitations related to the operating systme
 The application is developed only for Linux.
 
 <!-- TOC --><a name="the-limitations-related-to-openai"></a>
