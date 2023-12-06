@@ -393,11 +393,11 @@ Vue prend en charge les navigateurs Web compatibles avec [ECMAScript 5](https://
 <!-- TOC --><a name="other-technical-limitations"></a>
 ## Autres limitations techniques 
 
-L'application serait plue performante, si le `Serveur 3` transmettait l'identificateur d'une chaîne nouvellement ajoutée par l'utlisateur, directement au `Serveur 1`, afin de libérer le `Serveur 1` de l'observation constante de la collection MongoDB. 
+L'application serait plus performante, si le `Serveur 3` transmettait l'identificateur d'une chaîne nouvellement ajoutée, directement au `Serveur 1`, afin de libérer le `Serveur 1` de l'observation constante de la collection MongoDB. 
 
 L'asynchronie de toutes les requêtes MongoDB et OpenAI n'a pas été implémentée. 
 
-Les instructions d'installation et de configuration sont compliquées, ce que peut être amélioré par l'utilisation de conteneurs Docker.
+Les instructions d'installation et de configuration peuvent être simplifiées par l'utilisation de conteineurs Docker.
 
 <!-- TOC --><a name="conceptual-limitations"></a>
 ## Conceptual limitations 
