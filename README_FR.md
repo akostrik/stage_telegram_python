@@ -469,27 +469,29 @@ Two tests on the values of the confidence coefficient depending on the temperatu
 | difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
 | difference (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
-Output of `Server 1` is written to the [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log), in order to keep trace of all the experimentations.
+La sortie du Serveur 1 est écrite dans les [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log), pour garder une trace de toutes les expérimentations.
 
 <!-- TOC --><a name="future-enhancements"></a>
-## Future enhancements
+## Améliorations futures 
 
-As technology and misinformation tactics evolve, so will this application.
-Future versions aim to:
-- integrate with other messaging platforms beyond Telegram
-- provide real-time alerts to users about exceptional analysis results
-- detection of the first channel to spread information
-- comparison of the results with ones of the other projects
-- customizable detection parameters: features that allow users to customise detection parameters, tailoring the system to their individual needs
+À mesure que la technologie et les tactiques de désinformation évoluent, cette application peut évoluer également. 
+
+Les futures versions auront pour objectif de : 
+- s'intégrer à d'autres plates-formes de messagerie au-delà de Telegram ; 
+- fournir des alertes en temps réel aux utilisateurs sur les résultats d'analyse exceptionnels ; 
+- détecter le premier canal de diffusion de l'information ; 
+- comparer les résultats avec ceux d’autres projets ; 
+- trouver des paramètres personnalisables de détection – avec des fonctionnalités permettant aux utilisateurs de personnaliser les paramètres de détection, en adaptant le système à leurs besoins individuels. 
+    
   
 <!-- TOC --><a name="welcome-to-the-app"></a>
-# Welcome to the app 
+# Bienvenue 
+
 <img align="right" width="60" height="60" src="https://github.com/akostrik/stage_telegram/assets/22834202/9d78c9d6-c4c6-4566-9e83-3dcbc02e311e"> 
 
-[All the questions are welcome](mailto:stage.mongodb@gmail.com)
+[Toutes les questions sont les bienvenues](mailto:stage.mongodb@gmail.com)
 
-[Get help to install the application](mailto:stage.mongodb@gmail.com) 
-
+[Obtenir de l’aide pour installer l’application ](mailto:stage.mongodb@gmail.com) 
 
 [^1]: in English 1 token ≈ 3/4 of a word https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them 
 [^3]: [https://www.scalablepath.com/front-end/vue-vs-react](https://vuejs.org/guide/introduction.html#what-is-vue)https://vuejs.org/guide/introduction.html#what-is-vue 
