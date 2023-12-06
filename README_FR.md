@@ -84,7 +84,7 @@ Ce projet vise à détecter de manière automatique les informations relevant de
 Le projet s’est fondé sur les principaux piliers des [méthodes Agile](https://en.wikipedia.org/wiki/Agile_software_development) qui incluent la découverte des exigences et l'amélioration des solutions grâce à des équipes auto-organisées et inter-fonctionnelles avec les utilisateurs. À la nuance près que, dans le cadre du stage réalisé, l'équipe de développeurs et les utilisateurs étaient représentés uniquement par moi-même.
 
 L'approche du développement a suivi les valeurs Scrum fondamentales, à savoir : 
-- diviser le travail en objectifs à réaliser au sein d'itérations temporelles appelées sprints. Les sprints étant dédiés à l'étude : du contexte, des [grands modèles de language](https://en.wikipedia.org/wiki/Large_language_model) de l'architecture, de Python et de ses interactions avec l'API concernée, des bases de données et d’elasticsearch1 en node.js, vue.js) ; 
+- diviser le travail en objectifs à réaliser au sein d'itérations temporelles appelées sprints. Les sprints étant dédiés à l'étude : du contexte, des [grands modèles de language](https://en.wikipedia.org/wiki/Large_language_model), de l'architecture, de Python et de ses interactions avec l'API concernée, des bases de données et d’elasticsearch1 en node.js, vue.js) ; 
 - amener le pouvoir de décision à un niveau opérationnel ; 
 - mettre en place une rétroaction continue et flexibilité ; 
 - faire évoluer les exigences au fur et à mesure de l'évolution du projet.
