@@ -1,5 +1,5 @@
-# Internship carried out as part of the Master II Software Sciences and Technologies, Sorbonne University (Paris)
-The project presented was developed during a 5-month internship (from April 3, 2023 to September 12, 2023) carried out with two Parisian associations operating in the sector of alternative innovation solidarity projects.
+# Stage en entreprise réalisé dans le cadre du Master II Sciences et Technologies du Logiciel, Sorbonne Université (Paris)
+Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avril 2023 au 12 septembre 2023) réalisé auprès de deux associations parisiennes exerçant dans le secteur des projets solidaires d’innovation alternative.
 
 # Table of contents 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
@@ -51,36 +51,34 @@ The project presented was developed during a 5-month internship (from April 3, 2
 <!-- TOC end -->
 
 <!-- TOC --><a name="internship-details"></a>
-# Internship details
+# Les détails du stage
 
 <!-- TOC --><a name="objectives-of-the-internship"></a>
-## Objectives of the internship
-- Professional experience: Engage in full-time professional practice
-- Skill development: Cultivate skills as a development engineer, focusing on real-world applications
-- Career exploration: Investigate potential career trajectories, especially in computer sciences applied to societal challenges
-- Hands-on learning: Immerse in new techniques, methodologies, tools, and their practical applications
-- Association ethics: Grasp the ethical considerations and operational nuances of associations
-- Professional adaptability: Evaluate the ability to integrate and adapt in a professional environment
-- In terms of transition into the labor market: equipping yourself with the skills and experience necessary to enter the labor market smoothly
+## Les objectifs du stage
+- développement de l’expérience professionnelle par un engagement dans une pratique professionnelle à temps plein ; 
+- développement des compétences : cultiver ses compétences en tant qu'ingénieur en développement informatique, en se concentrant sur les applications du monde réel ; 
+- objectifs de carrière : étudier les trajectoires de carrière potentielles, notamment dans les sciences informatiques appliquées aux défis sociétaux ; 
+- en matière d’apprentissage pratique : immersion dans de nouvelles techniques, méthodologies, outils et leurs applications pratiques ; 
+- concernant la dimension éthique du travail des structure d’accueil : saisir les considérations éthiques et les nuances opérationnelles des associations ; 
+- en matière d’adaptabilité professionnelle : évaluer la capacité de s'intégrer et de s'adapter dans un environnement professionnel ; 
+- en matière de transition sur le marché du travail : se doter des compétences et de l'expérience nécessaires pour entrer en douceur sur le marché du travail.
 
 <!-- TOC --><a name="context-and-motivation"></a>
-## Context and motivation
-Technology has always greatly influenced social relations. Nowadays, the IT sector constitutes an exceptional tool for cooperation and co-reflection, with exceptional potential to bring about changes in the organization of daily life.
+## Le contexte et la motivation 
+La technologie a toujours grandement influencé les relations sociales. De nos jours, le secteur informatique constitue un outil exceptionnel de coopération et de co-réflexion, doté d'un potentiel exceptionnel pour apporter des changements dans l'organisation de la vie quotidienne. 
 
-This project deals with an application [Telegram](https://telegram.org/faq?setln=en#q-what-is-telegram-what-do-i-do-here), which is a messenger similar to WhatApp, Viber, Signal, etc. Its particularity is that it has a lot of [channels](https://telegram.org/faq?setln=en#q-what-39s-the-difference-between-groups-and-channels) on different subjects, chiefly in Russian, with little censorship. 
-
-The project is aimed at automaticalle detecting [propagandistic information](https://www.britannica.com/topic/propaganda) in the channels. In other words, it involves detecting information that may not be objective, presenting facts selectively to encourage a particular perception, or using particularly salient language to produce an emotional rather than rational response to the information.
+Ce projet vise à détecter de manière automatique les informations relevant de la propagande, présentes dans les chaînes [Telegram](https://telegram.org/faq?setln=en#q-what-is-telegram-what-do-i-do-here). Autrement dit, il s’agit de détecter les informations pouvant ne pas être objectives, présenter des faits de manière sélective pour encourager une perception particulière, ou utilisant un langage particulièrement marquant pour produire une réponse émotionnelle plutôt que rationnelle à l'information.
 
 <!-- TOC --><a name="presentation-of-projects-of-similar-orientation"></a>
-## Presentation of projects of similar orientation 
-- [Detecting of communities with similar ideologies by cross-channel interactions](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) by [DFRLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (United States)
-- [The project of Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), exploring activity and localization of the users, etc (China)
-- Machine learning project [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386) (United States)
-- Machine learning project [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works)
-- Machine learning project by [The Institute of Mathematical and Computing Sciences](https://cemeai.icmc.usp.br/) (Brazil)
-- Machine learning project [Buster.ai](https://www.buster.ai/) (France)
-- Workshops [Fever](https://fever.ai/workshop.html) (international)
-- [Auxipresse](https://auxipress.be/) (Belgium)
+## Présentation de projets d'orientation similaire 
+- projet de [détection des communautés ayant des idéologies similaires, par des interactions cross-cheannl](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) par le biais de [DFRLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (États-Unis) ;
+- projet de [Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), ouchant l’exploration de l'activité et de la localisation des utilisateurs etc. (Chine) ; 
+- projet d'apprentissage automatique consistant à transmettre de « fausses fausses nouvelles » pour détecter les vraies fausses nouvelles, avec génération de données de formation chargées de propagande [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386) (États-Unis) ;
+- projet d'apprentissage automatique [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works) (États-Unis) ;
+- projet d'apprentissage automatique de [l’Institut des Sciences mathématiques et informatiques](https://cemeai.icmc.usp.br/) (Brésil) ;
+- projet d'apprentissage automatique [Buster.ai](https://www.buster.ai/) (France) ;
+- Ateliers [Fever](https://fever.ai/workshop.html) (international) ;
+- [Auxipresse](https://auxipress.be/) (Belgique).
 
 <!-- TOC --><a name="methodology"></a>
 ## Methodology
