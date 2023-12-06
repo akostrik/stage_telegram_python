@@ -170,28 +170,29 @@ La chaîne 5: Offre une opinion partagée sur les politiques gouvernementales, m
 
 ![output 1+](https://github.com/akostrik/stage_telegram/assets/22834202/d88d7f54-ff08-40cc-ae85-b8b15349b44e)
 
-
 <!-- TOC --><a name="setup-and-usage"></a>
-# Setup and usage
-The user should have a web browser compatible with [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (for example, Internet Explorer 8 and its previous versions are not compatible with ECMAScript 5).
+# Configuration et utilisation 
+L'utilisateur doit disposer d'un navigateur Web compatible avec [ECMAScript 5](https://www.w3schools.com/js/js_es5.asp) (ainsi, et par exemple, IE8 et ses versions précédentes ne sont pas compatibles avec ECMAScript 5).
 
 <!-- TOC --><a name="mongodb-atlas-configuration"></a>
-## MongoDB Atlas configuration
+## Configuration de MongoDB Atlas 
 
-[Create a MongoDB account](https://cloud.mongodb.com/) 
+[MondoDB Atlas](https://cloud.mongodb.com/) est une base de données présente sur MongoDB dans le cloud. 
 
-In your account, create a database by the name of `telegram`
+Il faut créer un compte MongoDB.
 
-[Import the collection](https://www.mongodb.com/docs/atlas/import/mongoimport/) `characteristics` from [this file](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/collection_characteristics.json) to the database `telegram`
+Sur ce compte, il faut créer une base de données sous le nom de `Telegram`. 
 
-Go [to the MongoDB interface](https://cloud.mongodb.com) - Database Deployments - `to add your current ip address`
+De là, il faut [importer](https://www.mongodb.com/docs/atlas/import/mongoimport/) la collection [`caractéristics`](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/collection_characteristics.json) dans la base de données Telegram.  
 
-Go [to the MongoDB interface](https://cloud.mongodb.com/) - Database - Connect - Drives - `to get you MongoDB connection string` 
+Puis, il faut accéder à la section Database Deployments de [l'interface MongoDB](https://cloud.mongodb.com) et ajouter l’adresse IP (`add your current ip address`).
 
-Note: Be careful not to publish your MongoDB connection token on the internet and not to transmit it to unknown people
+Puis, il faut accéder à [l'interface MongoDB](https://cloud.mongodb.com/), section `Database`, section `Connect`, section `Drives`, pour récupérer le lien de connexion MongoDB (`get you MongoDB connection string`). 
+
+N.B. : Attention à ne pas publier le lien de connexio sur internet et à ne pas le transmettre à des personnes inconnues. 
 
 <!-- TOC --><a name="openai-configuration"></a>
-## OpenAI configuration 
+## Configuration d’OpenAI  
 
 [Get your OpenAI connection token](https://platform.openai.com/account/api-keys)
 
