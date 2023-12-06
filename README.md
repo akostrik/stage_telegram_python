@@ -1,4 +1,7 @@
-[<img align="right" width="50" height="50" src="https://github.com/akostrik/stage_telegram/assets/b914be7c-75f5-48aa-99d9-1b8941a6aabe">](https://github.com/akostrik/stage_telegram/blob/main/README.md)
+
+![EN](https://github.com/akostrik/stage_telegram/assets/22834202/7ff26ee4-85b4-4f14-9db3-2bd91feadf58)
+
+[<img align="right" width="50" height="50" src="https://github.com/akostrik/stage_telegram/assets/22834202/7ff26ee4-85b4-4f14-9db3-2bd91feadf58">](https://github.com/akostrik/stage_telegram/blob/main/README.md)
 
 [<img align="right" width="30" height="30" src="https://github.com/akostrik/stage_telegram/assets/f4b204c4-9ffe-4acc-90a2-df07d8b8fc7d">](https://github.com/akostrik/stage_telegram/blob/main/README_FR.md)
 
