@@ -72,14 +72,14 @@ Ce projet vise à détecter de manière automatique les informations relevant de
 
 <!-- TOC --><a name="presentation-of-projects-of-similar-orientation"></a>
 ## Présentation de projets d'orientation similaire 
-- projet de [détection des communautés ayant des idéologies similaires, par des interactions cross-cheannl](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) par le biais de [DFRLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (États-Unis) ;
+- Projet de [détection des communautés ayant des idéologies similaires, par des interactions cross-cheannl](https://medium.com/dfrlab/understanding-telegrams-ecosystem-of-far-right-channels-in-the-us-22e963c09234) par le biais de [DFRLab](https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/) (États-Unis) ;
 - projet de [Huan Cao (ru)](https://hightech.fm/2018/08/28/fakenews?is_ajax=1&ysclid=ln2wvj9vsp325940854), touchant l’exploration de l'activité et de la localisation des utilisateurs etc. (Chine) ; 
 - projet d'apprentissage automatique consistant à transmettre de « fausses fausses nouvelles » pour détecter les vraies fausses nouvelles, avec génération de données de formation chargées de propagande [Faking Fake News for Real Fake News Detection: Propaganda-loaded Training Data Generation](https://arxiv.org/abs/2203.05386) (États-Unis) ;
 - projet d'apprentissage automatique [Botometer](https://botometer.osome.iu.edu/faq#how-does-it-works) (États-Unis) ;
 - projet d'apprentissage automatique de [l’Institut des Sciences mathématiques et informatiques](https://cemeai.icmc.usp.br/) (Brésil) ;
 - projet d'apprentissage automatique [Buster.ai](https://www.buster.ai/) (France) ;
-- Ateliers [Fever](https://fever.ai/workshop.html) (international) ;
-- [Auxipresse](https://auxipress.be/) (Belgique).
+- les ateliers [Fever](https://fever.ai/workshop.html) (international) ;
+- [auxipresse](https://auxipress.be/) (Belgique).
 
 <!-- TOC --><a name="methodology"></a>
 ## La méthodologie employée  
