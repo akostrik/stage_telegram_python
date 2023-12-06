@@ -26,15 +26,21 @@ class Group:
         await self.update_channels_score(message, collection_messages, collection_channels_score)
         await self.update_channels_similarity(message, collection_messages, collection_channels_similarity, how_many_hours_verification)
 
-    def update_channels_from_mongo(self, collection_channels_id): # async 
-        channels = collection_channels_id.find({}, {}) # await ?
-        self.channels = set() # ?
-        for channel in channels:
-            if (isinstance(channel['telegram_id'], float)):
-                self.channels.add(int(channel['telegram_id']))
-            else:
-                self.channels.add(channel['telegram_id'])
-        print("server1 listens to the channels " + str(self.channels))
+    def update_channels_from_mongo(self, collection_channels):
+        try:
+            channels = collection_channels.find({}, {"channelId": 1})
+            self.channels = set()
+            for channel in channels:
+                telegram_id = channel.get('channelId', None)
+                if telegram_id is not None:
+                    if isinstance(telegram_id, float):
+                        self.channels.add(int(telegram_id))
+                    else:
+                        self.channels.add(telegram_id)
+            print("server1 listens to the channels " + str(self.channels))
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
 
     async def update_channels_score(self, new_message, collection_messages, collection_channels_score):
         try:
@@ -63,10 +69,10 @@ class Group:
             print(f"Failed to insert record due to duplicate _id.") # telegram_id = key ?
 
     async def update_channels_similarity(self, message, collection_messages, collection_channels_similarity, how_many_hours_verification):
-
-        # recent_messages = list(collection_messages.find({}))
-        timestamp_to_start_from = datetime.now() - timedelta(hours=how_many_hours_verification)
-        recent_messages = list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_to_start_from)}}))
+        
+        recent_messages = list(collection_messages.find({}))
+        #timestamp_to_start_from = datetime.now() - timedelta(hours=how_many_hours_verification)
+        #recent_messages = list(collection_messages.find({"timestamp.$date.$numberLong": {"$gte": str(timestamp_to_start_from)}}))
 
         for old_message in recent_messages:
             if message.channel != old_message["channel"]:

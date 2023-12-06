@@ -70,28 +70,26 @@ class Prompt_a: ################################### affirmations
 
     def to_string(self, message, collection_messages):
         # try:
-        string = f"""\
-            Please generate binary affirmations from the provided news message:
+        string = (
+            "Please generate binary affirmations from the provided news message:\n\n"
+            f"\"{message.text}\"\n\n"  # Use double quotes around the message text
+            "For each affirmation:\n\n"
+            "1. Extract key assertions from the message.\n"
+            "2. Convert negations into their positive counterparts.\n"
+            "3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.\n"
+            "4. Provide a truth value for each affirmation based on its accuracy within the message.\n\n"
+            "The result should be in this format (without anything else, no introduciton, no description, nothing, just this):\n"
+            "{\n"
+            "    \"Binary affirmation 1\": true/false,\n"  # Use double quotes for keys
+            "    \"Binary affirmation 2\": true/false,\n"  # and values in the dictionary
+            "    ...\n"
+            "}\n\n"
+            "Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain. And always in English no matter what language of the news\n"
+        )
 
-            '{message.text}'
+        # If you need to strip leading/trailing whitespace
+        string = string.strip()
 
-            For each affirmation:
-
-            1. Extract key assertions from the message. 
-            2. Convert negations into their positive counterparts.
-            3. Each affirmation must be standalone and provide full context. If there's an attributed source in the message, ensure it's included in the affirmation.
-            4. Provide a truth value for each affirmation based on its accuracy within the message.
-
-            The result should be in this format:
-            {{
-                'Binary affirmation 1': true/false,
-                'Binary affirmation 2': true/false,
-                ...
-            }}
-
-            Ensure that each binary affirmation is concise, clear, and independent. They should almost function as a unique hash of the information they contain.
-
-            """
         return string + self.examples(collection_messages)
         # except TypeError:
         #     return ("")

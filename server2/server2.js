@@ -49,7 +49,7 @@ app.get('/channels', async (req, res) => {
 });
 
 app.get('/relations', async (req, res) => {
-  const docs = await db.collection('relations').find({}).limit(100).toArray();
+  const docs = await db.collection('channels_similarity').find({}).limit(100).toArray();
   res.json(docs);
 });
 

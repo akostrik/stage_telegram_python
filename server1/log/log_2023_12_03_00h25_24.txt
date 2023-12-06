@@ -1,0 +1,564 @@
+openai model for propaganda marks = gpt-4
+openai model for affirmations     = gpt-3.5-turbo
+temperature                       = 0.2
+max_len_telegram_message          = 600
+verification of the messages for the last 0.016 hours
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 beneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+5096786433
+set()
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002033244827
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement annonce une nouvelle politique fiscale avantageuse pour les entreprises. Cette réforme est censée stimuler l'investissement et la croissance économique.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. -1', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government has announced a new advantageous tax policy for businesses": true,
+    "The reform is supposed to stimulate investment": true,
+    "The reform is supposed to stimulate economic growth": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2]
+new_average = -2 / 1 = -2
+Updated average score for channel -1002033244827 to -2
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002078508192
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Critiques sévères de la nouvelle politique fiscale du gouvernement, jugée désavantageuse pour les petites entreprises. Les experts craignent des répercussions négatives sur le marché.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 1', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government's new fiscal policy has received severe critiques": true,
+    "The new fiscal policy is considered disadvantageous for small businesses": true,
+    "Experts fear negative repercussions on the market due to the new fiscal policy": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [1]
+new_average = 1 / 1 = 1
+Updated average score for channel -1002078508192 to 1
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement annonce une réforme fiscale, promettant des avantages pour toutes les strates de la société. L'accent est mis sur l'équité fiscale.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. -1', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government has announced a tax reform": true,
+    "The tax reform promises benefits for all societal strata": true,
+    "The focus of the reform is on tax fairness": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2]
+new_average = -2 / 1 = -2
+Updated average score for channel -1002142650141 to -2
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :La nouvelle réforme fiscale est critiquée pour favoriser les grandes entreprises au détriment des PME. Des économistes appellent à une révision de la politique.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 1', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The new tax reform is criticized for favoring large corporations": true,
+    "The new tax reform is disadvantageous to SMEs": true,
+    "Economists are calling for a revision of the policy": true
+}
+scores_of_this_channel = []
+new_average = 0 / 0 = 0
+Updated average score for channel -1002074952363 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement annonce une politique fiscale qui divise l'opinion publique. Certains y voient une avancée, d'autres un recul.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government has announced a tax policy": true,
+    "The announced tax policy is dividing public opinion": true,
+    "Some people see the tax policy as a step forward": true,
+    "Others perceive the tax policy as a step back": true
+}
+scores_of_this_channel = []
+new_average = 0 / 0 = 0
+Updated average score for channel -1002061517552 to 0
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :k
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+The provided news message "k" does not contain any information or assertions that can be converted into binary affirmations.
+Failed to insert record invalid syntax (<unknown>, line 1)
+scores_of_this_channel = []
+new_average = 0 / 0 = 0
+Updated average score for channel -1002074952363 to 0
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :La nouvelle réforme fiscale est critiquée pour favoriser les grandes entreprises au détriment des PME. Des économistes appellent à une révision de la politique.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 1', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The new tax reform is criticized for favoring large companies": true,
+    "The new tax reform is detrimental to SMEs": true,
+    "Economists are calling for a revision of the policy": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [1]
+new_average = 1 / 1 = 1
+Updated average score for channel -1002074952363 to 1
+-1001969979422
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1001969979422
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement annonce une politique fiscale qui divise l'opinion publique. Certains y voient une avancée, d'autres un recul.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government has announced a tax policy": true,
+    "The tax policy is dividing public opinion": true,
+    "Some see the tax policy as a step forward": true,
+    "Others view the tax policy as a step backward": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [0]
+new_average = 0 / 1 = 0
+Updated average score for channel -1002061517552 to 0
+-1002033244827
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Les prévisions économiques indiquent une forte croissance du PIB pour le prochain trimestre. Les analystes attribuent cela aux récentes mesures gouvernementales.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. -1', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Economic forecasts indicate strong GDP growth for the next quarter": true,
+    "This GDP growth is attributed to recent government measures": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, -2]
+new_average = -4 / 2 = -2
+Updated average score for channel -1002033244827 to -2
+-1002078508192
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Malgré les récentes initiatives gouvernementales, certains experts prédisent une stagnation économique. Ils pointent du doigt le manque d'innovation dans les politiques actuelles.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government has recently initiated certain measures": true,
+    "Some experts predict economic stagnation": true,
+    "Experts criticize the lack of innovation in current policies": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [1, 0]
+new_average = 1 / 2 = 0.5
+Updated average score for channel -1002078508192 to 0.5
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :L'économie nationale montre des signes de reprise grâce aux récentes réformes. La confiance des consommateurs est à la hausse.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The national economy is showing signs of recovery": true,
+    "The recovery of the national economy is due to recent reforms": true,
+    "Consumer confidence is on the rise": true
+}
+scores_of_this_channel = [-2]
+new_average = -2 / 1 = -2
+Updated average score for channel -1002142650141 to -2
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :L'économie nationale montre des signes de reprise grâce aux récentes réformes. La confiance des consommateurs est à la hausse.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The national economy is showing signs of recovery": true,
+    "The recovery of the national economy is due to recent reforms": true,
+    "Consumer confidence is on the rise": true
+}
+scores_of_this_channel = [-2]
+new_average = -2 / 1 = -2
+Updated average score for channel -1002142650141 to -2
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :L'économie nationale montre des signes de reprise grâce aux récentes réformes. La confiance des consommateurs est à la hausse.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The national economy is showing signs of recovery": true,
+    "The recovery of the national economy is due to recent reforms": true,
+    "Consumer confidence is on the rise": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, 0]
+new_average = -2 / 2 = -1
+Updated average score for channel -1002142650141 to -1
+-1001969979422
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1001969979422
+Server closed the connection: [Errno 54] Connection reset by peer
+Server sent a very old message with ID 7308153020153252865, ignoring (see FAQ for details)
+Server sent a very old message with ID 7308153044193883137, ignoring (see FAQ for details)
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des signes d'instabilité économique apparaissent malgré les affirmations optimistes du gouvernement. Les investisseurs restent prudents.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Signs of economic instability are appearing": true,
+    "The government is making optimistic affirmations": true,
+    "Investors are remaining cautious": true
+}
+scores_of_this_channel = [1]
+new_average = 1 / 1 = 1
+Updated average score for channel -1002074952363 to 1
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des signes d'instabilité économique apparaissent malgré les affirmations optimistes du gouvernement. Les investisseurs restent prudents.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Signs of economic instability are appearing": true,
+    "The government is making optimistic assertions": true,
+    "Investors are remaining cautious": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [1, 0]
+new_average = 1 / 2 = 0.5
+Updated average score for channel -1002074952363 to 0.5
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Un débat s'engage sur l'impact économique des dernières réformes. Tandis que certains experts prévoient une relance, d'autres anticipent un ralentissement.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "A debate is underway about the economic impact of the latest reforms": true,
+    "Some experts predict a recovery due to the latest reforms": true,
+    "Other experts anticipate a slowdown due to the latest reforms": true
+}
+scores_of_this_channel = [0]
+new_average = 0 / 1 = 0
+Updated average score for channel -1002061517552 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Un débat s'engage sur l'impact économique des dernières réformes. Tandis que certains experts prévoient une relance, d'autres anticipent un ralentissement.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "A debate is underway about the economic impact of the latest reforms": true,
+    "Some experts predict a recovery due to the latest reforms": true,
+    "Other experts anticipate a slowdown due to the latest reforms": true
+}
+scores_of_this_channel = [0]
+new_average = 0 / 1 = 0
+Updated average score for channel -1002061517552 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Un débat s'engage sur l'impact économique des dernières réformes. Tandis que certains experts prévoient une relance, d'autres anticipent un ralentissement.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "A debate is underway about the economic impact of the latest reforms": true,
+    "Some experts predict a recovery due to the latest reforms": true,
+    "Other experts anticipate a slowdown due to the latest reforms": true
+}
+scores_of_this_channel = [0]
+new_average = 0 / 1 = 0
+Updated average score for channel -1002061517552 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Un débat s'engage sur l'impact économique des dernières réformes. Tandis que certains experts prévoient une relance, d'autres anticipent un ralentissement.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "A debate is underway about the economic impact of the latest reforms": true,
+    "Some experts predict a recovery due to the latest reforms": true,
+    "Other experts anticipate a slowdown due to the latest reforms": true
+}
+Put message to mongo successful.
+scores_of_this_channel = [0, 0]
+new_average = 0 / 2 = 0
+Updated average score for channel -1002061517552 to 0
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1001969979422
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+5096786433
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002118498738
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002033244827
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Une augmentation significative du budget de la santé a été annoncée pour améliorer les services publics. Cela marque un tournant majeur dans la politique sociale du pays.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+Message: "Une augmentation significative du budget de la santé a été annoncée pour améliorer les services publics. Cela marque un tournant majeur dans la politique sociale du pays."
+
+Affirmations: 
+{
+    "A significant increase in the health budget has been announced": true,
+    "The increase in the health budget is intended to improve public services": true,
+    "This marks a major turning point in the country's social policy": true
+}
+Failed to insert record invalid syntax (<unknown>, line 1)
+scores_of_this_channel = [-2, -2]
+new_average = -4 / 2 = -2
+Updated average score for channel -1002033244827 to -2
+492723430
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002033244827
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Une augmentation significative du budget de la santé a été annoncée pour améliorer les services publics. Cela marque un tournant majeur dans la politique sociale du pays.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. -1', '23. 0', '24. 0', '25. 0', '26. 0']
+
+Message: "Une augmentation significative du budget de la santé a été annoncée pour améliorer les services publics. Cela marque un tournant majeur dans la politique sociale du pays."
+
+Affirmations: {"A significant increase in the health budget has been announced": True, "The increase in the health budget is intended to improve public services": True, "This marks a major turning point in the country's social policy": True}
+Failed to insert record invalid syntax (<unknown>, line 1)
+scores_of_this_channel = [-2, -2]
+new_average = -4 / 2 = -2
+Updated average score for channel -1002033244827 to -2

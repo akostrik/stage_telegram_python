@@ -1,0 +1,51 @@
+openai model for propaganda marks = gpt-4
+openai model for affirmations     = gpt-3.5-turbo
+temperature                       = 0.2
+max_len_telegram_message          = 600
+verification of the messages for the last 0.016 hours
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 beneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+-1002033244827
+set()
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement annonce une nouvelle politique fiscale avantageuse pour les entreprises. Cette réforme est censée stimuler l'investissement et la croissance économique.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. -1', '23. 0', '24. 0', '25. 0', '26. 0']
+
+affirmations :             {
+                `Le gouvernement annonce une nouvelle politique fiscale`: True,
+                `Cette politique fiscale est avantageuse pour les entreprises`: True,
+                `La réforme est censée stimuler l'investissement`: True,
+                `La réforme est censée stimuler la croissance économique`: True
+            }
+Failed to insert record unexpected indent (<unknown>, line 1)
+scores_of_this_channel = [-2]
+new_average = -2 / 1 = -2
+Updated average score for channel -1002033244827 to -2

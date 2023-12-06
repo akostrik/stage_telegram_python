@@ -1,0 +1,20 @@
+Unhandled exception on new_message_handler
+Traceback (most recent call last):
+  File "/Users/jeanpaul/Projects/stage_telegram/server1/class_message.py", line 22, in calc_score
+    response = openai.chat.completions.create(
+  File "/Users/jeanpaul/Library/Python/3.9/lib/python/site-packages/openai/_utils/_utils.py", line 300, in wrapper
+    raise TypeError(msg)
+TypeError: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jeanpaul/Library/Python/3.9/lib/python/site-packages/telethon/client/updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "/Users/jeanpaul/Projects/stage_telegram/server1/server1.py", line 96, in new_message_handler
+    await group_channels.new_message_handler(event, prompt_c, prompt_a, model_c, model_a,temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels, collection_channels_score, collection_channels_simiarity)
+  File "/Users/jeanpaul/Projects/stage_telegram/server1/class_group.py", line 21, in new_message_handler
+    await message.calc_score(prompt_c, model_c, temperature, max_tokens, collection_messages, self)
+  File "/Users/jeanpaul/Projects/stage_telegram/server1/class_message.py", line 38, in calc_score
+    except Error as e:
+NameError: name 'Error' is not defined

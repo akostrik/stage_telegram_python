@@ -1,0 +1,279 @@
+openai model for propaganda marks = gpt-4
+openai model for affirmations     = gpt-3.5-turbo
+temperature                       = 0.2
+max_len_telegram_message          = 600
+verification of the messages for the last 0.016 hours
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 beneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+-1002033244827
+set()
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Les prévisions économiques indiquent une forte croissance du PIB pour le prochain trimestre. Les analystes attribuent cela aux récentes mesures gouvernementales.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Economic forecasts indicate strong GDP growth for the next quarter": True,
+    "This growth is attributed to recent government measures": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, -2, 0]
+new_average = -4 / 3 = -1.3333333333333333
+Updated average score for channel -1002033244827 to -1.3333333333333333
+-1002033244827
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Une augmentation significative du budget de la santé a été annoncée pour améliorer les services publics. Cela marque un tournant majeur dans la politique sociale du pays.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "A significant increase in the health budget has been announced": True,
+    "The increase in the health budget is intended to improve public services": True,
+    "This marks a major turning point in the country's social policy": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, -2, 0, 0]
+new_average = -4 / 4 = -1
+Updated average score for channel -1002033244827 to -1
+-1002033244827
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement lance un ambitieux programme de reforestation. Cette initiative vise à compenser les émissions de carbone du pays.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government has launched an ambitious reforestation program": True,
+    "The initiative aims to offset the country's carbon emissions": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, -2, 0, 0, -1]
+new_average = -5 / 5 = -1
+Updated average score for channel -1002033244827 to -1
+-1002033244827
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le président a annoncé une nouvelle alliance diplomatique avec les pays voisins pour renforcer la sécurité régionale.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The president has announced a new diplomatic alliance": True,
+    "The diplomatic alliance is with neighboring countries": True,
+    "The alliance aims to strengthen regional security": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, -2, 0, 0, -1, -1]
+new_average = -6 / 6 = -1
+Updated average score for channel -1002033244827 to -1
+-1002078508192
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des manifestations éclatent en réponse à la réduction des dépenses publiques dans les secteurs clés. Les citoyens expriment leur mécontentement face aux choix du gouvernement.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Protests have erupted in response to public spending cuts": True,
+    "Public spending cuts have been made in key sectors": True,
+    "Citizens are expressing their discontent with the government's choices": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [1, 0, 0]
+new_average = 1 / 3 = 0.3333333333333333
+Updated average score for channel -1002078508192 to 0.3333333333333333
+-1002078508192
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le nouveau programme de reforestation du gouvernement est critiqué pour son manque d'efficacité et de vision à long terme. Des écologistes appellent à des actions plus concrètes.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 1', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government has a new reforestation program": True,
+    "The new reforestation program is criticized for its lack of efficiency": True,
+    "The new reforestation program is criticized for its lack of long-term vision": True,
+    "Ecologists are calling for more concrete actions": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [1, 0, 0, 1]
+new_average = 2 / 4 = 0.5
+Updated average score for channel -1002078508192 to 0.5
+-1002078508192
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des tensions diplomatiques surviennent suite à la nouvelle politique étrangère du président. Des experts s'inquiètent de l'isolement croissant du pays.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Diplomatic tensions have arisen due to the president's new foreign policy": True,
+    "Experts are concerned about the country's increasing isolation": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [1, 0, 0, 1, 0]
+new_average = 2 / 5 = 0.4
+Updated average score for channel -1002078508192 to 0.4
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement augmente les fonds alloués à l'éducation et à la recherche. Cette initiative vise à préparer le pays aux défis futurs.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. -1', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government is increasing funds for education and research": True,
+    "The initiative aims to prepare the country for future challenges": True
+}
+scores_of_this_channel = [-2, 0]
+new_average = -2 / 2 = -1
+Updated average score for channel -1002142650141 to -1
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement augmente les fonds alloués à l'éducation et à la recherche. Cette initiative vise à préparer le pays aux défis futurs.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. -1', '22. -1', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government is increasing funds for education and research": True,
+    "The initiative aims to prepare the country for future challenges": True
+}
+scores_of_this_channel = [-2, 0]
+new_average = -2 / 2 = -1
+Updated average score for channel -1002142650141 to -1
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le gouvernement augmente les fonds alloués à l'éducation et à la recherche. Cette initiative vise à préparer le pays aux défis futurs.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government is increasing funds for education and research": True,
+    "The initiative aims to prepare the country for future challenges": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, 0, 0]
+new_average = -2 / 3 = -0.6666666666666666
+Updated average score for channel -1002142650141 to -0.6666666666666666
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le plan environnemental du gouvernement reçoit un accueil positif de la part des organisations écologiques. Il est considéré comme un pas important vers la durabilité.
+
+OpenAI response: ['0. 1', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government's environmental plan has received a positive reception": True,
+    "Ecological organizations have positively received the government's environmental plan": True,
+    "The environmental plan is considered an important step towards sustainability": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, 0, 0, 1]
+new_average = -1 / 4 = -0.25
+Updated average score for channel -1002142650141 to -0.25
+-1002142650141
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le président renforce les relations internationales, ouvrant la voie à de nouvelles opportunités commerciales et diplomatiques.
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The president is strengthening international relations": True,
+    "The president's actions are opening the way for new commercial opportunities": True,
+    "The president's actions are opening the way for new diplomatic opportunities": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [-2, 0, 0, 1, -1]
+new_average = -2 / 5 = -0.4
+Updated average score for channel -1002142650141 to -0.4
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des coupures budgétaires dans les services publics suscitent l'inquiétude. La population craint une baisse de la qualité des services.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Budget cuts are happening in public services": True,
+    "The population is worried about these budget cuts": True,
+    "There is a fear of a decrease in the quality of services": True
+}
+scores_of_this_channel = [1, 0]
+new_average = 1 / 2 = 0.5
+Updated average score for channel -1002074952363 to 0.5
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des coupures budgétaires dans les services publics suscitent l'inquiétude. La population craint une baisse de la qualité des services.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Budget cuts are happening in public services": True,
+    "The population is worried about these budget cuts": True,
+    "There is a fear of a decrease in the quality of services": True
+}
+scores_of_this_channel = [1, 0]
+new_average = 1 / 2 = 0.5
+Updated average score for channel -1002074952363 to 0.5
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des coupures budgétaires dans les services publics suscitent l'inquiétude. La population craint une baisse de la qualité des services.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Budget cuts are happening in public services": True,
+    "The population is worried about the budget cuts in public services": True,
+    "There is a fear of a decrease in the quality of public services": True
+}
+scores_of_this_channel = [1, 0]
+new_average = 1 / 2 = 0.5
+Updated average score for channel -1002074952363 to 0.5
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des coupures budgétaires dans les services publics suscitent l'inquiétude. La population craint une baisse de la qualité des services.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Budget cuts are happening in public services": True,
+    "The population is worried about these budget cuts": True,
+    "There is a fear of a decrease in the quality of services": True
+}
+scores_of_this_channel = [1, 0]
+new_average = 1 / 2 = 0.5
+Updated average score for channel -1002074952363 to 0.5

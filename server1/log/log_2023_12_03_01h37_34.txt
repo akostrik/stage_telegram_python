@@ -1,0 +1,207 @@
+openai model for propaganda marks = gpt-4
+openai model for affirmations     = gpt-3.5-turbo
+temperature                       = 0.2
+max_len_telegram_message          = 600
+verification of the messages for the last 0.016 hours
+
+0  positive author attitude
+1  the message is advantageous for the actual political power
+2  exaggerations
+3  lack of object concordance
+4  appeal to the intellect
+5  appeal to emotions
+6  appeal to virtues
+7  appeal to ethics
+8  appeal to blinding generalities as fatherland, peace, glory, justice, honor
+9  appeal to fear
+10 appeal to the threat from other countries
+11 appeal to hatred
+12 appeal to authority
+13 appeal to human rights
+14 criticism of the actual political power
+15 generalizations
+16 seemingly scientific appearance, but only seemingly
+17 real scientific proofs of the information
+18 real proofs of the information
+19 euphemismes replacing offensive expressions
+20 euphemismes replacing war or victims
+21 formal register of the texte
+22 beneficiaries of the information regarding to politics
+23 flattery to the reader
+24 dilemma between only two possibilities
+25 criticisme of a person instead of criticism of his arguments
+26 underestimation of the proofs of the opponents
+
+-1002074952363
+set()
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des activistes environnementaux contestent le plan de reforestation du gouvernement, le qualifiant de superficiel. Ils demandent des mesures plus radicales.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 1', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Environmental activists are challenging the government's reforestation plan": True,
+    "The government's reforestation plan is described as superficial": True,
+    "Activists are demanding more radical measures": True
+}
+scores_of_this_channel = [1, 0, -1]
+new_average = 0 / 3 = 0
+Updated average score for channel -1002074952363 to 0
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Des activistes environnementaux contestent le plan de reforestation du gouvernement, le qualifiant de superficiel. Ils demandent des mesures plus radicales.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 1', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Environmental activists are contesting the government's reforestation plan": True,
+    "The government's reforestation plan is described as superficial": True,
+    "Activists are demanding more radical measures": True
+}
+scores_of_this_channel = [1, 0, -1]
+new_average = 0 / 3 = 0
+Updated average score for channel -1002074952363 to 0
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Critiques internationales face à la nouvelle approche diplomatique du président. Des experts mettent en garde contre une détérioration des relations internationales.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The president has a new diplomatic approach": True,
+    "International critiques are made against the president's new diplomatic approach": True,
+    "Experts warn of a deterioration of international relations": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [1, 0, -1, 0]
+new_average = 0 / 4 = 0
+Updated average score for channel -1002074952363 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Les changements dans les allocations budgétaires soulèvent des questions sur les priorités du gouvernement. Les secteurs de la santé et de l'éducation sont particulièrement concernés.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Changes in budget allocations raise questions about government priorities": True,
+    "The health and education sectors are particularly affected": True
+}
+scores_of_this_channel = [0, 0]
+new_average = 0 / 2 = 0
+Updated average score for channel -1002061517552 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :Le programme environnemental du gouvernement reçoit un accueil mitigé. Si certains le louent pour son ambition, d'autres le critiquent pour son manque de clarté.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 1', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The government's environmental program has received a mixed reception": True,
+    "Some praise the environmental program for its ambition": True,
+    "Some criticize the environmental program for its lack of clarity": True
+}
+scores_of_this_channel = [0, 0]
+new_average = 0 / 2 = 0
+Updated average score for channel -1002061517552 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :La nouvelle orientation de la politique étrangère du président suscite des réactions contrastées. Des analystes craignent une perturbation des équilibres régionaux.
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "The president's foreign policy has a new direction": True,
+    "The new foreign policy direction is causing mixed reactions": True,
+    "Analysts fear a disruption of regional balances due to the new foreign policy": True
+}
+scores_of_this_channel = [0, 0]
+new_average = 0 / 2 = 0
+Updated average score for channel -1002061517552 to 0
+-1001231700817
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+492723430
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1001969979422
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1001969979422
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1001969979422
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1001969979422
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :macron est bon
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. -1', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Macron is good": True
+}
+scores_of_this_channel = [0, 0]
+new_average = 0 / 2 = 0
+Updated average score for channel -1002061517552 to 0
+-1002074952363
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :macron est bon
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Macron is good": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [1, 0, -1, 0, -1]
+new_average = -1 / 5 = -0.2
+Updated average score for channel -1002074952363 to -0.2
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :macron est bon
+
+OpenAI response: ['0. 0', '1. -1', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{"Macron is good": True}
+scores_of_this_channel = [0, 0]
+new_average = 0 / 2 = 0
+Updated average score for channel -1002061517552 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :macron est bon
+
+OpenAI response: ['0. 1', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Macron is good": True
+}
+scores_of_this_channel = [0, 0]
+new_average = 0 / 2 = 0
+Updated average score for channel -1002061517552 to 0
+-1002061517552
+{-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 listens to the channels {-1002078508192, -1002142650141, -1002033244827, -1002061517552, -1002074952363}
+server1 has received the message :macron est bon
+
+OpenAI response: ['0. 0', '1. 0', '2. 0', '3. 0', '4. 0', '5. 0', '6. 0', '7. 0', '8. 0', '9. 0', '10. 0', '11. 0', '12. 0', '13. 0', '14. 0', '15. 0', '16. 0', '17. 0', '18. 0', '19. 0', '20. 0', '21. 0', '22. 0', '23. 0', '24. 0', '25. 0', '26. 0']
+
+{
+    "Macron is good": True
+}
+Put message to mongo successful.
+scores_of_this_channel = [0, 0, 0]
+new_average = 0 / 3 = 0
+Updated average score for channel -1002061517552 to 0

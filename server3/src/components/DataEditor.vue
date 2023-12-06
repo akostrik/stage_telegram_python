@@ -75,7 +75,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-// You can add styles specific to this component here 
-</style>

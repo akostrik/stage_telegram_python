@@ -51,6 +51,7 @@ class Message:
             group.total_time_requests_a += time.time() - int(time_start)
             group.total_time_requests_a += 1
             self.affirmations = response['choices'][0]['message']['content'].replace('true', 'True').replace('false', 'False')
+            print(self.affirmations)
         except (openai.error.Timeout, requests.exceptions.ReadTimeout, openai.error.ServiceUnavailableError, openai.error.APIError):
             print('openai error when calculating affirmations')
             pass
@@ -62,7 +63,7 @@ class Message:
             print(f"Record with telegram_id {self.telegram_id} already exists in the database.")
             return
         try:
-          print ("affirmations : " + str(self.affirmations))
+          #print ("affirmations : " + str(self.affirmations))
           collection_messages.insert_one({
               "telegram_id": self.telegram_id,
               "text": self.text,

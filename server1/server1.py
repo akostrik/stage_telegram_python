@@ -35,7 +35,7 @@ class LoggerStderr:
         self.my_stderr.flush()
         self.file.flush()
 
-path_log                       = "server1/log"
+path_log                       = "log"
 try:
     os.mkdir(path_log)
 except FileExistsError:
@@ -52,7 +52,7 @@ client_tg.start()
 db                            = client_mongo['telegram']
 collection_characteristics    = db['characteristics']
 collection_messages           = db['messages']
-collection_channels_id        = db['channels_id']
+collection_channels           = db['channels']
 collection_channels_score     = db['channels_score']
 collection_channels_simiarity = db['channels_similarity']
 # try:
@@ -89,9 +89,11 @@ print (prompt_c.characteristics_to_string())
 
 @client_tg.on(events.NewMessage())
 async def new_message_handler(event):
-    group_channels.update_channels_from_mongo(collection_channels_id) # await TypeError: object NoneType can't be used in 'await' expression 
+    print(event.chat_id)
+    print(group_channels.channels)
+    group_channels.update_channels_from_mongo(collection_channels) # await TypeError: object NoneType can't be used in 'await' expression 
     if event.chat_id in group_channels.channels:
-        await group_channels.new_message_handler(event, prompt_c, prompt_a, model_c, model_a,temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels_id, collection_channels_score, collection_channels_simiarity)
+        await group_channels.new_message_handler(event, prompt_c, prompt_a, model_c, model_a,temperature, max_tokens, how_many_hours_verification, collection_messages, collection_channels, collection_channels_score, collection_channels_simiarity)
 
 
 with client_tg:
