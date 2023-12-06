@@ -137,8 +137,8 @@ Le [`Serveur 3`](https://github.com/akostrik/stage_telegram/tree/main/user_inter
 ### Fonctionnement
 
 1) Le `Serveur 3` obtient du navigateur Web, un identifiant du canal Telegram à examiner, via l'API du `Serveur 3`.
-1) Le `Serveur 3` ttransmet l'identifiant du canal au `Serveur 2`, via l'API du `serveur 2`.
-1) Le `Serveur 2` met l'identifiant du canal dans la base de données _MongoDB Atlas_ database, via l'API MongoDB. 
+1) Le `Serveur 3` transmet l'identifiant du canal au `Serveur 2`, via l'API du `serveur 2`.
+1) Le `Serveur 2` met l'identifiant du canal dans la base de données MongoDB Atlas, via l'API MongoDB. 
 1) Le `Serveur 1` met à jour en permanence la liste des identifiants de MongoDB Atlas, via l'API MongoDB. 
 1) Le `Serveur 1` écoute les chaînes choisies, via l'API Telegram. 
 1) Le `Serveur 1` traite chaque nouveau message. Cela signifie que le Serveur 1 : 
@@ -148,7 +148,7 @@ Le [`Serveur 3`](https://github.com/akostrik/stage_telegram/tree/main/user_inter
 - ensuite il compare ces affirmations aux affirmations récentes des autres chaînes suivies, et stocke le message lui-même ;
 - enfin, le résultat de son analyse met à jour les coefficients de confiance des canaux mais aussi l'indice de similarité des canaux dans la base de données MongoDB Atlas, via l'API MongoDB.
 7) Le `Serveur 3` demande en permanence les résultats des calculs du `Serveur 2`, via l'API du `Serveur 2`.
-8) Le `Serveur 2` écupère les résultats des calculs dans MongoDB Atlas, via l'API MongoDB, et les renvoie au `Serveur 3`.
+8) Le `Serveur 2` récupère les résultats des calculs dans MongoDB Atlas, via l'API MongoDB, et les renvoie au `Serveur 3`.
 9) Le `Serveur 3` transmet les résultats au navigateur web sous la forme d'un graphe des canaux, où chaque sommet contient l'identifiant du canal et son coefficient de confiance. Chaque bord est l'indice de similarité des deux canaux concernés, via l'API du `Serveur 3`.
 10) Le navigateur Web affiche le graphique à l'utilisateur. 
 
@@ -165,8 +165,7 @@ Le service Apprentissage fonctionne simultanément. Ce qui signifie que :
 
 La chaîne 1 se concentre sur les aspects positifs des politiques gouvernementales (par exemple, nouvelle politique fiscale, croissance économique, augmentation du budget de la santé, programme de reforestation, alliances diplomatiques).
 
-La chaîne 2 critique la politique du  government et predicts negative outcomes (e.g., negative view on fiscal policy, economic stagnation, public spending cuts, ineffective reforestation, diplomatic tensions).
-prédit des événements négatifs (par exemple, une vision négative de la politique budgétaire, une stagnation économique, des réductions des dépenses publiques, une reforestation inefficace, des tensions diplomatiques).
+La chaîne 2 critique la politique du  government et prédit des événements négatifs (par exemple, une vision négative de la politique budgétaire, une stagnation économique, des réductions des dépenses publiques, une reforestation inefficace, des tensions diplomatiques).
 
 La chaîne 3 présente une vision équilibrée des réformes gouvernementales (par exemple, réforme fiscale pour tous, reprise économique, financement de l’éducation, plan environnemental positif, renforcement des relations internationales).
 
@@ -192,16 +191,16 @@ De là, il faut [importer](https://www.mongodb.com/docs/atlas/import/mongoimport
 
 Puis, il faut accéder à la section Database Deployments de [l'interface MongoDB](https://cloud.mongodb.com) et ajouter l’adresse IP (`add your current ip address`).
 
-Puis, il faut accéder à [l'interface MongoDB](https://cloud.mongodb.com/), section `Database`, section `Connect`, section `Drives`, pour récupérer le lien de connexion MongoDB (`get you MongoDB connection string`). 
+Puis, il faut accéder à [l'interface MongoDB](https://cloud.mongodb.com/), section `Database`, section `Connect`, section `Drives`, pour récupérer le lien de connexion MongoDB (`get you MongoDB connexion string`). 
 
-N.B. : Attention à ne pas publier le lien de connexio sur internet et à ne pas le transmettre à des personnes inconnues. 
+N.B. : Attention à ne pas publier le lien de connexion sur internet et à ne pas le transmettre à des personnes inconnues. 
 
 <!-- TOC --><a name="openai-configuration"></a>
 ## Configuration d’OpenAI  
 
 [Il faut récupérer le token de connexion OpenAi](https://platform.openai.com/account/api-keys).
 
-Le compte doit avoir accès à gpt-4 (une option payante). 
+Le compte doit avoir accès à Gpt-4 (une option payante). 
 
 N.B. : Attention à ne pas publier le token sur internet et à ne pas le transmettre à des personnes inconnues. 
 
@@ -277,9 +276,9 @@ Pour comprendre cette section, le lecteur doit avoir des connaissances de base e
 
 La séparation du traitement des données fourni par le Serveur 1 et de la fonctionnalité de présentation fournie par le Serveur 2 et le Serveur 1 s'inscrit dans le [Model-View-ViewModel (MVVM)](https://ru.wikipedia.org/wiki/Model-View-ViewModel).
 
-Le `Serveur 1` et le `Serveur 2` r représentent la fonctionnalité backend, tandis que le `Serveur 3` ssure celle du frontend. 
+Le `Serveur 1` et le `Serveur 2` r représentent la fonctionnalité backend, tandis que le `Serveur 3` assure celle du frontend. 
 
-Le `Serveur 1` crée [un socket d'écoute](https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes) osur l'API Telegram, puis se bloque en attendant de nouvelles connexions, cela signifie que le noyau met le processus dans un état de veille interruptible, et exécute d'autres processus. 
+Le `Serveur 1` crée [un socket d'écoute](https://superuser.com/questions/837933/how-do-web-servers-listen-to-ip-addresses-interrupt-or-polling#:~:text=Essentially%2C%20they%20use%20blocking%20I,state%20and%20runs%20other%20processes) sur l'API Telegram, puis se bloque en attendant de nouvelles connexions, cela signifie que le noyau met le processus dans un état de veille interruptible, et exécute d'autres processus. 
 
 De la même manière, le `Serveur 2` écoute l'API du `Serveur 2` et le `Serveur 3` écoute l'API du `Serveur 3`.
 
@@ -298,13 +297,13 @@ De la même manière, le `Serveur 2` écoute l'API du `Serveur 2` et le `Serveur
 <!-- TOC --><a name="computation-details"></a>
 ## Détails du calcul 
 
-_Le coefficient de confiance d’un message_ est la somme de points attribués par OpenAI pour chaque charactéristique ;
+_Le coefficient de confiance d’un message_ est la somme de points attribués par OpenAI pour chaque caractéristique ;
 
 _Le coefficient de confiance d’une chaîne_ est la somme des coefficients de ses messages. 
 
-_Le coefficient de confiance d’un groupe de chaînes_ est la somme normalilisée, dans l'intervalle [0 … 100], des coefficients de ses chaînes. 
+_Le coefficient de confiance d’un groupe de chaînes_ est la somme normalisée, dans l'intervalle [0 … 100], des coefficients de ses chaînes. 
 
-_L’indice de similarité de deux canaux_ est la nombre d’affirmations similaires, delaquelle on déduit le nombre d’affirmations contraires contenues dans les deux chaînes. 
+_L’indice de similarité de deux canaux_ est la nombre d’affirmations similaires, de laquelle on déduit le nombre d’affirmations contraires contenues dans les deux chaînes. 
 
 L'application exécute 2 requêtes OpenAI par message, et `O(K)` requêtes MongoDB par message (ici, `K` est le nombre de canaux suivis). 
 
@@ -340,7 +339,7 @@ Dans cette application, de nombreuses requêtes peuvent être concernées (voir 
 <!-- TOC --><a name="database-details"></a>
 ## Détails de la base de données 
 
-L’utilisation d'une base de données noSql s'explique principalement par l'évolution du nombre de caractéristiques, ainsi que par l'évolution des caractéristiques elles-mêmes, lors de l'ajustement de l'application. Les caractéristiques sont conservées dans les collections `caractéristics` et `messages`. 
+L’utilisation d'une base de données noSql s'explique principalement par l'évolution du nombre de caractéristiques, ainsi que par l'évolution des caractéristiques elles-mêmes, lors de l'ajustement de l'application. Les caractéristiques sont conservées dans les collections `caracteristics` et `messages`. 
 
 L'utilisation de MongoDB s'explique par son service de base de données cloud MongoDB Atlas et par sa popularité. Les opérations touchant la base de données de ce projet sont simples. De ce fait, une autre base de données noSql fournirait probablement à peu près les mêmes fonctionnalités et ce, à la même vitesse. 
 
@@ -374,7 +373,7 @@ Cependant, l'analyse par un [grand modèle de langage](https://fr.wikipedia.org/
 
 (*) par exemple, pour entraîner un modèle auto-hébergé (comme LLama2) sur un corpus relu par des humains, car il a été prouvé que des modèles plus petits peuvent être bien plus performants que des modèles plus grands [^12]
 
-(**) en considératnt que tous les LLM sont payants, sauf ceux auto-hébergé
+(**) en considérant que tous les LLM sont payants, sauf ceux auto-hébergé
 
 Les limitations d'OpenAI obligent à limiter le service Apprentissage de l'application (5 exemples ou moins par requête) et la longueur d'un message examiné (un message est coupé au-delà de cette longueur). 
 
@@ -403,7 +402,7 @@ L'application serait plus performante, si le `Serveur 3` transmettait l'identifi
 
 L'asynchronie de toutes les requêtes MongoDB et OpenAI n'a pas été implémentée. 
 
-Les instructions d'installation et de configuration peuvent être simplifiées par l'utilisation de conteineurs Docker.
+Les instructions d'installation et de configuration peuvent être simplifiées par l'utilisation de conteneurs Docker.
 
 <!-- TOC --><a name="conceptual-limitations"></a>
 ## Limites conceptuelles  
@@ -431,7 +430,7 @@ L'intégration de LLM pour analyser le contexte des messages a considérablement
 
 Cette version présente son propre ensemble de défis, notamment les faux positifs. En effet, l'extraction d'informations détaillées (comme le sujet principal, les personnes auxquelles il s'adresse, etc.) d'un message, qui touche donc la « compréhension » du sens d'un message, ne fonctionnait pas correctement en raison de la mauvaise qualité de l'analyse. 
 
-Un essay de poser directement à OpenAIles les question de type : « Y a-t-il des marques de propagande dans ce message ? » n'a pas abouti.
+Un essai de poser directement à OpenAIles les question de type : « Y a-t-il des marques de propagande dans ce message ? » n'a pas abouti.
 
 Le mécanisme de retour d'information des utilisateurs, grâce auquel l'utilisateur peut signaler les détections incorrectes, constitue la première étape vers un système d'auto-amélioration. 
 
@@ -467,9 +466,8 @@ Les tests lancés sur deux groupes de chaînes, un groupe propagandiste et un gr
 
 ![test](https://github.com/akostrik/stage_telegram/assets/22834202/dbc311e8-38f4-46f5-a31d-c060e9f28c1e)
 
-Deux tests sur les valeurs du coefficient de confiance en fonction du paramètre température, chacun des tests lancés sur les deux groupes de voies, montrent une tendance à une meilleure distinction entre les deux groupes lorsque le paramètre température est plus élevé.
+Deux tests sur les valeurs du coefficient de confiance en fonction du paramètre température, chacun des tests lancés sur les deux groupes de voies, montrent une tendance à une meilleure distinction entre les deux groupes lorsque le paramètre température est plus élevé :
 
-Two tests on the values of the confidence coefficient depending on the temperature parameter, every of the tests launched on the two groups of channels, show a tendency of better distinction between the two groups while the temperature parameter is higher:    
 | Température         | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |---------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
