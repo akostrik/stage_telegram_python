@@ -374,13 +374,13 @@ Cependant, l'analyse par un [grand modèle de langage](https://fr.wikipedia.org/
 Les limitations d'OpenAI obligent à limiter le service Apprentissage de l'application (5 exemples ou moins par requête) et la longueur d'un message examiné (un message est coupé au-delà de cette longueur). 
 
 <!-- TOC --><a name="the-limitations-related-to-mongodb"></a>
-## The limitations related to MongoDB
+## Limitations liées à MongoDB 
 
-The installation instructions are provided in this document only for the cloud version _MongoDB Atlas_, however the user can [install MongoDB locally](https://www.mongodb.com/docs/manual/administration/install-on-linux/).
+Les instructions d'installation sont fournies dans ce document uniquement pour la version cloud MongoDB Atlas. Cependant l'utilisateur peut [installer MongoDB localement](https://www.mongodb.com/docs/manual/administration/install-on-linux/). 
 
-The speed of MongoDB requests is not critical in this project, because they are much faster than OpenAI requests. However, once OpenAI operations are accelerated (by the means described above or others), the database requests can be accelerated by installing MongoDB locally and may be, by using other databases.
+La vitesse des requêtes MongoDB n'est pas un point de critique dans ce projet, car elles sont beaucoup plus rapides que les requêtes OpenAI. Cependant, es requêtes de base de données peuvent être accélérées en installant MongoDB localement. 
 
-A BSON document in MongoDB cannot exceed 16 Mb [^11] and a MongoDB database cannot exceed 64 TB in size.
+Un document BSON dans MongoDB ne peut pas dépasser 16 Mo et une base de données MongoDB ne peut pas dépasser 64 To.
 
 <!-- TOC --><a name="the-limitations-related-to-telegram"></a>
 ## The limitations related to Telegram
