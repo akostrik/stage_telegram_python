@@ -361,14 +361,14 @@ Gpt-4 :
 
 However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
                                 
-| the means                       | speed    | quality  | investissement | one request cost ** |
-|---------------------------------|----------|----------|----------------|---------------------|
-| many powerful machines          | better   | the same | yes            | 0                   |
-| many LLM accounts               | better   | the same | no             | the same            |
-| cross-analysis by several LLM   | worse    | better   | no             | greater             |
-| prompt design                   | the same | better   | no             | the same            |
-| learning (prompt with examples) | the same | better   | no             | the same            |
-| fine-tuning *                   | better ! | better ! | yes            | 0                   |
+| the means                       | speed       | quality     | investissement | one request cost ** |
+|---------------------------------|-------------|-------------|----------------|---------------------|
+| many powerful machines          | better      | the same    | yes            | 0                   |
+| many LLM accounts               | better      | the same    | no             | the same            |
+| cross-analysis by several LLM   | worse       | better      | no             | greater             |
+| prompt design                   | the same    | better      | no             | the same            |
+| learning (prompt with examples) | the same    | better      | no             | the same            |
+| fine-tuning *                   | much better | much better | yes            | 0                   |
 
 (*) for example, to train a self-hosted model (like [LLama2](https://ai.meta.com/llama/)) on a corpus proofread by humans, since it has been proven that smaller models can perform way better than larger models [^12]
 
