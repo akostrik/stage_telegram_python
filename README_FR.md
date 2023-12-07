@@ -24,7 +24,7 @@ Le projet présenté a été développé au cours d'un stage de 5 mois (du 3 avr
    * [Configuration de MongoDB Atlas](#mongodb-atlas-configuration)
    * [Configuration d’OpenAI](#openai-configuration)
    * [Configuration de Telegram](#telegram-configuration)
-   * [Configuration du fichier .env.](#env-file-configuration)
+   * [Configuration du fichier .env](#env-file-configuration)
    * [Installation](#setup)
    * [Compiler et exécuter](#compile-and-run)
 - [Détails techniques du développement](#technical-details-of-the-developement)
