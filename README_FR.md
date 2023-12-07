@@ -470,8 +470,8 @@ Deux tests sur les valeurs du coefficient de confiance en fonction du paramètre
 
 | Température         | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 |---------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-| difference (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
-| difference (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
+| différence (test 1) |  2  |  2  |  2  |  2  |  3  |  4  |  3  |  3  |  5  |  5  |  5  |
+| différence (test 2) |  1  |  1  |  2  |  3  |  1  |  1  |  3  |  4  |  2  |  4  |  4  |
 
 La sortie du Serveur 1 est écrite dans les [logs](https://github.com/akostrik/stage_telegram/tree/main/server1/log), pour garder une trace de toutes les expérimentations.
 
