@@ -187,7 +187,7 @@ Il faut créer un compte MongoDB.
 
 Sur ce compte, il faut créer une base de données sous le nom de `Telegram`. 
 
-De là, il faut [importer](https://www.mongodb.com/docs/atlas/import/mongoimport/) la collection [`caractéristics`](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/collection_characteristics.json) dans la base de données Telegram.  
+De là, il faut [importer](https://www.mongodb.com/docs/atlas/import/mongoimport/) la collection [`caracteristics`](https://github.com/akostrik/stage_telegram/blob/main/subsidiary%20files/collection_characteristics.json) dans la base de données Telegram.  
 
 Puis, il faut accéder à la section Database Deployments de [l'interface MongoDB](https://cloud.mongodb.com) et ajouter l’adresse IP (`add your current ip address`).
 
