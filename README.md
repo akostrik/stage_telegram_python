@@ -361,7 +361,7 @@ Gpt-4 :
 
 However, the [large language model](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage) analysis may be improved in all these respects by the means like:
                                 
-| the means                       | speed       | quality     | investissement | one request cost ** |
+| the means                       | speed       | quality     | investissement | the request cost ** |
 |---------------------------------|-------------|-------------|----------------|---------------------|
 | many powerful machines          | better      | the same    | yes            | 0                   |
 | many LLM accounts               | better      | the same    | no             | the same            |
